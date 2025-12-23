@@ -2,6 +2,21 @@
 
 Detailed guidance for extracting agent "business logic" patterns.
 
+## Workflow
+
+Phase 2 skills run in parallel after Phase 1 completes:
+```
+Skill Agent (coordinator) → Reader Agents (file clusters) → Synthesis → Output
+```
+
+Each skill agent:
+1. Uses codebase map and Phase 1 patterns to identify relevant files
+2. Clusters files by relationship (hierarchy, cohort, type+usage, etc.)
+3. Spawns reader agents to extract cognitive patterns from clusters
+4. Synthesizes extracts, referencing Phase 1 findings where relevant
+
+Output: `forensics-output/frameworks/{name}/phase2/*.md`
+
 ## 2.1 Control Loop Analysis
 
 ### Reasoning Pattern Detection

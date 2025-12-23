@@ -2,6 +2,20 @@
 
 Detailed guidance for analyzing the software engineering foundations.
 
+## Workflow
+
+Phase 1 skills run in parallel via the 4-tier agent hierarchy:
+```
+Skill Agent (coordinator) → Reader Agents (file clusters) → Synthesis → Output
+```
+
+Each skill agent:
+1. Clusters files by relationship (hierarchy, cohort, type+usage, etc.)
+2. Spawns reader agents to extract patterns from clusters
+3. Synthesizes extracts into skill analysis report
+
+Output: `forensics-output/frameworks/{name}/phase1/*.md`
+
 ## 1.1 Data Substrate Analysis
 
 ### What to Look For

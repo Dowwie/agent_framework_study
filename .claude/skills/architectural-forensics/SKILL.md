@@ -116,19 +116,43 @@ reports/                             # Final deliverables
 
 ## Agent Orchestration
 
-This skill uses a hierarchy of specialized agents for context efficiency:
+This skill uses a **4-tier hierarchy** of specialized agents for context efficiency:
 
 ```
-Orchestrator → Framework Agents (parallel) → Skill Agents (parallel) → Synthesis Agent
+Orchestrator
+    │
+    └── Framework Agents (parallel, one per framework)
+            │
+            └── Skill Agents (parallel, one per skill) [COORDINATORS]
+                    │
+                    └── Reader Agents (parallel, one per file cluster) [EXTRACTORS]
+                            │
+                            └── Synthesis Agent (cross-framework synthesis)
 ```
 
-Each agent has defined context boundaries to prevent token bloat. See:
+### Agent Roles
+
+| Agent | Context Budget | Reads | Produces |
+|-------|---------------|-------|----------|
+| **Orchestrator** | ~10K | State files | Coordination decisions |
+| **Framework Agent** | ~50K | Skill outputs | Framework summary report |
+| **Skill Agent** | ~25K | Cluster extracts | Skill analysis report |
+| **Reader Agent** | ~20K | 1-5 source files | JSON extract (~2K) |
+| **Synthesis Agent** | ~40K | All framework reports | Comparison matrix, architecture spec |
+
+### Key Innovation: Cluster-Based Reading
+
+Reader Agents read **file clusters** (1-5 related files) rather than individual files:
+- Clusters are grouped by relationship: hierarchy, module cohort, type+usage, interface+impl
+- Cross-file patterns (inheritance, imports, shared state) are captured in the extract
+- This enables understanding architectural patterns that span multiple files
+
+See:
 - `references/orchestrator-agent.md` — Top-level coordination
 - `references/framework-agent.md` — Per-framework analysis coordination
-- `references/skill-agent.md` — Individual skill execution
+- `references/skill-agent.md` — Skill coordination and cluster assignment
+- `references/reader-agent.md` — File cluster extraction
 - `references/synthesis-agent.md` — Cross-framework synthesis
-
-Project-level scripts (`scripts/agents/*.py`) build complete agent prompts with embedded context.
 
 ## Sub-Skill Reference
 
