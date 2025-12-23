@@ -7,6 +7,7 @@ Tracks which frameworks are pending, in-progress, or completed.
 import json
 import sys
 import argparse
+import shutil
 from pathlib import Path
 from typing import Dict, List, Optional
 from enum import Enum
@@ -110,13 +111,23 @@ def show_status():
         print(f"{name:<25} {data['status']:<15}")
 
 def reset_in_progress():
-    """Reset IN_PROGRESS to PENDING (useful for resume after crash)."""
+    """Reset IN_PROGRESS to PENDING and clean up output directories (Clean Slate)."""
     manifest = get_manifest()
     count = 0
+    frameworks_output_dir = STATE_DIR.parent / "frameworks"
+
     for name, data in manifest["frameworks"].items():
         if data["status"] == Status.IN_PROGRESS:
             data["status"] = Status.PENDING
+            
+            # Clean slate: remove output directory
+            fw_dir = frameworks_output_dir / name
+            if fw_dir.exists():
+                shutil.rmtree(fw_dir)
+                print(f"  Cleaned up partial output for '{name}'")
+            
             count += 1
+            
     save_manifest(manifest)
     print(f"Reset {count} in-progress frameworks to pending.")
 

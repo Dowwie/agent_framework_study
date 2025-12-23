@@ -23,13 +23,14 @@ def build_prompt() -> str:
 
 ## Execute Now
 
-### Step 1: Initialize State
+### Step 1: Initialize & Auto-Recover State
 
-Invoke the **run_shell_command** tool to initialize the manifest and reset any stale jobs:
+Invoke the **run_shell_command** tool to initialize the manifest and automatically reset any interrupted jobs from previous sessions:
 
 ```bash
 python scripts/state_manager.py init && python scripts/state_manager.py reset-running
 ```
+*Note: `reset-running` will detect any frameworks left in `in_progress` state (e.g., from a crash), move them back to `pending`, and clean up their partial output directories to ensure a fresh start.*
 
 ### Step 2: Analyze Frameworks (Execution Loop)
 

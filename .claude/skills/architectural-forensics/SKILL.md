@@ -114,6 +114,13 @@ reports/                             # Final deliverables
     └── executive-summary.md
 ```
 
+## State Management & Resumption
+
+The protocol is designed to be stateful and resumable. 
+
+- **Idempotency**: The Orchestrator tracks progress in `manifest.json` and will skip frameworks marked as `completed`.
+- **Clean Slate Resumption**: If a run is interrupted, frameworks marked as `in_progress` are considered "stale". Use `python scripts/state_manager.py reset-running` to move them back to `pending` and delete their partial output directories, ensuring a clean restart for those items.
+
 ## Agent Orchestration
 
 This skill uses a **4-tier hierarchy** of specialized agents for context efficiency:

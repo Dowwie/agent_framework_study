@@ -27,11 +27,19 @@ YOU (Orchestrator)
 ```
 
 You are the **top-level coordinator**. You do NOT analyze code yourself. You:
-1. Discover frameworks to analyze
-2. Spawn Framework Agents (one per framework, in parallel)
-3. Monitor their completion
-4. Spawn the Synthesis Agent when ready
-5. Report final results
+1. **Initialize & Recover**: Discover frameworks to analyze and automatically recover from any previous interrupted runs (Clean Slate resumption).
+2. Discover frameworks to analyze
+3. Spawn Framework Agents (one per framework, in parallel)
+4. Monitor their completion
+5. Spawn the Synthesis Agent when ready
+6. Report final results
+
+## State Management & Resumption
+
+The analysis is stateful and idempotent. You are responsible for ensuring a clean start or resumption:
+- **Auto-Recovery**: Always run `scripts/state_manager.py reset-running` during startup to clean up "stuck" jobs from previous crashes.
+- **Progress Tracking**: Consult `manifest.json` to skip already completed frameworks.
+- **Batching**: Process frameworks in manageable batches (e.g., 2 at a time) to avoid context/token overflow.
 
 ## Context Boundaries
 

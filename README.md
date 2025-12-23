@@ -57,39 +57,28 @@ git clone https://github.com/langchain-ai/langgraph repos/langgraph
 # ... other frameworks
 ```
 
-### 2. Running the Analysis
-Trigger the analysis protocol directly using the Claude Code command:
+### 2. Running & Resuming the Analysis
+To start or resume the analysis, simply run:
 ```bash
 /analyze-frameworks
 ```
-This command auto-discovers all frameworks in the `repos/` directory and executes the full architectural forensics protocol.
 
-### 3. Interruption and Resumption
-The analysis process is stateful and supports interruption and resumption. State is tracked in `forensics-output/.state/manifest.json`.
+**How it works:**
+- **Automatic Discovery**: The command finds all frameworks in `repos/`.
+- **Smart Resumption**: If a previous run was interrupted, the agent automatically detects incomplete jobs, resets them (clean slate), and resumes processing from where it left off.
+- **Idempotency**: Completed frameworks are skipped.
 
-#### Checking Progress
-To see the current status of all frameworks:
+### 3. Monitoring Progress
+State is tracked in `forensics-output/.state/manifest.json`. To view the current status table:
 ```bash
 python scripts/state_manager.py status
 ```
 
-#### Resuming After Interruption
-If the process crashes or is manually stopped, some frameworks may be left in `in_progress` status. To safely resume:
-
-1. **Reset Stalled Jobs**: This moves frameworks from `in_progress` back to `pending`.
-   ```bash
-   python scripts/state_manager.py reset-running
-   ```
-2. **Restart the Analysis**: Re-issue the command:
-   ```bash
-   /analyze-frameworks
-   ```
-   The protocol will skip completed frameworks and resume from the next pending ones.
-
-### 4. Manual State Management
-For advanced users, the `state_manager.py` script provides fine-grained control:
-- `python scripts/state_manager.py init`: Refresh the manifest based on the current contents of the `repos/` directory.
-- `python scripts/state_manager.py mark <framework> <status>`: Manually set a framework's status (`pending`, `in_progress`, `completed`, `failed`).
+### 4. Advanced State Management
+For manual control (rarely needed), use the `state_manager.py` script:
+- `python scripts/state_manager.py init`: Refresh manifest from `repos/`.
+- `python scripts/state_manager.py reset-running`: Manually reset in-progress jobs.
+- `python scripts/state_manager.py mark <framework> <status>`: Force a status update.
 
 ## Skills Taxonomy
 
