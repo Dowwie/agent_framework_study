@@ -14,11 +14,11 @@ Distinguish between **software engineering decisions** (how it runs) and **cogni
 ## Quick Start
 
 ```bash
-# 1. Map the codebase
-python scripts/map_codebase.py /path/to/framework
+# 1. Map the codebase (uses codebase-mapping skill's script)
+python .claude/skills/codebase-mapping/scripts/map_codebase.py /path/to/framework --output codebase-map.json
 
-# 2. Run analysis (creates structured output)
-# Follow the phase-by-phase process below
+# 2. Run analysis via the command
+/analyze-frameworks
 ```
 
 ## Protocol Phases
@@ -94,28 +94,41 @@ codebase-mapping → execution-engine-analysis → control-loop-extraction → t
 ## Output Directory Structure
 
 ```
-forensics-output/
+forensics-output/                    # Working/intermediate files
+├── .state/
+│   ├── manifest.json
+│   └── {framework}.state.json
+└── frameworks/
+    └── {framework}/
+        ├── codebase-map.json
+        ├── phase1/*.md
+        └── phase2/*.md
+
+reports/                             # Final deliverables
 ├── frameworks/
-│   ├── framework-a/
-│   │   ├── codebase-map.json
-│   │   ├── phase1/
-│   │   │   ├── data-substrate.md
-│   │   │   ├── execution-engine.md
-│   │   │   ├── component-model.md
-│   │   │   └── resilience.md
-│   │   └── phase2/
-│   │       ├── control-loop.md
-│   │       ├── memory.md
-│   │       ├── tool-interface.md
-│   │       └── multi-agent.md
-│   └── framework-b/
-│       └── ...
-├── synthesis/
-│   ├── comparison-matrix.md
-│   ├── antipatterns.md
-│   └── reference-architecture.md
-└── README.md
+│   └── {framework}.md               # Framework summary
+└── synthesis/
+    ├── comparison-matrix.md
+    ├── antipatterns.md
+    ├── reference-architecture.md
+    └── executive-summary.md
 ```
+
+## Agent Orchestration
+
+This skill uses a hierarchy of specialized agents for context efficiency:
+
+```
+Orchestrator → Framework Agents (parallel) → Skill Agents (parallel) → Synthesis Agent
+```
+
+Each agent has defined context boundaries to prevent token bloat. See:
+- `references/orchestrator-agent.md` — Top-level coordination
+- `references/framework-agent.md` — Per-framework analysis coordination
+- `references/skill-agent.md` — Individual skill execution
+- `references/synthesis-agent.md` — Cross-framework synthesis
+
+Project-level scripts (`scripts/agents/*.py`) build complete agent prompts with embedded context.
 
 ## Sub-Skill Reference
 
