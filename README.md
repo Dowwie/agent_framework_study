@@ -58,22 +58,11 @@ git clone https://github.com/langchain-ai/langgraph repos/langgraph
 ```
 
 ### 2. Running the Analysis
-There are two ways to trigger the analysis protocol:
-
-#### Option A: Using the Orchestrator (Recommended)
-This method uses a dedicated orchestrator agent to manage the entire process, including spawning sub-agents for each framework and skill.
-
-1. **Generate the Orchestrator Prompt**:
-   ```bash
-   python scripts/agents/orchestrator.py
-   ```
-2. **Execute the Output**: Copy and paste the generated prompt into your agent chat. Follow the step-by-step instructions provided by the orchestrator.
-
-#### Option B: Using the Command (If available)
-If your environment supports custom commands, you can trigger the analysis directly:
+Trigger the analysis protocol directly using the Claude Code command:
 ```bash
 /analyze-frameworks
 ```
+This command auto-discovers all frameworks in the `repos/` directory and executes the full architectural forensics protocol.
 
 ### 3. Interruption and Resumption
 The analysis process is stateful and supports interruption and resumption. State is tracked in `forensics-output/.state/manifest.json`.
@@ -91,13 +80,16 @@ If the process crashes or is manually stopped, some frameworks may be left in `i
    ```bash
    python scripts/state_manager.py reset-running
    ```
-2. **Restart the Orchestrator**: Regenerate the prompt with `python scripts/agents/orchestrator.py` and continue the process. It will skip completed frameworks and start with the next pending ones.
+2. **Restart the Analysis**: Re-issue the command:
+   ```bash
+   /analyze-frameworks
+   ```
+   The protocol will skip completed frameworks and resume from the next pending ones.
 
 ### 4. Manual State Management
 For advanced users, the `state_manager.py` script provides fine-grained control:
 - `python scripts/state_manager.py init`: Refresh the manifest based on the current contents of the `repos/` directory.
 - `python scripts/state_manager.py mark <framework> <status>`: Manually set a framework's status (`pending`, `in_progress`, `completed`, `failed`).
-- `python scripts/state_manager.py next --limit N`: See which frameworks will be analyzed in the next batch.
 
 ## Skills Taxonomy
 
