@@ -6,6 +6,27 @@ A modular skill library for software engineering agents to analyze, compare, and
 
 This project provides **13 discrete skills** that enable an AI agent to systematically deconstruct agent frameworks, distinguishing between **software engineering decisions** (how it runs) and **cognitive architecture decisions** (how it thinks). The goal is to extract reusable patterns for building new agent systems.
 
+## Target Frameworks
+
+The `repos/` directory contains clones of major agent frameworks for analysis:
+
+| Framework | Source | Focus |
+|-----------|--------|-------|
+| **autogen** | Microsoft | Multi-agent conversation patterns |
+| **langgraph** | LangChain | Graph-based agent orchestration |
+| **crewAI** | CrewAI | Role-based multi-agent teams |
+| **openai-agents-python** | OpenAI | Swarm-inspired lightweight agents |
+| **pydantic-ai** | Pydantic | Type-safe agent interfaces |
+| **llama_index** | LlamaIndex | Data-augmented agents |
+| **google-adk** | Google | Agent Development Kit |
+| **aws-strands** | AWS | Strands agent framework |
+| **ms-agent-framework** | Microsoft | Semantic Kernel agents |
+| **MetaGPT** | DeepWisdom | Software dev team simulation |
+| **camel** | CAMEL-AI | Communicative agent framework |
+| **agno** | Agno | Lightweight agent runtime |
+| **agent-zero** | FrdLnd | Personal assistant framework |
+| **swarm** | OpenAI | Educational multi-agent patterns |
+
 ## Quick Start
 
 ```bash
