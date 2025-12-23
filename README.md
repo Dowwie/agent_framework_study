@@ -2,9 +2,15 @@
 
 A modular skill library for software engineering agents to analyze, compare, and synthesize agent framework architectures.
 
-## Overview
+## Mission
 
-This project provides **13 discrete skills** that enable an AI agent to systematically deconstruct agent frameworks, distinguishing between **software engineering decisions** (how it runs) and **cognitive architecture decisions** (how it thinks). The goal is to extract reusable patterns for building new agent systems.
+We are analyzing 14 of the most popular agent frameworks to deconstruct their architectures and inform the design of a new, optimized derivative system.
+
+This strategy prioritizes understanding:
+*   **Software Engineering Decisions** (how it runs): The "Engineering Chassis" (Data, Execution, Component Model, Resilience).
+*   **Cognitive Architecture Decisions** (how it thinks): The "Cognitive Core" (Control Loop, Memory, Tooling, Coordination).
+
+The ultimate goal is to extract reusable "best-of-breed" patterns and document critical anti-patterns to guide the development of robust, scalable agentic software.
 
 ## Target Frameworks
 

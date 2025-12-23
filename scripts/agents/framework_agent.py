@@ -32,7 +32,6 @@ Execute the workflow described above. Remember:
 - Run codebase mapping first
 - Spawn Skill Agents for all analysis (do not read source code yourself)
 - Write your summary to `reports/frameworks/{framework_name}.md`
-- Update state file when complete
 """
 
 

@@ -23,58 +23,59 @@ def build_prompt() -> str:
 
 ## Execute Now
 
-### Step 1: Discover Frameworks
+### Step 1: Initialize State
 
-Scan the `repos/` directory for subdirectories. Each subdirectory is a framework to analyze.
-
-```bash
-ls -d repos/*/
-```
-
-If `repos/` is empty or missing, report error and exit.
-
-### Step 2: Initialize
-
-Create the output directory structure:
+Invoke the **run_shell_command** tool to initialize the manifest and reset any stale jobs:
 
 ```bash
-mkdir -p forensics-output/.state
-mkdir -p reports/frameworks reports/synthesis
+python scripts/state_manager.py init && python scripts/state_manager.py reset-running
 ```
 
-Write `forensics-output/.state/manifest.json` with the discovered frameworks.
+### Step 2: Analyze Frameworks (Execution Loop)
 
-### Step 3: Analyze Frameworks (Parallel)
+You must process frameworks in batches of 2 until finished. For each iteration:
 
-For each framework, generate the prompt and spawn an agent:
+1.  **Check for Work**: Invoke **run_shell_command** to get the next batch:
+    ```bash
+    python scripts/state_manager.py next --limit 2
+    ```
+    *   If the output is empty, **STOP** this loop and proceed to **Step 3**.
+    *   If the output contains framework names (e.g., `autogen langgraph`), proceed to the next sub-step.
 
+2.  **Mark and Spawn**: For each framework in the batch:
+    a. Invoke **run_shell_command** to mark it as `in_progress`:
+       ```bash
+       python scripts/state_manager.py mark <framework_name> in_progress
+       ```
+    b. Invoke **run_shell_command** to generate the agent prompt:
+       ```bash
+       python scripts/agents/framework_agent.py <framework_name> repos/<framework_name> forensics-output/frameworks/<framework_name>
+       ```
+    c. Use the output prompt to call the **Task** tool (`subagent_type: "general-purpose"`, `run_in_background: true`).
+
+3.  **Monitor Completion**: 
+    Wait for the spawned background tasks to finish. Once they are done:
+    - Invoke **run_shell_command** to mark each as `completed`:
+      ```bash
+      python scripts/state_manager.py mark <framework_name> completed
+      ```
+    - **Return to Sub-step 1** to fetch the next batch.
+
+### Step 3: Synthesis
+
+After the loop finishes, verify all frameworks are analyzed by checking the status:
 ```bash
-python scripts/agents/framework_agent.py <framework_name> repos/<framework_name> forensics-output/frameworks/<framework_name>
+python scripts/state_manager.py status
 ```
 
-Use the output as the prompt for a Task tool call with:
-- `subagent_type`: "general-purpose"
-- `run_in_background`: true
-
-### Step 4: Monitor Completion
-
-Wait for all framework agents using TaskOutput.
-Update manifest.json as frameworks complete or fail.
-
-### Step 5: Synthesize (if 2+ completed)
-
-Generate the synthesis prompt:
-
+Then, generate and execute the synthesis prompt:
 ```bash
-python scripts/agents/synthesis_agent.py <framework1> <framework2> ...
+python scripts/agents/synthesis_agent.py $(ls repos/)
 ```
 
-Use the output as the prompt for the Synthesis Agent Task.
+### Step 4: Final Report
 
-### Step 6: Report
-
-Update manifest.json with final status.
-Report completion to user with paths to reports.
+Inform the user that the analysis is complete and provide paths to the generated reports.
 """
 
 
