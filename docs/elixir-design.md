@@ -2,10 +2,49 @@
 
 A production-grade agent framework for Elixir, informed by architectural forensics of 15 Python agent frameworks.
 
+## Background
+
+### Problem Statement
+
+Building agentic AI systems requires orchestrating LLM calls, tool execution, state management, and human interaction. Python dominates this space with frameworks like LangGraph, CrewAI, and AutoGen. However, these frameworks exhibit common architectural flaws: unbounded memory growth (80%), mutable state without thread safety, and synchronous operations wrapped in async facades.
+
+Elixir's OTP platform offers primitives that solve these problems natively: supervised processes for fault isolation, ETS for concurrent state, and the actor model for coordination. Rather than port Python patterns, this framework applies Elixir idioms to achieve equivalent capabilities.
+
+### Design Context
+
+This design emerged from analyzing 15 Python agent frameworks:
+- **LangGraph** - Graph-based state machines with checkpointing
+- **CrewAI** - Role-based multi-agent orchestration
+- **AutoGen** - Conversational agent patterns
+- **Swarm** - Lightweight handoff-based coordination
+- **PydanticAI** - Type-safe tool interfaces
+- And 10 others (see `reports/synthesis/comparison-matrix.md`)
+
+Key patterns extracted:
+- **Deep Agents**: Explicit planning, hierarchical delegation, persistent memory
+- **State Reducers**: Controlled state updates (mapped to Ecto changesets)
+- **Tool Introspection**: Schema generation from type definitions
+- **Checkpointing**: Durable state for recovery and time-travel
+
+### Architectural Decisions
+
+Two major simplifications were made after initial design:
+
+1. **Broadway → GenServer + Task**: Broadway is optimized for broker ingestion (Kafka, RabbitMQ). Agent workflows generate work internally, have stateful steps, and include cycles. Plain OTP primitives are simpler and sufficient.
+
+2. **Explicit Graph → Pattern Matching**: LangGraph uses declarative graph definitions because Python lacks pattern matching. In Elixir, GenServer callback clauses **are** the state machine transitions. The graph is implicit but equally expressive.
+
+### Target Use Cases
+
+- Research agents with planning and tool use
+- Multi-step workflows with human approval gates
+- Long-running sessions with checkpoint recovery
+- Distributed agent clusters with session affinity
+
 ## Design Principles
 
 1. **Deep Agents Pattern** - Explicit planning, hierarchical delegation, persistent memory, extreme context engineering
-2. **Broadway-First** - Leverage production-grade pipeline processing
+2. **Plain OTP** - GenServer + Task over abstraction layers; pattern matching over explicit graph DSL
 3. **ETS as Hot Cache** - PostgreSQL as durability layer with write-behind
 4. **Behaviour-Driven** - Protocols and behaviours for extensibility
 5. **Observability Built-In** - Telemetry + OpenTelemetry from day one
@@ -14,8 +53,8 @@ A production-grade agent framework for Elixir, informed by architectural forensi
 
 | Dimension | Decision |
 |-----------|----------|
-| Core Architecture | Deep Agents via Broadway pipeline |
-| Process Structure | Broadway + GenStage producer with :queue |
+| Core Architecture | Deep Agents via GenServer + Task |
+| Process Structure | SessionController GenServer + Task.async for steps |
 | State Model | PostgreSQL + Redis with Ecto embedded schemas |
 | Message Protocol | Lightweight reference structs (session_id, plan_id, step_index) |
 | ETS Layout | 4 tables: :sessions, :messages, :context, :cache |
@@ -23,7 +62,7 @@ A production-grade agent framework for Elixir, informed by architectural forensi
 | Tool System | Ecto schemas, introspection-based JSON schema, Task isolation |
 | LLM Integration | Req + Behaviour adapters, PubSub streaming, Hammer rate limiting, :fuse circuit breaker |
 | Memory/Context | Token budget + eviction, pgvector + pg_bm25, tiktoken NIF |
-| Multi-Agent | SessionController GenServer + Broadway execution |
+| Multi-Agent | SessionController orchestrates sub-steps; no peer-to-peer agent communication |
 | Observability | Telemetry + OpenTelemetry, step-level granularity |
 | Error Handling | Feed errors to LLM, checkpoint recovery, configurable max iterations |
 | Interrupts/Breakpoints | Hybrid (step-level + runtime registry), timeout with default action |
@@ -32,12 +71,12 @@ A production-grade agent framework for Elixir, informed by architectural forensi
 
 ## Key Libraries
 
-- **Broadway** - Pipeline processing with batching, rate limiting, telemetry
 - **Ecto** - Data modeling, validation, changesets
 - **Req** - HTTP client with streaming
 - **ex_hash_ring** - Consistent hashing (Discord's library)
 - **Hammer** - Rate limiting
 - **:fuse** - Circuit breaker
+- **Poolboy** - Connection pooling for LLM clients
 - **Phoenix.PubSub** - Streaming to UI
 - **Telemetry + OpenTelemetry** - Observability
 - **pgvector + pg_bm25** - Vector and text search in PostgreSQL
@@ -56,35 +95,30 @@ A production-grade agent framework for Elixir, informed by architectural forensi
                     │                     │                     │
                     ▼                     ▼                     ▼
         ┌───────────────────┐  ┌───────────────────┐  ┌───────────────────┐
-        │  ETS Supervisor   │  │  Infrastructure   │  │  Session          │
-        │  (one_for_one)    │  │  Supervisor       │  │  Supervisor       │
+        │  ETS Supervisor   │  │  Session.Supervisor│  │  Infrastructure   │
+        │  (one_for_one)    │  │  (DynamicSupervisor)│  │  Supervisor       │
         └─────────┬─────────┘  └─────────┬─────────┘  └─────────┬─────────┘
                   │                      │                      │
       ┌───────────┼───────────┐          │          ┌───────────┼───────────┐
       ▼           ▼           ▼          │          ▼           ▼           ▼
-   :sessions  :messages  :context        │    SessionCtrl   SessionCtrl  ...
-   :cache     (ETS)      (ETS)           │    (GenServer)   (GenServer)
+   :sessions  :messages  :context        │    PersistenceWorker  HashRing  LLM.Pool
+   :cache     (ETS)      (ETS)           │    (GenServer)       Manager   (Poolboy)
    (ETS)                                 │
                                          │
-              ┌──────────────────────────┼──────────────────────────┐
-              ▼                          ▼                          ▼
-    ┌───────────────────┐    ┌───────────────────┐    ┌───────────────────┐
-    │  Broadway         │    │  PersistenceWorker│    │  HashRing         │
-    │  Pipeline         │    │  (GenServer)      │    │  Manager          │
-    └─────────┬─────────┘    │  Write-behind     │    │  (GenServer)      │
-              │              └───────────────────┘    └───────────────────┘
-    ┌─────────┴─────────┐
-    ▼                   ▼
-  Producer           Processors
-  (GenStage)         ┌─────────┬─────────┐
-                     ▼         ▼         ▼
-               Researcher   Coder    Writer
-               (pool: 2)  (pool: 2) (pool: 1)
-                     │         │         │
-                     └────┬────┴────┬────┘
-                          ▼         ▼
-                       Batcher   Batcher
-                       (default) (priority)
+                           ┌─────────────┼─────────────┐
+                           ▼             ▼             ▼
+                     SessionCtrl   SessionCtrl   SessionCtrl
+                     (GenServer)   (GenServer)   (GenServer)
+                           │
+                           │ spawns Task.async
+                           ▼
+                     ┌─────────────┐
+                     │    Task     │──► LLM call / Tool execution
+                     └─────────────┘
+                           │
+                           │ result message
+                           ▼
+                     Controller updates state, {:continue, :next_step}
 ```
 
 ### Cluster Architecture
@@ -110,27 +144,41 @@ A production-grade agent framework for Elixir, informed by architectural forensi
 ### Session Control Flow
 
 ```
-┌────────────────────────────────────────────────────────────────────┐
-│                         Session Layer                               │
-│  ┌────────────────┐  ┌────────────────┐  ┌────────────────┐        │
-│  │ SessionCtrl 1  │  │ SessionCtrl 2  │  │ SessionCtrl N  │        │
-│  │ (GenServer)    │  │ (GenServer)    │  │ (GenServer)    │        │
-│  └───────┬────────┘  └───────┬────────┘  └───────┬────────┘        │
-│          │                   │                   │                  │
-│          └───────────────────┼───────────────────┘                  │
-│                              │ enqueue steps                        │
-└──────────────────────────────┼──────────────────────────────────────┘
-                               ▼
-┌──────────────────────────────────────────────────────────────────────┐
-│                       Broadway Pipeline                               │
-│                                                                       │
-│  [Producer] → [Researcher] → ┐                                        │
-│            → [Coder]     → ─┼─→ [Batcher] → step_complete message    │
-│            → [Writer]    → ─┘                                        │
-└──────────────────────────────────────────────────────────────────────┘
-                               │
-                               ▼
-                    back to SessionController
+┌───────────────────────────────────────────────────────────────────────┐
+│                         SessionController                              │
+│                           (GenServer)                                  │
+│                                                                        │
+│  ┌─────────────────────────────────────────────────────────────────┐  │
+│  │ init/1 ──► {:continue, :plan}                                   │  │
+│  │                     │                                            │  │
+│  │                     ▼                                            │  │
+│  │ handle_continue(:plan) ──► Task.async(create_plan)              │  │
+│  │                     │                                            │  │
+│  │                     ▼                                            │  │
+│  │ handle_info({ref, plan}) ──► store plan, {:continue, :next_step}│  │
+│  │                     │                                            │  │
+│  │         ┌───────────┴───────────┐                                │  │
+│  │         ▼                       ▼                                │  │
+│  │   {:ok, step}            {:human_input, step}                    │  │
+│  │         │                       │                                │  │
+│  │         ▼                       ▼                                │  │
+│  │   Task.async(execute)    broadcast HITL request                  │  │
+│  │         │                 await provide_input                    │  │
+│  │         ▼                       │                                │  │
+│  │   handle_info(result)           │                                │  │
+│  │         │                       │                                │  │
+│  │         └───────────┬───────────┘                                │  │
+│  │                     ▼                                            │  │
+│  │           {:continue, :next_step}                                │  │
+│  │                     │                                            │  │
+│  │         ┌───────────┴───────────┐                                │  │
+│  │         ▼                       ▼                                │  │
+│  │       :done              more steps...                           │  │
+│  │         │                                                        │  │
+│  │         ▼                                                        │  │
+│  │   {:stop, :normal}                                               │  │
+│  └─────────────────────────────────────────────────────────────────┘  │
+└───────────────────────────────────────────────────────────────────────┘
 ```
 
 ## Module Structure
@@ -156,18 +204,10 @@ lib/
 │   │
 │   ├── session/                    # Session Management
 │   │   ├── supervisor.ex           # DynamicSupervisor
-│   │   ├── controller.ex           # GenServer per session
+│   │   ├── controller.ex           # Core GenServer (state machine)
+│   │   ├── step_executor.ex        # Task logic for step execution
 │   │   ├── router.ex               # Routes to owning node
 │   │   └── registry.ex             # Process registry
-│   │
-│   ├── pipeline/                   # Broadway Pipeline
-│   │   ├── broadway.ex             # Broadway configuration
-│   │   ├── producer.ex             # GenStage producer
-│   │   ├── processors/
-│   │   │   ├── researcher.ex
-│   │   │   ├── coder.ex
-│   │   │   └── writer.ex
-│   │   └── batcher.ex
 │   │
 │   ├── tools/                      # Tool System
 │   │   ├── behaviour.ex
@@ -179,6 +219,7 @@ lib/
 │   ├── llm/                        # LLM Integration
 │   │   ├── behaviour.ex
 │   │   ├── client.ex
+│   │   ├── pool.ex                 # Poolboy connection pooling
 │   │   ├── streaming.ex
 │   │   ├── providers/
 │   │   ├── rate_limiter.ex
@@ -219,15 +260,17 @@ lib/
 ## Key Types
 
 ```elixir
-# Session State
+# Session State (GenServer state for SessionController)
 @type session :: %AgentFramework.Schemas.Session{
   id: String.t(),
   user_id: String.t(),
-  state: :planning | :executing | :completed | :failed,
+  state: :planning | :executing | :interrupted | :awaiting_human | :completed | :failed,
   plan: plan() | nil,
   config: map(),
   max_iterations: pos_integer(),
-  current_iteration: non_neg_integer()
+  current_iteration: non_neg_integer(),
+  pending_task: reference() | nil,    # Task.async ref when step is executing
+  subscribers: [pid()]                 # Processes to notify on events
 }
 
 # Plan with Steps
@@ -241,17 +284,21 @@ lib/
 # Individual Step
 @type step :: %AgentFramework.Schemas.Step{
   id: String.t(),
-  type: :research | :code | :write | :review | :custom,
+  type: :research | :code | :write | :review | :human_input | :custom,
   description: String.t(),
   status: :pending | :in_progress | :completed | :failed | :skipped,
-  processor: atom(),
-  dependencies: [String.t()],
+  executor: module() | nil,           # Optional custom executor module
+  dependencies: [String.t()],         # Step IDs that must complete first
   result: map() | nil,
-  error: String.t() | nil
+  error: String.t() | nil,
+  # Interrupt configuration
+  interrupt: :none | :before | :after,
+  interrupt_timeout_ms: pos_integer(),
+  interrupt_default_action: :continue | :fail
 }
 
-# Broadway Message (lightweight reference)
-@type broadway_message :: %{
+# Step Reference (lightweight pointer for cross-process communication)
+@type step_ref :: %{
   session_id: String.t(),
   plan_id: String.t(),
   step_index: non_neg_integer(),
@@ -422,18 +469,123 @@ TimeTravel.full_timeline(session_id)
 
 **Snapshot strategy:** Full snapshot every 5 steps + events between. Reconstruct by loading nearest snapshot and applying subsequent events.
 
+## Public API
+
+The `AgentFramework` module exposes the primary interface:
+
+```elixir
+defmodule AgentFramework do
+  @moduledoc """
+  Public API for the Agent Framework.
+  """
+
+  # Session Lifecycle
+  @spec start_session(String.t(), keyword()) :: {:ok, session_id} | {:error, term()}
+  def start_session(goal, opts \\ [])
+
+  @spec stop_session(String.t()) :: :ok | {:error, :not_found}
+  def stop_session(session_id)
+
+  @spec get_session(String.t()) :: {:ok, Session.t()} | {:error, :not_found}
+  def get_session(session_id)
+
+  @spec subscribe(String.t()) :: :ok
+  def subscribe(session_id)
+
+  # Interrupt Control
+  @spec resume(String.t(), keyword()) :: :ok | {:error, term()}
+  def resume(session_id, opts \\ [])
+
+  @spec pause(String.t()) :: :ok | {:error, term()}
+  def pause(session_id)
+
+  # Human-in-the-Loop
+  @spec provide_input(String.t(), String.t(), map()) :: :ok | {:error, term()}
+  def provide_input(session_id, step_id, input)
+
+  # Breakpoints (debugging)
+  @spec set_breakpoint(String.t(), :before | :after, atom() | String.t()) :: :ok
+  def set_breakpoint(session_id, position, step_type_or_id)
+
+  @spec clear_breakpoints(String.t()) :: :ok
+  def clear_breakpoints(session_id)
+
+  # Time Travel
+  @spec state_at(String.t(), non_neg_integer()) :: {:ok, Session.t()} | {:error, term()}
+  def state_at(session_id, step_index)
+
+  @spec timeline(String.t()) :: {:ok, [Event.t()]} | {:error, term()}
+  def timeline(session_id)
+end
+```
+
+**Usage Example:**
+
+```elixir
+# Start a research session
+{:ok, session_id} = AgentFramework.start_session(
+  "Research quantum computing advances in 2024",
+  tools: [MyTools.WebSearch, MyTools.FileWrite],
+  max_iterations: 15
+)
+
+# Subscribe to events
+AgentFramework.subscribe(session_id)
+
+# Receive events in calling process
+receive do
+  {:agent_framework, :step_complete, %{step: step, result: result}} ->
+    IO.puts("Step #{step.id} completed")
+
+  {:agent_framework, :hitl_request, %{step: step, question: q}} ->
+    AgentFramework.provide_input(session_id, step.id, %{answer: "approved"})
+
+  {:agent_framework, :session_complete, %{result: result}} ->
+    IO.puts("Done: #{inspect(result)}")
+end
+```
+
 ## Implementation Order
 
 1. **Foundation** - ETS tables, Ecto schemas, persistence worker
-2. **Session Management** - Controller, supervisor, registry
-3. **Pipeline** - Producer, Broadway config, first processor
-4. **Tools** - Behaviour, registry, executor, schema generation
-5. **LLM Integration** - Provider behaviour, OpenAI adapter, streaming
-6. **Memory & Context** - Token counter, context builder, eviction
-7. **Interrupts & HITL** - Breakpoints, interrupt handler, AskHuman tool, Phoenix Channel
-8. **Time Travel** - Event logging, snapshotter, query API
-9. **Clustering** - Hash ring, cross-node routing, failover
-10. **Observability & Hardening** - Telemetry, checkpoints, integration tests
+2. **Session Management** - Controller GenServer, step executor, supervisor, registry
+3. **Tools** - Behaviour, registry, executor, schema generation
+4. **LLM Integration** - Provider behaviour, pool, OpenAI adapter, streaming
+5. **Memory & Context** - Token counter, context builder, eviction
+6. **Interrupts & HITL** - Breakpoints, interrupt handler, AskHuman tool, Phoenix Channel
+7. **Time Travel** - Event logging, snapshotter, query API
+8. **Clustering** - Hash ring, cross-node routing, failover
+9. **Observability & Hardening** - Telemetry, checkpoints, integration tests
+
+## Architectural Note: Why GenServer + Task (Not Broadway)
+
+After initial design with Broadway, expert analysis revealed a mismatch:
+
+| Broadway Assumption | Our Reality |
+|---------------------|-------------|
+| Messages from external broker | Work generated internally |
+| High-throughput streams | Low-throughput, stateful |
+| Homogeneous batches | Heterogeneous steps |
+| DAG pipeline | Graph with cycles |
+
+**The simpler solution**: GenServer for state machine logic, Task.async for step execution. This is idiomatic OTP and avoids unnecessary abstraction.
+
+**What we kept from Broadway thinking**: Telemetry events, graceful shutdown, pooling (via Poolboy for LLM connections).
+
+## Architectural Note: Why Pattern Matching (Not Explicit Graph)
+
+We considered adding a Graph DSL like LangGraph's `StateGraph`. Expert analysis concluded:
+
+| Concern | Explicit Graph | Pattern Matching |
+|---------|----------------|------------------|
+| Cycle handling | Requires bounds declaration | `max_iterations` already handles |
+| Conditional routing | `add_conditional_edges()` | `next_action/1` function clauses |
+| Visualization | Native | Can generate from plan state |
+| Runtime behavior | No difference | Equivalent expressiveness |
+
+**The Elixir idiom**: Pattern matching in GenServer callbacks **is** a state machine graph. LangGraph needed explicit graphs because Python lacks pattern matching.
+
+**Future option**: If visualization becomes critical, add `SessionInspector` to generate Mermaid/DOT diagrams from plan state. If many agents share common patterns, consider a workflow DSL layer.
 
 ## Anti-Patterns to Avoid
 
@@ -458,7 +610,15 @@ From analysis of 15 Python frameworks:
 
 ## References
 
-- [Deep Agents Pattern](https://www.philschmid.de/deep-research-agent)
-- [ex_hash_ring](https://github.com/discord/ex_hash_ring)
-- [Broadway](https://hexdocs.pm/broadway)
+### Adopted Patterns
+- [Deep Agents Pattern](https://www.philschmid.de/deep-research-agent) - Core architecture inspiration
+- [ex_hash_ring](https://github.com/discord/ex_hash_ring) - Consistent hashing for session affinity
+- [LangGraph](https://langchain-ai.github.io/langgraph/) - Reference for checkpointing, interrupts, HITL
+
+### Considered but Not Adopted
+- [Broadway](https://hexdocs.pm/broadway) - Evaluated for pipeline processing; rejected as overfit for broker ingestion (see Architectural Notes)
+
+### Project Artifacts
+- Framework analysis: `reports/synthesis/comparison-matrix.md`
+- Anti-patterns catalog: `reports/synthesis/antipatterns.md`
 - Session log: `docs/elixir-sessions/2025-12-24-0639.md`
