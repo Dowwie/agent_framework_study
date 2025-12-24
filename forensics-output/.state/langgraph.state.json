@@ -1,0 +1,69 @@
+{
+  "framework": "langgraph",
+  "status": "completed",
+  "timestamp": "2025-12-23T18:00:00Z",
+  "source_path": "/Users/dgordon/my_projects/agent_framework_study/repos/langgraph",
+  "output_directory": "/Users/dgordon/my_projects/agent_framework_study/forensics-output/frameworks/langgraph",
+  "phases_completed": {
+    "codebase_mapping": true,
+    "phase1_analysis": true,
+    "phase2_analysis": true,
+    "synthesis": true
+  },
+  "artifacts": {
+    "codebase_map": "forensics-output/frameworks/langgraph/codebase-map.json",
+    "phase1_outputs": [
+      "forensics-output/frameworks/langgraph/phase1/data-substrate-analysis.md",
+      "forensics-output/frameworks/langgraph/phase1/execution-engine-analysis.md",
+      "forensics-output/frameworks/langgraph/phase1/component-model-analysis.md",
+      "forensics-output/frameworks/langgraph/phase1/resilience-analysis.md"
+    ],
+    "phase2_outputs": [
+      "forensics-output/frameworks/langgraph/phase2/control-loop-extraction.md",
+      "forensics-output/frameworks/langgraph/phase2/memory-orchestration.md",
+      "forensics-output/frameworks/langgraph/phase2/tool-interface-analysis.md",
+      "forensics-output/frameworks/langgraph/phase2/multi-agent-analysis.md"
+    ],
+    "summary_report": "reports/frameworks/langgraph.md"
+  },
+  "key_findings": {
+    "architecture_style": "Graph-based workflow orchestration (BSP/Pregel model)",
+    "typing_strategy": "Hybrid (TypedDict + Pydantic + frozen dataclasses)",
+    "execution_model": "Bulk Synchronous Parallel (deterministic parallelism)",
+    "reasoning_pattern": "Framework-agnostic (user-defined via graph topology)",
+    "memory_system": "State-based with checkpoint persistence",
+    "tool_interface": "Delegated to LangChain (Pydantic schemas)",
+    "multi_agent_model": "Graph-based (agents as nodes)",
+    "notable_innovations": [
+      "Checkpoint-based pause/resume",
+      "Annotated-based state reducers",
+      "Channel abstraction for state management",
+      "Command pattern for dynamic routing",
+      "Send pattern for dynamic parallelism",
+      "BSP execution model for determinism"
+    ],
+    "production_readiness": "High (with external circuit breakers)",
+    "primary_strengths": [
+      "Robust checkpointing",
+      "Flexible graph-based orchestration",
+      "Clean async/sync separation",
+      "Thin protocols for extensibility",
+      "LangChain ecosystem integration"
+    ],
+    "primary_weaknesses": [
+      "No built-in memory management",
+      "No circuit breakers or rate limiting",
+      "No automatic loop detection",
+      "Static tool registration",
+      "BSP limits pipeline parallelism"
+    ]
+  },
+  "analysis_metadata": {
+    "total_files_examined": "100+",
+    "primary_language": "Python",
+    "codebase_size": "~20K lines (core + checkpoint + prebuilt)",
+    "analysis_approach": "Skill-based decomposition",
+    "framework_version": "v1.0+ (December 2024)",
+    "monorepo_structure": "libs/{langgraph,checkpoint,prebuilt,sdk-py,sdk-js,cli}"
+  }
+}

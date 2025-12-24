@@ -1,0 +1,35 @@
+{
+  "framework": "aws-strands",
+  "status": "completed",
+  "source_path": "repos/aws-strands",
+  "output_dir": "forensics-output/frameworks/aws-strands",
+  "completed_at": "2025-12-23T18:45:00Z",
+  "phase1_complete": true,
+  "phase2_complete": true,
+  "skills_completed": [
+    "data-substrate-analysis",
+    "execution-engine-analysis",
+    "component-model-analysis",
+    "resilience-analysis",
+    "control-loop-extraction",
+    "memory-orchestration",
+    "tool-interface-analysis",
+    "multi-agent-analysis"
+  ],
+  "outputs": {
+    "codebase_map": "forensics-output/frameworks/aws-strands/codebase-map.json",
+    "phase1": [
+      "forensics-output/frameworks/aws-strands/phase1/data-substrate-analysis.md",
+      "forensics-output/frameworks/aws-strands/phase1/execution-engine-analysis.md",
+      "forensics-output/frameworks/aws-strands/phase1/component-model-analysis.md",
+      "forensics-output/frameworks/aws-strands/phase1/resilience-analysis.md"
+    ],
+    "phase2": [
+      "forensics-output/frameworks/aws-strands/phase2/control-loop-extraction.md",
+      "forensics-output/frameworks/aws-strands/phase2/memory-orchestration.md",
+      "forensics-output/frameworks/aws-strands/phase2/tool-interface-analysis.md",
+      "forensics-output/frameworks/aws-strands/phase2/multi-agent-analysis.md"
+    ],
+    "summary": "reports/frameworks/aws-strands.md"
+  }
+}

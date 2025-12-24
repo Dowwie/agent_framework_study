@@ -1,0 +1,53 @@
+{
+  "framework": "swarm",
+  "status": "completed",
+  "started_at": "2025-12-23T00:00:00Z",
+  "completed_at": "2025-12-23T00:00:00Z",
+  "phase1_analyses": {
+    "data-substrate-analysis": "completed",
+    "execution-engine-analysis": "completed",
+    "component-model-analysis": "completed",
+    "resilience-analysis": "completed"
+  },
+  "phase2_analyses": {
+    "control-loop-extraction": "completed",
+    "memory-orchestration": "completed",
+    "tool-interface-analysis": "completed",
+    "multi-agent-analysis": "completed"
+  },
+  "outputs": {
+    "codebase_map": "forensics-output/frameworks/swarm/codebase-map.json",
+    "phase1_reports": [
+      "forensics-output/frameworks/swarm/phase1/data-substrate-analysis.md",
+      "forensics-output/frameworks/swarm/phase1/execution-engine-analysis.md",
+      "forensics-output/frameworks/swarm/phase1/component-model-analysis.md",
+      "forensics-output/frameworks/swarm/phase1/resilience-analysis.md"
+    ],
+    "phase2_reports": [
+      "forensics-output/frameworks/swarm/phase2/control-loop-extraction.md",
+      "forensics-output/frameworks/swarm/phase2/memory-orchestration.md",
+      "forensics-output/frameworks/swarm/phase2/tool-interface-analysis.md",
+      "forensics-output/frameworks/swarm/phase2/multi-agent-analysis.md"
+    ],
+    "framework_summary": "reports/frameworks/swarm.md"
+  },
+  "key_findings": {
+    "architecture_style": "monolithic",
+    "production_readiness": "3.2/10",
+    "total_core_lines": 380,
+    "primary_pattern": "sequential_agent_handoff",
+    "major_strengths": [
+      "elegant_tool_based_handoff",
+      "clean_pydantic_interfaces",
+      "deep_copy_isolation",
+      "graceful_missing_tool_handling"
+    ],
+    "major_weaknesses": [
+      "no_error_resilience",
+      "unbounded_memory_growth",
+      "zero_abstraction_vendor_lockin",
+      "no_async_support",
+      "misleading_name_sequential_not_swarm"
+    ]
+  }
+}

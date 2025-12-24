@@ -1,0 +1,40 @@
+{
+  "framework": "agent-zero",
+  "status": "completed",
+  "source_path": "repos/agent-zero",
+  "output_directory": "forensics-output/frameworks/agent-zero",
+  "completed_at": "2025-12-23T18:30:00Z",
+  "analyses_completed": {
+    "codebase_mapping": true,
+    "phase1": {
+      "data_substrate": true,
+      "execution_engine": true,
+      "component_model": true,
+      "resilience": true
+    },
+    "phase2": {
+      "control_loop": true,
+      "memory_orchestration": true,
+      "tool_interface": true,
+      "multi_agent": true
+    }
+  },
+  "outputs": {
+    "codebase_map": "forensics-output/frameworks/agent-zero/codebase-map.json",
+    "framework_summary": "reports/frameworks/agent-zero.md"
+  },
+  "statistics": {
+    "total_files": 1175,
+    "python_files": 205,
+    "external_dependencies": 135,
+    "key_files_analyzed": 15
+  },
+  "key_findings": {
+    "architecture_style": "Monolithic with extension-based modularity",
+    "reasoning_pattern": "ReAct",
+    "primary_language": "Python",
+    "async_model": "Native asyncio",
+    "typing_strategy": "Hybrid (Pydantic, dataclass, TypedDict)",
+    "multi_agent_model": "Hierarchical (supervisor-worker)"
+  }
+}

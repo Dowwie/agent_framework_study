@@ -1,0 +1,966 @@
+{
+  "repository": "swarm",
+  "path": "/Users/dgordon/my_projects/agent_framework_study/repos/swarm",
+  "file_tree": {
+    "name": "swarm",
+    "type": "directory",
+    "path": "/Users/dgordon/my_projects/agent_framework_study/repos/swarm",
+    "children": [
+      {
+        "name": "examples",
+        "type": "directory",
+        "path": "examples",
+        "children": [
+          {
+            "name": "airline",
+            "type": "directory",
+            "path": "examples/airline",
+            "children": [
+              {
+                "name": "configs",
+                "type": "directory",
+                "path": "examples/airline/configs",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/airline/configs/__init__.py"
+                  },
+                  {
+                    "name": "agents.py",
+                    "type": "file",
+                    "path": "examples/airline/configs/agents.py"
+                  },
+                  {
+                    "name": "tools.py",
+                    "type": "file",
+                    "path": "examples/airline/configs/tools.py"
+                  }
+                ]
+              },
+              {
+                "name": "data",
+                "type": "directory",
+                "path": "examples/airline/data",
+                "children": [
+                  {
+                    "name": "routines",
+                    "type": "directory",
+                    "path": "examples/airline/data/routines",
+                    "children": [
+                      {
+                        "name": "baggage",
+                        "type": "directory",
+                        "path": "examples/airline/data/routines/baggage",
+                        "children": [
+                          {
+                            "name": "policies.py",
+                            "type": "file",
+                            "path": "examples/airline/data/routines/baggage/policies.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "flight_modification",
+                        "type": "directory",
+                        "path": "examples/airline/data/routines/flight_modification",
+                        "children": [
+                          {
+                            "name": "policies.py",
+                            "type": "file",
+                            "path": "examples/airline/data/routines/flight_modification/policies.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "prompts.py",
+                        "type": "file",
+                        "path": "examples/airline/data/routines/prompts.py"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "evals",
+                "type": "directory",
+                "path": "examples/airline/evals",
+                "children": [
+                  {
+                    "name": "eval_utils.py",
+                    "type": "file",
+                    "path": "examples/airline/evals/eval_utils.py"
+                  },
+                  {
+                    "name": "function_evals.py",
+                    "type": "file",
+                    "path": "examples/airline/evals/function_evals.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "examples/airline/__init__.py"
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "examples/airline/main.py"
+              }
+            ]
+          },
+          {
+            "name": "basic",
+            "type": "directory",
+            "path": "examples/basic",
+            "children": [
+              {
+                "name": "agent_handoff.py",
+                "type": "file",
+                "path": "examples/basic/agent_handoff.py"
+              },
+              {
+                "name": "bare_minimum.py",
+                "type": "file",
+                "path": "examples/basic/bare_minimum.py"
+              },
+              {
+                "name": "context_variables.py",
+                "type": "file",
+                "path": "examples/basic/context_variables.py"
+              },
+              {
+                "name": "function_calling.py",
+                "type": "file",
+                "path": "examples/basic/function_calling.py"
+              },
+              {
+                "name": "simple_loop_no_helpers.py",
+                "type": "file",
+                "path": "examples/basic/simple_loop_no_helpers.py"
+              }
+            ]
+          },
+          {
+            "name": "customer_service_streaming",
+            "type": "directory",
+            "path": "examples/customer_service_streaming",
+            "children": [
+              {
+                "name": "configs",
+                "type": "directory",
+                "path": "examples/customer_service_streaming/configs",
+                "children": [
+                  {
+                    "name": "tools",
+                    "type": "directory",
+                    "path": "examples/customer_service_streaming/configs/tools",
+                    "children": [
+                      {
+                        "name": "query_docs",
+                        "type": "directory",
+                        "path": "examples/customer_service_streaming/configs/tools/query_docs",
+                        "children": [
+                          {
+                            "name": "handler.py",
+                            "type": "file",
+                            "path": "examples/customer_service_streaming/configs/tools/query_docs/handler.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "send_email",
+                        "type": "directory",
+                        "path": "examples/customer_service_streaming/configs/tools/send_email",
+                        "children": [
+                          {
+                            "name": "handler.py",
+                            "type": "file",
+                            "path": "examples/customer_service_streaming/configs/tools/send_email/handler.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "submit_ticket",
+                        "type": "directory",
+                        "path": "examples/customer_service_streaming/configs/tools/submit_ticket",
+                        "children": [
+                          {
+                            "name": "handler.py",
+                            "type": "file",
+                            "path": "examples/customer_service_streaming/configs/tools/submit_ticket/handler.py"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/customer_service_streaming/configs/__init__.py"
+                  },
+                  {
+                    "name": "general.py",
+                    "type": "file",
+                    "path": "examples/customer_service_streaming/configs/general.py"
+                  },
+                  {
+                    "name": "prompts.py",
+                    "type": "file",
+                    "path": "examples/customer_service_streaming/configs/prompts.py"
+                  }
+                ]
+              },
+              {
+                "name": "src",
+                "type": "directory",
+                "path": "examples/customer_service_streaming/src",
+                "children": [
+                  {
+                    "name": "evals",
+                    "type": "directory",
+                    "path": "examples/customer_service_streaming/src/evals",
+                    "children": [
+                      {
+                        "name": "eval_function.py",
+                        "type": "file",
+                        "path": "examples/customer_service_streaming/src/evals/eval_function.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "runs",
+                    "type": "directory",
+                    "path": "examples/customer_service_streaming/src/runs",
+                    "children": [
+                      {
+                        "name": "run.py",
+                        "type": "file",
+                        "path": "examples/customer_service_streaming/src/runs/run.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "swarm",
+                    "type": "directory",
+                    "path": "examples/customer_service_streaming/src/swarm",
+                    "children": [
+                      {
+                        "name": "engines",
+                        "type": "directory",
+                        "path": "examples/customer_service_streaming/src/swarm/engines",
+                        "children": [
+                          {
+                            "name": "assistants_engine.py",
+                            "type": "file",
+                            "path": "examples/customer_service_streaming/src/swarm/engines/assistants_engine.py"
+                          },
+                          {
+                            "name": "engine.py",
+                            "type": "file",
+                            "path": "examples/customer_service_streaming/src/swarm/engines/engine.py"
+                          },
+                          {
+                            "name": "local_engine.py",
+                            "type": "file",
+                            "path": "examples/customer_service_streaming/src/swarm/engines/local_engine.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "assistants.py",
+                        "type": "file",
+                        "path": "examples/customer_service_streaming/src/swarm/assistants.py"
+                      },
+                      {
+                        "name": "conversation.py",
+                        "type": "file",
+                        "path": "examples/customer_service_streaming/src/swarm/conversation.py"
+                      },
+                      {
+                        "name": "swarm.py",
+                        "type": "file",
+                        "path": "examples/customer_service_streaming/src/swarm/swarm.py"
+                      },
+                      {
+                        "name": "tool.py",
+                        "type": "file",
+                        "path": "examples/customer_service_streaming/src/swarm/tool.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tasks",
+                    "type": "directory",
+                    "path": "examples/customer_service_streaming/src/tasks",
+                    "children": [
+                      {
+                        "name": "task.py",
+                        "type": "file",
+                        "path": "examples/customer_service_streaming/src/tasks/task.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/customer_service_streaming/src/__init__.py"
+                  },
+                  {
+                    "name": "arg_parser.py",
+                    "type": "file",
+                    "path": "examples/customer_service_streaming/src/arg_parser.py"
+                  },
+                  {
+                    "name": "utils.py",
+                    "type": "file",
+                    "path": "examples/customer_service_streaming/src/utils.py"
+                  },
+                  {
+                    "name": "validator.py",
+                    "type": "file",
+                    "path": "examples/customer_service_streaming/src/validator.py"
+                  }
+                ]
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "examples/customer_service_streaming/main.py"
+              },
+              {
+                "name": "prep_data.py",
+                "type": "file",
+                "path": "examples/customer_service_streaming/prep_data.py"
+              }
+            ]
+          },
+          {
+            "name": "personal_shopper",
+            "type": "directory",
+            "path": "examples/personal_shopper",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "examples/personal_shopper/__init__.py"
+              },
+              {
+                "name": "database.py",
+                "type": "file",
+                "path": "examples/personal_shopper/database.py"
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "examples/personal_shopper/main.py"
+              }
+            ]
+          },
+          {
+            "name": "support_bot",
+            "type": "directory",
+            "path": "examples/support_bot",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "examples/support_bot/__init__.py"
+              },
+              {
+                "name": "customer_service.py",
+                "type": "file",
+                "path": "examples/support_bot/customer_service.py"
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "examples/support_bot/main.py"
+              },
+              {
+                "name": "prep_data.py",
+                "type": "file",
+                "path": "examples/support_bot/prep_data.py"
+              }
+            ]
+          },
+          {
+            "name": "triage_agent",
+            "type": "directory",
+            "path": "examples/triage_agent",
+            "children": [
+              {
+                "name": "agents.py",
+                "type": "file",
+                "path": "examples/triage_agent/agents.py"
+              },
+              {
+                "name": "evals.py",
+                "type": "file",
+                "path": "examples/triage_agent/evals.py"
+              },
+              {
+                "name": "evals_util.py",
+                "type": "file",
+                "path": "examples/triage_agent/evals_util.py"
+              },
+              {
+                "name": "run.py",
+                "type": "file",
+                "path": "examples/triage_agent/run.py"
+              }
+            ]
+          },
+          {
+            "name": "weather_agent",
+            "type": "directory",
+            "path": "examples/weather_agent",
+            "children": [
+              {
+                "name": "agents.py",
+                "type": "file",
+                "path": "examples/weather_agent/agents.py"
+              },
+              {
+                "name": "evals.py",
+                "type": "file",
+                "path": "examples/weather_agent/evals.py"
+              },
+              {
+                "name": "run.py",
+                "type": "file",
+                "path": "examples/weather_agent/run.py"
+              }
+            ]
+          },
+          {
+            "name": "__init__.py",
+            "type": "file",
+            "path": "examples/__init__.py"
+          }
+        ]
+      },
+      {
+        "name": "swarm",
+        "type": "directory",
+        "path": "swarm",
+        "children": [
+          {
+            "name": "repl",
+            "type": "directory",
+            "path": "swarm/repl",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "swarm/repl/__init__.py"
+              },
+              {
+                "name": "repl.py",
+                "type": "file",
+                "path": "swarm/repl/repl.py"
+              }
+            ]
+          },
+          {
+            "name": "__init__.py",
+            "type": "file",
+            "path": "swarm/__init__.py"
+          },
+          {
+            "name": "core.py",
+            "type": "file",
+            "path": "swarm/core.py"
+          },
+          {
+            "name": "types.py",
+            "type": "file",
+            "path": "swarm/types.py"
+          },
+          {
+            "name": "util.py",
+            "type": "file",
+            "path": "swarm/util.py"
+          }
+        ]
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "tests",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file",
+            "path": "tests/__init__.py"
+          },
+          {
+            "name": "mock_client.py",
+            "type": "file",
+            "path": "tests/mock_client.py"
+          },
+          {
+            "name": "test_core.py",
+            "type": "file",
+            "path": "tests/test_core.py"
+          },
+          {
+            "name": "test_util.py",
+            "type": "file",
+            "path": "tests/test_util.py"
+          }
+        ]
+      },
+      {
+        "name": "pyproject.toml",
+        "type": "file",
+        "path": "pyproject.toml"
+      }
+    ]
+  },
+  "dependencies": {
+    "nodes": [
+      {
+        "id": 0,
+        "path": "swarm/util.py",
+        "name": "util.py"
+      },
+      {
+        "id": 1,
+        "path": "swarm/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 2,
+        "path": "swarm/core.py",
+        "name": "core.py"
+      },
+      {
+        "id": 3,
+        "path": "swarm/types.py",
+        "name": "types.py"
+      },
+      {
+        "id": 4,
+        "path": "tests/mock_client.py",
+        "name": "mock_client.py"
+      },
+      {
+        "id": 5,
+        "path": "tests/test_core.py",
+        "name": "test_core.py"
+      },
+      {
+        "id": 6,
+        "path": "tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 7,
+        "path": "tests/test_util.py",
+        "name": "test_util.py"
+      },
+      {
+        "id": 8,
+        "path": "examples/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 9,
+        "path": "examples/customer_service_streaming/prep_data.py",
+        "name": "prep_data.py"
+      },
+      {
+        "id": 10,
+        "path": "examples/customer_service_streaming/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 11,
+        "path": "examples/support_bot/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 12,
+        "path": "examples/support_bot/prep_data.py",
+        "name": "prep_data.py"
+      },
+      {
+        "id": 13,
+        "path": "examples/support_bot/customer_service.py",
+        "name": "customer_service.py"
+      },
+      {
+        "id": 14,
+        "path": "examples/support_bot/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 15,
+        "path": "examples/personal_shopper/database.py",
+        "name": "database.py"
+      },
+      {
+        "id": 16,
+        "path": "examples/personal_shopper/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 17,
+        "path": "examples/personal_shopper/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 18,
+        "path": "examples/basic/agent_handoff.py",
+        "name": "agent_handoff.py"
+      },
+      {
+        "id": 19,
+        "path": "examples/basic/context_variables.py",
+        "name": "context_variables.py"
+      },
+      {
+        "id": 20,
+        "path": "examples/basic/simple_loop_no_helpers.py",
+        "name": "simple_loop_no_helpers.py"
+      },
+      {
+        "id": 21,
+        "path": "examples/basic/function_calling.py",
+        "name": "function_calling.py"
+      },
+      {
+        "id": 22,
+        "path": "examples/basic/bare_minimum.py",
+        "name": "bare_minimum.py"
+      },
+      {
+        "id": 23,
+        "path": "examples/triage_agent/run.py",
+        "name": "run.py"
+      },
+      {
+        "id": 24,
+        "path": "examples/triage_agent/evals.py",
+        "name": "evals.py"
+      },
+      {
+        "id": 25,
+        "path": "examples/triage_agent/agents.py",
+        "name": "agents.py"
+      },
+      {
+        "id": 26,
+        "path": "examples/triage_agent/evals_util.py",
+        "name": "evals_util.py"
+      },
+      {
+        "id": 27,
+        "path": "examples/weather_agent/run.py",
+        "name": "run.py"
+      },
+      {
+        "id": 28,
+        "path": "examples/weather_agent/evals.py",
+        "name": "evals.py"
+      },
+      {
+        "id": 29,
+        "path": "examples/weather_agent/agents.py",
+        "name": "agents.py"
+      },
+      {
+        "id": 30,
+        "path": "examples/airline/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 31,
+        "path": "examples/airline/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 32,
+        "path": "examples/airline/evals/function_evals.py",
+        "name": "function_evals.py"
+      },
+      {
+        "id": 33,
+        "path": "examples/airline/evals/eval_utils.py",
+        "name": "eval_utils.py"
+      },
+      {
+        "id": 34,
+        "path": "examples/airline/configs/tools.py",
+        "name": "tools.py"
+      },
+      {
+        "id": 35,
+        "path": "examples/airline/configs/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 36,
+        "path": "examples/airline/configs/agents.py",
+        "name": "agents.py"
+      },
+      {
+        "id": 37,
+        "path": "examples/airline/data/routines/prompts.py",
+        "name": "prompts.py"
+      },
+      {
+        "id": 38,
+        "path": "examples/airline/data/routines/flight_modification/policies.py",
+        "name": "policies.py"
+      },
+      {
+        "id": 39,
+        "path": "examples/airline/data/routines/baggage/policies.py",
+        "name": "policies.py"
+      },
+      {
+        "id": 40,
+        "path": "examples/customer_service_streaming/configs/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 41,
+        "path": "examples/customer_service_streaming/configs/prompts.py",
+        "name": "prompts.py"
+      },
+      {
+        "id": 42,
+        "path": "examples/customer_service_streaming/configs/general.py",
+        "name": "general.py"
+      },
+      {
+        "id": 43,
+        "path": "examples/customer_service_streaming/src/validator.py",
+        "name": "validator.py"
+      },
+      {
+        "id": 44,
+        "path": "examples/customer_service_streaming/src/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 45,
+        "path": "examples/customer_service_streaming/src/arg_parser.py",
+        "name": "arg_parser.py"
+      },
+      {
+        "id": 46,
+        "path": "examples/customer_service_streaming/src/utils.py",
+        "name": "utils.py"
+      },
+      {
+        "id": 47,
+        "path": "examples/customer_service_streaming/src/swarm/swarm.py",
+        "name": "swarm.py"
+      },
+      {
+        "id": 48,
+        "path": "examples/customer_service_streaming/src/swarm/assistants.py",
+        "name": "assistants.py"
+      },
+      {
+        "id": 49,
+        "path": "examples/customer_service_streaming/src/swarm/conversation.py",
+        "name": "conversation.py"
+      },
+      {
+        "id": 50,
+        "path": "examples/customer_service_streaming/src/swarm/tool.py",
+        "name": "tool.py"
+      },
+      {
+        "id": 51,
+        "path": "examples/customer_service_streaming/src/evals/eval_function.py",
+        "name": "eval_function.py"
+      },
+      {
+        "id": 52,
+        "path": "examples/customer_service_streaming/src/tasks/task.py",
+        "name": "task.py"
+      },
+      {
+        "id": 53,
+        "path": "examples/customer_service_streaming/src/runs/run.py",
+        "name": "run.py"
+      },
+      {
+        "id": 54,
+        "path": "examples/customer_service_streaming/src/swarm/engines/local_engine.py",
+        "name": "local_engine.py"
+      },
+      {
+        "id": 55,
+        "path": "examples/customer_service_streaming/src/swarm/engines/assistants_engine.py",
+        "name": "assistants_engine.py"
+      },
+      {
+        "id": 56,
+        "path": "examples/customer_service_streaming/src/swarm/engines/engine.py",
+        "name": "engine.py"
+      },
+      {
+        "id": 57,
+        "path": "examples/customer_service_streaming/configs/tools/query_docs/handler.py",
+        "name": "handler.py"
+      },
+      {
+        "id": 58,
+        "path": "examples/customer_service_streaming/configs/tools/send_email/handler.py",
+        "name": "handler.py"
+      },
+      {
+        "id": 59,
+        "path": "examples/customer_service_streaming/configs/tools/submit_ticket/handler.py",
+        "name": "handler.py"
+      },
+      {
+        "id": 60,
+        "path": "swarm/repl/repl.py",
+        "name": "repl.py"
+      },
+      {
+        "id": 61,
+        "path": "swarm/repl/__init__.py",
+        "name": "__init__.py"
+      }
+    ],
+    "edges": [],
+    "external_deps": [
+      "agents",
+      "argparse",
+      "ast",
+      "collections",
+      "configs",
+      "copy",
+      "core",
+      "data",
+      "database",
+      "datetime",
+      "evals_util",
+      "examples",
+      "importlib",
+      "inspect",
+      "instructor",
+      "json",
+      "openai",
+      "os",
+      "pandas",
+      "pydantic",
+      "pytest",
+      "qdrant_client",
+      "random",
+      "re",
+      "repl",
+      "shlex",
+      "sqlite3",
+      "src",
+      "swarm",
+      "tests",
+      "time",
+      "types",
+      "typing",
+      "unittest",
+      "util",
+      "uuid"
+    ],
+    "internal_deps": {}
+  },
+  "entry_points": [
+    {
+      "path": "pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "examples/customer_service_streaming/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/support_bot/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/personal_shopper/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/airline/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/customer_service_streaming/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/support_bot/customer_service.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/support_bot/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/personal_shopper/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/triage_agent/run.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/weather_agent/run.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/airline/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/airline/evals/function_evals.py",
+      "type": "python",
+      "description": "Executable module"
+    }
+  ],
+  "key_files": {
+    "types": [
+      "swarm/types.py"
+    ],
+    "execution": [
+      "examples/customer_service_streaming/src/swarm/engines/engine.py"
+    ],
+    "tools": [
+      "examples/customer_service_streaming/src/swarm/tool.py",
+      "examples/airline/configs/tools.py"
+    ],
+    "agents": [
+      "examples/triage_agent/agents.py",
+      "examples/weather_agent/agents.py",
+      "examples/airline/configs/agents.py"
+    ],
+    "config": []
+  },
+  "stats": {
+    "total_files": 288,
+    "python_files": 62,
+    "external_dependencies": 36
+  }
+}

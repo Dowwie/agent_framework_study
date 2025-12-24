@@ -1,0 +1,58 @@
+{
+  "framework": "pydantic-ai",
+  "status": "completed",
+  "timestamp": "2025-12-23T18:00:00Z",
+  "phase1_skills": [
+    {
+      "skill": "data-substrate-analysis",
+      "status": "completed",
+      "output": "forensics-output/frameworks/pydantic-ai/phase1/data-substrate-analysis.md"
+    },
+    {
+      "skill": "execution-engine-analysis",
+      "status": "completed",
+      "output": "forensics-output/frameworks/pydantic-ai/phase1/execution-engine-analysis.md"
+    },
+    {
+      "skill": "component-model-analysis",
+      "status": "completed",
+      "output": "forensics-output/frameworks/pydantic-ai/phase1/component-model-analysis.md"
+    },
+    {
+      "skill": "resilience-analysis",
+      "status": "completed",
+      "output": "forensics-output/frameworks/pydantic-ai/phase1/resilience-analysis.md"
+    }
+  ],
+  "phase2_skills": [
+    {
+      "skill": "control-loop-extraction",
+      "status": "completed",
+      "output": "forensics-output/frameworks/pydantic-ai/phase2/control-loop-extraction.md"
+    },
+    {
+      "skill": "memory-orchestration",
+      "status": "completed",
+      "output": "forensics-output/frameworks/pydantic-ai/phase2/memory-orchestration.md"
+    },
+    {
+      "skill": "tool-interface-analysis",
+      "status": "completed",
+      "output": "forensics-output/frameworks/pydantic-ai/phase2/tool-interface-analysis.md"
+    },
+    {
+      "skill": "multi-agent-analysis",
+      "status": "completed",
+      "output": "forensics-output/frameworks/pydantic-ai/phase2/multi-agent-analysis.md"
+    }
+  ],
+  "summary": {
+    "report": "reports/frameworks/pydantic-ai.md",
+    "codebase_map": "forensics-output/frameworks/pydantic-ai/codebase-map.json"
+  },
+  "metrics": {
+    "files_analyzed": 150,
+    "skills_completed": 8,
+    "analysis_depth": "comprehensive"
+  }
+}

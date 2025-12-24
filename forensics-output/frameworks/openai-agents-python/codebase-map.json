@@ -1,0 +1,4818 @@
+{
+  "repository": "openai-agents-python",
+  "path": "/Users/dgordon/my_projects/agent_framework_study/repos/openai-agents-python",
+  "file_tree": {
+    "name": "openai-agents-python",
+    "type": "directory",
+    "path": "/Users/dgordon/my_projects/agent_framework_study/repos/openai-agents-python",
+    "children": [
+      {
+        "name": "docs",
+        "type": "directory",
+        "path": "docs",
+        "children": [
+          {
+            "name": "scripts",
+            "type": "directory",
+            "path": "docs/scripts",
+            "children": [
+              {
+                "name": "generate_ref_files.py",
+                "type": "file",
+                "path": "docs/scripts/generate_ref_files.py"
+              },
+              {
+                "name": "translate_docs.py",
+                "type": "file",
+                "path": "docs/scripts/translate_docs.py"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "examples",
+        "type": "directory",
+        "path": "examples",
+        "children": [
+          {
+            "name": "agent_patterns",
+            "type": "directory",
+            "path": "examples/agent_patterns",
+            "children": [
+              {
+                "name": "agents_as_tools.py",
+                "type": "file",
+                "path": "examples/agent_patterns/agents_as_tools.py"
+              },
+              {
+                "name": "agents_as_tools_conditional.py",
+                "type": "file",
+                "path": "examples/agent_patterns/agents_as_tools_conditional.py"
+              },
+              {
+                "name": "agents_as_tools_streaming.py",
+                "type": "file",
+                "path": "examples/agent_patterns/agents_as_tools_streaming.py"
+              },
+              {
+                "name": "deterministic.py",
+                "type": "file",
+                "path": "examples/agent_patterns/deterministic.py"
+              },
+              {
+                "name": "forcing_tool_use.py",
+                "type": "file",
+                "path": "examples/agent_patterns/forcing_tool_use.py"
+              },
+              {
+                "name": "input_guardrails.py",
+                "type": "file",
+                "path": "examples/agent_patterns/input_guardrails.py"
+              },
+              {
+                "name": "llm_as_a_judge.py",
+                "type": "file",
+                "path": "examples/agent_patterns/llm_as_a_judge.py"
+              },
+              {
+                "name": "output_guardrails.py",
+                "type": "file",
+                "path": "examples/agent_patterns/output_guardrails.py"
+              },
+              {
+                "name": "parallelization.py",
+                "type": "file",
+                "path": "examples/agent_patterns/parallelization.py"
+              },
+              {
+                "name": "routing.py",
+                "type": "file",
+                "path": "examples/agent_patterns/routing.py"
+              },
+              {
+                "name": "streaming_guardrails.py",
+                "type": "file",
+                "path": "examples/agent_patterns/streaming_guardrails.py"
+              }
+            ]
+          },
+          {
+            "name": "basic",
+            "type": "directory",
+            "path": "examples/basic",
+            "children": [
+              {
+                "name": "agent_lifecycle_example.py",
+                "type": "file",
+                "path": "examples/basic/agent_lifecycle_example.py"
+              },
+              {
+                "name": "dynamic_system_prompt.py",
+                "type": "file",
+                "path": "examples/basic/dynamic_system_prompt.py"
+              },
+              {
+                "name": "hello_world.py",
+                "type": "file",
+                "path": "examples/basic/hello_world.py"
+              },
+              {
+                "name": "hello_world_gpt_5.py",
+                "type": "file",
+                "path": "examples/basic/hello_world_gpt_5.py"
+              },
+              {
+                "name": "hello_world_gpt_oss.py",
+                "type": "file",
+                "path": "examples/basic/hello_world_gpt_oss.py"
+              },
+              {
+                "name": "image_tool_output.py",
+                "type": "file",
+                "path": "examples/basic/image_tool_output.py"
+              },
+              {
+                "name": "lifecycle_example.py",
+                "type": "file",
+                "path": "examples/basic/lifecycle_example.py"
+              },
+              {
+                "name": "local_file.py",
+                "type": "file",
+                "path": "examples/basic/local_file.py"
+              },
+              {
+                "name": "local_image.py",
+                "type": "file",
+                "path": "examples/basic/local_image.py"
+              },
+              {
+                "name": "non_strict_output_type.py",
+                "type": "file",
+                "path": "examples/basic/non_strict_output_type.py"
+              },
+              {
+                "name": "previous_response_id.py",
+                "type": "file",
+                "path": "examples/basic/previous_response_id.py"
+              },
+              {
+                "name": "prompt_template.py",
+                "type": "file",
+                "path": "examples/basic/prompt_template.py"
+              },
+              {
+                "name": "remote_image.py",
+                "type": "file",
+                "path": "examples/basic/remote_image.py"
+              },
+              {
+                "name": "remote_pdf.py",
+                "type": "file",
+                "path": "examples/basic/remote_pdf.py"
+              },
+              {
+                "name": "stream_function_call_args.py",
+                "type": "file",
+                "path": "examples/basic/stream_function_call_args.py"
+              },
+              {
+                "name": "stream_items.py",
+                "type": "file",
+                "path": "examples/basic/stream_items.py"
+              },
+              {
+                "name": "stream_text.py",
+                "type": "file",
+                "path": "examples/basic/stream_text.py"
+              },
+              {
+                "name": "tool_guardrails.py",
+                "type": "file",
+                "path": "examples/basic/tool_guardrails.py"
+              },
+              {
+                "name": "tools.py",
+                "type": "file",
+                "path": "examples/basic/tools.py"
+              },
+              {
+                "name": "usage_tracking.py",
+                "type": "file",
+                "path": "examples/basic/usage_tracking.py"
+              }
+            ]
+          },
+          {
+            "name": "customer_service",
+            "type": "directory",
+            "path": "examples/customer_service",
+            "children": [
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "examples/customer_service/main.py"
+              }
+            ]
+          },
+          {
+            "name": "financial_research_agent",
+            "type": "directory",
+            "path": "examples/financial_research_agent",
+            "children": [
+              {
+                "name": "agents",
+                "type": "directory",
+                "path": "examples/financial_research_agent/agents",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/financial_research_agent/agents/__init__.py"
+                  },
+                  {
+                    "name": "financials_agent.py",
+                    "type": "file",
+                    "path": "examples/financial_research_agent/agents/financials_agent.py"
+                  },
+                  {
+                    "name": "planner_agent.py",
+                    "type": "file",
+                    "path": "examples/financial_research_agent/agents/planner_agent.py"
+                  },
+                  {
+                    "name": "risk_agent.py",
+                    "type": "file",
+                    "path": "examples/financial_research_agent/agents/risk_agent.py"
+                  },
+                  {
+                    "name": "search_agent.py",
+                    "type": "file",
+                    "path": "examples/financial_research_agent/agents/search_agent.py"
+                  },
+                  {
+                    "name": "verifier_agent.py",
+                    "type": "file",
+                    "path": "examples/financial_research_agent/agents/verifier_agent.py"
+                  },
+                  {
+                    "name": "writer_agent.py",
+                    "type": "file",
+                    "path": "examples/financial_research_agent/agents/writer_agent.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "examples/financial_research_agent/__init__.py"
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "examples/financial_research_agent/main.py"
+              },
+              {
+                "name": "manager.py",
+                "type": "file",
+                "path": "examples/financial_research_agent/manager.py"
+              },
+              {
+                "name": "printer.py",
+                "type": "file",
+                "path": "examples/financial_research_agent/printer.py"
+              }
+            ]
+          },
+          {
+            "name": "handoffs",
+            "type": "directory",
+            "path": "examples/handoffs",
+            "children": [
+              {
+                "name": "message_filter.py",
+                "type": "file",
+                "path": "examples/handoffs/message_filter.py"
+              },
+              {
+                "name": "message_filter_streaming.py",
+                "type": "file",
+                "path": "examples/handoffs/message_filter_streaming.py"
+              }
+            ]
+          },
+          {
+            "name": "hosted_mcp",
+            "type": "directory",
+            "path": "examples/hosted_mcp",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "examples/hosted_mcp/__init__.py"
+              },
+              {
+                "name": "approvals.py",
+                "type": "file",
+                "path": "examples/hosted_mcp/approvals.py"
+              },
+              {
+                "name": "connectors.py",
+                "type": "file",
+                "path": "examples/hosted_mcp/connectors.py"
+              },
+              {
+                "name": "simple.py",
+                "type": "file",
+                "path": "examples/hosted_mcp/simple.py"
+              }
+            ]
+          },
+          {
+            "name": "mcp",
+            "type": "directory",
+            "path": "examples/mcp",
+            "children": [
+              {
+                "name": "filesystem_example",
+                "type": "directory",
+                "path": "examples/mcp/filesystem_example",
+                "children": [
+                  {
+                    "name": "main.py",
+                    "type": "file",
+                    "path": "examples/mcp/filesystem_example/main.py"
+                  }
+                ]
+              },
+              {
+                "name": "git_example",
+                "type": "directory",
+                "path": "examples/mcp/git_example",
+                "children": [
+                  {
+                    "name": "main.py",
+                    "type": "file",
+                    "path": "examples/mcp/git_example/main.py"
+                  }
+                ]
+              },
+              {
+                "name": "prompt_server",
+                "type": "directory",
+                "path": "examples/mcp/prompt_server",
+                "children": [
+                  {
+                    "name": "main.py",
+                    "type": "file",
+                    "path": "examples/mcp/prompt_server/main.py"
+                  },
+                  {
+                    "name": "server.py",
+                    "type": "file",
+                    "path": "examples/mcp/prompt_server/server.py"
+                  }
+                ]
+              },
+              {
+                "name": "sse_example",
+                "type": "directory",
+                "path": "examples/mcp/sse_example",
+                "children": [
+                  {
+                    "name": "main.py",
+                    "type": "file",
+                    "path": "examples/mcp/sse_example/main.py"
+                  },
+                  {
+                    "name": "server.py",
+                    "type": "file",
+                    "path": "examples/mcp/sse_example/server.py"
+                  }
+                ]
+              },
+              {
+                "name": "streamablehttp_custom_client_example",
+                "type": "directory",
+                "path": "examples/mcp/streamablehttp_custom_client_example",
+                "children": [
+                  {
+                    "name": "main.py",
+                    "type": "file",
+                    "path": "examples/mcp/streamablehttp_custom_client_example/main.py"
+                  },
+                  {
+                    "name": "server.py",
+                    "type": "file",
+                    "path": "examples/mcp/streamablehttp_custom_client_example/server.py"
+                  }
+                ]
+              },
+              {
+                "name": "streamablehttp_example",
+                "type": "directory",
+                "path": "examples/mcp/streamablehttp_example",
+                "children": [
+                  {
+                    "name": "main.py",
+                    "type": "file",
+                    "path": "examples/mcp/streamablehttp_example/main.py"
+                  },
+                  {
+                    "name": "server.py",
+                    "type": "file",
+                    "path": "examples/mcp/streamablehttp_example/server.py"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "memory",
+            "type": "directory",
+            "path": "examples/memory",
+            "children": [
+              {
+                "name": "advanced_sqlite_session_example.py",
+                "type": "file",
+                "path": "examples/memory/advanced_sqlite_session_example.py"
+              },
+              {
+                "name": "dapr_session_example.py",
+                "type": "file",
+                "path": "examples/memory/dapr_session_example.py"
+              },
+              {
+                "name": "encrypted_session_example.py",
+                "type": "file",
+                "path": "examples/memory/encrypted_session_example.py"
+              },
+              {
+                "name": "openai_session_example.py",
+                "type": "file",
+                "path": "examples/memory/openai_session_example.py"
+              },
+              {
+                "name": "redis_session_example.py",
+                "type": "file",
+                "path": "examples/memory/redis_session_example.py"
+              },
+              {
+                "name": "sqlalchemy_session_example.py",
+                "type": "file",
+                "path": "examples/memory/sqlalchemy_session_example.py"
+              },
+              {
+                "name": "sqlite_session_example.py",
+                "type": "file",
+                "path": "examples/memory/sqlite_session_example.py"
+              }
+            ]
+          },
+          {
+            "name": "model_providers",
+            "type": "directory",
+            "path": "examples/model_providers",
+            "children": [
+              {
+                "name": "custom_example_agent.py",
+                "type": "file",
+                "path": "examples/model_providers/custom_example_agent.py"
+              },
+              {
+                "name": "custom_example_global.py",
+                "type": "file",
+                "path": "examples/model_providers/custom_example_global.py"
+              },
+              {
+                "name": "custom_example_provider.py",
+                "type": "file",
+                "path": "examples/model_providers/custom_example_provider.py"
+              },
+              {
+                "name": "litellm_auto.py",
+                "type": "file",
+                "path": "examples/model_providers/litellm_auto.py"
+              },
+              {
+                "name": "litellm_provider.py",
+                "type": "file",
+                "path": "examples/model_providers/litellm_provider.py"
+              }
+            ]
+          },
+          {
+            "name": "realtime",
+            "type": "directory",
+            "path": "examples/realtime",
+            "children": [
+              {
+                "name": "app",
+                "type": "directory",
+                "path": "examples/realtime/app",
+                "children": [
+                  {
+                    "name": "static",
+                    "type": "directory",
+                    "path": "examples/realtime/app/static",
+                    "children": [
+                      {
+                        "name": "app.js",
+                        "type": "file",
+                        "path": "examples/realtime/app/static/app.js"
+                      },
+                      {
+                        "name": "audio-playback.worklet.js",
+                        "type": "file",
+                        "path": "examples/realtime/app/static/audio-playback.worklet.js"
+                      },
+                      {
+                        "name": "audio-recorder.worklet.js",
+                        "type": "file",
+                        "path": "examples/realtime/app/static/audio-recorder.worklet.js"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "agent.py",
+                    "type": "file",
+                    "path": "examples/realtime/app/agent.py"
+                  },
+                  {
+                    "name": "server.py",
+                    "type": "file",
+                    "path": "examples/realtime/app/server.py"
+                  }
+                ]
+              },
+              {
+                "name": "cli",
+                "type": "directory",
+                "path": "examples/realtime/cli",
+                "children": [
+                  {
+                    "name": "demo.py",
+                    "type": "file",
+                    "path": "examples/realtime/cli/demo.py"
+                  }
+                ]
+              },
+              {
+                "name": "twilio",
+                "type": "directory",
+                "path": "examples/realtime/twilio",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/realtime/twilio/__init__.py"
+                  },
+                  {
+                    "name": "server.py",
+                    "type": "file",
+                    "path": "examples/realtime/twilio/server.py"
+                  },
+                  {
+                    "name": "twilio_handler.py",
+                    "type": "file",
+                    "path": "examples/realtime/twilio/twilio_handler.py"
+                  }
+                ]
+              },
+              {
+                "name": "twilio_sip",
+                "type": "directory",
+                "path": "examples/realtime/twilio_sip",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/realtime/twilio_sip/__init__.py"
+                  },
+                  {
+                    "name": "agents.py",
+                    "type": "file",
+                    "path": "examples/realtime/twilio_sip/agents.py"
+                  },
+                  {
+                    "name": "server.py",
+                    "type": "file",
+                    "path": "examples/realtime/twilio_sip/server.py"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "reasoning_content",
+            "type": "directory",
+            "path": "examples/reasoning_content",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "examples/reasoning_content/__init__.py"
+              },
+              {
+                "name": "gpt_oss_stream.py",
+                "type": "file",
+                "path": "examples/reasoning_content/gpt_oss_stream.py"
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "examples/reasoning_content/main.py"
+              },
+              {
+                "name": "runner_example.py",
+                "type": "file",
+                "path": "examples/reasoning_content/runner_example.py"
+              }
+            ]
+          },
+          {
+            "name": "research_bot",
+            "type": "directory",
+            "path": "examples/research_bot",
+            "children": [
+              {
+                "name": "agents",
+                "type": "directory",
+                "path": "examples/research_bot/agents",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/research_bot/agents/__init__.py"
+                  },
+                  {
+                    "name": "planner_agent.py",
+                    "type": "file",
+                    "path": "examples/research_bot/agents/planner_agent.py"
+                  },
+                  {
+                    "name": "search_agent.py",
+                    "type": "file",
+                    "path": "examples/research_bot/agents/search_agent.py"
+                  },
+                  {
+                    "name": "writer_agent.py",
+                    "type": "file",
+                    "path": "examples/research_bot/agents/writer_agent.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "examples/research_bot/__init__.py"
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "examples/research_bot/main.py"
+              },
+              {
+                "name": "manager.py",
+                "type": "file",
+                "path": "examples/research_bot/manager.py"
+              },
+              {
+                "name": "printer.py",
+                "type": "file",
+                "path": "examples/research_bot/printer.py"
+              }
+            ]
+          },
+          {
+            "name": "tools",
+            "type": "directory",
+            "path": "examples/tools",
+            "children": [
+              {
+                "name": "apply_patch.py",
+                "type": "file",
+                "path": "examples/tools/apply_patch.py"
+              },
+              {
+                "name": "code_interpreter.py",
+                "type": "file",
+                "path": "examples/tools/code_interpreter.py"
+              },
+              {
+                "name": "computer_use.py",
+                "type": "file",
+                "path": "examples/tools/computer_use.py"
+              },
+              {
+                "name": "file_search.py",
+                "type": "file",
+                "path": "examples/tools/file_search.py"
+              },
+              {
+                "name": "image_generator.py",
+                "type": "file",
+                "path": "examples/tools/image_generator.py"
+              },
+              {
+                "name": "local_shell.py",
+                "type": "file",
+                "path": "examples/tools/local_shell.py"
+              },
+              {
+                "name": "shell.py",
+                "type": "file",
+                "path": "examples/tools/shell.py"
+              },
+              {
+                "name": "web_search.py",
+                "type": "file",
+                "path": "examples/tools/web_search.py"
+              },
+              {
+                "name": "web_search_filters.py",
+                "type": "file",
+                "path": "examples/tools/web_search_filters.py"
+              }
+            ]
+          },
+          {
+            "name": "voice",
+            "type": "directory",
+            "path": "examples/voice",
+            "children": [
+              {
+                "name": "static",
+                "type": "directory",
+                "path": "examples/voice/static",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/voice/static/__init__.py"
+                  },
+                  {
+                    "name": "main.py",
+                    "type": "file",
+                    "path": "examples/voice/static/main.py"
+                  },
+                  {
+                    "name": "util.py",
+                    "type": "file",
+                    "path": "examples/voice/static/util.py"
+                  }
+                ]
+              },
+              {
+                "name": "streamed",
+                "type": "directory",
+                "path": "examples/voice/streamed",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/voice/streamed/__init__.py"
+                  },
+                  {
+                    "name": "main.py",
+                    "type": "file",
+                    "path": "examples/voice/streamed/main.py"
+                  },
+                  {
+                    "name": "my_workflow.py",
+                    "type": "file",
+                    "path": "examples/voice/streamed/my_workflow.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "examples/voice/__init__.py"
+              }
+            ]
+          },
+          {
+            "name": "__init__.py",
+            "type": "file",
+            "path": "examples/__init__.py"
+          }
+        ]
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "src",
+        "children": [
+          {
+            "name": "agents",
+            "type": "directory",
+            "path": "src/agents",
+            "children": [
+              {
+                "name": "extensions",
+                "type": "directory",
+                "path": "src/agents/extensions",
+                "children": [
+                  {
+                    "name": "memory",
+                    "type": "directory",
+                    "path": "src/agents/extensions/memory",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/memory/__init__.py"
+                      },
+                      {
+                        "name": "advanced_sqlite_session.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/memory/advanced_sqlite_session.py"
+                      },
+                      {
+                        "name": "dapr_session.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/memory/dapr_session.py"
+                      },
+                      {
+                        "name": "encrypt_session.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/memory/encrypt_session.py"
+                      },
+                      {
+                        "name": "redis_session.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/memory/redis_session.py"
+                      },
+                      {
+                        "name": "sqlalchemy_session.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/memory/sqlalchemy_session.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "models",
+                    "type": "directory",
+                    "path": "src/agents/extensions/models",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/models/__init__.py"
+                      },
+                      {
+                        "name": "litellm_model.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/models/litellm_model.py"
+                      },
+                      {
+                        "name": "litellm_provider.py",
+                        "type": "file",
+                        "path": "src/agents/extensions/models/litellm_provider.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/extensions/__init__.py"
+                  },
+                  {
+                    "name": "handoff_filters.py",
+                    "type": "file",
+                    "path": "src/agents/extensions/handoff_filters.py"
+                  },
+                  {
+                    "name": "handoff_prompt.py",
+                    "type": "file",
+                    "path": "src/agents/extensions/handoff_prompt.py"
+                  },
+                  {
+                    "name": "visualization.py",
+                    "type": "file",
+                    "path": "src/agents/extensions/visualization.py"
+                  }
+                ]
+              },
+              {
+                "name": "handoffs",
+                "type": "directory",
+                "path": "src/agents/handoffs",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/handoffs/__init__.py"
+                  },
+                  {
+                    "name": "history.py",
+                    "type": "file",
+                    "path": "src/agents/handoffs/history.py"
+                  }
+                ]
+              },
+              {
+                "name": "mcp",
+                "type": "directory",
+                "path": "src/agents/mcp",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/mcp/__init__.py"
+                  },
+                  {
+                    "name": "server.py",
+                    "type": "file",
+                    "path": "src/agents/mcp/server.py"
+                  },
+                  {
+                    "name": "util.py",
+                    "type": "file",
+                    "path": "src/agents/mcp/util.py"
+                  }
+                ]
+              },
+              {
+                "name": "memory",
+                "type": "directory",
+                "path": "src/agents/memory",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/memory/__init__.py"
+                  },
+                  {
+                    "name": "openai_conversations_session.py",
+                    "type": "file",
+                    "path": "src/agents/memory/openai_conversations_session.py"
+                  },
+                  {
+                    "name": "session.py",
+                    "type": "file",
+                    "path": "src/agents/memory/session.py"
+                  },
+                  {
+                    "name": "sqlite_session.py",
+                    "type": "file",
+                    "path": "src/agents/memory/sqlite_session.py"
+                  },
+                  {
+                    "name": "util.py",
+                    "type": "file",
+                    "path": "src/agents/memory/util.py"
+                  }
+                ]
+              },
+              {
+                "name": "models",
+                "type": "directory",
+                "path": "src/agents/models",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/models/__init__.py"
+                  },
+                  {
+                    "name": "_openai_shared.py",
+                    "type": "file",
+                    "path": "src/agents/models/_openai_shared.py"
+                  },
+                  {
+                    "name": "chatcmpl_converter.py",
+                    "type": "file",
+                    "path": "src/agents/models/chatcmpl_converter.py"
+                  },
+                  {
+                    "name": "chatcmpl_helpers.py",
+                    "type": "file",
+                    "path": "src/agents/models/chatcmpl_helpers.py"
+                  },
+                  {
+                    "name": "chatcmpl_stream_handler.py",
+                    "type": "file",
+                    "path": "src/agents/models/chatcmpl_stream_handler.py"
+                  },
+                  {
+                    "name": "default_models.py",
+                    "type": "file",
+                    "path": "src/agents/models/default_models.py"
+                  },
+                  {
+                    "name": "fake_id.py",
+                    "type": "file",
+                    "path": "src/agents/models/fake_id.py"
+                  },
+                  {
+                    "name": "interface.py",
+                    "type": "file",
+                    "path": "src/agents/models/interface.py"
+                  },
+                  {
+                    "name": "multi_provider.py",
+                    "type": "file",
+                    "path": "src/agents/models/multi_provider.py"
+                  },
+                  {
+                    "name": "openai_chatcompletions.py",
+                    "type": "file",
+                    "path": "src/agents/models/openai_chatcompletions.py"
+                  },
+                  {
+                    "name": "openai_provider.py",
+                    "type": "file",
+                    "path": "src/agents/models/openai_provider.py"
+                  },
+                  {
+                    "name": "openai_responses.py",
+                    "type": "file",
+                    "path": "src/agents/models/openai_responses.py"
+                  }
+                ]
+              },
+              {
+                "name": "realtime",
+                "type": "directory",
+                "path": "src/agents/realtime",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/__init__.py"
+                  },
+                  {
+                    "name": "_default_tracker.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/_default_tracker.py"
+                  },
+                  {
+                    "name": "_util.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/_util.py"
+                  },
+                  {
+                    "name": "agent.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/agent.py"
+                  },
+                  {
+                    "name": "audio_formats.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/audio_formats.py"
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/config.py"
+                  },
+                  {
+                    "name": "events.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/events.py"
+                  },
+                  {
+                    "name": "handoffs.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/handoffs.py"
+                  },
+                  {
+                    "name": "items.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/items.py"
+                  },
+                  {
+                    "name": "model.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/model.py"
+                  },
+                  {
+                    "name": "model_events.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/model_events.py"
+                  },
+                  {
+                    "name": "model_inputs.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/model_inputs.py"
+                  },
+                  {
+                    "name": "openai_realtime.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/openai_realtime.py"
+                  },
+                  {
+                    "name": "runner.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/runner.py"
+                  },
+                  {
+                    "name": "session.py",
+                    "type": "file",
+                    "path": "src/agents/realtime/session.py"
+                  }
+                ]
+              },
+              {
+                "name": "tracing",
+                "type": "directory",
+                "path": "src/agents/tracing",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/__init__.py"
+                  },
+                  {
+                    "name": "create.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/create.py"
+                  },
+                  {
+                    "name": "logger.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/logger.py"
+                  },
+                  {
+                    "name": "processor_interface.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/processor_interface.py"
+                  },
+                  {
+                    "name": "processors.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/processors.py"
+                  },
+                  {
+                    "name": "provider.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/provider.py"
+                  },
+                  {
+                    "name": "scope.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/scope.py"
+                  },
+                  {
+                    "name": "setup.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/setup.py"
+                  },
+                  {
+                    "name": "span_data.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/span_data.py"
+                  },
+                  {
+                    "name": "spans.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/spans.py"
+                  },
+                  {
+                    "name": "traces.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/traces.py"
+                  },
+                  {
+                    "name": "util.py",
+                    "type": "file",
+                    "path": "src/agents/tracing/util.py"
+                  }
+                ]
+              },
+              {
+                "name": "util",
+                "type": "directory",
+                "path": "src/agents/util",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/util/__init__.py"
+                  },
+                  {
+                    "name": "_coro.py",
+                    "type": "file",
+                    "path": "src/agents/util/_coro.py"
+                  },
+                  {
+                    "name": "_error_tracing.py",
+                    "type": "file",
+                    "path": "src/agents/util/_error_tracing.py"
+                  },
+                  {
+                    "name": "_json.py",
+                    "type": "file",
+                    "path": "src/agents/util/_json.py"
+                  },
+                  {
+                    "name": "_pretty_print.py",
+                    "type": "file",
+                    "path": "src/agents/util/_pretty_print.py"
+                  },
+                  {
+                    "name": "_transforms.py",
+                    "type": "file",
+                    "path": "src/agents/util/_transforms.py"
+                  },
+                  {
+                    "name": "_types.py",
+                    "type": "file",
+                    "path": "src/agents/util/_types.py"
+                  }
+                ]
+              },
+              {
+                "name": "voice",
+                "type": "directory",
+                "path": "src/agents/voice",
+                "children": [
+                  {
+                    "name": "models",
+                    "type": "directory",
+                    "path": "src/agents/voice/models",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/agents/voice/models/__init__.py"
+                      },
+                      {
+                        "name": "openai_model_provider.py",
+                        "type": "file",
+                        "path": "src/agents/voice/models/openai_model_provider.py"
+                      },
+                      {
+                        "name": "openai_stt.py",
+                        "type": "file",
+                        "path": "src/agents/voice/models/openai_stt.py"
+                      },
+                      {
+                        "name": "openai_tts.py",
+                        "type": "file",
+                        "path": "src/agents/voice/models/openai_tts.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/agents/voice/__init__.py"
+                  },
+                  {
+                    "name": "events.py",
+                    "type": "file",
+                    "path": "src/agents/voice/events.py"
+                  },
+                  {
+                    "name": "exceptions.py",
+                    "type": "file",
+                    "path": "src/agents/voice/exceptions.py"
+                  },
+                  {
+                    "name": "imports.py",
+                    "type": "file",
+                    "path": "src/agents/voice/imports.py"
+                  },
+                  {
+                    "name": "input.py",
+                    "type": "file",
+                    "path": "src/agents/voice/input.py"
+                  },
+                  {
+                    "name": "model.py",
+                    "type": "file",
+                    "path": "src/agents/voice/model.py"
+                  },
+                  {
+                    "name": "pipeline.py",
+                    "type": "file",
+                    "path": "src/agents/voice/pipeline.py"
+                  },
+                  {
+                    "name": "pipeline_config.py",
+                    "type": "file",
+                    "path": "src/agents/voice/pipeline_config.py"
+                  },
+                  {
+                    "name": "result.py",
+                    "type": "file",
+                    "path": "src/agents/voice/result.py"
+                  },
+                  {
+                    "name": "utils.py",
+                    "type": "file",
+                    "path": "src/agents/voice/utils.py"
+                  },
+                  {
+                    "name": "workflow.py",
+                    "type": "file",
+                    "path": "src/agents/voice/workflow.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "src/agents/__init__.py"
+              },
+              {
+                "name": "_config.py",
+                "type": "file",
+                "path": "src/agents/_config.py"
+              },
+              {
+                "name": "_debug.py",
+                "type": "file",
+                "path": "src/agents/_debug.py"
+              },
+              {
+                "name": "_run_impl.py",
+                "type": "file",
+                "path": "src/agents/_run_impl.py"
+              },
+              {
+                "name": "agent.py",
+                "type": "file",
+                "path": "src/agents/agent.py"
+              },
+              {
+                "name": "agent_output.py",
+                "type": "file",
+                "path": "src/agents/agent_output.py"
+              },
+              {
+                "name": "apply_diff.py",
+                "type": "file",
+                "path": "src/agents/apply_diff.py"
+              },
+              {
+                "name": "computer.py",
+                "type": "file",
+                "path": "src/agents/computer.py"
+              },
+              {
+                "name": "editor.py",
+                "type": "file",
+                "path": "src/agents/editor.py"
+              },
+              {
+                "name": "exceptions.py",
+                "type": "file",
+                "path": "src/agents/exceptions.py"
+              },
+              {
+                "name": "function_schema.py",
+                "type": "file",
+                "path": "src/agents/function_schema.py"
+              },
+              {
+                "name": "guardrail.py",
+                "type": "file",
+                "path": "src/agents/guardrail.py"
+              },
+              {
+                "name": "items.py",
+                "type": "file",
+                "path": "src/agents/items.py"
+              },
+              {
+                "name": "lifecycle.py",
+                "type": "file",
+                "path": "src/agents/lifecycle.py"
+              },
+              {
+                "name": "logger.py",
+                "type": "file",
+                "path": "src/agents/logger.py"
+              },
+              {
+                "name": "model_settings.py",
+                "type": "file",
+                "path": "src/agents/model_settings.py"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file",
+                "path": "src/agents/prompts.py"
+              },
+              {
+                "name": "repl.py",
+                "type": "file",
+                "path": "src/agents/repl.py"
+              },
+              {
+                "name": "result.py",
+                "type": "file",
+                "path": "src/agents/result.py"
+              },
+              {
+                "name": "run.py",
+                "type": "file",
+                "path": "src/agents/run.py"
+              },
+              {
+                "name": "run_context.py",
+                "type": "file",
+                "path": "src/agents/run_context.py"
+              },
+              {
+                "name": "stream_events.py",
+                "type": "file",
+                "path": "src/agents/stream_events.py"
+              },
+              {
+                "name": "strict_schema.py",
+                "type": "file",
+                "path": "src/agents/strict_schema.py"
+              },
+              {
+                "name": "tool.py",
+                "type": "file",
+                "path": "src/agents/tool.py"
+              },
+              {
+                "name": "tool_context.py",
+                "type": "file",
+                "path": "src/agents/tool_context.py"
+              },
+              {
+                "name": "tool_guardrails.py",
+                "type": "file",
+                "path": "src/agents/tool_guardrails.py"
+              },
+              {
+                "name": "usage.py",
+                "type": "file",
+                "path": "src/agents/usage.py"
+              },
+              {
+                "name": "version.py",
+                "type": "file",
+                "path": "src/agents/version.py"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "tests",
+        "children": [
+          {
+            "name": "extensions",
+            "type": "directory",
+            "path": "tests/extensions",
+            "children": [
+              {
+                "name": "memory",
+                "type": "directory",
+                "path": "tests/extensions/memory",
+                "children": [
+                  {
+                    "name": "test_advanced_sqlite_session.py",
+                    "type": "file",
+                    "path": "tests/extensions/memory/test_advanced_sqlite_session.py"
+                  },
+                  {
+                    "name": "test_dapr_redis_integration.py",
+                    "type": "file",
+                    "path": "tests/extensions/memory/test_dapr_redis_integration.py"
+                  },
+                  {
+                    "name": "test_dapr_session.py",
+                    "type": "file",
+                    "path": "tests/extensions/memory/test_dapr_session.py"
+                  },
+                  {
+                    "name": "test_encrypt_session.py",
+                    "type": "file",
+                    "path": "tests/extensions/memory/test_encrypt_session.py"
+                  },
+                  {
+                    "name": "test_redis_session.py",
+                    "type": "file",
+                    "path": "tests/extensions/memory/test_redis_session.py"
+                  },
+                  {
+                    "name": "test_sqlalchemy_session.py",
+                    "type": "file",
+                    "path": "tests/extensions/memory/test_sqlalchemy_session.py"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fastapi",
+            "type": "directory",
+            "path": "tests/fastapi",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/fastapi/__init__.py"
+              },
+              {
+                "name": "streaming_app.py",
+                "type": "file",
+                "path": "tests/fastapi/streaming_app.py"
+              },
+              {
+                "name": "test_streaming_context.py",
+                "type": "file",
+                "path": "tests/fastapi/test_streaming_context.py"
+              }
+            ]
+          },
+          {
+            "name": "mcp",
+            "type": "directory",
+            "path": "tests/mcp",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/mcp/__init__.py"
+              },
+              {
+                "name": "conftest.py",
+                "type": "file",
+                "path": "tests/mcp/conftest.py"
+              },
+              {
+                "name": "helpers.py",
+                "type": "file",
+                "path": "tests/mcp/helpers.py"
+              },
+              {
+                "name": "test_caching.py",
+                "type": "file",
+                "path": "tests/mcp/test_caching.py"
+              },
+              {
+                "name": "test_client_session_retries.py",
+                "type": "file",
+                "path": "tests/mcp/test_client_session_retries.py"
+              },
+              {
+                "name": "test_connect_disconnect.py",
+                "type": "file",
+                "path": "tests/mcp/test_connect_disconnect.py"
+              },
+              {
+                "name": "test_mcp_tracing.py",
+                "type": "file",
+                "path": "tests/mcp/test_mcp_tracing.py"
+              },
+              {
+                "name": "test_mcp_util.py",
+                "type": "file",
+                "path": "tests/mcp/test_mcp_util.py"
+              },
+              {
+                "name": "test_message_handler.py",
+                "type": "file",
+                "path": "tests/mcp/test_message_handler.py"
+              },
+              {
+                "name": "test_prompt_server.py",
+                "type": "file",
+                "path": "tests/mcp/test_prompt_server.py"
+              },
+              {
+                "name": "test_runner_calls_mcp.py",
+                "type": "file",
+                "path": "tests/mcp/test_runner_calls_mcp.py"
+              },
+              {
+                "name": "test_server_errors.py",
+                "type": "file",
+                "path": "tests/mcp/test_server_errors.py"
+              },
+              {
+                "name": "test_streamable_http_client_factory.py",
+                "type": "file",
+                "path": "tests/mcp/test_streamable_http_client_factory.py"
+              },
+              {
+                "name": "test_tool_filtering.py",
+                "type": "file",
+                "path": "tests/mcp/test_tool_filtering.py"
+              }
+            ]
+          },
+          {
+            "name": "model_settings",
+            "type": "directory",
+            "path": "tests/model_settings",
+            "children": [
+              {
+                "name": "test_serialization.py",
+                "type": "file",
+                "path": "tests/model_settings/test_serialization.py"
+              }
+            ]
+          },
+          {
+            "name": "models",
+            "type": "directory",
+            "path": "tests/models",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/models/__init__.py"
+              },
+              {
+                "name": "conftest.py",
+                "type": "file",
+                "path": "tests/models/conftest.py"
+              },
+              {
+                "name": "test_default_models.py",
+                "type": "file",
+                "path": "tests/models/test_default_models.py"
+              },
+              {
+                "name": "test_kwargs_functionality.py",
+                "type": "file",
+                "path": "tests/models/test_kwargs_functionality.py"
+              },
+              {
+                "name": "test_litellm_chatcompletions_stream.py",
+                "type": "file",
+                "path": "tests/models/test_litellm_chatcompletions_stream.py"
+              },
+              {
+                "name": "test_litellm_extra_body.py",
+                "type": "file",
+                "path": "tests/models/test_litellm_extra_body.py"
+              },
+              {
+                "name": "test_litellm_user_agent.py",
+                "type": "file",
+                "path": "tests/models/test_litellm_user_agent.py"
+              },
+              {
+                "name": "test_map.py",
+                "type": "file",
+                "path": "tests/models/test_map.py"
+              }
+            ]
+          },
+          {
+            "name": "realtime",
+            "type": "directory",
+            "path": "tests/realtime",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/realtime/__init__.py"
+              },
+              {
+                "name": "test_agent.py",
+                "type": "file",
+                "path": "tests/realtime/test_agent.py"
+              },
+              {
+                "name": "test_audio_formats_unit.py",
+                "type": "file",
+                "path": "tests/realtime/test_audio_formats_unit.py"
+              },
+              {
+                "name": "test_conversion_helpers.py",
+                "type": "file",
+                "path": "tests/realtime/test_conversion_helpers.py"
+              },
+              {
+                "name": "test_ga_session_update_normalization.py",
+                "type": "file",
+                "path": "tests/realtime/test_ga_session_update_normalization.py"
+              },
+              {
+                "name": "test_item_parsing.py",
+                "type": "file",
+                "path": "tests/realtime/test_item_parsing.py"
+              },
+              {
+                "name": "test_model_events.py",
+                "type": "file",
+                "path": "tests/realtime/test_model_events.py"
+              },
+              {
+                "name": "test_openai_realtime.py",
+                "type": "file",
+                "path": "tests/realtime/test_openai_realtime.py"
+              },
+              {
+                "name": "test_openai_realtime_conversions.py",
+                "type": "file",
+                "path": "tests/realtime/test_openai_realtime_conversions.py"
+              },
+              {
+                "name": "test_openai_realtime_sip_model.py",
+                "type": "file",
+                "path": "tests/realtime/test_openai_realtime_sip_model.py"
+              },
+              {
+                "name": "test_playback_tracker.py",
+                "type": "file",
+                "path": "tests/realtime/test_playback_tracker.py"
+              },
+              {
+                "name": "test_playback_tracker_manual_unit.py",
+                "type": "file",
+                "path": "tests/realtime/test_playback_tracker_manual_unit.py"
+              },
+              {
+                "name": "test_realtime_handoffs.py",
+                "type": "file",
+                "path": "tests/realtime/test_realtime_handoffs.py"
+              },
+              {
+                "name": "test_runner.py",
+                "type": "file",
+                "path": "tests/realtime/test_runner.py"
+              },
+              {
+                "name": "test_session.py",
+                "type": "file",
+                "path": "tests/realtime/test_session.py"
+              },
+              {
+                "name": "test_session_payload_and_formats.py",
+                "type": "file",
+                "path": "tests/realtime/test_session_payload_and_formats.py"
+              },
+              {
+                "name": "test_tracing.py",
+                "type": "file",
+                "path": "tests/realtime/test_tracing.py"
+              },
+              {
+                "name": "test_twilio_sip_server.py",
+                "type": "file",
+                "path": "tests/realtime/test_twilio_sip_server.py"
+              }
+            ]
+          },
+          {
+            "name": "tracing",
+            "type": "directory",
+            "path": "tests/tracing",
+            "children": [
+              {
+                "name": "test_processor_api_key.py",
+                "type": "file",
+                "path": "tests/tracing/test_processor_api_key.py"
+              },
+              {
+                "name": "test_set_api_key_fix.py",
+                "type": "file",
+                "path": "tests/tracing/test_set_api_key_fix.py"
+              }
+            ]
+          },
+          {
+            "name": "utils",
+            "type": "directory",
+            "path": "tests/utils",
+            "children": [
+              {
+                "name": "simple_session.py",
+                "type": "file",
+                "path": "tests/utils/simple_session.py"
+              },
+              {
+                "name": "test_json.py",
+                "type": "file",
+                "path": "tests/utils/test_json.py"
+              }
+            ]
+          },
+          {
+            "name": "voice",
+            "type": "directory",
+            "path": "tests/voice",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/voice/__init__.py"
+              },
+              {
+                "name": "conftest.py",
+                "type": "file",
+                "path": "tests/voice/conftest.py"
+              },
+              {
+                "name": "fake_models.py",
+                "type": "file",
+                "path": "tests/voice/fake_models.py"
+              },
+              {
+                "name": "helpers.py",
+                "type": "file",
+                "path": "tests/voice/helpers.py"
+              },
+              {
+                "name": "test_input.py",
+                "type": "file",
+                "path": "tests/voice/test_input.py"
+              },
+              {
+                "name": "test_openai_stt.py",
+                "type": "file",
+                "path": "tests/voice/test_openai_stt.py"
+              },
+              {
+                "name": "test_openai_tts.py",
+                "type": "file",
+                "path": "tests/voice/test_openai_tts.py"
+              },
+              {
+                "name": "test_pipeline.py",
+                "type": "file",
+                "path": "tests/voice/test_pipeline.py"
+              },
+              {
+                "name": "test_workflow.py",
+                "type": "file",
+                "path": "tests/voice/test_workflow.py"
+              }
+            ]
+          },
+          {
+            "name": "__init__.py",
+            "type": "file",
+            "path": "tests/__init__.py"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file",
+            "path": "tests/conftest.py"
+          },
+          {
+            "name": "fake_model.py",
+            "type": "file",
+            "path": "tests/fake_model.py"
+          },
+          {
+            "name": "test_agent_as_tool.py",
+            "type": "file",
+            "path": "tests/test_agent_as_tool.py"
+          },
+          {
+            "name": "test_agent_clone_shallow_copy.py",
+            "type": "file",
+            "path": "tests/test_agent_clone_shallow_copy.py"
+          },
+          {
+            "name": "test_agent_config.py",
+            "type": "file",
+            "path": "tests/test_agent_config.py"
+          },
+          {
+            "name": "test_agent_hooks.py",
+            "type": "file",
+            "path": "tests/test_agent_hooks.py"
+          },
+          {
+            "name": "test_agent_instructions_signature.py",
+            "type": "file",
+            "path": "tests/test_agent_instructions_signature.py"
+          },
+          {
+            "name": "test_agent_llm_hooks.py",
+            "type": "file",
+            "path": "tests/test_agent_llm_hooks.py"
+          },
+          {
+            "name": "test_agent_memory_leak.py",
+            "type": "file",
+            "path": "tests/test_agent_memory_leak.py"
+          },
+          {
+            "name": "test_agent_prompt.py",
+            "type": "file",
+            "path": "tests/test_agent_prompt.py"
+          },
+          {
+            "name": "test_agent_runner.py",
+            "type": "file",
+            "path": "tests/test_agent_runner.py"
+          },
+          {
+            "name": "test_agent_runner_streamed.py",
+            "type": "file",
+            "path": "tests/test_agent_runner_streamed.py"
+          },
+          {
+            "name": "test_agent_runner_sync.py",
+            "type": "file",
+            "path": "tests/test_agent_runner_sync.py"
+          },
+          {
+            "name": "test_agent_tracing.py",
+            "type": "file",
+            "path": "tests/test_agent_tracing.py"
+          },
+          {
+            "name": "test_agents_logging.py",
+            "type": "file",
+            "path": "tests/test_agents_logging.py"
+          },
+          {
+            "name": "test_anthropic_thinking_blocks.py",
+            "type": "file",
+            "path": "tests/test_anthropic_thinking_blocks.py"
+          },
+          {
+            "name": "test_apply_diff.py",
+            "type": "file",
+            "path": "tests/test_apply_diff.py"
+          },
+          {
+            "name": "test_apply_diff_helpers.py",
+            "type": "file",
+            "path": "tests/test_apply_diff_helpers.py"
+          },
+          {
+            "name": "test_apply_patch_tool.py",
+            "type": "file",
+            "path": "tests/test_apply_patch_tool.py"
+          },
+          {
+            "name": "test_call_model_input_filter.py",
+            "type": "file",
+            "path": "tests/test_call_model_input_filter.py"
+          },
+          {
+            "name": "test_call_model_input_filter_unit.py",
+            "type": "file",
+            "path": "tests/test_call_model_input_filter_unit.py"
+          },
+          {
+            "name": "test_cancel_streaming.py",
+            "type": "file",
+            "path": "tests/test_cancel_streaming.py"
+          },
+          {
+            "name": "test_computer_action.py",
+            "type": "file",
+            "path": "tests/test_computer_action.py"
+          },
+          {
+            "name": "test_computer_tool_lifecycle.py",
+            "type": "file",
+            "path": "tests/test_computer_tool_lifecycle.py"
+          },
+          {
+            "name": "test_config.py",
+            "type": "file",
+            "path": "tests/test_config.py"
+          },
+          {
+            "name": "test_debug.py",
+            "type": "file",
+            "path": "tests/test_debug.py"
+          },
+          {
+            "name": "test_doc_parsing.py",
+            "type": "file",
+            "path": "tests/test_doc_parsing.py"
+          },
+          {
+            "name": "test_extended_thinking_message_order.py",
+            "type": "file",
+            "path": "tests/test_extended_thinking_message_order.py"
+          },
+          {
+            "name": "test_extension_filters.py",
+            "type": "file",
+            "path": "tests/test_extension_filters.py"
+          },
+          {
+            "name": "test_extra_headers.py",
+            "type": "file",
+            "path": "tests/test_extra_headers.py"
+          },
+          {
+            "name": "test_function_schema.py",
+            "type": "file",
+            "path": "tests/test_function_schema.py"
+          },
+          {
+            "name": "test_function_tool.py",
+            "type": "file",
+            "path": "tests/test_function_tool.py"
+          },
+          {
+            "name": "test_function_tool_decorator.py",
+            "type": "file",
+            "path": "tests/test_function_tool_decorator.py"
+          },
+          {
+            "name": "test_global_hooks.py",
+            "type": "file",
+            "path": "tests/test_global_hooks.py"
+          },
+          {
+            "name": "test_guardrails.py",
+            "type": "file",
+            "path": "tests/test_guardrails.py"
+          },
+          {
+            "name": "test_handoff_tool.py",
+            "type": "file",
+            "path": "tests/test_handoff_tool.py"
+          },
+          {
+            "name": "test_items_helpers.py",
+            "type": "file",
+            "path": "tests/test_items_helpers.py"
+          },
+          {
+            "name": "test_local_shell_tool.py",
+            "type": "file",
+            "path": "tests/test_local_shell_tool.py"
+          },
+          {
+            "name": "test_logprobs.py",
+            "type": "file",
+            "path": "tests/test_logprobs.py"
+          },
+          {
+            "name": "test_max_turns.py",
+            "type": "file",
+            "path": "tests/test_max_turns.py"
+          },
+          {
+            "name": "test_model_payload_iterators.py",
+            "type": "file",
+            "path": "tests/test_model_payload_iterators.py"
+          },
+          {
+            "name": "test_openai_chatcompletions.py",
+            "type": "file",
+            "path": "tests/test_openai_chatcompletions.py"
+          },
+          {
+            "name": "test_openai_chatcompletions_converter.py",
+            "type": "file",
+            "path": "tests/test_openai_chatcompletions_converter.py"
+          },
+          {
+            "name": "test_openai_chatcompletions_stream.py",
+            "type": "file",
+            "path": "tests/test_openai_chatcompletions_stream.py"
+          },
+          {
+            "name": "test_openai_conversations_session.py",
+            "type": "file",
+            "path": "tests/test_openai_conversations_session.py"
+          },
+          {
+            "name": "test_openai_responses.py",
+            "type": "file",
+            "path": "tests/test_openai_responses.py"
+          },
+          {
+            "name": "test_openai_responses_converter.py",
+            "type": "file",
+            "path": "tests/test_openai_responses_converter.py"
+          },
+          {
+            "name": "test_output_tool.py",
+            "type": "file",
+            "path": "tests/test_output_tool.py"
+          },
+          {
+            "name": "test_pretty_print.py",
+            "type": "file",
+            "path": "tests/test_pretty_print.py"
+          },
+          {
+            "name": "test_reasoning_content.py",
+            "type": "file",
+            "path": "tests/test_reasoning_content.py"
+          },
+          {
+            "name": "test_repl.py",
+            "type": "file",
+            "path": "tests/test_repl.py"
+          },
+          {
+            "name": "test_responses.py",
+            "type": "file",
+            "path": "tests/test_responses.py"
+          },
+          {
+            "name": "test_responses_tracing.py",
+            "type": "file",
+            "path": "tests/test_responses_tracing.py"
+          },
+          {
+            "name": "test_result_cast.py",
+            "type": "file",
+            "path": "tests/test_result_cast.py"
+          },
+          {
+            "name": "test_run.py",
+            "type": "file",
+            "path": "tests/test_run.py"
+          },
+          {
+            "name": "test_run_config.py",
+            "type": "file",
+            "path": "tests/test_run_config.py"
+          },
+          {
+            "name": "test_run_error_details.py",
+            "type": "file",
+            "path": "tests/test_run_error_details.py"
+          },
+          {
+            "name": "test_run_hooks.py",
+            "type": "file",
+            "path": "tests/test_run_hooks.py"
+          },
+          {
+            "name": "test_run_step_execution.py",
+            "type": "file",
+            "path": "tests/test_run_step_execution.py"
+          },
+          {
+            "name": "test_run_step_processing.py",
+            "type": "file",
+            "path": "tests/test_run_step_processing.py"
+          },
+          {
+            "name": "test_session.py",
+            "type": "file",
+            "path": "tests/test_session.py"
+          },
+          {
+            "name": "test_session_exceptions.py",
+            "type": "file",
+            "path": "tests/test_session_exceptions.py"
+          },
+          {
+            "name": "test_shell_call_serialization.py",
+            "type": "file",
+            "path": "tests/test_shell_call_serialization.py"
+          },
+          {
+            "name": "test_shell_tool.py",
+            "type": "file",
+            "path": "tests/test_shell_tool.py"
+          },
+          {
+            "name": "test_soft_cancel.py",
+            "type": "file",
+            "path": "tests/test_soft_cancel.py"
+          },
+          {
+            "name": "test_stream_events.py",
+            "type": "file",
+            "path": "tests/test_stream_events.py"
+          },
+          {
+            "name": "test_stream_input_guardrail_timing.py",
+            "type": "file",
+            "path": "tests/test_stream_input_guardrail_timing.py"
+          },
+          {
+            "name": "test_streaming_tool_call_arguments.py",
+            "type": "file",
+            "path": "tests/test_streaming_tool_call_arguments.py"
+          },
+          {
+            "name": "test_strict_schema.py",
+            "type": "file",
+            "path": "tests/test_strict_schema.py"
+          },
+          {
+            "name": "test_strict_schema_oneof.py",
+            "type": "file",
+            "path": "tests/test_strict_schema_oneof.py"
+          },
+          {
+            "name": "test_tool_choice_reset.py",
+            "type": "file",
+            "path": "tests/test_tool_choice_reset.py"
+          },
+          {
+            "name": "test_tool_converter.py",
+            "type": "file",
+            "path": "tests/test_tool_converter.py"
+          },
+          {
+            "name": "test_tool_guardrails.py",
+            "type": "file",
+            "path": "tests/test_tool_guardrails.py"
+          },
+          {
+            "name": "test_tool_metadata.py",
+            "type": "file",
+            "path": "tests/test_tool_metadata.py"
+          },
+          {
+            "name": "test_tool_output_conversion.py",
+            "type": "file",
+            "path": "tests/test_tool_output_conversion.py"
+          },
+          {
+            "name": "test_tool_use_behavior.py",
+            "type": "file",
+            "path": "tests/test_tool_use_behavior.py"
+          },
+          {
+            "name": "test_trace_processor.py",
+            "type": "file",
+            "path": "tests/test_trace_processor.py"
+          },
+          {
+            "name": "test_tracing.py",
+            "type": "file",
+            "path": "tests/test_tracing.py"
+          },
+          {
+            "name": "test_tracing_errors.py",
+            "type": "file",
+            "path": "tests/test_tracing_errors.py"
+          },
+          {
+            "name": "test_tracing_errors_streamed.py",
+            "type": "file",
+            "path": "tests/test_tracing_errors_streamed.py"
+          },
+          {
+            "name": "test_usage.py",
+            "type": "file",
+            "path": "tests/test_usage.py"
+          },
+          {
+            "name": "test_visualization.py",
+            "type": "file",
+            "path": "tests/test_visualization.py"
+          },
+          {
+            "name": "testing_processor.py",
+            "type": "file",
+            "path": "tests/testing_processor.py"
+          }
+        ]
+      },
+      {
+        "name": "pyproject.toml",
+        "type": "file",
+        "path": "pyproject.toml"
+      }
+    ]
+  },
+  "dependencies": {
+    "nodes": [
+      {
+        "id": 0,
+        "path": "tests/test_run_error_details.py",
+        "name": "test_run_error_details.py"
+      },
+      {
+        "id": 1,
+        "path": "tests/test_anthropic_thinking_blocks.py",
+        "name": "test_anthropic_thinking_blocks.py"
+      },
+      {
+        "id": 2,
+        "path": "tests/test_tool_metadata.py",
+        "name": "test_tool_metadata.py"
+      },
+      {
+        "id": 3,
+        "path": "tests/test_run_config.py",
+        "name": "test_run_config.py"
+      },
+      {
+        "id": 4,
+        "path": "tests/test_shell_call_serialization.py",
+        "name": "test_shell_call_serialization.py"
+      },
+      {
+        "id": 5,
+        "path": "tests/test_tracing_errors.py",
+        "name": "test_tracing_errors.py"
+      },
+      {
+        "id": 6,
+        "path": "tests/testing_processor.py",
+        "name": "testing_processor.py"
+      },
+      {
+        "id": 7,
+        "path": "tests/test_model_payload_iterators.py",
+        "name": "test_model_payload_iterators.py"
+      },
+      {
+        "id": 8,
+        "path": "tests/test_agent_instructions_signature.py",
+        "name": "test_agent_instructions_signature.py"
+      },
+      {
+        "id": 9,
+        "path": "tests/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 10,
+        "path": "tests/test_tool_use_behavior.py",
+        "name": "test_tool_use_behavior.py"
+      },
+      {
+        "id": 11,
+        "path": "tests/test_debug.py",
+        "name": "test_debug.py"
+      },
+      {
+        "id": 12,
+        "path": "tests/test_output_tool.py",
+        "name": "test_output_tool.py"
+      },
+      {
+        "id": 13,
+        "path": "tests/test_tracing.py",
+        "name": "test_tracing.py"
+      },
+      {
+        "id": 14,
+        "path": "tests/test_agent_memory_leak.py",
+        "name": "test_agent_memory_leak.py"
+      },
+      {
+        "id": 15,
+        "path": "tests/test_call_model_input_filter.py",
+        "name": "test_call_model_input_filter.py"
+      },
+      {
+        "id": 16,
+        "path": "tests/test_responses_tracing.py",
+        "name": "test_responses_tracing.py"
+      },
+      {
+        "id": 17,
+        "path": "tests/test_tool_converter.py",
+        "name": "test_tool_converter.py"
+      },
+      {
+        "id": 18,
+        "path": "tests/test_openai_chatcompletions_converter.py",
+        "name": "test_openai_chatcompletions_converter.py"
+      },
+      {
+        "id": 19,
+        "path": "tests/test_agent_llm_hooks.py",
+        "name": "test_agent_llm_hooks.py"
+      },
+      {
+        "id": 20,
+        "path": "tests/test_guardrails.py",
+        "name": "test_guardrails.py"
+      },
+      {
+        "id": 21,
+        "path": "tests/test_session.py",
+        "name": "test_session.py"
+      },
+      {
+        "id": 22,
+        "path": "tests/test_run_hooks.py",
+        "name": "test_run_hooks.py"
+      },
+      {
+        "id": 23,
+        "path": "tests/test_visualization.py",
+        "name": "test_visualization.py"
+      },
+      {
+        "id": 24,
+        "path": "tests/test_tracing_errors_streamed.py",
+        "name": "test_tracing_errors_streamed.py"
+      },
+      {
+        "id": 25,
+        "path": "tests/test_soft_cancel.py",
+        "name": "test_soft_cancel.py"
+      },
+      {
+        "id": 26,
+        "path": "tests/test_run.py",
+        "name": "test_run.py"
+      },
+      {
+        "id": 27,
+        "path": "tests/test_logprobs.py",
+        "name": "test_logprobs.py"
+      },
+      {
+        "id": 28,
+        "path": "tests/test_items_helpers.py",
+        "name": "test_items_helpers.py"
+      },
+      {
+        "id": 29,
+        "path": "tests/test_agent_runner_streamed.py",
+        "name": "test_agent_runner_streamed.py"
+      },
+      {
+        "id": 30,
+        "path": "tests/test_agent_prompt.py",
+        "name": "test_agent_prompt.py"
+      },
+      {
+        "id": 31,
+        "path": "tests/test_agent_tracing.py",
+        "name": "test_agent_tracing.py"
+      },
+      {
+        "id": 32,
+        "path": "tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 33,
+        "path": "tests/test_run_step_processing.py",
+        "name": "test_run_step_processing.py"
+      },
+      {
+        "id": 34,
+        "path": "tests/test_apply_diff.py",
+        "name": "test_apply_diff.py"
+      },
+      {
+        "id": 35,
+        "path": "tests/test_local_shell_tool.py",
+        "name": "test_local_shell_tool.py"
+      },
+      {
+        "id": 36,
+        "path": "tests/test_usage.py",
+        "name": "test_usage.py"
+      },
+      {
+        "id": 37,
+        "path": "tests/test_strict_schema.py",
+        "name": "test_strict_schema.py"
+      },
+      {
+        "id": 38,
+        "path": "tests/test_openai_responses_converter.py",
+        "name": "test_openai_responses_converter.py"
+      },
+      {
+        "id": 39,
+        "path": "tests/test_shell_tool.py",
+        "name": "test_shell_tool.py"
+      },
+      {
+        "id": 40,
+        "path": "tests/test_repl.py",
+        "name": "test_repl.py"
+      },
+      {
+        "id": 41,
+        "path": "tests/test_agents_logging.py",
+        "name": "test_agents_logging.py"
+      },
+      {
+        "id": 42,
+        "path": "tests/test_agent_runner.py",
+        "name": "test_agent_runner.py"
+      },
+      {
+        "id": 43,
+        "path": "tests/test_agent_as_tool.py",
+        "name": "test_agent_as_tool.py"
+      },
+      {
+        "id": 44,
+        "path": "tests/test_function_tool.py",
+        "name": "test_function_tool.py"
+      },
+      {
+        "id": 45,
+        "path": "tests/test_call_model_input_filter_unit.py",
+        "name": "test_call_model_input_filter_unit.py"
+      },
+      {
+        "id": 46,
+        "path": "tests/test_extended_thinking_message_order.py",
+        "name": "test_extended_thinking_message_order.py"
+      },
+      {
+        "id": 47,
+        "path": "tests/test_extra_headers.py",
+        "name": "test_extra_headers.py"
+      },
+      {
+        "id": 48,
+        "path": "tests/test_computer_tool_lifecycle.py",
+        "name": "test_computer_tool_lifecycle.py"
+      },
+      {
+        "id": 49,
+        "path": "tests/test_pretty_print.py",
+        "name": "test_pretty_print.py"
+      },
+      {
+        "id": 50,
+        "path": "tests/test_apply_diff_helpers.py",
+        "name": "test_apply_diff_helpers.py"
+      },
+      {
+        "id": 51,
+        "path": "tests/test_computer_action.py",
+        "name": "test_computer_action.py"
+      },
+      {
+        "id": 52,
+        "path": "tests/test_cancel_streaming.py",
+        "name": "test_cancel_streaming.py"
+      },
+      {
+        "id": 53,
+        "path": "tests/test_extension_filters.py",
+        "name": "test_extension_filters.py"
+      },
+      {
+        "id": 54,
+        "path": "tests/test_tool_guardrails.py",
+        "name": "test_tool_guardrails.py"
+      },
+      {
+        "id": 55,
+        "path": "tests/test_tool_output_conversion.py",
+        "name": "test_tool_output_conversion.py"
+      },
+      {
+        "id": 56,
+        "path": "tests/test_responses.py",
+        "name": "test_responses.py"
+      },
+      {
+        "id": 57,
+        "path": "tests/test_openai_conversations_session.py",
+        "name": "test_openai_conversations_session.py"
+      },
+      {
+        "id": 58,
+        "path": "tests/test_config.py",
+        "name": "test_config.py"
+      },
+      {
+        "id": 59,
+        "path": "tests/test_openai_chatcompletions_stream.py",
+        "name": "test_openai_chatcompletions_stream.py"
+      },
+      {
+        "id": 60,
+        "path": "tests/test_agent_config.py",
+        "name": "test_agent_config.py"
+      },
+      {
+        "id": 61,
+        "path": "tests/test_session_exceptions.py",
+        "name": "test_session_exceptions.py"
+      },
+      {
+        "id": 62,
+        "path": "tests/test_max_turns.py",
+        "name": "test_max_turns.py"
+      },
+      {
+        "id": 63,
+        "path": "tests/test_result_cast.py",
+        "name": "test_result_cast.py"
+      },
+      {
+        "id": 64,
+        "path": "tests/test_global_hooks.py",
+        "name": "test_global_hooks.py"
+      },
+      {
+        "id": 65,
+        "path": "tests/test_apply_patch_tool.py",
+        "name": "test_apply_patch_tool.py"
+      },
+      {
+        "id": 66,
+        "path": "tests/test_agent_runner_sync.py",
+        "name": "test_agent_runner_sync.py"
+      },
+      {
+        "id": 67,
+        "path": "tests/test_function_tool_decorator.py",
+        "name": "test_function_tool_decorator.py"
+      },
+      {
+        "id": 68,
+        "path": "tests/test_agent_clone_shallow_copy.py",
+        "name": "test_agent_clone_shallow_copy.py"
+      },
+      {
+        "id": 69,
+        "path": "tests/test_trace_processor.py",
+        "name": "test_trace_processor.py"
+      },
+      {
+        "id": 70,
+        "path": "tests/test_function_schema.py",
+        "name": "test_function_schema.py"
+      },
+      {
+        "id": 71,
+        "path": "tests/test_tool_choice_reset.py",
+        "name": "test_tool_choice_reset.py"
+      },
+      {
+        "id": 72,
+        "path": "tests/test_doc_parsing.py",
+        "name": "test_doc_parsing.py"
+      },
+      {
+        "id": 73,
+        "path": "tests/test_run_step_execution.py",
+        "name": "test_run_step_execution.py"
+      },
+      {
+        "id": 74,
+        "path": "tests/test_streaming_tool_call_arguments.py",
+        "name": "test_streaming_tool_call_arguments.py"
+      },
+      {
+        "id": 75,
+        "path": "tests/test_openai_chatcompletions.py",
+        "name": "test_openai_chatcompletions.py"
+      },
+      {
+        "id": 76,
+        "path": "tests/test_strict_schema_oneof.py",
+        "name": "test_strict_schema_oneof.py"
+      },
+      {
+        "id": 77,
+        "path": "tests/fake_model.py",
+        "name": "fake_model.py"
+      },
+      {
+        "id": 78,
+        "path": "tests/test_stream_events.py",
+        "name": "test_stream_events.py"
+      },
+      {
+        "id": 79,
+        "path": "tests/test_openai_responses.py",
+        "name": "test_openai_responses.py"
+      },
+      {
+        "id": 80,
+        "path": "tests/test_handoff_tool.py",
+        "name": "test_handoff_tool.py"
+      },
+      {
+        "id": 81,
+        "path": "tests/test_stream_input_guardrail_timing.py",
+        "name": "test_stream_input_guardrail_timing.py"
+      },
+      {
+        "id": 82,
+        "path": "tests/test_reasoning_content.py",
+        "name": "test_reasoning_content.py"
+      },
+      {
+        "id": 83,
+        "path": "tests/test_agent_hooks.py",
+        "name": "test_agent_hooks.py"
+      },
+      {
+        "id": 84,
+        "path": "examples/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 85,
+        "path": "src/agents/tool_guardrails.py",
+        "name": "tool_guardrails.py"
+      },
+      {
+        "id": 86,
+        "path": "src/agents/model_settings.py",
+        "name": "model_settings.py"
+      },
+      {
+        "id": 87,
+        "path": "src/agents/run.py",
+        "name": "run.py"
+      },
+      {
+        "id": 88,
+        "path": "src/agents/version.py",
+        "name": "version.py"
+      },
+      {
+        "id": 89,
+        "path": "src/agents/_run_impl.py",
+        "name": "_run_impl.py"
+      },
+      {
+        "id": 90,
+        "path": "src/agents/strict_schema.py",
+        "name": "strict_schema.py"
+      },
+      {
+        "id": 91,
+        "path": "src/agents/repl.py",
+        "name": "repl.py"
+      },
+      {
+        "id": 92,
+        "path": "src/agents/tool_context.py",
+        "name": "tool_context.py"
+      },
+      {
+        "id": 93,
+        "path": "src/agents/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 94,
+        "path": "src/agents/function_schema.py",
+        "name": "function_schema.py"
+      },
+      {
+        "id": 95,
+        "path": "src/agents/logger.py",
+        "name": "logger.py"
+      },
+      {
+        "id": 96,
+        "path": "src/agents/computer.py",
+        "name": "computer.py"
+      },
+      {
+        "id": 97,
+        "path": "src/agents/prompts.py",
+        "name": "prompts.py"
+      },
+      {
+        "id": 98,
+        "path": "src/agents/result.py",
+        "name": "result.py"
+      },
+      {
+        "id": 99,
+        "path": "src/agents/run_context.py",
+        "name": "run_context.py"
+      },
+      {
+        "id": 100,
+        "path": "src/agents/lifecycle.py",
+        "name": "lifecycle.py"
+      },
+      {
+        "id": 101,
+        "path": "src/agents/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 102,
+        "path": "src/agents/apply_diff.py",
+        "name": "apply_diff.py"
+      },
+      {
+        "id": 103,
+        "path": "src/agents/agent_output.py",
+        "name": "agent_output.py"
+      },
+      {
+        "id": 104,
+        "path": "src/agents/exceptions.py",
+        "name": "exceptions.py"
+      },
+      {
+        "id": 105,
+        "path": "src/agents/stream_events.py",
+        "name": "stream_events.py"
+      },
+      {
+        "id": 106,
+        "path": "src/agents/guardrail.py",
+        "name": "guardrail.py"
+      },
+      {
+        "id": 107,
+        "path": "src/agents/editor.py",
+        "name": "editor.py"
+      },
+      {
+        "id": 108,
+        "path": "src/agents/_debug.py",
+        "name": "_debug.py"
+      },
+      {
+        "id": 109,
+        "path": "src/agents/_config.py",
+        "name": "_config.py"
+      },
+      {
+        "id": 110,
+        "path": "src/agents/items.py",
+        "name": "items.py"
+      },
+      {
+        "id": 111,
+        "path": "src/agents/tool.py",
+        "name": "tool.py"
+      },
+      {
+        "id": 112,
+        "path": "src/agents/usage.py",
+        "name": "usage.py"
+      },
+      {
+        "id": 113,
+        "path": "src/agents/tracing/create.py",
+        "name": "create.py"
+      },
+      {
+        "id": 114,
+        "path": "src/agents/tracing/provider.py",
+        "name": "provider.py"
+      },
+      {
+        "id": 115,
+        "path": "src/agents/tracing/span_data.py",
+        "name": "span_data.py"
+      },
+      {
+        "id": 116,
+        "path": "src/agents/tracing/util.py",
+        "name": "util.py"
+      },
+      {
+        "id": 117,
+        "path": "src/agents/tracing/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 118,
+        "path": "src/agents/tracing/spans.py",
+        "name": "spans.py"
+      },
+      {
+        "id": 119,
+        "path": "src/agents/tracing/logger.py",
+        "name": "logger.py"
+      },
+      {
+        "id": 120,
+        "path": "src/agents/tracing/setup.py",
+        "name": "setup.py"
+      },
+      {
+        "id": 121,
+        "path": "src/agents/tracing/processor_interface.py",
+        "name": "processor_interface.py"
+      },
+      {
+        "id": 122,
+        "path": "src/agents/tracing/processors.py",
+        "name": "processors.py"
+      },
+      {
+        "id": 123,
+        "path": "src/agents/tracing/traces.py",
+        "name": "traces.py"
+      },
+      {
+        "id": 124,
+        "path": "src/agents/tracing/scope.py",
+        "name": "scope.py"
+      },
+      {
+        "id": 125,
+        "path": "src/agents/memory/sqlite_session.py",
+        "name": "sqlite_session.py"
+      },
+      {
+        "id": 126,
+        "path": "src/agents/memory/util.py",
+        "name": "util.py"
+      },
+      {
+        "id": 127,
+        "path": "src/agents/memory/session.py",
+        "name": "session.py"
+      },
+      {
+        "id": 128,
+        "path": "src/agents/memory/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 129,
+        "path": "src/agents/memory/openai_conversations_session.py",
+        "name": "openai_conversations_session.py"
+      },
+      {
+        "id": 130,
+        "path": "src/agents/util/_json.py",
+        "name": "_json.py"
+      },
+      {
+        "id": 131,
+        "path": "src/agents/util/_types.py",
+        "name": "_types.py"
+      },
+      {
+        "id": 132,
+        "path": "src/agents/util/_error_tracing.py",
+        "name": "_error_tracing.py"
+      },
+      {
+        "id": 133,
+        "path": "src/agents/util/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 134,
+        "path": "src/agents/util/_transforms.py",
+        "name": "_transforms.py"
+      },
+      {
+        "id": 135,
+        "path": "src/agents/util/_coro.py",
+        "name": "_coro.py"
+      },
+      {
+        "id": 136,
+        "path": "src/agents/util/_pretty_print.py",
+        "name": "_pretty_print.py"
+      },
+      {
+        "id": 137,
+        "path": "src/agents/mcp/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 138,
+        "path": "src/agents/mcp/util.py",
+        "name": "util.py"
+      },
+      {
+        "id": 139,
+        "path": "src/agents/mcp/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 140,
+        "path": "src/agents/models/chatcmpl_stream_handler.py",
+        "name": "chatcmpl_stream_handler.py"
+      },
+      {
+        "id": 141,
+        "path": "src/agents/models/chatcmpl_converter.py",
+        "name": "chatcmpl_converter.py"
+      },
+      {
+        "id": 142,
+        "path": "src/agents/models/chatcmpl_helpers.py",
+        "name": "chatcmpl_helpers.py"
+      },
+      {
+        "id": 143,
+        "path": "src/agents/models/openai_responses.py",
+        "name": "openai_responses.py"
+      },
+      {
+        "id": 144,
+        "path": "src/agents/models/fake_id.py",
+        "name": "fake_id.py"
+      },
+      {
+        "id": 145,
+        "path": "src/agents/models/openai_chatcompletions.py",
+        "name": "openai_chatcompletions.py"
+      },
+      {
+        "id": 146,
+        "path": "src/agents/models/interface.py",
+        "name": "interface.py"
+      },
+      {
+        "id": 147,
+        "path": "src/agents/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 148,
+        "path": "src/agents/models/multi_provider.py",
+        "name": "multi_provider.py"
+      },
+      {
+        "id": 149,
+        "path": "src/agents/models/openai_provider.py",
+        "name": "openai_provider.py"
+      },
+      {
+        "id": 150,
+        "path": "src/agents/models/default_models.py",
+        "name": "default_models.py"
+      },
+      {
+        "id": 151,
+        "path": "src/agents/models/_openai_shared.py",
+        "name": "_openai_shared.py"
+      },
+      {
+        "id": 152,
+        "path": "src/agents/extensions/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 153,
+        "path": "src/agents/extensions/visualization.py",
+        "name": "visualization.py"
+      },
+      {
+        "id": 154,
+        "path": "src/agents/extensions/handoff_filters.py",
+        "name": "handoff_filters.py"
+      },
+      {
+        "id": 155,
+        "path": "src/agents/extensions/handoff_prompt.py",
+        "name": "handoff_prompt.py"
+      },
+      {
+        "id": 156,
+        "path": "src/agents/realtime/runner.py",
+        "name": "runner.py"
+      },
+      {
+        "id": 157,
+        "path": "src/agents/realtime/config.py",
+        "name": "config.py"
+      },
+      {
+        "id": 158,
+        "path": "src/agents/realtime/audio_formats.py",
+        "name": "audio_formats.py"
+      },
+      {
+        "id": 159,
+        "path": "src/agents/realtime/_default_tracker.py",
+        "name": "_default_tracker.py"
+      },
+      {
+        "id": 160,
+        "path": "src/agents/realtime/events.py",
+        "name": "events.py"
+      },
+      {
+        "id": 161,
+        "path": "src/agents/realtime/model_events.py",
+        "name": "model_events.py"
+      },
+      {
+        "id": 162,
+        "path": "src/agents/realtime/session.py",
+        "name": "session.py"
+      },
+      {
+        "id": 163,
+        "path": "src/agents/realtime/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 164,
+        "path": "src/agents/realtime/model_inputs.py",
+        "name": "model_inputs.py"
+      },
+      {
+        "id": 165,
+        "path": "src/agents/realtime/model.py",
+        "name": "model.py"
+      },
+      {
+        "id": 166,
+        "path": "src/agents/realtime/openai_realtime.py",
+        "name": "openai_realtime.py"
+      },
+      {
+        "id": 167,
+        "path": "src/agents/realtime/_util.py",
+        "name": "_util.py"
+      },
+      {
+        "id": 168,
+        "path": "src/agents/realtime/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 169,
+        "path": "src/agents/realtime/handoffs.py",
+        "name": "handoffs.py"
+      },
+      {
+        "id": 170,
+        "path": "src/agents/realtime/items.py",
+        "name": "items.py"
+      },
+      {
+        "id": 171,
+        "path": "src/agents/voice/events.py",
+        "name": "events.py"
+      },
+      {
+        "id": 172,
+        "path": "src/agents/voice/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 173,
+        "path": "src/agents/voice/imports.py",
+        "name": "imports.py"
+      },
+      {
+        "id": 174,
+        "path": "src/agents/voice/model.py",
+        "name": "model.py"
+      },
+      {
+        "id": 175,
+        "path": "src/agents/voice/result.py",
+        "name": "result.py"
+      },
+      {
+        "id": 176,
+        "path": "src/agents/voice/utils.py",
+        "name": "utils.py"
+      },
+      {
+        "id": 177,
+        "path": "src/agents/voice/pipeline.py",
+        "name": "pipeline.py"
+      },
+      {
+        "id": 178,
+        "path": "src/agents/voice/input.py",
+        "name": "input.py"
+      },
+      {
+        "id": 179,
+        "path": "src/agents/voice/exceptions.py",
+        "name": "exceptions.py"
+      },
+      {
+        "id": 180,
+        "path": "src/agents/voice/pipeline_config.py",
+        "name": "pipeline_config.py"
+      },
+      {
+        "id": 181,
+        "path": "src/agents/voice/workflow.py",
+        "name": "workflow.py"
+      },
+      {
+        "id": 182,
+        "path": "src/agents/handoffs/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 183,
+        "path": "src/agents/handoffs/history.py",
+        "name": "history.py"
+      },
+      {
+        "id": 184,
+        "path": "src/agents/voice/models/openai_model_provider.py",
+        "name": "openai_model_provider.py"
+      },
+      {
+        "id": 185,
+        "path": "src/agents/voice/models/openai_tts.py",
+        "name": "openai_tts.py"
+      },
+      {
+        "id": 186,
+        "path": "src/agents/voice/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 187,
+        "path": "src/agents/voice/models/openai_stt.py",
+        "name": "openai_stt.py"
+      },
+      {
+        "id": 188,
+        "path": "src/agents/extensions/memory/advanced_sqlite_session.py",
+        "name": "advanced_sqlite_session.py"
+      },
+      {
+        "id": 189,
+        "path": "src/agents/extensions/memory/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 190,
+        "path": "src/agents/extensions/memory/encrypt_session.py",
+        "name": "encrypt_session.py"
+      },
+      {
+        "id": 191,
+        "path": "src/agents/extensions/memory/redis_session.py",
+        "name": "redis_session.py"
+      },
+      {
+        "id": 192,
+        "path": "src/agents/extensions/memory/dapr_session.py",
+        "name": "dapr_session.py"
+      },
+      {
+        "id": 193,
+        "path": "src/agents/extensions/memory/sqlalchemy_session.py",
+        "name": "sqlalchemy_session.py"
+      },
+      {
+        "id": 194,
+        "path": "src/agents/extensions/models/litellm_model.py",
+        "name": "litellm_model.py"
+      },
+      {
+        "id": 195,
+        "path": "src/agents/extensions/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 196,
+        "path": "src/agents/extensions/models/litellm_provider.py",
+        "name": "litellm_provider.py"
+      },
+      {
+        "id": 197,
+        "path": "examples/tools/code_interpreter.py",
+        "name": "code_interpreter.py"
+      },
+      {
+        "id": 198,
+        "path": "examples/tools/local_shell.py",
+        "name": "local_shell.py"
+      },
+      {
+        "id": 199,
+        "path": "examples/tools/apply_patch.py",
+        "name": "apply_patch.py"
+      },
+      {
+        "id": 200,
+        "path": "examples/tools/shell.py",
+        "name": "shell.py"
+      },
+      {
+        "id": 201,
+        "path": "examples/tools/computer_use.py",
+        "name": "computer_use.py"
+      },
+      {
+        "id": 202,
+        "path": "examples/tools/file_search.py",
+        "name": "file_search.py"
+      },
+      {
+        "id": 203,
+        "path": "examples/tools/web_search.py",
+        "name": "web_search.py"
+      },
+      {
+        "id": 204,
+        "path": "examples/tools/web_search_filters.py",
+        "name": "web_search_filters.py"
+      },
+      {
+        "id": 205,
+        "path": "examples/tools/image_generator.py",
+        "name": "image_generator.py"
+      },
+      {
+        "id": 206,
+        "path": "examples/customer_service/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 207,
+        "path": "examples/memory/dapr_session_example.py",
+        "name": "dapr_session_example.py"
+      },
+      {
+        "id": 208,
+        "path": "examples/memory/redis_session_example.py",
+        "name": "redis_session_example.py"
+      },
+      {
+        "id": 209,
+        "path": "examples/memory/advanced_sqlite_session_example.py",
+        "name": "advanced_sqlite_session_example.py"
+      },
+      {
+        "id": 210,
+        "path": "examples/memory/sqlalchemy_session_example.py",
+        "name": "sqlalchemy_session_example.py"
+      },
+      {
+        "id": 211,
+        "path": "examples/memory/encrypted_session_example.py",
+        "name": "encrypted_session_example.py"
+      },
+      {
+        "id": 212,
+        "path": "examples/memory/openai_session_example.py",
+        "name": "openai_session_example.py"
+      },
+      {
+        "id": 213,
+        "path": "examples/memory/sqlite_session_example.py",
+        "name": "sqlite_session_example.py"
+      },
+      {
+        "id": 214,
+        "path": "examples/model_providers/custom_example_global.py",
+        "name": "custom_example_global.py"
+      },
+      {
+        "id": 215,
+        "path": "examples/model_providers/custom_example_agent.py",
+        "name": "custom_example_agent.py"
+      },
+      {
+        "id": 216,
+        "path": "examples/model_providers/custom_example_provider.py",
+        "name": "custom_example_provider.py"
+      },
+      {
+        "id": 217,
+        "path": "examples/model_providers/litellm_auto.py",
+        "name": "litellm_auto.py"
+      },
+      {
+        "id": 218,
+        "path": "examples/model_providers/litellm_provider.py",
+        "name": "litellm_provider.py"
+      },
+      {
+        "id": 219,
+        "path": "examples/financial_research_agent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 220,
+        "path": "examples/financial_research_agent/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 221,
+        "path": "examples/financial_research_agent/printer.py",
+        "name": "printer.py"
+      },
+      {
+        "id": 222,
+        "path": "examples/financial_research_agent/manager.py",
+        "name": "manager.py"
+      },
+      {
+        "id": 223,
+        "path": "examples/basic/tool_guardrails.py",
+        "name": "tool_guardrails.py"
+      },
+      {
+        "id": 224,
+        "path": "examples/basic/lifecycle_example.py",
+        "name": "lifecycle_example.py"
+      },
+      {
+        "id": 225,
+        "path": "examples/basic/hello_world.py",
+        "name": "hello_world.py"
+      },
+      {
+        "id": 226,
+        "path": "examples/basic/dynamic_system_prompt.py",
+        "name": "dynamic_system_prompt.py"
+      },
+      {
+        "id": 227,
+        "path": "examples/basic/previous_response_id.py",
+        "name": "previous_response_id.py"
+      },
+      {
+        "id": 228,
+        "path": "examples/basic/remote_image.py",
+        "name": "remote_image.py"
+      },
+      {
+        "id": 229,
+        "path": "examples/basic/usage_tracking.py",
+        "name": "usage_tracking.py"
+      },
+      {
+        "id": 230,
+        "path": "examples/basic/hello_world_gpt_oss.py",
+        "name": "hello_world_gpt_oss.py"
+      },
+      {
+        "id": 231,
+        "path": "examples/basic/tools.py",
+        "name": "tools.py"
+      },
+      {
+        "id": 232,
+        "path": "examples/basic/stream_text.py",
+        "name": "stream_text.py"
+      },
+      {
+        "id": 233,
+        "path": "examples/basic/hello_world_gpt_5.py",
+        "name": "hello_world_gpt_5.py"
+      },
+      {
+        "id": 234,
+        "path": "examples/basic/local_image.py",
+        "name": "local_image.py"
+      },
+      {
+        "id": 235,
+        "path": "examples/basic/remote_pdf.py",
+        "name": "remote_pdf.py"
+      },
+      {
+        "id": 236,
+        "path": "examples/basic/agent_lifecycle_example.py",
+        "name": "agent_lifecycle_example.py"
+      },
+      {
+        "id": 237,
+        "path": "examples/basic/stream_function_call_args.py",
+        "name": "stream_function_call_args.py"
+      },
+      {
+        "id": 238,
+        "path": "examples/basic/image_tool_output.py",
+        "name": "image_tool_output.py"
+      },
+      {
+        "id": 239,
+        "path": "examples/basic/stream_items.py",
+        "name": "stream_items.py"
+      },
+      {
+        "id": 240,
+        "path": "examples/basic/non_strict_output_type.py",
+        "name": "non_strict_output_type.py"
+      },
+      {
+        "id": 241,
+        "path": "examples/basic/prompt_template.py",
+        "name": "prompt_template.py"
+      },
+      {
+        "id": 242,
+        "path": "examples/basic/local_file.py",
+        "name": "local_file.py"
+      },
+      {
+        "id": 243,
+        "path": "examples/research_bot/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 244,
+        "path": "examples/research_bot/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 245,
+        "path": "examples/research_bot/printer.py",
+        "name": "printer.py"
+      },
+      {
+        "id": 246,
+        "path": "examples/research_bot/manager.py",
+        "name": "manager.py"
+      },
+      {
+        "id": 247,
+        "path": "examples/reasoning_content/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 248,
+        "path": "examples/reasoning_content/runner_example.py",
+        "name": "runner_example.py"
+      },
+      {
+        "id": 249,
+        "path": "examples/reasoning_content/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 250,
+        "path": "examples/reasoning_content/gpt_oss_stream.py",
+        "name": "gpt_oss_stream.py"
+      },
+      {
+        "id": 251,
+        "path": "examples/agent_patterns/agents_as_tools_conditional.py",
+        "name": "agents_as_tools_conditional.py"
+      },
+      {
+        "id": 252,
+        "path": "examples/agent_patterns/agents_as_tools_streaming.py",
+        "name": "agents_as_tools_streaming.py"
+      },
+      {
+        "id": 253,
+        "path": "examples/agent_patterns/deterministic.py",
+        "name": "deterministic.py"
+      },
+      {
+        "id": 254,
+        "path": "examples/agent_patterns/input_guardrails.py",
+        "name": "input_guardrails.py"
+      },
+      {
+        "id": 255,
+        "path": "examples/agent_patterns/agents_as_tools.py",
+        "name": "agents_as_tools.py"
+      },
+      {
+        "id": 256,
+        "path": "examples/agent_patterns/output_guardrails.py",
+        "name": "output_guardrails.py"
+      },
+      {
+        "id": 257,
+        "path": "examples/agent_patterns/parallelization.py",
+        "name": "parallelization.py"
+      },
+      {
+        "id": 258,
+        "path": "examples/agent_patterns/routing.py",
+        "name": "routing.py"
+      },
+      {
+        "id": 259,
+        "path": "examples/agent_patterns/streaming_guardrails.py",
+        "name": "streaming_guardrails.py"
+      },
+      {
+        "id": 260,
+        "path": "examples/agent_patterns/llm_as_a_judge.py",
+        "name": "llm_as_a_judge.py"
+      },
+      {
+        "id": 261,
+        "path": "examples/agent_patterns/forcing_tool_use.py",
+        "name": "forcing_tool_use.py"
+      },
+      {
+        "id": 262,
+        "path": "examples/voice/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 263,
+        "path": "examples/handoffs/message_filter_streaming.py",
+        "name": "message_filter_streaming.py"
+      },
+      {
+        "id": 264,
+        "path": "examples/handoffs/message_filter.py",
+        "name": "message_filter.py"
+      },
+      {
+        "id": 265,
+        "path": "examples/hosted_mcp/connectors.py",
+        "name": "connectors.py"
+      },
+      {
+        "id": 266,
+        "path": "examples/hosted_mcp/approvals.py",
+        "name": "approvals.py"
+      },
+      {
+        "id": 267,
+        "path": "examples/hosted_mcp/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 268,
+        "path": "examples/hosted_mcp/simple.py",
+        "name": "simple.py"
+      },
+      {
+        "id": 269,
+        "path": "examples/voice/streamed/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 270,
+        "path": "examples/voice/streamed/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 271,
+        "path": "examples/voice/streamed/my_workflow.py",
+        "name": "my_workflow.py"
+      },
+      {
+        "id": 272,
+        "path": "examples/voice/static/util.py",
+        "name": "util.py"
+      },
+      {
+        "id": 273,
+        "path": "examples/voice/static/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 274,
+        "path": "examples/voice/static/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 275,
+        "path": "examples/realtime/app/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 276,
+        "path": "examples/realtime/app/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 277,
+        "path": "examples/realtime/cli/demo.py",
+        "name": "demo.py"
+      },
+      {
+        "id": 278,
+        "path": "examples/realtime/twilio_sip/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 279,
+        "path": "examples/realtime/twilio_sip/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 280,
+        "path": "examples/realtime/twilio_sip/agents.py",
+        "name": "agents.py"
+      },
+      {
+        "id": 281,
+        "path": "examples/realtime/twilio/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 282,
+        "path": "examples/realtime/twilio/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 283,
+        "path": "examples/realtime/twilio/twilio_handler.py",
+        "name": "twilio_handler.py"
+      },
+      {
+        "id": 284,
+        "path": "examples/realtime/app/static/audio-playback.worklet.js",
+        "name": "audio-playback.worklet.js"
+      },
+      {
+        "id": 285,
+        "path": "examples/realtime/app/static/audio-recorder.worklet.js",
+        "name": "audio-recorder.worklet.js"
+      },
+      {
+        "id": 286,
+        "path": "examples/realtime/app/static/app.js",
+        "name": "app.js"
+      },
+      {
+        "id": 287,
+        "path": "examples/mcp/streamablehttp_custom_client_example/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 288,
+        "path": "examples/mcp/streamablehttp_custom_client_example/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 289,
+        "path": "examples/mcp/streamablehttp_example/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 290,
+        "path": "examples/mcp/streamablehttp_example/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 291,
+        "path": "examples/mcp/git_example/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 292,
+        "path": "examples/mcp/prompt_server/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 293,
+        "path": "examples/mcp/prompt_server/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 294,
+        "path": "examples/mcp/sse_example/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 295,
+        "path": "examples/mcp/sse_example/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 296,
+        "path": "examples/mcp/filesystem_example/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 297,
+        "path": "examples/research_bot/agents/planner_agent.py",
+        "name": "planner_agent.py"
+      },
+      {
+        "id": 298,
+        "path": "examples/research_bot/agents/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 299,
+        "path": "examples/research_bot/agents/search_agent.py",
+        "name": "search_agent.py"
+      },
+      {
+        "id": 300,
+        "path": "examples/research_bot/agents/writer_agent.py",
+        "name": "writer_agent.py"
+      },
+      {
+        "id": 301,
+        "path": "examples/financial_research_agent/agents/financials_agent.py",
+        "name": "financials_agent.py"
+      },
+      {
+        "id": 302,
+        "path": "examples/financial_research_agent/agents/planner_agent.py",
+        "name": "planner_agent.py"
+      },
+      {
+        "id": 303,
+        "path": "examples/financial_research_agent/agents/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 304,
+        "path": "examples/financial_research_agent/agents/verifier_agent.py",
+        "name": "verifier_agent.py"
+      },
+      {
+        "id": 305,
+        "path": "examples/financial_research_agent/agents/search_agent.py",
+        "name": "search_agent.py"
+      },
+      {
+        "id": 306,
+        "path": "examples/financial_research_agent/agents/risk_agent.py",
+        "name": "risk_agent.py"
+      },
+      {
+        "id": 307,
+        "path": "examples/financial_research_agent/agents/writer_agent.py",
+        "name": "writer_agent.py"
+      },
+      {
+        "id": 308,
+        "path": "docs/scripts/generate_ref_files.py",
+        "name": "generate_ref_files.py"
+      },
+      {
+        "id": 309,
+        "path": "docs/scripts/translate_docs.py",
+        "name": "translate_docs.py"
+      },
+      {
+        "id": 310,
+        "path": "tests/tracing/test_processor_api_key.py",
+        "name": "test_processor_api_key.py"
+      },
+      {
+        "id": 311,
+        "path": "tests/tracing/test_set_api_key_fix.py",
+        "name": "test_set_api_key_fix.py"
+      },
+      {
+        "id": 312,
+        "path": "tests/utils/simple_session.py",
+        "name": "simple_session.py"
+      },
+      {
+        "id": 313,
+        "path": "tests/utils/test_json.py",
+        "name": "test_json.py"
+      },
+      {
+        "id": 314,
+        "path": "tests/mcp/test_tool_filtering.py",
+        "name": "test_tool_filtering.py"
+      },
+      {
+        "id": 315,
+        "path": "tests/mcp/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 316,
+        "path": "tests/mcp/test_mcp_tracing.py",
+        "name": "test_mcp_tracing.py"
+      },
+      {
+        "id": 317,
+        "path": "tests/mcp/test_mcp_util.py",
+        "name": "test_mcp_util.py"
+      },
+      {
+        "id": 318,
+        "path": "tests/mcp/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 319,
+        "path": "tests/mcp/test_prompt_server.py",
+        "name": "test_prompt_server.py"
+      },
+      {
+        "id": 320,
+        "path": "tests/mcp/test_runner_calls_mcp.py",
+        "name": "test_runner_calls_mcp.py"
+      },
+      {
+        "id": 321,
+        "path": "tests/mcp/test_streamable_http_client_factory.py",
+        "name": "test_streamable_http_client_factory.py"
+      },
+      {
+        "id": 322,
+        "path": "tests/mcp/test_connect_disconnect.py",
+        "name": "test_connect_disconnect.py"
+      },
+      {
+        "id": 323,
+        "path": "tests/mcp/test_message_handler.py",
+        "name": "test_message_handler.py"
+      },
+      {
+        "id": 324,
+        "path": "tests/mcp/test_server_errors.py",
+        "name": "test_server_errors.py"
+      },
+      {
+        "id": 325,
+        "path": "tests/mcp/test_caching.py",
+        "name": "test_caching.py"
+      },
+      {
+        "id": 326,
+        "path": "tests/mcp/helpers.py",
+        "name": "helpers.py"
+      },
+      {
+        "id": 327,
+        "path": "tests/mcp/test_client_session_retries.py",
+        "name": "test_client_session_retries.py"
+      },
+      {
+        "id": 328,
+        "path": "tests/models/test_litellm_extra_body.py",
+        "name": "test_litellm_extra_body.py"
+      },
+      {
+        "id": 329,
+        "path": "tests/models/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 330,
+        "path": "tests/models/test_kwargs_functionality.py",
+        "name": "test_kwargs_functionality.py"
+      },
+      {
+        "id": 331,
+        "path": "tests/models/test_default_models.py",
+        "name": "test_default_models.py"
+      },
+      {
+        "id": 332,
+        "path": "tests/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 333,
+        "path": "tests/models/test_litellm_chatcompletions_stream.py",
+        "name": "test_litellm_chatcompletions_stream.py"
+      },
+      {
+        "id": 334,
+        "path": "tests/models/test_map.py",
+        "name": "test_map.py"
+      },
+      {
+        "id": 335,
+        "path": "tests/models/test_litellm_user_agent.py",
+        "name": "test_litellm_user_agent.py"
+      },
+      {
+        "id": 336,
+        "path": "tests/realtime/test_realtime_handoffs.py",
+        "name": "test_realtime_handoffs.py"
+      },
+      {
+        "id": 337,
+        "path": "tests/realtime/test_conversion_helpers.py",
+        "name": "test_conversion_helpers.py"
+      },
+      {
+        "id": 338,
+        "path": "tests/realtime/test_agent.py",
+        "name": "test_agent.py"
+      },
+      {
+        "id": 339,
+        "path": "tests/realtime/test_openai_realtime.py",
+        "name": "test_openai_realtime.py"
+      },
+      {
+        "id": 340,
+        "path": "tests/realtime/test_tracing.py",
+        "name": "test_tracing.py"
+      },
+      {
+        "id": 341,
+        "path": "tests/realtime/test_session_payload_and_formats.py",
+        "name": "test_session_payload_and_formats.py"
+      },
+      {
+        "id": 342,
+        "path": "tests/realtime/test_session.py",
+        "name": "test_session.py"
+      },
+      {
+        "id": 343,
+        "path": "tests/realtime/test_ga_session_update_normalization.py",
+        "name": "test_ga_session_update_normalization.py"
+      },
+      {
+        "id": 344,
+        "path": "tests/realtime/test_openai_realtime_conversions.py",
+        "name": "test_openai_realtime_conversions.py"
+      },
+      {
+        "id": 345,
+        "path": "tests/realtime/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 346,
+        "path": "tests/realtime/test_twilio_sip_server.py",
+        "name": "test_twilio_sip_server.py"
+      },
+      {
+        "id": 347,
+        "path": "tests/realtime/test_model_events.py",
+        "name": "test_model_events.py"
+      },
+      {
+        "id": 348,
+        "path": "tests/realtime/test_runner.py",
+        "name": "test_runner.py"
+      },
+      {
+        "id": 349,
+        "path": "tests/realtime/test_item_parsing.py",
+        "name": "test_item_parsing.py"
+      },
+      {
+        "id": 350,
+        "path": "tests/realtime/test_playback_tracker_manual_unit.py",
+        "name": "test_playback_tracker_manual_unit.py"
+      },
+      {
+        "id": 351,
+        "path": "tests/realtime/test_audio_formats_unit.py",
+        "name": "test_audio_formats_unit.py"
+      },
+      {
+        "id": 352,
+        "path": "tests/realtime/test_playback_tracker.py",
+        "name": "test_playback_tracker.py"
+      },
+      {
+        "id": 353,
+        "path": "tests/realtime/test_openai_realtime_sip_model.py",
+        "name": "test_openai_realtime_sip_model.py"
+      },
+      {
+        "id": 354,
+        "path": "tests/model_settings/test_serialization.py",
+        "name": "test_serialization.py"
+      },
+      {
+        "id": 355,
+        "path": "tests/voice/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 356,
+        "path": "tests/voice/test_input.py",
+        "name": "test_input.py"
+      },
+      {
+        "id": 357,
+        "path": "tests/voice/test_openai_stt.py",
+        "name": "test_openai_stt.py"
+      },
+      {
+        "id": 358,
+        "path": "tests/voice/fake_models.py",
+        "name": "fake_models.py"
+      },
+      {
+        "id": 359,
+        "path": "tests/voice/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 360,
+        "path": "tests/voice/test_workflow.py",
+        "name": "test_workflow.py"
+      },
+      {
+        "id": 361,
+        "path": "tests/voice/test_openai_tts.py",
+        "name": "test_openai_tts.py"
+      },
+      {
+        "id": 362,
+        "path": "tests/voice/helpers.py",
+        "name": "helpers.py"
+      },
+      {
+        "id": 363,
+        "path": "tests/voice/test_pipeline.py",
+        "name": "test_pipeline.py"
+      },
+      {
+        "id": 364,
+        "path": "tests/fastapi/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 365,
+        "path": "tests/fastapi/test_streaming_context.py",
+        "name": "test_streaming_context.py"
+      },
+      {
+        "id": 366,
+        "path": "tests/fastapi/streaming_app.py",
+        "name": "streaming_app.py"
+      },
+      {
+        "id": 367,
+        "path": "tests/extensions/memory/test_encrypt_session.py",
+        "name": "test_encrypt_session.py"
+      },
+      {
+        "id": 368,
+        "path": "tests/extensions/memory/test_dapr_session.py",
+        "name": "test_dapr_session.py"
+      },
+      {
+        "id": 369,
+        "path": "tests/extensions/memory/test_dapr_redis_integration.py",
+        "name": "test_dapr_redis_integration.py"
+      },
+      {
+        "id": 370,
+        "path": "tests/extensions/memory/test_sqlalchemy_session.py",
+        "name": "test_sqlalchemy_session.py"
+      },
+      {
+        "id": 371,
+        "path": "tests/extensions/memory/test_advanced_sqlite_session.py",
+        "name": "test_advanced_sqlite_session.py"
+      },
+      {
+        "id": 372,
+        "path": "tests/extensions/memory/test_redis_session.py",
+        "name": "test_redis_session.py"
+      }
+    ],
+    "edges": [],
+    "external_deps": [
+      "",
+      "__future__",
+      "_error_tracing",
+      "_run_impl",
+      "_util",
+      "abc",
+      "advanced_sqlite_session",
+      "agent",
+      "agent_output",
+      "agents",
+      "anyio",
+      "apply_diff",
+      "argparse",
+      "asyncio",
+      "atexit",
+      "base64",
+      "chatcmpl_converter",
+      "chatcmpl_helpers",
+      "chatcmpl_stream_handler",
+      "collections",
+      "computer",
+      "concurrent",
+      "config",
+      "contextlib",
+      "contextvars",
+      "copy",
+      "create",
+      "cryptography",
+      "curses",
+      "dapr",
+      "dapr_session",
+      "dataclasses",
+      "datetime",
+      "default_models",
+      "docker",
+      "editor",
+      "encrypt_session",
+      "enum",
+      "events",
+      "exceptions",
+      "extensions",
+      "fake_id",
+      "fake_model",
+      "fake_models",
+      "fakeredis",
+      "fastapi",
+      "function_schema",
+      "functools",
+      "gc",
+      "graphviz",
+      "griffe",
+      "guardrail",
+      "handoffs",
+      "hashlib",
+      "helpers",
+      "history",
+      "httpx",
+      "importlib",
+      "imports",
+      "inline_snapshot",
+      "input",
+      "inspect",
+      "interface",
+      "io",
+      "items",
+      "json",
+      "lifecycle",
+      "litellm",
+      "litellm_model",
+      "logger",
+      "logging",
+      "manager",
+      "mcp",
+      "memory",
+      "model",
+      "model_events",
+      "model_inputs",
+      "model_settings",
+      "models",
+      "my_workflow",
+      "numpy",
+      "openai",
+      "openai_chatcompletions",
+      "openai_conversations_session",
+      "openai_provider",
+      "openai_realtime",
+      "openai_responses",
+      "openai_stt",
+      "openai_tts",
+      "os",
+      "pathlib",
+      "pipeline",
+      "pipeline_config",
+      "playwright",
+      "printer",
+      "processor_interface",
+      "processors",
+      "prompts",
+      "provider",
+      "pydantic",
+      "pydantic_core",
+      "pytest",
+      "queue",
+      "random",
+      "re",
+      "redis",
+      "redis_session",
+      "repl",
+      "requests",
+      "result",
+      "rich",
+      "run",
+      "run_context",
+      "runner",
+      "scope",
+      "server",
+      "session",
+      "setup",
+      "shutil",
+      "sounddevice",
+      "span_data",
+      "spans",
+      "sqlalchemy",
+      "sqlalchemy_session",
+      "sqlite3",
+      "sqlite_session",
+      "starlette",
+      "stream_events",
+      "streaming_app",
+      "strict_schema",
+      "string",
+      "struct",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "test_responses",
+      "testcontainers",
+      "testing_processor",
+      "tests",
+      "textual",
+      "threading",
+      "time",
+      "tool",
+      "tool_context",
+      "tool_guardrails",
+      "traces",
+      "tracing",
+      "twilio_handler",
+      "types",
+      "typing",
+      "typing_extensions",
+      "unittest",
+      "urllib",
+      "usage",
+      "util",
+      "utils",
+      "uuid",
+      "uvicorn",
+      "version",
+      "warnings",
+      "wave",
+      "weakref",
+      "websockets",
+      "workflow"
+    ],
+    "internal_deps": {}
+  },
+  "entry_points": [
+    {
+      "path": "src/agents/tracing/setup.py",
+      "type": "python",
+      "description": "Python package setup"
+    },
+    {
+      "path": "pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "examples/customer_service/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/financial_research_agent/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/research_bot/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/reasoning_content/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/voice/streamed/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/voice/static/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/mcp/streamablehttp_custom_client_example/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/mcp/streamablehttp_example/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/mcp/git_example/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/mcp/prompt_server/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/mcp/sse_example/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/mcp/filesystem_example/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "tests/test_tool_guardrails.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/code_interpreter.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/local_shell.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/apply_patch.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/shell.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/computer_use.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/file_search.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/web_search.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/web_search_filters.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/tools/image_generator.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/customer_service/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/memory/dapr_session_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/memory/redis_session_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/memory/advanced_sqlite_session_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/memory/sqlalchemy_session_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/memory/encrypted_session_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/memory/openai_session_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/memory/sqlite_session_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/model_providers/custom_example_global.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/model_providers/custom_example_agent.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/model_providers/custom_example_provider.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/model_providers/litellm_auto.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/model_providers/litellm_provider.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/financial_research_agent/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/tool_guardrails.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/lifecycle_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/hello_world.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/dynamic_system_prompt.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/previous_response_id.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/remote_image.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/usage_tracking.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/hello_world_gpt_oss.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/tools.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/stream_text.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/hello_world_gpt_5.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/local_image.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/remote_pdf.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/agent_lifecycle_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/stream_function_call_args.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/image_tool_output.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/stream_items.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/non_strict_output_type.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/prompt_template.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/basic/local_file.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/research_bot/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/reasoning_content/runner_example.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/reasoning_content/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/reasoning_content/gpt_oss_stream.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/agents_as_tools_conditional.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/agents_as_tools_streaming.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/deterministic.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/input_guardrails.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/agents_as_tools.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/output_guardrails.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/parallelization.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/routing.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/streaming_guardrails.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/llm_as_a_judge.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/agent_patterns/forcing_tool_use.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/handoffs/message_filter_streaming.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/handoffs/message_filter.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/hosted_mcp/connectors.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/hosted_mcp/approvals.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/hosted_mcp/simple.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/voice/streamed/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/voice/static/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/realtime/app/server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/realtime/cli/demo.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/realtime/twilio/server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/streamablehttp_custom_client_example/server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/streamablehttp_custom_client_example/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/streamablehttp_example/server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/streamablehttp_example/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/git_example/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/prompt_server/server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/prompt_server/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/sse_example/server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/sse_example/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/mcp/filesystem_example/main.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/scripts/generate_ref_files.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/scripts/translate_docs.py",
+      "type": "python",
+      "description": "Executable module"
+    }
+  ],
+  "key_files": {
+    "types": [],
+    "execution": [
+      "src/agents/realtime/runner.py"
+    ],
+    "tools": [
+      "src/agents/tool.py",
+      "examples/basic/tools.py"
+    ],
+    "agents": [
+      "src/agents/agent.py",
+      "src/agents/realtime/agent.py",
+      "examples/realtime/app/agent.py",
+      "examples/realtime/twilio_sip/agents.py"
+    ],
+    "config": [
+      "src/agents/realtime/config.py"
+    ]
+  },
+  "stats": {
+    "total_files": 648,
+    "python_files": 370,
+    "external_dependencies": 164
+  }
+}

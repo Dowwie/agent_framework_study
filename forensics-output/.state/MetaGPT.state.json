@@ -1,0 +1,49 @@
+{
+  "framework": "MetaGPT",
+  "status": "completed",
+  "timestamp": "2025-12-23T12:00:00Z",
+  "phases": {
+    "codebase_mapping": "completed",
+    "phase1": {
+      "data_substrate_analysis": "completed",
+      "execution_engine_analysis": "completed",
+      "component_model_analysis": "completed",
+      "resilience_analysis": "completed"
+    },
+    "phase2": {
+      "control_loop_extraction": "completed",
+      "memory_orchestration": "completed",
+      "tool_interface_analysis": "completed",
+      "multi_agent_analysis": "completed"
+    },
+    "synthesis": "completed"
+  },
+  "outputs": {
+    "codebase_map": "forensics-output/frameworks/MetaGPT/codebase-map.json",
+    "framework_summary": "reports/frameworks/MetaGPT.md"
+  },
+  "key_findings": {
+    "architecture_style": "Role-based multi-agent with environment orchestration",
+    "typing_strategy": "Pydantic V2 with validators",
+    "async_model": "Native asyncio (underutilized parallelism)",
+    "reasoning_pattern": "Configurable (ReAct/FSM/Planning)",
+    "memory_system": "Dual-tier list-based (unbounded)",
+    "tool_interface": "Decorator registry with AST introspection",
+    "multi_agent": "Pub-sub via shared Environment"
+  },
+  "notable_patterns": [
+    "Action-Message causality chain",
+    "Serialization-first design",
+    "Context injection pattern",
+    "Planner as separate concern",
+    "Dual system prompts"
+  ],
+  "anti_patterns": [
+    "Silent exception swallowing via decorator",
+    "Unbounded memory growth",
+    "String-based action identification",
+    "Sequential async execution",
+    "Lack of structured logging",
+    "Pydantic config sprawl"
+  ]
+}

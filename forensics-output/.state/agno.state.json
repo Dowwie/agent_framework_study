@@ -1,0 +1,49 @@
+{
+  "framework": "agno",
+  "status": "completed",
+  "timestamp": "2025-12-23T18:30:00Z",
+  "analyses_completed": {
+    "phase1": {
+      "data-substrate-analysis": true,
+      "execution-engine-analysis": true,
+      "component-model-analysis": true,
+      "resilience-analysis": true
+    },
+    "phase2": {
+      "control-loop-extraction": true,
+      "memory-orchestration": true,
+      "tool-interface-analysis": true,
+      "multi-agent-analysis": true
+    }
+  },
+  "outputs": {
+    "codebase_map": "forensics-output/frameworks/agno/codebase-map.json",
+    "phase1_analyses": [
+      "forensics-output/frameworks/agno/phase1/data-substrate.md",
+      "forensics-output/frameworks/agno/phase1/execution-engine.md",
+      "forensics-output/frameworks/agno/phase1/component-model.md",
+      "forensics-output/frameworks/agno/phase1/resilience.md"
+    ],
+    "phase2_analyses": [
+      "forensics-output/frameworks/agno/phase2/control-loop.md",
+      "forensics-output/frameworks/agno/phase2/memory.md",
+      "forensics-output/frameworks/agno/phase2/tool-interface.md",
+      "forensics-output/frameworks/agno/phase2/multi-agent.md"
+    ],
+    "framework_summary": "reports/frameworks/agno.md"
+  },
+  "metadata": {
+    "source_path": "repos/agno",
+    "primary_language": "Python",
+    "files_analyzed": 20,
+    "key_insights": [
+      "Hybrid Pydantic + dataclass typing strategy",
+      "Dual sync/async execution model",
+      "ABC-based extensibility with 250+ agent configuration fields",
+      "Optional Chain-of-Thought reasoning with native model support",
+      "User-centric memory with strategy pattern optimization",
+      "JSON Schema tool interface with rich lifecycle hooks",
+      "Leader-follower multi-agent with recursive teams"
+    ]
+  }
+}

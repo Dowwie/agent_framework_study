@@ -1,0 +1,4092 @@
+{
+  "repository": "langgraph",
+  "path": "/Users/dgordon/my_projects/agent_framework_study/repos/langgraph",
+  "file_tree": {
+    "name": "langgraph",
+    "type": "directory",
+    "path": "/Users/dgordon/my_projects/agent_framework_study/repos/langgraph",
+    "children": [
+      {
+        "name": "docs",
+        "type": "directory",
+        "path": "docs",
+        "children": [
+          {
+            "name": "_scripts",
+            "type": "directory",
+            "path": "docs/_scripts",
+            "children": [
+              {
+                "name": "js_translation",
+                "type": "directory",
+                "path": "docs/_scripts/js_translation",
+                "children": [
+                  {
+                    "name": "codeblocks",
+                    "type": "directory",
+                    "path": "docs/_scripts/js_translation/codeblocks",
+                    "children": [
+                      {
+                        "name": "package.json",
+                        "type": "file",
+                        "path": "docs/_scripts/js_translation/codeblocks/package.json"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "add_translation.py",
+                    "type": "file",
+                    "path": "docs/_scripts/js_translation/add_translation.py"
+                  },
+                  {
+                    "name": "extract_codeblocks.py",
+                    "type": "file",
+                    "path": "docs/_scripts/js_translation/extract_codeblocks.py"
+                  }
+                ]
+              },
+              {
+                "name": "third_party_page",
+                "type": "directory",
+                "path": "docs/_scripts/third_party_page",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "docs/_scripts/third_party_page/__init__.py"
+                  },
+                  {
+                    "name": "create_third_party_page.py",
+                    "type": "file",
+                    "path": "docs/_scripts/third_party_page/create_third_party_page.py"
+                  },
+                  {
+                    "name": "get_download_stats.py",
+                    "type": "file",
+                    "path": "docs/_scripts/third_party_page/get_download_stats.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "docs/_scripts/__init__.py"
+              },
+              {
+                "name": "_patch.py",
+                "type": "file",
+                "path": "docs/_scripts/_patch.py"
+              },
+              {
+                "name": "download_tiktoken.py",
+                "type": "file",
+                "path": "docs/_scripts/download_tiktoken.py"
+              },
+              {
+                "name": "generate_api_reference_links.py",
+                "type": "file",
+                "path": "docs/_scripts/generate_api_reference_links.py"
+              },
+              {
+                "name": "generate_llms_text.py",
+                "type": "file",
+                "path": "docs/_scripts/generate_llms_text.py"
+              },
+              {
+                "name": "handle_auto_links.py",
+                "type": "file",
+                "path": "docs/_scripts/handle_auto_links.py"
+              },
+              {
+                "name": "link_map.py",
+                "type": "file",
+                "path": "docs/_scripts/link_map.py"
+              },
+              {
+                "name": "notebook_convert.py",
+                "type": "file",
+                "path": "docs/_scripts/notebook_convert.py"
+              },
+              {
+                "name": "notebook_hooks.py",
+                "type": "file",
+                "path": "docs/_scripts/notebook_hooks.py"
+              },
+              {
+                "name": "prepare_notebooks_for_ci.py",
+                "type": "file",
+                "path": "docs/_scripts/prepare_notebooks_for_ci.py"
+              }
+            ]
+          },
+          {
+            "name": "docs",
+            "type": "directory",
+            "path": "docs/docs",
+            "children": [
+              {
+                "name": "tutorials",
+                "type": "directory",
+                "path": "docs/docs/tutorials",
+                "children": [
+                  {
+                    "name": "chatbot-simulation-evaluation",
+                    "type": "directory",
+                    "path": "docs/docs/tutorials/chatbot-simulation-evaluation",
+                    "children": [
+                      {
+                        "name": "simulation_utils.py",
+                        "type": "file",
+                        "path": "docs/docs/tutorials/chatbot-simulation-evaluation/simulation_utils.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "llm-compiler",
+                    "type": "directory",
+                    "path": "docs/docs/tutorials/llm-compiler",
+                    "children": [
+                      {
+                        "name": "math_tools.py",
+                        "type": "file",
+                        "path": "docs/docs/tutorials/llm-compiler/math_tools.py"
+                      },
+                      {
+                        "name": "output_parser.py",
+                        "type": "file",
+                        "path": "docs/docs/tutorials/llm-compiler/output_parser.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "web-navigation",
+                    "type": "directory",
+                    "path": "docs/docs/tutorials/web-navigation",
+                    "children": [
+                      {
+                        "name": "mark_page.js",
+                        "type": "file",
+                        "path": "docs/docs/tutorials/web-navigation/mark_page.js"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "overrides",
+            "type": "directory",
+            "path": "docs/overrides",
+            "children": [
+              {
+                "name": "copy-page.js",
+                "type": "file",
+                "path": "docs/overrides/copy-page.js"
+              },
+              {
+                "name": "language-switcher.js",
+                "type": "file",
+                "path": "docs/overrides/language-switcher.js"
+              }
+            ]
+          },
+          {
+            "name": "tests",
+            "type": "directory",
+            "path": "docs/tests",
+            "children": [
+              {
+                "name": "unit_tests",
+                "type": "directory",
+                "path": "docs/tests/unit_tests",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "docs/tests/unit_tests/__init__.py"
+                  },
+                  {
+                    "name": "test_api_reference.py",
+                    "type": "file",
+                    "path": "docs/tests/unit_tests/test_api_reference.py"
+                  },
+                  {
+                    "name": "test_auto_links.py",
+                    "type": "file",
+                    "path": "docs/tests/unit_tests/test_auto_links.py"
+                  },
+                  {
+                    "name": "test_conditional_rendering.py",
+                    "type": "file",
+                    "path": "docs/tests/unit_tests/test_conditional_rendering.py"
+                  },
+                  {
+                    "name": "test_highlights.py",
+                    "type": "file",
+                    "path": "docs/tests/unit_tests/test_highlights.py"
+                  },
+                  {
+                    "name": "test_notebook_conversion.py",
+                    "type": "file",
+                    "path": "docs/tests/unit_tests/test_notebook_conversion.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "docs/tests/__init__.py"
+              }
+            ]
+          },
+          {
+            "name": "package.json",
+            "type": "file",
+            "path": "docs/package.json"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file",
+            "path": "docs/pyproject.toml"
+          }
+        ]
+      },
+      {
+        "name": "examples",
+        "type": "directory",
+        "path": "examples",
+        "children": [
+          {
+            "name": "chatbot-simulation-evaluation",
+            "type": "directory",
+            "path": "examples/chatbot-simulation-evaluation",
+            "children": [
+              {
+                "name": "simulation_utils.py",
+                "type": "file",
+                "path": "examples/chatbot-simulation-evaluation/simulation_utils.py"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "libs",
+        "type": "directory",
+        "path": "libs",
+        "children": [
+          {
+            "name": "checkpoint",
+            "type": "directory",
+            "path": "libs/checkpoint",
+            "children": [
+              {
+                "name": "langgraph",
+                "type": "directory",
+                "path": "libs/checkpoint/langgraph",
+                "children": [
+                  {
+                    "name": "cache",
+                    "type": "directory",
+                    "path": "libs/checkpoint/langgraph/cache",
+                    "children": [
+                      {
+                        "name": "base",
+                        "type": "directory",
+                        "path": "libs/checkpoint/langgraph/cache/base",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/cache/base/__init__.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "memory",
+                        "type": "directory",
+                        "path": "libs/checkpoint/langgraph/cache/memory",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/cache/memory/__init__.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "redis",
+                        "type": "directory",
+                        "path": "libs/checkpoint/langgraph/cache/redis",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/cache/redis/__init__.py"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "checkpoint",
+                    "type": "directory",
+                    "path": "libs/checkpoint/langgraph/checkpoint",
+                    "children": [
+                      {
+                        "name": "base",
+                        "type": "directory",
+                        "path": "libs/checkpoint/langgraph/checkpoint/base",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/checkpoint/base/__init__.py"
+                          },
+                          {
+                            "name": "id.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/checkpoint/base/id.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "memory",
+                        "type": "directory",
+                        "path": "libs/checkpoint/langgraph/checkpoint/memory",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/checkpoint/memory/__init__.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "serde",
+                        "type": "directory",
+                        "path": "libs/checkpoint/langgraph/checkpoint/serde",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/checkpoint/serde/__init__.py"
+                          },
+                          {
+                            "name": "base.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/checkpoint/serde/base.py"
+                          },
+                          {
+                            "name": "encrypted.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/checkpoint/serde/encrypted.py"
+                          },
+                          {
+                            "name": "jsonplus.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/checkpoint/serde/jsonplus.py"
+                          },
+                          {
+                            "name": "types.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/checkpoint/serde/types.py"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "store",
+                    "type": "directory",
+                    "path": "libs/checkpoint/langgraph/store",
+                    "children": [
+                      {
+                        "name": "base",
+                        "type": "directory",
+                        "path": "libs/checkpoint/langgraph/store/base",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/store/base/__init__.py"
+                          },
+                          {
+                            "name": "batch.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/store/base/batch.py"
+                          },
+                          {
+                            "name": "embed.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/store/base/embed.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "memory",
+                        "type": "directory",
+                        "path": "libs/checkpoint/langgraph/store/memory",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint/langgraph/store/memory/__init__.py"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "tests",
+                "type": "directory",
+                "path": "libs/checkpoint/tests",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/checkpoint/tests/__init__.py"
+                  },
+                  {
+                    "name": "embed_test_utils.py",
+                    "type": "file",
+                    "path": "libs/checkpoint/tests/embed_test_utils.py"
+                  },
+                  {
+                    "name": "test_jsonplus.py",
+                    "type": "file",
+                    "path": "libs/checkpoint/tests/test_jsonplus.py"
+                  },
+                  {
+                    "name": "test_memory.py",
+                    "type": "file",
+                    "path": "libs/checkpoint/tests/test_memory.py"
+                  },
+                  {
+                    "name": "test_redis_cache.py",
+                    "type": "file",
+                    "path": "libs/checkpoint/tests/test_redis_cache.py"
+                  },
+                  {
+                    "name": "test_store.py",
+                    "type": "file",
+                    "path": "libs/checkpoint/tests/test_store.py"
+                  }
+                ]
+              },
+              {
+                "name": "pyproject.toml",
+                "type": "file",
+                "path": "libs/checkpoint/pyproject.toml"
+              }
+            ]
+          },
+          {
+            "name": "checkpoint-postgres",
+            "type": "directory",
+            "path": "libs/checkpoint-postgres",
+            "children": [
+              {
+                "name": "langgraph",
+                "type": "directory",
+                "path": "libs/checkpoint-postgres/langgraph",
+                "children": [
+                  {
+                    "name": "checkpoint",
+                    "type": "directory",
+                    "path": "libs/checkpoint-postgres/langgraph/checkpoint",
+                    "children": [
+                      {
+                        "name": "postgres",
+                        "type": "directory",
+                        "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/__init__.py"
+                          },
+                          {
+                            "name": "_ainternal.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/_ainternal.py"
+                          },
+                          {
+                            "name": "_internal.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/_internal.py"
+                          },
+                          {
+                            "name": "aio.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/aio.py"
+                          },
+                          {
+                            "name": "base.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/base.py"
+                          },
+                          {
+                            "name": "shallow.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/shallow.py"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "store",
+                    "type": "directory",
+                    "path": "libs/checkpoint-postgres/langgraph/store",
+                    "children": [
+                      {
+                        "name": "postgres",
+                        "type": "directory",
+                        "path": "libs/checkpoint-postgres/langgraph/store/postgres",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/store/postgres/__init__.py"
+                          },
+                          {
+                            "name": "aio.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/store/postgres/aio.py"
+                          },
+                          {
+                            "name": "base.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-postgres/langgraph/store/postgres/base.py"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "tests",
+                "type": "directory",
+                "path": "libs/checkpoint-postgres/tests",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-postgres/tests/__init__.py"
+                  },
+                  {
+                    "name": "conftest.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-postgres/tests/conftest.py"
+                  },
+                  {
+                    "name": "embed_test_utils.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-postgres/tests/embed_test_utils.py"
+                  },
+                  {
+                    "name": "test_async.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-postgres/tests/test_async.py"
+                  },
+                  {
+                    "name": "test_async_store.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-postgres/tests/test_async_store.py"
+                  },
+                  {
+                    "name": "test_store.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-postgres/tests/test_store.py"
+                  },
+                  {
+                    "name": "test_sync.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-postgres/tests/test_sync.py"
+                  }
+                ]
+              },
+              {
+                "name": "pyproject.toml",
+                "type": "file",
+                "path": "libs/checkpoint-postgres/pyproject.toml"
+              }
+            ]
+          },
+          {
+            "name": "checkpoint-sqlite",
+            "type": "directory",
+            "path": "libs/checkpoint-sqlite",
+            "children": [
+              {
+                "name": "langgraph",
+                "type": "directory",
+                "path": "libs/checkpoint-sqlite/langgraph",
+                "children": [
+                  {
+                    "name": "cache",
+                    "type": "directory",
+                    "path": "libs/checkpoint-sqlite/langgraph/cache",
+                    "children": [
+                      {
+                        "name": "sqlite",
+                        "type": "directory",
+                        "path": "libs/checkpoint-sqlite/langgraph/cache/sqlite",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-sqlite/langgraph/cache/sqlite/__init__.py"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "checkpoint",
+                    "type": "directory",
+                    "path": "libs/checkpoint-sqlite/langgraph/checkpoint",
+                    "children": [
+                      {
+                        "name": "sqlite",
+                        "type": "directory",
+                        "path": "libs/checkpoint-sqlite/langgraph/checkpoint/sqlite",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/__init__.py"
+                          },
+                          {
+                            "name": "aio.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/aio.py"
+                          },
+                          {
+                            "name": "utils.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/utils.py"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "store",
+                    "type": "directory",
+                    "path": "libs/checkpoint-sqlite/langgraph/store",
+                    "children": [
+                      {
+                        "name": "sqlite",
+                        "type": "directory",
+                        "path": "libs/checkpoint-sqlite/langgraph/store/sqlite",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-sqlite/langgraph/store/sqlite/__init__.py"
+                          },
+                          {
+                            "name": "aio.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-sqlite/langgraph/store/sqlite/aio.py"
+                          },
+                          {
+                            "name": "base.py",
+                            "type": "file",
+                            "path": "libs/checkpoint-sqlite/langgraph/store/sqlite/base.py"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "tests",
+                "type": "directory",
+                "path": "libs/checkpoint-sqlite/tests",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-sqlite/tests/__init__.py"
+                  },
+                  {
+                    "name": "test_aiosqlite.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-sqlite/tests/test_aiosqlite.py"
+                  },
+                  {
+                    "name": "test_async_store.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-sqlite/tests/test_async_store.py"
+                  },
+                  {
+                    "name": "test_sqlite.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-sqlite/tests/test_sqlite.py"
+                  },
+                  {
+                    "name": "test_store.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-sqlite/tests/test_store.py"
+                  },
+                  {
+                    "name": "test_ttl.py",
+                    "type": "file",
+                    "path": "libs/checkpoint-sqlite/tests/test_ttl.py"
+                  }
+                ]
+              },
+              {
+                "name": "pyproject.toml",
+                "type": "file",
+                "path": "libs/checkpoint-sqlite/pyproject.toml"
+              }
+            ]
+          },
+          {
+            "name": "cli",
+            "type": "directory",
+            "path": "libs/cli",
+            "children": [
+              {
+                "name": "examples",
+                "type": "directory",
+                "path": "libs/cli/examples",
+                "children": [
+                  {
+                    "name": "graph_prerelease_reqs",
+                    "type": "directory",
+                    "path": "libs/cli/examples/graph_prerelease_reqs",
+                    "children": [
+                      {
+                        "name": "deps",
+                        "type": "directory",
+                        "path": "libs/cli/examples/graph_prerelease_reqs/deps",
+                        "children": [
+                          {
+                            "name": "additional_deps",
+                            "type": "directory",
+                            "path": "libs/cli/examples/graph_prerelease_reqs/deps/additional_deps",
+                            "children": [
+                              {
+                                "name": "pyproject.toml",
+                                "type": "file",
+                                "path": "libs/cli/examples/graph_prerelease_reqs/deps/additional_deps/pyproject.toml"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "zuper_deps",
+                            "type": "directory",
+                            "path": "libs/cli/examples/graph_prerelease_reqs/deps/zuper_deps",
+                            "children": [
+                              {
+                                "name": "pyproject.toml",
+                                "type": "file",
+                                "path": "libs/cli/examples/graph_prerelease_reqs/deps/zuper_deps/pyproject.toml"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "agent.py",
+                        "type": "file",
+                        "path": "libs/cli/examples/graph_prerelease_reqs/agent.py"
+                      },
+                      {
+                        "name": "pyproject.toml",
+                        "type": "file",
+                        "path": "libs/cli/examples/graph_prerelease_reqs/pyproject.toml"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "graph_prerelease_reqs_fail",
+                    "type": "directory",
+                    "path": "libs/cli/examples/graph_prerelease_reqs_fail",
+                    "children": [
+                      {
+                        "name": "agent.py",
+                        "type": "file",
+                        "path": "libs/cli/examples/graph_prerelease_reqs_fail/agent.py"
+                      },
+                      {
+                        "name": "pyproject.toml",
+                        "type": "file",
+                        "path": "libs/cli/examples/graph_prerelease_reqs_fail/pyproject.toml"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "graphs",
+                    "type": "directory",
+                    "path": "libs/cli/examples/graphs",
+                    "children": [
+                      {
+                        "name": "agent.py",
+                        "type": "file",
+                        "path": "libs/cli/examples/graphs/agent.py"
+                      },
+                      {
+                        "name": "storm.py",
+                        "type": "file",
+                        "path": "libs/cli/examples/graphs/storm.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "graphs_reqs_a",
+                    "type": "directory",
+                    "path": "libs/cli/examples/graphs_reqs_a",
+                    "children": [
+                      {
+                        "name": "graphs_submod",
+                        "type": "directory",
+                        "path": "libs/cli/examples/graphs_reqs_a/graphs_submod",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/cli/examples/graphs_reqs_a/graphs_submod/__init__.py"
+                          },
+                          {
+                            "name": "agent.py",
+                            "type": "file",
+                            "path": "libs/cli/examples/graphs_reqs_a/graphs_submod/agent.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/cli/examples/graphs_reqs_a/__init__.py"
+                      },
+                      {
+                        "name": "hello.py",
+                        "type": "file",
+                        "path": "libs/cli/examples/graphs_reqs_a/hello.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "graphs_reqs_b",
+                    "type": "directory",
+                    "path": "libs/cli/examples/graphs_reqs_b",
+                    "children": [
+                      {
+                        "name": "graphs_submod",
+                        "type": "directory",
+                        "path": "libs/cli/examples/graphs_reqs_b/graphs_submod",
+                        "children": [
+                          {
+                            "name": "agent.py",
+                            "type": "file",
+                            "path": "libs/cli/examples/graphs_reqs_b/graphs_submod/agent.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "utils",
+                        "type": "directory",
+                        "path": "libs/cli/examples/graphs_reqs_b/utils",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/cli/examples/graphs_reqs_b/utils/__init__.py"
+                          },
+                          {
+                            "name": "greeter.py",
+                            "type": "file",
+                            "path": "libs/cli/examples/graphs_reqs_b/utils/greeter.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "hello.py",
+                        "type": "file",
+                        "path": "libs/cli/examples/graphs_reqs_b/hello.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "my_app.py",
+                    "type": "file",
+                    "path": "libs/cli/examples/my_app.py"
+                  },
+                  {
+                    "name": "pyproject.toml",
+                    "type": "file",
+                    "path": "libs/cli/examples/pyproject.toml"
+                  }
+                ]
+              },
+              {
+                "name": "js-examples",
+                "type": "directory",
+                "path": "libs/cli/js-examples",
+                "children": [
+                  {
+                    "name": "src",
+                    "type": "directory",
+                    "path": "libs/cli/js-examples/src",
+                    "children": [
+                      {
+                        "name": "agent",
+                        "type": "directory",
+                        "path": "libs/cli/js-examples/src/agent",
+                        "children": [
+                          {
+                            "name": "graph.ts",
+                            "type": "file",
+                            "path": "libs/cli/js-examples/src/agent/graph.ts"
+                          },
+                          {
+                            "name": "state.ts",
+                            "type": "file",
+                            "path": "libs/cli/js-examples/src/agent/state.ts"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tests",
+                    "type": "directory",
+                    "path": "libs/cli/js-examples/tests",
+                    "children": [
+                      {
+                        "name": "agent.test.ts",
+                        "type": "file",
+                        "path": "libs/cli/js-examples/tests/agent.test.ts"
+                      },
+                      {
+                        "name": "graph.int.test.ts",
+                        "type": "file",
+                        "path": "libs/cli/js-examples/tests/graph.int.test.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "jest.config.js",
+                    "type": "file",
+                    "path": "libs/cli/js-examples/jest.config.js"
+                  },
+                  {
+                    "name": "package.json",
+                    "type": "file",
+                    "path": "libs/cli/js-examples/package.json"
+                  }
+                ]
+              },
+              {
+                "name": "js-monorepo-example",
+                "type": "directory",
+                "path": "libs/cli/js-monorepo-example",
+                "children": [
+                  {
+                    "name": "apps",
+                    "type": "directory",
+                    "path": "libs/cli/js-monorepo-example/apps",
+                    "children": [
+                      {
+                        "name": "agent",
+                        "type": "directory",
+                        "path": "libs/cli/js-monorepo-example/apps/agent",
+                        "children": [
+                          {
+                            "name": "src",
+                            "type": "directory",
+                            "path": "libs/cli/js-monorepo-example/apps/agent/src",
+                            "children": [
+                              {
+                                "name": "graph.ts",
+                                "type": "file",
+                                "path": "libs/cli/js-monorepo-example/apps/agent/src/graph.ts"
+                              },
+                              {
+                                "name": "state.ts",
+                                "type": "file",
+                                "path": "libs/cli/js-monorepo-example/apps/agent/src/state.ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "package.json",
+                            "type": "file",
+                            "path": "libs/cli/js-monorepo-example/apps/agent/package.json"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "libs",
+                    "type": "directory",
+                    "path": "libs/cli/js-monorepo-example/libs",
+                    "children": [
+                      {
+                        "name": "shared",
+                        "type": "directory",
+                        "path": "libs/cli/js-monorepo-example/libs/shared",
+                        "children": [
+                          {
+                            "name": "src",
+                            "type": "directory",
+                            "path": "libs/cli/js-monorepo-example/libs/shared/src",
+                            "children": [
+                              {
+                                "name": "index.ts",
+                                "type": "file",
+                                "path": "libs/cli/js-monorepo-example/libs/shared/src/index.ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "package.json",
+                            "type": "file",
+                            "path": "libs/cli/js-monorepo-example/libs/shared/package.json"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "package.json",
+                    "type": "file",
+                    "path": "libs/cli/js-monorepo-example/package.json"
+                  }
+                ]
+              },
+              {
+                "name": "langgraph_cli",
+                "type": "directory",
+                "path": "libs/cli/langgraph_cli",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/__init__.py"
+                  },
+                  {
+                    "name": "__main__.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/__main__.py"
+                  },
+                  {
+                    "name": "analytics.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/analytics.py"
+                  },
+                  {
+                    "name": "cli.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/cli.py"
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/config.py"
+                  },
+                  {
+                    "name": "constants.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/constants.py"
+                  },
+                  {
+                    "name": "docker.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/docker.py"
+                  },
+                  {
+                    "name": "exec.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/exec.py"
+                  },
+                  {
+                    "name": "progress.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/progress.py"
+                  },
+                  {
+                    "name": "schemas.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/schemas.py"
+                  },
+                  {
+                    "name": "templates.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/templates.py"
+                  },
+                  {
+                    "name": "util.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/util.py"
+                  },
+                  {
+                    "name": "version.py",
+                    "type": "file",
+                    "path": "libs/cli/langgraph_cli/version.py"
+                  }
+                ]
+              },
+              {
+                "name": "python-monorepo-example",
+                "type": "directory",
+                "path": "libs/cli/python-monorepo-example",
+                "children": [
+                  {
+                    "name": "apps",
+                    "type": "directory",
+                    "path": "libs/cli/python-monorepo-example/apps",
+                    "children": [
+                      {
+                        "name": "agent",
+                        "type": "directory",
+                        "path": "libs/cli/python-monorepo-example/apps/agent",
+                        "children": [
+                          {
+                            "name": "src",
+                            "type": "directory",
+                            "path": "libs/cli/python-monorepo-example/apps/agent/src",
+                            "children": [
+                              {
+                                "name": "agent",
+                                "type": "directory",
+                                "path": "libs/cli/python-monorepo-example/apps/agent/src/agent",
+                                "children": [
+                                  {
+                                    "name": "__init__.py",
+                                    "type": "file",
+                                    "path": "libs/cli/python-monorepo-example/apps/agent/src/agent/__init__.py"
+                                  },
+                                  {
+                                    "name": "graph.py",
+                                    "type": "file",
+                                    "path": "libs/cli/python-monorepo-example/apps/agent/src/agent/graph.py"
+                                  },
+                                  {
+                                    "name": "state.py",
+                                    "type": "file",
+                                    "path": "libs/cli/python-monorepo-example/apps/agent/src/agent/state.py"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "pyproject.toml",
+                            "type": "file",
+                            "path": "libs/cli/python-monorepo-example/apps/agent/pyproject.toml"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "libs",
+                    "type": "directory",
+                    "path": "libs/cli/python-monorepo-example/libs",
+                    "children": [
+                      {
+                        "name": "common",
+                        "type": "directory",
+                        "path": "libs/cli/python-monorepo-example/libs/common",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/cli/python-monorepo-example/libs/common/__init__.py"
+                          },
+                          {
+                            "name": "helpers.py",
+                            "type": "file",
+                            "path": "libs/cli/python-monorepo-example/libs/common/helpers.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "shared",
+                        "type": "directory",
+                        "path": "libs/cli/python-monorepo-example/libs/shared",
+                        "children": [
+                          {
+                            "name": "src",
+                            "type": "directory",
+                            "path": "libs/cli/python-monorepo-example/libs/shared/src",
+                            "children": [
+                              {
+                                "name": "shared",
+                                "type": "directory",
+                                "path": "libs/cli/python-monorepo-example/libs/shared/src/shared",
+                                "children": [
+                                  {
+                                    "name": "__init__.py",
+                                    "type": "file",
+                                    "path": "libs/cli/python-monorepo-example/libs/shared/src/shared/__init__.py"
+                                  },
+                                  {
+                                    "name": "utils.py",
+                                    "type": "file",
+                                    "path": "libs/cli/python-monorepo-example/libs/shared/src/shared/utils.py"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "pyproject.toml",
+                            "type": "file",
+                            "path": "libs/cli/python-monorepo-example/libs/shared/pyproject.toml"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "pyproject.toml",
+                    "type": "file",
+                    "path": "libs/cli/python-monorepo-example/pyproject.toml"
+                  }
+                ]
+              },
+              {
+                "name": "tests",
+                "type": "directory",
+                "path": "libs/cli/tests",
+                "children": [
+                  {
+                    "name": "integration_tests",
+                    "type": "directory",
+                    "path": "libs/cli/tests/integration_tests",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/integration_tests/__init__.py"
+                      },
+                      {
+                        "name": "test_cli.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/integration_tests/test_cli.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "unit_tests",
+                    "type": "directory",
+                    "path": "libs/cli/tests/unit_tests",
+                    "children": [
+                      {
+                        "name": "cli",
+                        "type": "directory",
+                        "path": "libs/cli/tests/unit_tests/cli",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "libs/cli/tests/unit_tests/cli/__init__.py"
+                          },
+                          {
+                            "name": "pyproject.toml",
+                            "type": "file",
+                            "path": "libs/cli/tests/unit_tests/cli/pyproject.toml"
+                          },
+                          {
+                            "name": "test_cli.py",
+                            "type": "file",
+                            "path": "libs/cli/tests/unit_tests/cli/test_cli.py"
+                          },
+                          {
+                            "name": "test_templates.py",
+                            "type": "file",
+                            "path": "libs/cli/tests/unit_tests/cli/test_templates.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "graphs",
+                        "type": "directory",
+                        "path": "libs/cli/tests/unit_tests/graphs",
+                        "children": [
+                          {
+                            "name": "agent.py",
+                            "type": "file",
+                            "path": "libs/cli/tests/unit_tests/graphs/agent.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "multiplatform",
+                        "type": "directory",
+                        "path": "libs/cli/tests/unit_tests/multiplatform",
+                        "children": [
+                          {
+                            "name": "python.py",
+                            "type": "file",
+                            "path": "libs/cli/tests/unit_tests/multiplatform/python.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/unit_tests/__init__.py"
+                      },
+                      {
+                        "name": "agent.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/unit_tests/agent.py"
+                      },
+                      {
+                        "name": "conftest.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/unit_tests/conftest.py"
+                      },
+                      {
+                        "name": "helpers.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/unit_tests/helpers.py"
+                      },
+                      {
+                        "name": "test_config.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/unit_tests/test_config.py"
+                      },
+                      {
+                        "name": "test_docker.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/unit_tests/test_docker.py"
+                      },
+                      {
+                        "name": "test_util.py",
+                        "type": "file",
+                        "path": "libs/cli/tests/unit_tests/test_util.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/cli/tests/__init__.py"
+                  }
+                ]
+              },
+              {
+                "name": "generate_schema.py",
+                "type": "file",
+                "path": "libs/cli/generate_schema.py"
+              },
+              {
+                "name": "pyproject.toml",
+                "type": "file",
+                "path": "libs/cli/pyproject.toml"
+              }
+            ]
+          },
+          {
+            "name": "langgraph",
+            "type": "directory",
+            "path": "libs/langgraph",
+            "children": [
+              {
+                "name": "bench",
+                "type": "directory",
+                "path": "libs/langgraph/bench",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/langgraph/bench/__init__.py"
+                  },
+                  {
+                    "name": "__main__.py",
+                    "type": "file",
+                    "path": "libs/langgraph/bench/__main__.py"
+                  },
+                  {
+                    "name": "fanout_to_subgraph.py",
+                    "type": "file",
+                    "path": "libs/langgraph/bench/fanout_to_subgraph.py"
+                  },
+                  {
+                    "name": "pydantic_state.py",
+                    "type": "file",
+                    "path": "libs/langgraph/bench/pydantic_state.py"
+                  },
+                  {
+                    "name": "react_agent.py",
+                    "type": "file",
+                    "path": "libs/langgraph/bench/react_agent.py"
+                  },
+                  {
+                    "name": "sequential.py",
+                    "type": "file",
+                    "path": "libs/langgraph/bench/sequential.py"
+                  },
+                  {
+                    "name": "wide_dict.py",
+                    "type": "file",
+                    "path": "libs/langgraph/bench/wide_dict.py"
+                  },
+                  {
+                    "name": "wide_state.py",
+                    "type": "file",
+                    "path": "libs/langgraph/bench/wide_state.py"
+                  }
+                ]
+              },
+              {
+                "name": "langgraph",
+                "type": "directory",
+                "path": "libs/langgraph/langgraph",
+                "children": [
+                  {
+                    "name": "_internal",
+                    "type": "directory",
+                    "path": "libs/langgraph/langgraph/_internal",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/__init__.py"
+                      },
+                      {
+                        "name": "_cache.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_cache.py"
+                      },
+                      {
+                        "name": "_config.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_config.py"
+                      },
+                      {
+                        "name": "_constants.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_constants.py"
+                      },
+                      {
+                        "name": "_fields.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_fields.py"
+                      },
+                      {
+                        "name": "_future.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_future.py"
+                      },
+                      {
+                        "name": "_pydantic.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_pydantic.py"
+                      },
+                      {
+                        "name": "_queue.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_queue.py"
+                      },
+                      {
+                        "name": "_retry.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_retry.py"
+                      },
+                      {
+                        "name": "_runnable.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_runnable.py"
+                      },
+                      {
+                        "name": "_scratchpad.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_scratchpad.py"
+                      },
+                      {
+                        "name": "_typing.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/_internal/_typing.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "channels",
+                    "type": "directory",
+                    "path": "libs/langgraph/langgraph/channels",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/__init__.py"
+                      },
+                      {
+                        "name": "any_value.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/any_value.py"
+                      },
+                      {
+                        "name": "base.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/base.py"
+                      },
+                      {
+                        "name": "binop.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/binop.py"
+                      },
+                      {
+                        "name": "ephemeral_value.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/ephemeral_value.py"
+                      },
+                      {
+                        "name": "last_value.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/last_value.py"
+                      },
+                      {
+                        "name": "named_barrier_value.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/named_barrier_value.py"
+                      },
+                      {
+                        "name": "topic.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/topic.py"
+                      },
+                      {
+                        "name": "untracked_value.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/channels/untracked_value.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "func",
+                    "type": "directory",
+                    "path": "libs/langgraph/langgraph/func",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/func/__init__.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "graph",
+                    "type": "directory",
+                    "path": "libs/langgraph/langgraph/graph",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/graph/__init__.py"
+                      },
+                      {
+                        "name": "_branch.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/graph/_branch.py"
+                      },
+                      {
+                        "name": "_node.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/graph/_node.py"
+                      },
+                      {
+                        "name": "message.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/graph/message.py"
+                      },
+                      {
+                        "name": "state.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/graph/state.py"
+                      },
+                      {
+                        "name": "ui.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/graph/ui.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "managed",
+                    "type": "directory",
+                    "path": "libs/langgraph/langgraph/managed",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/managed/__init__.py"
+                      },
+                      {
+                        "name": "base.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/managed/base.py"
+                      },
+                      {
+                        "name": "is_last_step.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/managed/is_last_step.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "pregel",
+                    "type": "directory",
+                    "path": "libs/langgraph/langgraph/pregel",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/__init__.py"
+                      },
+                      {
+                        "name": "_algo.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_algo.py"
+                      },
+                      {
+                        "name": "_call.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_call.py"
+                      },
+                      {
+                        "name": "_checkpoint.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_checkpoint.py"
+                      },
+                      {
+                        "name": "_config.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_config.py"
+                      },
+                      {
+                        "name": "_draw.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_draw.py"
+                      },
+                      {
+                        "name": "_executor.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_executor.py"
+                      },
+                      {
+                        "name": "_io.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_io.py"
+                      },
+                      {
+                        "name": "_log.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_log.py"
+                      },
+                      {
+                        "name": "_loop.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_loop.py"
+                      },
+                      {
+                        "name": "_messages.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_messages.py"
+                      },
+                      {
+                        "name": "_read.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_read.py"
+                      },
+                      {
+                        "name": "_retry.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_retry.py"
+                      },
+                      {
+                        "name": "_runner.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_runner.py"
+                      },
+                      {
+                        "name": "_utils.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_utils.py"
+                      },
+                      {
+                        "name": "_validate.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_validate.py"
+                      },
+                      {
+                        "name": "_write.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/_write.py"
+                      },
+                      {
+                        "name": "debug.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/debug.py"
+                      },
+                      {
+                        "name": "main.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/main.py"
+                      },
+                      {
+                        "name": "protocol.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/protocol.py"
+                      },
+                      {
+                        "name": "remote.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/remote.py"
+                      },
+                      {
+                        "name": "types.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/pregel/types.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "utils",
+                    "type": "directory",
+                    "path": "libs/langgraph/langgraph/utils",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/utils/__init__.py"
+                      },
+                      {
+                        "name": "config.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/utils/config.py"
+                      },
+                      {
+                        "name": "runnable.py",
+                        "type": "file",
+                        "path": "libs/langgraph/langgraph/utils/runnable.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file",
+                    "path": "libs/langgraph/langgraph/config.py"
+                  },
+                  {
+                    "name": "constants.py",
+                    "type": "file",
+                    "path": "libs/langgraph/langgraph/constants.py"
+                  },
+                  {
+                    "name": "errors.py",
+                    "type": "file",
+                    "path": "libs/langgraph/langgraph/errors.py"
+                  },
+                  {
+                    "name": "runtime.py",
+                    "type": "file",
+                    "path": "libs/langgraph/langgraph/runtime.py"
+                  },
+                  {
+                    "name": "types.py",
+                    "type": "file",
+                    "path": "libs/langgraph/langgraph/types.py"
+                  },
+                  {
+                    "name": "typing.py",
+                    "type": "file",
+                    "path": "libs/langgraph/langgraph/typing.py"
+                  },
+                  {
+                    "name": "version.py",
+                    "type": "file",
+                    "path": "libs/langgraph/langgraph/version.py"
+                  },
+                  {
+                    "name": "warnings.py",
+                    "type": "file",
+                    "path": "libs/langgraph/langgraph/warnings.py"
+                  }
+                ]
+              },
+              {
+                "name": "tests",
+                "type": "directory",
+                "path": "libs/langgraph/tests",
+                "children": [
+                  {
+                    "name": "example_app",
+                    "type": "directory",
+                    "path": "libs/langgraph/tests/example_app",
+                    "children": [
+                      {
+                        "name": "example_graph.py",
+                        "type": "file",
+                        "path": "libs/langgraph/tests/example_app/example_graph.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/__init__.py"
+                  },
+                  {
+                    "name": "agents.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/agents.py"
+                  },
+                  {
+                    "name": "any_int.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/any_int.py"
+                  },
+                  {
+                    "name": "any_str.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/any_str.py"
+                  },
+                  {
+                    "name": "conftest.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/conftest.py"
+                  },
+                  {
+                    "name": "conftest_checkpointer.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/conftest_checkpointer.py"
+                  },
+                  {
+                    "name": "conftest_store.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/conftest_store.py"
+                  },
+                  {
+                    "name": "fake_chat.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/fake_chat.py"
+                  },
+                  {
+                    "name": "fake_tracer.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/fake_tracer.py"
+                  },
+                  {
+                    "name": "memory_assert.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/memory_assert.py"
+                  },
+                  {
+                    "name": "messages.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/messages.py"
+                  },
+                  {
+                    "name": "test_algo.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_algo.py"
+                  },
+                  {
+                    "name": "test_channels.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_channels.py"
+                  },
+                  {
+                    "name": "test_checkpoint_migration.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_checkpoint_migration.py"
+                  },
+                  {
+                    "name": "test_config_async.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_config_async.py"
+                  },
+                  {
+                    "name": "test_deprecation.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_deprecation.py"
+                  },
+                  {
+                    "name": "test_interrupt_migration.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_interrupt_migration.py"
+                  },
+                  {
+                    "name": "test_interruption.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_interruption.py"
+                  },
+                  {
+                    "name": "test_large_cases.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_large_cases.py"
+                  },
+                  {
+                    "name": "test_large_cases_async.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_large_cases_async.py"
+                  },
+                  {
+                    "name": "test_managed_values.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_managed_values.py"
+                  },
+                  {
+                    "name": "test_messages_state.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_messages_state.py"
+                  },
+                  {
+                    "name": "test_pregel.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_pregel.py"
+                  },
+                  {
+                    "name": "test_pregel_async.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_pregel_async.py"
+                  },
+                  {
+                    "name": "test_pydantic.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_pydantic.py"
+                  },
+                  {
+                    "name": "test_remote_graph.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_remote_graph.py"
+                  },
+                  {
+                    "name": "test_retry.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_retry.py"
+                  },
+                  {
+                    "name": "test_runnable.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_runnable.py"
+                  },
+                  {
+                    "name": "test_runtime.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_runtime.py"
+                  },
+                  {
+                    "name": "test_state.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_state.py"
+                  },
+                  {
+                    "name": "test_tracing_interops.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_tracing_interops.py"
+                  },
+                  {
+                    "name": "test_type_checking.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_type_checking.py"
+                  },
+                  {
+                    "name": "test_utils.py",
+                    "type": "file",
+                    "path": "libs/langgraph/tests/test_utils.py"
+                  }
+                ]
+              },
+              {
+                "name": "pyproject.toml",
+                "type": "file",
+                "path": "libs/langgraph/pyproject.toml"
+              }
+            ]
+          },
+          {
+            "name": "prebuilt",
+            "type": "directory",
+            "path": "libs/prebuilt",
+            "children": [
+              {
+                "name": "langgraph",
+                "type": "directory",
+                "path": "libs/prebuilt/langgraph",
+                "children": [
+                  {
+                    "name": "prebuilt",
+                    "type": "directory",
+                    "path": "libs/prebuilt/langgraph/prebuilt",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/prebuilt/langgraph/prebuilt/__init__.py"
+                      },
+                      {
+                        "name": "chat_agent_executor.py",
+                        "type": "file",
+                        "path": "libs/prebuilt/langgraph/prebuilt/chat_agent_executor.py"
+                      },
+                      {
+                        "name": "interrupt.py",
+                        "type": "file",
+                        "path": "libs/prebuilt/langgraph/prebuilt/interrupt.py"
+                      },
+                      {
+                        "name": "tool_node.py",
+                        "type": "file",
+                        "path": "libs/prebuilt/langgraph/prebuilt/tool_node.py"
+                      },
+                      {
+                        "name": "tool_validator.py",
+                        "type": "file",
+                        "path": "libs/prebuilt/langgraph/prebuilt/tool_validator.py"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "tests",
+                "type": "directory",
+                "path": "libs/prebuilt/tests",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/__init__.py"
+                  },
+                  {
+                    "name": "any_str.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/any_str.py"
+                  },
+                  {
+                    "name": "conftest.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/conftest.py"
+                  },
+                  {
+                    "name": "conftest_checkpointer.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/conftest_checkpointer.py"
+                  },
+                  {
+                    "name": "conftest_store.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/conftest_store.py"
+                  },
+                  {
+                    "name": "memory_assert.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/memory_assert.py"
+                  },
+                  {
+                    "name": "messages.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/messages.py"
+                  },
+                  {
+                    "name": "model.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/model.py"
+                  },
+                  {
+                    "name": "test_deprecation.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/test_deprecation.py"
+                  },
+                  {
+                    "name": "test_on_tool_call.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/test_on_tool_call.py"
+                  },
+                  {
+                    "name": "test_react_agent.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/test_react_agent.py"
+                  },
+                  {
+                    "name": "test_react_agent_graph.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/test_react_agent_graph.py"
+                  },
+                  {
+                    "name": "test_tool_node.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/test_tool_node.py"
+                  },
+                  {
+                    "name": "test_tool_node_interceptor_unregistered.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/test_tool_node_interceptor_unregistered.py"
+                  },
+                  {
+                    "name": "test_tool_node_validation_error_filtering.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/test_tool_node_validation_error_filtering.py"
+                  },
+                  {
+                    "name": "test_validation_node.py",
+                    "type": "file",
+                    "path": "libs/prebuilt/tests/test_validation_node.py"
+                  }
+                ]
+              },
+              {
+                "name": "pyproject.toml",
+                "type": "file",
+                "path": "libs/prebuilt/pyproject.toml"
+              }
+            ]
+          },
+          {
+            "name": "sdk-py",
+            "type": "directory",
+            "path": "libs/sdk-py",
+            "children": [
+              {
+                "name": "langgraph_sdk",
+                "type": "directory",
+                "path": "libs/sdk-py/langgraph_sdk",
+                "children": [
+                  {
+                    "name": "auth",
+                    "type": "directory",
+                    "path": "libs/sdk-py/langgraph_sdk/auth",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/sdk-py/langgraph_sdk/auth/__init__.py"
+                      },
+                      {
+                        "name": "exceptions.py",
+                        "type": "file",
+                        "path": "libs/sdk-py/langgraph_sdk/auth/exceptions.py"
+                      },
+                      {
+                        "name": "types.py",
+                        "type": "file",
+                        "path": "libs/sdk-py/langgraph_sdk/auth/types.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "encryption",
+                    "type": "directory",
+                    "path": "libs/sdk-py/langgraph_sdk/encryption",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "libs/sdk-py/langgraph_sdk/encryption/__init__.py"
+                      },
+                      {
+                        "name": "types.py",
+                        "type": "file",
+                        "path": "libs/sdk-py/langgraph_sdk/encryption/types.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/langgraph_sdk/__init__.py"
+                  },
+                  {
+                    "name": "client.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/langgraph_sdk/client.py"
+                  },
+                  {
+                    "name": "errors.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/langgraph_sdk/errors.py"
+                  },
+                  {
+                    "name": "schema.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/langgraph_sdk/schema.py"
+                  },
+                  {
+                    "name": "sse.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/langgraph_sdk/sse.py"
+                  }
+                ]
+              },
+              {
+                "name": "tests",
+                "type": "directory",
+                "path": "libs/sdk-py/tests",
+                "children": [
+                  {
+                    "name": "test_api_parity.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_api_parity.py"
+                  },
+                  {
+                    "name": "test_assistants_client.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_assistants_client.py"
+                  },
+                  {
+                    "name": "test_client_stream.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_client_stream.py"
+                  },
+                  {
+                    "name": "test_encryption.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_encryption.py"
+                  },
+                  {
+                    "name": "test_errors.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_errors.py"
+                  },
+                  {
+                    "name": "test_select_fields_sync.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_select_fields_sync.py"
+                  },
+                  {
+                    "name": "test_serde.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_serde.py"
+                  },
+                  {
+                    "name": "test_serde_schema.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_serde_schema.py"
+                  },
+                  {
+                    "name": "test_skip_auto_load_api_key.py",
+                    "type": "file",
+                    "path": "libs/sdk-py/tests/test_skip_auto_load_api_key.py"
+                  }
+                ]
+              },
+              {
+                "name": "pyproject.toml",
+                "type": "file",
+                "path": "libs/sdk-py/pyproject.toml"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "nodes": [
+      {
+        "id": 0,
+        "path": ".github/workflows/extract_ignored_words_list.py",
+        "name": "extract_ignored_words_list.py"
+      },
+      {
+        "id": 1,
+        "path": ".github/scripts/check_sdk_methods.py",
+        "name": "check_sdk_methods.py"
+      },
+      {
+        "id": 2,
+        "path": ".github/scripts/run_langgraph_cli_test.py",
+        "name": "run_langgraph_cli_test.py"
+      },
+      {
+        "id": 3,
+        "path": "examples/chatbot-simulation-evaluation/simulation_utils.py",
+        "name": "simulation_utils.py"
+      },
+      {
+        "id": 4,
+        "path": "libs/cli/generate_schema.py",
+        "name": "generate_schema.py"
+      },
+      {
+        "id": 5,
+        "path": "libs/checkpoint-sqlite/tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 6,
+        "path": "libs/checkpoint-sqlite/tests/test_store.py",
+        "name": "test_store.py"
+      },
+      {
+        "id": 7,
+        "path": "libs/checkpoint-sqlite/tests/test_ttl.py",
+        "name": "test_ttl.py"
+      },
+      {
+        "id": 8,
+        "path": "libs/checkpoint-sqlite/tests/test_aiosqlite.py",
+        "name": "test_aiosqlite.py"
+      },
+      {
+        "id": 9,
+        "path": "libs/checkpoint-sqlite/tests/test_async_store.py",
+        "name": "test_async_store.py"
+      },
+      {
+        "id": 10,
+        "path": "libs/checkpoint-sqlite/tests/test_sqlite.py",
+        "name": "test_sqlite.py"
+      },
+      {
+        "id": 11,
+        "path": "libs/checkpoint-sqlite/langgraph/store/sqlite/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 12,
+        "path": "libs/checkpoint-sqlite/langgraph/store/sqlite/aio.py",
+        "name": "aio.py"
+      },
+      {
+        "id": 13,
+        "path": "libs/checkpoint-sqlite/langgraph/store/sqlite/base.py",
+        "name": "base.py"
+      },
+      {
+        "id": 14,
+        "path": "libs/checkpoint-sqlite/langgraph/cache/sqlite/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 15,
+        "path": "libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 16,
+        "path": "libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/utils.py",
+        "name": "utils.py"
+      },
+      {
+        "id": 17,
+        "path": "libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/aio.py",
+        "name": "aio.py"
+      },
+      {
+        "id": 18,
+        "path": "libs/cli/langgraph_cli/config.py",
+        "name": "config.py"
+      },
+      {
+        "id": 19,
+        "path": "libs/cli/langgraph_cli/version.py",
+        "name": "version.py"
+      },
+      {
+        "id": 20,
+        "path": "libs/cli/langgraph_cli/util.py",
+        "name": "util.py"
+      },
+      {
+        "id": 21,
+        "path": "libs/cli/langgraph_cli/exec.py",
+        "name": "exec.py"
+      },
+      {
+        "id": 22,
+        "path": "libs/cli/langgraph_cli/constants.py",
+        "name": "constants.py"
+      },
+      {
+        "id": 23,
+        "path": "libs/cli/langgraph_cli/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 24,
+        "path": "libs/cli/langgraph_cli/docker.py",
+        "name": "docker.py"
+      },
+      {
+        "id": 25,
+        "path": "libs/cli/langgraph_cli/templates.py",
+        "name": "templates.py"
+      },
+      {
+        "id": 26,
+        "path": "libs/cli/langgraph_cli/schemas.py",
+        "name": "schemas.py"
+      },
+      {
+        "id": 27,
+        "path": "libs/cli/langgraph_cli/cli.py",
+        "name": "cli.py"
+      },
+      {
+        "id": 28,
+        "path": "libs/cli/langgraph_cli/analytics.py",
+        "name": "analytics.py"
+      },
+      {
+        "id": 29,
+        "path": "libs/cli/langgraph_cli/progress.py",
+        "name": "progress.py"
+      },
+      {
+        "id": 30,
+        "path": "libs/cli/langgraph_cli/__main__.py",
+        "name": "__main__.py"
+      },
+      {
+        "id": 31,
+        "path": "libs/cli/js-examples/jest.config.js",
+        "name": "jest.config.js"
+      },
+      {
+        "id": 32,
+        "path": "libs/cli/tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 33,
+        "path": "libs/cli/examples/my_app.py",
+        "name": "my_app.py"
+      },
+      {
+        "id": 34,
+        "path": "libs/cli/js-monorepo-example/apps/agent/src/state.ts",
+        "name": "state.ts"
+      },
+      {
+        "id": 35,
+        "path": "libs/cli/js-monorepo-example/apps/agent/src/graph.ts",
+        "name": "graph.ts"
+      },
+      {
+        "id": 36,
+        "path": "libs/cli/js-monorepo-example/libs/shared/src/index.ts",
+        "name": "index.ts"
+      },
+      {
+        "id": 37,
+        "path": "libs/cli/examples/graphs_reqs_b/hello.py",
+        "name": "hello.py"
+      },
+      {
+        "id": 38,
+        "path": "libs/cli/examples/graph_prerelease_reqs_fail/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 39,
+        "path": "libs/cli/examples/graph_prerelease_reqs/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 40,
+        "path": "libs/cli/examples/graphs/storm.py",
+        "name": "storm.py"
+      },
+      {
+        "id": 41,
+        "path": "libs/cli/examples/graphs/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 42,
+        "path": "libs/cli/examples/graphs_reqs_a/hello.py",
+        "name": "hello.py"
+      },
+      {
+        "id": 43,
+        "path": "libs/cli/examples/graphs_reqs_a/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 44,
+        "path": "libs/cli/examples/graphs_reqs_a/graphs_submod/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 45,
+        "path": "libs/cli/examples/graphs_reqs_a/graphs_submod/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 46,
+        "path": "libs/cli/examples/graphs_reqs_b/graphs_submod/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 47,
+        "path": "libs/cli/examples/graphs_reqs_b/utils/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 48,
+        "path": "libs/cli/examples/graphs_reqs_b/utils/greeter.py",
+        "name": "greeter.py"
+      },
+      {
+        "id": 49,
+        "path": "libs/cli/python-monorepo-example/apps/agent/src/agent/graph.py",
+        "name": "graph.py"
+      },
+      {
+        "id": 50,
+        "path": "libs/cli/python-monorepo-example/apps/agent/src/agent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 51,
+        "path": "libs/cli/python-monorepo-example/apps/agent/src/agent/state.py",
+        "name": "state.py"
+      },
+      {
+        "id": 52,
+        "path": "libs/cli/python-monorepo-example/libs/common/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 53,
+        "path": "libs/cli/python-monorepo-example/libs/common/helpers.py",
+        "name": "helpers.py"
+      },
+      {
+        "id": 54,
+        "path": "libs/cli/python-monorepo-example/libs/shared/src/shared/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 55,
+        "path": "libs/cli/python-monorepo-example/libs/shared/src/shared/utils.py",
+        "name": "utils.py"
+      },
+      {
+        "id": 56,
+        "path": "libs/cli/tests/unit_tests/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 57,
+        "path": "libs/cli/tests/unit_tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 58,
+        "path": "libs/cli/tests/unit_tests/test_util.py",
+        "name": "test_util.py"
+      },
+      {
+        "id": 59,
+        "path": "libs/cli/tests/unit_tests/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 60,
+        "path": "libs/cli/tests/unit_tests/test_config.py",
+        "name": "test_config.py"
+      },
+      {
+        "id": 61,
+        "path": "libs/cli/tests/unit_tests/helpers.py",
+        "name": "helpers.py"
+      },
+      {
+        "id": 62,
+        "path": "libs/cli/tests/unit_tests/test_docker.py",
+        "name": "test_docker.py"
+      },
+      {
+        "id": 63,
+        "path": "libs/cli/tests/integration_tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 64,
+        "path": "libs/cli/tests/integration_tests/test_cli.py",
+        "name": "test_cli.py"
+      },
+      {
+        "id": 65,
+        "path": "libs/cli/tests/unit_tests/cli/test_templates.py",
+        "name": "test_templates.py"
+      },
+      {
+        "id": 66,
+        "path": "libs/cli/tests/unit_tests/cli/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 67,
+        "path": "libs/cli/tests/unit_tests/cli/test_cli.py",
+        "name": "test_cli.py"
+      },
+      {
+        "id": 68,
+        "path": "libs/cli/tests/unit_tests/multiplatform/python.py",
+        "name": "python.py"
+      },
+      {
+        "id": 69,
+        "path": "libs/cli/tests/unit_tests/graphs/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 70,
+        "path": "libs/cli/js-examples/tests/graph.int.test.ts",
+        "name": "graph.int.test.ts"
+      },
+      {
+        "id": 71,
+        "path": "libs/cli/js-examples/tests/agent.test.ts",
+        "name": "agent.test.ts"
+      },
+      {
+        "id": 72,
+        "path": "libs/cli/js-examples/src/agent/state.ts",
+        "name": "state.ts"
+      },
+      {
+        "id": 73,
+        "path": "libs/cli/js-examples/src/agent/graph.ts",
+        "name": "graph.ts"
+      },
+      {
+        "id": 74,
+        "path": "libs/prebuilt/tests/test_deprecation.py",
+        "name": "test_deprecation.py"
+      },
+      {
+        "id": 75,
+        "path": "libs/prebuilt/tests/conftest_store.py",
+        "name": "conftest_store.py"
+      },
+      {
+        "id": 76,
+        "path": "libs/prebuilt/tests/test_tool_node_interceptor_unregistered.py",
+        "name": "test_tool_node_interceptor_unregistered.py"
+      },
+      {
+        "id": 77,
+        "path": "libs/prebuilt/tests/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 78,
+        "path": "libs/prebuilt/tests/test_on_tool_call.py",
+        "name": "test_on_tool_call.py"
+      },
+      {
+        "id": 79,
+        "path": "libs/prebuilt/tests/test_react_agent.py",
+        "name": "test_react_agent.py"
+      },
+      {
+        "id": 80,
+        "path": "libs/prebuilt/tests/memory_assert.py",
+        "name": "memory_assert.py"
+      },
+      {
+        "id": 81,
+        "path": "libs/prebuilt/tests/conftest_checkpointer.py",
+        "name": "conftest_checkpointer.py"
+      },
+      {
+        "id": 82,
+        "path": "libs/prebuilt/tests/test_tool_node.py",
+        "name": "test_tool_node.py"
+      },
+      {
+        "id": 83,
+        "path": "libs/prebuilt/tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 84,
+        "path": "libs/prebuilt/tests/model.py",
+        "name": "model.py"
+      },
+      {
+        "id": 85,
+        "path": "libs/prebuilt/tests/test_tool_node_validation_error_filtering.py",
+        "name": "test_tool_node_validation_error_filtering.py"
+      },
+      {
+        "id": 86,
+        "path": "libs/prebuilt/tests/messages.py",
+        "name": "messages.py"
+      },
+      {
+        "id": 87,
+        "path": "libs/prebuilt/tests/test_react_agent_graph.py",
+        "name": "test_react_agent_graph.py"
+      },
+      {
+        "id": 88,
+        "path": "libs/prebuilt/tests/test_validation_node.py",
+        "name": "test_validation_node.py"
+      },
+      {
+        "id": 89,
+        "path": "libs/prebuilt/tests/any_str.py",
+        "name": "any_str.py"
+      },
+      {
+        "id": 90,
+        "path": "libs/prebuilt/langgraph/prebuilt/interrupt.py",
+        "name": "interrupt.py"
+      },
+      {
+        "id": 91,
+        "path": "libs/prebuilt/langgraph/prebuilt/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 92,
+        "path": "libs/prebuilt/langgraph/prebuilt/tool_validator.py",
+        "name": "tool_validator.py"
+      },
+      {
+        "id": 93,
+        "path": "libs/prebuilt/langgraph/prebuilt/chat_agent_executor.py",
+        "name": "chat_agent_executor.py"
+      },
+      {
+        "id": 94,
+        "path": "libs/prebuilt/langgraph/prebuilt/tool_node.py",
+        "name": "tool_node.py"
+      },
+      {
+        "id": 95,
+        "path": "libs/sdk-py/tests/test_errors.py",
+        "name": "test_errors.py"
+      },
+      {
+        "id": 96,
+        "path": "libs/sdk-py/tests/test_skip_auto_load_api_key.py",
+        "name": "test_skip_auto_load_api_key.py"
+      },
+      {
+        "id": 97,
+        "path": "libs/sdk-py/tests/test_api_parity.py",
+        "name": "test_api_parity.py"
+      },
+      {
+        "id": 98,
+        "path": "libs/sdk-py/tests/test_assistants_client.py",
+        "name": "test_assistants_client.py"
+      },
+      {
+        "id": 99,
+        "path": "libs/sdk-py/tests/test_serde_schema.py",
+        "name": "test_serde_schema.py"
+      },
+      {
+        "id": 100,
+        "path": "libs/sdk-py/tests/test_serde.py",
+        "name": "test_serde.py"
+      },
+      {
+        "id": 101,
+        "path": "libs/sdk-py/tests/test_client_stream.py",
+        "name": "test_client_stream.py"
+      },
+      {
+        "id": 102,
+        "path": "libs/sdk-py/tests/test_select_fields_sync.py",
+        "name": "test_select_fields_sync.py"
+      },
+      {
+        "id": 103,
+        "path": "libs/sdk-py/tests/test_encryption.py",
+        "name": "test_encryption.py"
+      },
+      {
+        "id": 104,
+        "path": "libs/sdk-py/langgraph_sdk/client.py",
+        "name": "client.py"
+      },
+      {
+        "id": 105,
+        "path": "libs/sdk-py/langgraph_sdk/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 106,
+        "path": "libs/sdk-py/langgraph_sdk/sse.py",
+        "name": "sse.py"
+      },
+      {
+        "id": 107,
+        "path": "libs/sdk-py/langgraph_sdk/errors.py",
+        "name": "errors.py"
+      },
+      {
+        "id": 108,
+        "path": "libs/sdk-py/langgraph_sdk/schema.py",
+        "name": "schema.py"
+      },
+      {
+        "id": 109,
+        "path": "libs/sdk-py/langgraph_sdk/encryption/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 110,
+        "path": "libs/sdk-py/langgraph_sdk/encryption/types.py",
+        "name": "types.py"
+      },
+      {
+        "id": 111,
+        "path": "libs/sdk-py/langgraph_sdk/auth/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 112,
+        "path": "libs/sdk-py/langgraph_sdk/auth/types.py",
+        "name": "types.py"
+      },
+      {
+        "id": 113,
+        "path": "libs/sdk-py/langgraph_sdk/auth/exceptions.py",
+        "name": "exceptions.py"
+      },
+      {
+        "id": 114,
+        "path": "libs/checkpoint/tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 115,
+        "path": "libs/checkpoint/tests/test_jsonplus.py",
+        "name": "test_jsonplus.py"
+      },
+      {
+        "id": 116,
+        "path": "libs/checkpoint/tests/test_store.py",
+        "name": "test_store.py"
+      },
+      {
+        "id": 117,
+        "path": "libs/checkpoint/tests/test_redis_cache.py",
+        "name": "test_redis_cache.py"
+      },
+      {
+        "id": 118,
+        "path": "libs/checkpoint/tests/test_memory.py",
+        "name": "test_memory.py"
+      },
+      {
+        "id": 119,
+        "path": "libs/checkpoint/tests/embed_test_utils.py",
+        "name": "embed_test_utils.py"
+      },
+      {
+        "id": 120,
+        "path": "libs/checkpoint/langgraph/store/memory/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 121,
+        "path": "libs/checkpoint/langgraph/store/base/embed.py",
+        "name": "embed.py"
+      },
+      {
+        "id": 122,
+        "path": "libs/checkpoint/langgraph/store/base/batch.py",
+        "name": "batch.py"
+      },
+      {
+        "id": 123,
+        "path": "libs/checkpoint/langgraph/store/base/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 124,
+        "path": "libs/checkpoint/langgraph/cache/memory/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 125,
+        "path": "libs/checkpoint/langgraph/cache/redis/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 126,
+        "path": "libs/checkpoint/langgraph/cache/base/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 127,
+        "path": "libs/checkpoint/langgraph/checkpoint/memory/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 128,
+        "path": "libs/checkpoint/langgraph/checkpoint/serde/jsonplus.py",
+        "name": "jsonplus.py"
+      },
+      {
+        "id": 129,
+        "path": "libs/checkpoint/langgraph/checkpoint/serde/encrypted.py",
+        "name": "encrypted.py"
+      },
+      {
+        "id": 130,
+        "path": "libs/checkpoint/langgraph/checkpoint/serde/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 131,
+        "path": "libs/checkpoint/langgraph/checkpoint/serde/types.py",
+        "name": "types.py"
+      },
+      {
+        "id": 132,
+        "path": "libs/checkpoint/langgraph/checkpoint/serde/base.py",
+        "name": "base.py"
+      },
+      {
+        "id": 133,
+        "path": "libs/checkpoint/langgraph/checkpoint/base/id.py",
+        "name": "id.py"
+      },
+      {
+        "id": 134,
+        "path": "libs/checkpoint/langgraph/checkpoint/base/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 135,
+        "path": "libs/langgraph/langgraph/config.py",
+        "name": "config.py"
+      },
+      {
+        "id": 136,
+        "path": "libs/langgraph/langgraph/version.py",
+        "name": "version.py"
+      },
+      {
+        "id": 137,
+        "path": "libs/langgraph/langgraph/warnings.py",
+        "name": "warnings.py"
+      },
+      {
+        "id": 138,
+        "path": "libs/langgraph/langgraph/constants.py",
+        "name": "constants.py"
+      },
+      {
+        "id": 139,
+        "path": "libs/langgraph/langgraph/types.py",
+        "name": "types.py"
+      },
+      {
+        "id": 140,
+        "path": "libs/langgraph/langgraph/runtime.py",
+        "name": "runtime.py"
+      },
+      {
+        "id": 141,
+        "path": "libs/langgraph/langgraph/errors.py",
+        "name": "errors.py"
+      },
+      {
+        "id": 142,
+        "path": "libs/langgraph/langgraph/typing.py",
+        "name": "typing.py"
+      },
+      {
+        "id": 143,
+        "path": "libs/langgraph/bench/fanout_to_subgraph.py",
+        "name": "fanout_to_subgraph.py"
+      },
+      {
+        "id": 144,
+        "path": "libs/langgraph/bench/react_agent.py",
+        "name": "react_agent.py"
+      },
+      {
+        "id": 145,
+        "path": "libs/langgraph/bench/wide_dict.py",
+        "name": "wide_dict.py"
+      },
+      {
+        "id": 146,
+        "path": "libs/langgraph/bench/pydantic_state.py",
+        "name": "pydantic_state.py"
+      },
+      {
+        "id": 147,
+        "path": "libs/langgraph/bench/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 148,
+        "path": "libs/langgraph/bench/sequential.py",
+        "name": "sequential.py"
+      },
+      {
+        "id": 149,
+        "path": "libs/langgraph/bench/wide_state.py",
+        "name": "wide_state.py"
+      },
+      {
+        "id": 150,
+        "path": "libs/langgraph/bench/__main__.py",
+        "name": "__main__.py"
+      },
+      {
+        "id": 151,
+        "path": "libs/langgraph/tests/test_deprecation.py",
+        "name": "test_deprecation.py"
+      },
+      {
+        "id": 152,
+        "path": "libs/langgraph/tests/test_retry.py",
+        "name": "test_retry.py"
+      },
+      {
+        "id": 153,
+        "path": "libs/langgraph/tests/conftest_store.py",
+        "name": "conftest_store.py"
+      },
+      {
+        "id": 154,
+        "path": "libs/langgraph/tests/test_utils.py",
+        "name": "test_utils.py"
+      },
+      {
+        "id": 155,
+        "path": "libs/langgraph/tests/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 156,
+        "path": "libs/langgraph/tests/test_remote_graph.py",
+        "name": "test_remote_graph.py"
+      },
+      {
+        "id": 157,
+        "path": "libs/langgraph/tests/fake_chat.py",
+        "name": "fake_chat.py"
+      },
+      {
+        "id": 158,
+        "path": "libs/langgraph/tests/any_int.py",
+        "name": "any_int.py"
+      },
+      {
+        "id": 159,
+        "path": "libs/langgraph/tests/test_managed_values.py",
+        "name": "test_managed_values.py"
+      },
+      {
+        "id": 160,
+        "path": "libs/langgraph/tests/test_pydantic.py",
+        "name": "test_pydantic.py"
+      },
+      {
+        "id": 161,
+        "path": "libs/langgraph/tests/test_interruption.py",
+        "name": "test_interruption.py"
+      },
+      {
+        "id": 162,
+        "path": "libs/langgraph/tests/memory_assert.py",
+        "name": "memory_assert.py"
+      },
+      {
+        "id": 163,
+        "path": "libs/langgraph/tests/test_runtime.py",
+        "name": "test_runtime.py"
+      },
+      {
+        "id": 164,
+        "path": "libs/langgraph/tests/test_config_async.py",
+        "name": "test_config_async.py"
+      },
+      {
+        "id": 165,
+        "path": "libs/langgraph/tests/conftest_checkpointer.py",
+        "name": "conftest_checkpointer.py"
+      },
+      {
+        "id": 166,
+        "path": "libs/langgraph/tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 167,
+        "path": "libs/langgraph/tests/test_pregel_async.py",
+        "name": "test_pregel_async.py"
+      },
+      {
+        "id": 168,
+        "path": "libs/langgraph/tests/test_type_checking.py",
+        "name": "test_type_checking.py"
+      },
+      {
+        "id": 169,
+        "path": "libs/langgraph/tests/test_large_cases.py",
+        "name": "test_large_cases.py"
+      },
+      {
+        "id": 170,
+        "path": "libs/langgraph/tests/test_state.py",
+        "name": "test_state.py"
+      },
+      {
+        "id": 171,
+        "path": "libs/langgraph/tests/test_messages_state.py",
+        "name": "test_messages_state.py"
+      },
+      {
+        "id": 172,
+        "path": "libs/langgraph/tests/agents.py",
+        "name": "agents.py"
+      },
+      {
+        "id": 173,
+        "path": "libs/langgraph/tests/test_large_cases_async.py",
+        "name": "test_large_cases_async.py"
+      },
+      {
+        "id": 174,
+        "path": "libs/langgraph/tests/test_channels.py",
+        "name": "test_channels.py"
+      },
+      {
+        "id": 175,
+        "path": "libs/langgraph/tests/test_runnable.py",
+        "name": "test_runnable.py"
+      },
+      {
+        "id": 176,
+        "path": "libs/langgraph/tests/test_tracing_interops.py",
+        "name": "test_tracing_interops.py"
+      },
+      {
+        "id": 177,
+        "path": "libs/langgraph/tests/test_checkpoint_migration.py",
+        "name": "test_checkpoint_migration.py"
+      },
+      {
+        "id": 178,
+        "path": "libs/langgraph/tests/messages.py",
+        "name": "messages.py"
+      },
+      {
+        "id": 179,
+        "path": "libs/langgraph/tests/test_pregel.py",
+        "name": "test_pregel.py"
+      },
+      {
+        "id": 180,
+        "path": "libs/langgraph/tests/test_interrupt_migration.py",
+        "name": "test_interrupt_migration.py"
+      },
+      {
+        "id": 181,
+        "path": "libs/langgraph/tests/any_str.py",
+        "name": "any_str.py"
+      },
+      {
+        "id": 182,
+        "path": "libs/langgraph/tests/test_algo.py",
+        "name": "test_algo.py"
+      },
+      {
+        "id": 183,
+        "path": "libs/langgraph/tests/fake_tracer.py",
+        "name": "fake_tracer.py"
+      },
+      {
+        "id": 184,
+        "path": "libs/langgraph/tests/example_app/example_graph.py",
+        "name": "example_graph.py"
+      },
+      {
+        "id": 185,
+        "path": "libs/langgraph/langgraph/pregel/_draw.py",
+        "name": "_draw.py"
+      },
+      {
+        "id": 186,
+        "path": "libs/langgraph/langgraph/pregel/_read.py",
+        "name": "_read.py"
+      },
+      {
+        "id": 187,
+        "path": "libs/langgraph/langgraph/pregel/_call.py",
+        "name": "_call.py"
+      },
+      {
+        "id": 188,
+        "path": "libs/langgraph/langgraph/pregel/_algo.py",
+        "name": "_algo.py"
+      },
+      {
+        "id": 189,
+        "path": "libs/langgraph/langgraph/pregel/_io.py",
+        "name": "_io.py"
+      },
+      {
+        "id": 190,
+        "path": "libs/langgraph/langgraph/pregel/remote.py",
+        "name": "remote.py"
+      },
+      {
+        "id": 191,
+        "path": "libs/langgraph/langgraph/pregel/_checkpoint.py",
+        "name": "_checkpoint.py"
+      },
+      {
+        "id": 192,
+        "path": "libs/langgraph/langgraph/pregel/protocol.py",
+        "name": "protocol.py"
+      },
+      {
+        "id": 193,
+        "path": "libs/langgraph/langgraph/pregel/_loop.py",
+        "name": "_loop.py"
+      },
+      {
+        "id": 194,
+        "path": "libs/langgraph/langgraph/pregel/_write.py",
+        "name": "_write.py"
+      },
+      {
+        "id": 195,
+        "path": "libs/langgraph/langgraph/pregel/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 196,
+        "path": "libs/langgraph/langgraph/pregel/types.py",
+        "name": "types.py"
+      },
+      {
+        "id": 197,
+        "path": "libs/langgraph/langgraph/pregel/_messages.py",
+        "name": "_messages.py"
+      },
+      {
+        "id": 198,
+        "path": "libs/langgraph/langgraph/pregel/debug.py",
+        "name": "debug.py"
+      },
+      {
+        "id": 199,
+        "path": "libs/langgraph/langgraph/pregel/_validate.py",
+        "name": "_validate.py"
+      },
+      {
+        "id": 200,
+        "path": "libs/langgraph/langgraph/pregel/_executor.py",
+        "name": "_executor.py"
+      },
+      {
+        "id": 201,
+        "path": "libs/langgraph/langgraph/pregel/_config.py",
+        "name": "_config.py"
+      },
+      {
+        "id": 202,
+        "path": "libs/langgraph/langgraph/pregel/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 203,
+        "path": "libs/langgraph/langgraph/pregel/_runner.py",
+        "name": "_runner.py"
+      },
+      {
+        "id": 204,
+        "path": "libs/langgraph/langgraph/pregel/_retry.py",
+        "name": "_retry.py"
+      },
+      {
+        "id": 205,
+        "path": "libs/langgraph/langgraph/pregel/_log.py",
+        "name": "_log.py"
+      },
+      {
+        "id": 206,
+        "path": "libs/langgraph/langgraph/pregel/_utils.py",
+        "name": "_utils.py"
+      },
+      {
+        "id": 207,
+        "path": "libs/langgraph/langgraph/_internal/_constants.py",
+        "name": "_constants.py"
+      },
+      {
+        "id": 208,
+        "path": "libs/langgraph/langgraph/_internal/_cache.py",
+        "name": "_cache.py"
+      },
+      {
+        "id": 209,
+        "path": "libs/langgraph/langgraph/_internal/_typing.py",
+        "name": "_typing.py"
+      },
+      {
+        "id": 210,
+        "path": "libs/langgraph/langgraph/_internal/_future.py",
+        "name": "_future.py"
+      },
+      {
+        "id": 211,
+        "path": "libs/langgraph/langgraph/_internal/_pydantic.py",
+        "name": "_pydantic.py"
+      },
+      {
+        "id": 212,
+        "path": "libs/langgraph/langgraph/_internal/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 213,
+        "path": "libs/langgraph/langgraph/_internal/_queue.py",
+        "name": "_queue.py"
+      },
+      {
+        "id": 214,
+        "path": "libs/langgraph/langgraph/_internal/_scratchpad.py",
+        "name": "_scratchpad.py"
+      },
+      {
+        "id": 215,
+        "path": "libs/langgraph/langgraph/_internal/_fields.py",
+        "name": "_fields.py"
+      },
+      {
+        "id": 216,
+        "path": "libs/langgraph/langgraph/_internal/_config.py",
+        "name": "_config.py"
+      },
+      {
+        "id": 217,
+        "path": "libs/langgraph/langgraph/_internal/_runnable.py",
+        "name": "_runnable.py"
+      },
+      {
+        "id": 218,
+        "path": "libs/langgraph/langgraph/_internal/_retry.py",
+        "name": "_retry.py"
+      },
+      {
+        "id": 219,
+        "path": "libs/langgraph/langgraph/managed/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 220,
+        "path": "libs/langgraph/langgraph/managed/is_last_step.py",
+        "name": "is_last_step.py"
+      },
+      {
+        "id": 221,
+        "path": "libs/langgraph/langgraph/managed/base.py",
+        "name": "base.py"
+      },
+      {
+        "id": 222,
+        "path": "libs/langgraph/langgraph/graph/_node.py",
+        "name": "_node.py"
+      },
+      {
+        "id": 223,
+        "path": "libs/langgraph/langgraph/graph/ui.py",
+        "name": "ui.py"
+      },
+      {
+        "id": 224,
+        "path": "libs/langgraph/langgraph/graph/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 225,
+        "path": "libs/langgraph/langgraph/graph/message.py",
+        "name": "message.py"
+      },
+      {
+        "id": 226,
+        "path": "libs/langgraph/langgraph/graph/_branch.py",
+        "name": "_branch.py"
+      },
+      {
+        "id": 227,
+        "path": "libs/langgraph/langgraph/graph/state.py",
+        "name": "state.py"
+      },
+      {
+        "id": 228,
+        "path": "libs/langgraph/langgraph/utils/config.py",
+        "name": "config.py"
+      },
+      {
+        "id": 229,
+        "path": "libs/langgraph/langgraph/utils/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 230,
+        "path": "libs/langgraph/langgraph/utils/runnable.py",
+        "name": "runnable.py"
+      },
+      {
+        "id": 231,
+        "path": "libs/langgraph/langgraph/channels/last_value.py",
+        "name": "last_value.py"
+      },
+      {
+        "id": 232,
+        "path": "libs/langgraph/langgraph/channels/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 233,
+        "path": "libs/langgraph/langgraph/channels/untracked_value.py",
+        "name": "untracked_value.py"
+      },
+      {
+        "id": 234,
+        "path": "libs/langgraph/langgraph/channels/any_value.py",
+        "name": "any_value.py"
+      },
+      {
+        "id": 235,
+        "path": "libs/langgraph/langgraph/channels/named_barrier_value.py",
+        "name": "named_barrier_value.py"
+      },
+      {
+        "id": 236,
+        "path": "libs/langgraph/langgraph/channels/binop.py",
+        "name": "binop.py"
+      },
+      {
+        "id": 237,
+        "path": "libs/langgraph/langgraph/channels/ephemeral_value.py",
+        "name": "ephemeral_value.py"
+      },
+      {
+        "id": 238,
+        "path": "libs/langgraph/langgraph/channels/topic.py",
+        "name": "topic.py"
+      },
+      {
+        "id": 239,
+        "path": "libs/langgraph/langgraph/channels/base.py",
+        "name": "base.py"
+      },
+      {
+        "id": 240,
+        "path": "libs/langgraph/langgraph/func/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 241,
+        "path": "libs/checkpoint-postgres/tests/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 242,
+        "path": "libs/checkpoint-postgres/tests/test_sync.py",
+        "name": "test_sync.py"
+      },
+      {
+        "id": 243,
+        "path": "libs/checkpoint-postgres/tests/test_async.py",
+        "name": "test_async.py"
+      },
+      {
+        "id": 244,
+        "path": "libs/checkpoint-postgres/tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 245,
+        "path": "libs/checkpoint-postgres/tests/test_store.py",
+        "name": "test_store.py"
+      },
+      {
+        "id": 246,
+        "path": "libs/checkpoint-postgres/tests/embed_test_utils.py",
+        "name": "embed_test_utils.py"
+      },
+      {
+        "id": 247,
+        "path": "libs/checkpoint-postgres/tests/test_async_store.py",
+        "name": "test_async_store.py"
+      },
+      {
+        "id": 248,
+        "path": "libs/checkpoint-postgres/langgraph/store/postgres/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 249,
+        "path": "libs/checkpoint-postgres/langgraph/store/postgres/aio.py",
+        "name": "aio.py"
+      },
+      {
+        "id": 250,
+        "path": "libs/checkpoint-postgres/langgraph/store/postgres/base.py",
+        "name": "base.py"
+      },
+      {
+        "id": 251,
+        "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/_internal.py",
+        "name": "_internal.py"
+      },
+      {
+        "id": 252,
+        "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/_ainternal.py",
+        "name": "_ainternal.py"
+      },
+      {
+        "id": 253,
+        "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/shallow.py",
+        "name": "shallow.py"
+      },
+      {
+        "id": 254,
+        "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 255,
+        "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/aio.py",
+        "name": "aio.py"
+      },
+      {
+        "id": 256,
+        "path": "libs/checkpoint-postgres/langgraph/checkpoint/postgres/base.py",
+        "name": "base.py"
+      },
+      {
+        "id": 257,
+        "path": "docs/overrides/language-switcher.js",
+        "name": "language-switcher.js"
+      },
+      {
+        "id": 258,
+        "path": "docs/overrides/copy-page.js",
+        "name": "copy-page.js"
+      },
+      {
+        "id": 259,
+        "path": "docs/_scripts/link_map.py",
+        "name": "link_map.py"
+      },
+      {
+        "id": 260,
+        "path": "docs/_scripts/generate_api_reference_links.py",
+        "name": "generate_api_reference_links.py"
+      },
+      {
+        "id": 261,
+        "path": "docs/_scripts/prepare_notebooks_for_ci.py",
+        "name": "prepare_notebooks_for_ci.py"
+      },
+      {
+        "id": 262,
+        "path": "docs/_scripts/notebook_convert.py",
+        "name": "notebook_convert.py"
+      },
+      {
+        "id": 263,
+        "path": "docs/_scripts/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 264,
+        "path": "docs/_scripts/_patch.py",
+        "name": "_patch.py"
+      },
+      {
+        "id": 265,
+        "path": "docs/_scripts/notebook_hooks.py",
+        "name": "notebook_hooks.py"
+      },
+      {
+        "id": 266,
+        "path": "docs/_scripts/generate_llms_text.py",
+        "name": "generate_llms_text.py"
+      },
+      {
+        "id": 267,
+        "path": "docs/_scripts/handle_auto_links.py",
+        "name": "handle_auto_links.py"
+      },
+      {
+        "id": 268,
+        "path": "docs/_scripts/download_tiktoken.py",
+        "name": "download_tiktoken.py"
+      },
+      {
+        "id": 269,
+        "path": "docs/tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 270,
+        "path": "docs/docs/tutorials/web-navigation/mark_page.js",
+        "name": "mark_page.js"
+      },
+      {
+        "id": 271,
+        "path": "docs/docs/tutorials/llm-compiler/output_parser.py",
+        "name": "output_parser.py"
+      },
+      {
+        "id": 272,
+        "path": "docs/docs/tutorials/llm-compiler/math_tools.py",
+        "name": "math_tools.py"
+      },
+      {
+        "id": 273,
+        "path": "docs/docs/tutorials/chatbot-simulation-evaluation/simulation_utils.py",
+        "name": "simulation_utils.py"
+      },
+      {
+        "id": 274,
+        "path": "docs/tests/unit_tests/test_auto_links.py",
+        "name": "test_auto_links.py"
+      },
+      {
+        "id": 275,
+        "path": "docs/tests/unit_tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 276,
+        "path": "docs/tests/unit_tests/test_api_reference.py",
+        "name": "test_api_reference.py"
+      },
+      {
+        "id": 277,
+        "path": "docs/tests/unit_tests/test_conditional_rendering.py",
+        "name": "test_conditional_rendering.py"
+      },
+      {
+        "id": 278,
+        "path": "docs/tests/unit_tests/test_highlights.py",
+        "name": "test_highlights.py"
+      },
+      {
+        "id": 279,
+        "path": "docs/tests/unit_tests/test_notebook_conversion.py",
+        "name": "test_notebook_conversion.py"
+      },
+      {
+        "id": 280,
+        "path": "docs/_scripts/js_translation/extract_codeblocks.py",
+        "name": "extract_codeblocks.py"
+      },
+      {
+        "id": 281,
+        "path": "docs/_scripts/js_translation/add_translation.py",
+        "name": "add_translation.py"
+      },
+      {
+        "id": 282,
+        "path": "docs/_scripts/third_party_page/create_third_party_page.py",
+        "name": "create_third_party_page.py"
+      },
+      {
+        "id": 283,
+        "path": "docs/_scripts/third_party_page/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 284,
+        "path": "docs/_scripts/third_party_page/get_download_stats.py",
+        "name": "get_download_stats.py"
+      }
+    ],
+    "edges": [],
+    "external_deps": [
+      "Crypto",
+      "__future__",
+      "_scripts",
+      "abc",
+      "agent",
+      "aiosqlite",
+      "argparse",
+      "ast",
+      "asyncio",
+      "bench",
+      "binascii",
+      "bs4",
+      "cli",
+      "click",
+      "collections",
+      "common",
+      "concurrent",
+      "contextlib",
+      "contextvars",
+      "copy",
+      "dataclasses",
+      "dataclasses_json",
+      "datetime",
+      "decimal",
+      "enum",
+      "functools",
+      "gc",
+      "glob",
+      "graphs_reqs_a",
+      "graphs_submod",
+      "hashlib",
+      "helpers",
+      "http",
+      "httpx",
+      "importlib",
+      "inspect",
+      "io",
+      "ipaddress",
+      "itertools",
+      "json",
+      "langchain",
+      "langchain_anthropic",
+      "langchain_community",
+      "langchain_core",
+      "langchain_openai",
+      "langgraph",
+      "langgraph_api",
+      "langgraph_cli",
+      "langgraph_sdk",
+      "langsmith",
+      "logging",
+      "math",
+      "messages",
+      "mkdocs",
+      "model",
+      "msgspec",
+      "nbconvert",
+      "nbformat",
+      "numexpr",
+      "numpy",
+      "openai",
+      "operator",
+      "orjson",
+      "ormsgpack",
+      "os",
+      "packaging",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "posixpath",
+      "psycopg",
+      "psycopg_pool",
+      "pydantic",
+      "pydantic_core",
+      "pyperf",
+      "pytest",
+      "pytest_mock",
+      "queue",
+      "random",
+      "re",
+      "redis",
+      "requests",
+      "shared",
+      "shutil",
+      "signal",
+      "sqlite3",
+      "sqlite_vec",
+      "starlette",
+      "syrupy",
+      "sys",
+      "tempfile",
+      "tests",
+      "textwrap",
+      "threading",
+      "tiktoken",
+      "time",
+      "toml",
+      "types",
+      "typing",
+      "typing_extensions",
+      "unittest",
+      "urllib",
+      "urllib3",
+      "utils",
+      "uuid",
+      "uvloop",
+      "warnings",
+      "weakref",
+      "xxhash",
+      "yaml",
+      "zipfile",
+      "zoneinfo"
+    ],
+    "internal_deps": {
+      "libs/cli/js-monorepo-example/apps/agent/src/state.ts": [
+        "@langchain/core/messages",
+        "@langchain/langgraph"
+      ],
+      "libs/cli/js-monorepo-example/apps/agent/src/graph.ts": [
+        "@langchain/langgraph",
+        "@langchain/core/runnables",
+        "./state.js",
+        "@js-monorepo-example/shared"
+      ],
+      "libs/cli/js-examples/tests/graph.int.test.ts": [
+        "@jest/globals",
+        "../src/agent/graph.js"
+      ],
+      "libs/cli/js-examples/tests/agent.test.ts": [
+        "@jest/globals",
+        "../src/agent/graph.js"
+      ],
+      "libs/cli/js-examples/src/agent/state.ts": [
+        "@langchain/core/messages",
+        "@langchain/langgraph"
+      ],
+      "libs/cli/js-examples/src/agent/graph.ts": [
+        "@langchain/langgraph",
+        "@langchain/core/runnables",
+        "./state.js",
+        "@langchain/anthropic"
+      ]
+    }
+  },
+  "entry_points": [
+    {
+      "path": "docs/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/checkpoint-postgres/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/langgraph/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/checkpoint/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/sdk-py/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/prebuilt/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/checkpoint-sqlite/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/python-monorepo-example/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/examples/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/examples/graph_prerelease_reqs_fail/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/examples/graph_prerelease_reqs/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/examples/graph_prerelease_reqs/deps/zuper_deps/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/examples/graph_prerelease_reqs/deps/additional_deps/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/python-monorepo-example/apps/agent/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/python-monorepo-example/libs/shared/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/cli/tests/unit_tests/cli/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "libs/langgraph/langgraph/pregel/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "libs/cli/langgraph_cli/cli.py",
+      "type": "python",
+      "description": "CLI entry point"
+    },
+    {
+      "path": "libs/cli/langgraph_cli/__main__.py",
+      "type": "python",
+      "description": "Package main module"
+    },
+    {
+      "path": "libs/langgraph/bench/__main__.py",
+      "type": "python",
+      "description": "Package main module"
+    },
+    {
+      "path": ".github/scripts/check_sdk_methods.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": ".github/scripts/run_langgraph_cli_test.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "libs/cli/generate_schema.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "libs/cli/langgraph_cli/__main__.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "libs/langgraph/bench/fanout_to_subgraph.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "libs/langgraph/bench/react_agent.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "libs/langgraph/bench/wide_dict.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "libs/langgraph/bench/pydantic_state.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "libs/langgraph/bench/sequential.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "libs/langgraph/bench/wide_state.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/_scripts/prepare_notebooks_for_ci.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/_scripts/generate_llms_text.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/_scripts/js_translation/extract_codeblocks.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/_scripts/js_translation/add_translation.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/_scripts/third_party_page/create_third_party_page.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/_scripts/third_party_page/get_download_stats.py",
+      "type": "python",
+      "description": "Executable module"
+    }
+  ],
+  "key_files": {
+    "types": [
+      "libs/sdk-py/langgraph_sdk/encryption/types.py",
+      "libs/sdk-py/langgraph_sdk/auth/types.py",
+      "libs/checkpoint/langgraph/checkpoint/serde/types.py",
+      "libs/langgraph/langgraph/types.py",
+      "libs/langgraph/langgraph/pregel/types.py",
+      "libs/sdk-py/langgraph_sdk/schema.py",
+      "libs/cli/langgraph_cli/schemas.py",
+      "libs/langgraph/langgraph/typing.py"
+    ],
+    "execution": [
+      "libs/langgraph/langgraph/runtime.py"
+    ],
+    "tools": [],
+    "agents": [
+      "libs/cli/examples/graph_prerelease_reqs_fail/agent.py",
+      "libs/cli/examples/graph_prerelease_reqs/agent.py",
+      "libs/cli/examples/graphs/agent.py",
+      "libs/cli/examples/graphs_reqs_a/graphs_submod/agent.py",
+      "libs/cli/examples/graphs_reqs_b/graphs_submod/agent.py",
+      "libs/cli/tests/unit_tests/agent.py",
+      "libs/cli/tests/unit_tests/graphs/agent.py",
+      "libs/langgraph/tests/agents.py"
+    ],
+    "config": [
+      "libs/cli/langgraph_cli/config.py",
+      "libs/langgraph/langgraph/config.py",
+      "libs/langgraph/langgraph/utils/config.py",
+      "libs/cli/langgraph_cli/constants.py",
+      "libs/langgraph/langgraph/constants.py"
+    ]
+  },
+  "stats": {
+    "total_files": 1079,
+    "python_files": 274,
+    "external_dependencies": 113
+  }
+}

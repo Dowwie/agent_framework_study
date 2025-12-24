@@ -1,0 +1,26 @@
+{
+  "framework": "ms-agent-framework",
+  "status": "completed",
+  "timestamp": "2025-12-23T13:50:00Z",
+  "source_path": "repos/ms-agent-framework",
+  "output_dir": "forensics-output/frameworks/ms-agent-framework",
+  "codebase_map": "forensics-output/frameworks/ms-agent-framework/codebase-map.json",
+  "summary_report": "reports/frameworks/ms-agent-framework.md",
+  "phases": {
+    "codebase_mapping": "completed",
+    "phase1_engineering": "completed",
+    "phase2_cognitive": "completed",
+    "synthesis": "completed"
+  },
+  "skills_completed": [
+    "data-substrate-analysis",
+    "execution-engine-analysis",
+    "component-model-analysis",
+    "resilience-analysis",
+    "control-loop-extraction",
+    "memory-orchestration",
+    "tool-interface-analysis",
+    "multi-agent-analysis"
+  ],
+  "notes": "Analysis focused on Python implementation due to dual-language nature. Protocol-first architecture and graph-based workflows are key innovations."
+}

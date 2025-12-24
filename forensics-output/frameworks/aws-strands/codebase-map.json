@@ -1,0 +1,4162 @@
+{
+  "repository": "aws-strands",
+  "path": "/Users/dgordon/my_projects/agent_framework_study/repos/aws-strands",
+  "file_tree": {
+    "name": "aws-strands",
+    "type": "directory",
+    "path": "/Users/dgordon/my_projects/agent_framework_study/repos/aws-strands",
+    "children": [
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "src",
+        "children": [
+          {
+            "name": "strands",
+            "type": "directory",
+            "path": "src/strands",
+            "children": [
+              {
+                "name": "agent",
+                "type": "directory",
+                "path": "src/strands/agent",
+                "children": [
+                  {
+                    "name": "conversation_manager",
+                    "type": "directory",
+                    "path": "src/strands/agent/conversation_manager",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/agent/conversation_manager/__init__.py"
+                      },
+                      {
+                        "name": "conversation_manager.py",
+                        "type": "file",
+                        "path": "src/strands/agent/conversation_manager/conversation_manager.py"
+                      },
+                      {
+                        "name": "null_conversation_manager.py",
+                        "type": "file",
+                        "path": "src/strands/agent/conversation_manager/null_conversation_manager.py"
+                      },
+                      {
+                        "name": "sliding_window_conversation_manager.py",
+                        "type": "file",
+                        "path": "src/strands/agent/conversation_manager/sliding_window_conversation_manager.py"
+                      },
+                      {
+                        "name": "summarizing_conversation_manager.py",
+                        "type": "file",
+                        "path": "src/strands/agent/conversation_manager/summarizing_conversation_manager.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/agent/__init__.py"
+                  },
+                  {
+                    "name": "agent.py",
+                    "type": "file",
+                    "path": "src/strands/agent/agent.py"
+                  },
+                  {
+                    "name": "agent_result.py",
+                    "type": "file",
+                    "path": "src/strands/agent/agent_result.py"
+                  },
+                  {
+                    "name": "state.py",
+                    "type": "file",
+                    "path": "src/strands/agent/state.py"
+                  }
+                ]
+              },
+              {
+                "name": "event_loop",
+                "type": "directory",
+                "path": "src/strands/event_loop",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/event_loop/__init__.py"
+                  },
+                  {
+                    "name": "_recover_message_on_max_tokens_reached.py",
+                    "type": "file",
+                    "path": "src/strands/event_loop/_recover_message_on_max_tokens_reached.py"
+                  },
+                  {
+                    "name": "event_loop.py",
+                    "type": "file",
+                    "path": "src/strands/event_loop/event_loop.py"
+                  },
+                  {
+                    "name": "streaming.py",
+                    "type": "file",
+                    "path": "src/strands/event_loop/streaming.py"
+                  }
+                ]
+              },
+              {
+                "name": "experimental",
+                "type": "directory",
+                "path": "src/strands/experimental",
+                "children": [
+                  {
+                    "name": "bidi",
+                    "type": "directory",
+                    "path": "src/strands/experimental/bidi",
+                    "children": [
+                      {
+                        "name": "_async",
+                        "type": "directory",
+                        "path": "src/strands/experimental/bidi/_async",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/_async/__init__.py"
+                          },
+                          {
+                            "name": "_task_group.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/_async/_task_group.py"
+                          },
+                          {
+                            "name": "_task_pool.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/_async/_task_pool.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "agent",
+                        "type": "directory",
+                        "path": "src/strands/experimental/bidi/agent",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/agent/__init__.py"
+                          },
+                          {
+                            "name": "agent.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/agent/agent.py"
+                          },
+                          {
+                            "name": "loop.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/agent/loop.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io",
+                        "type": "directory",
+                        "path": "src/strands/experimental/bidi/io",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/io/__init__.py"
+                          },
+                          {
+                            "name": "audio.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/io/audio.py"
+                          },
+                          {
+                            "name": "text.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/io/text.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "models",
+                        "type": "directory",
+                        "path": "src/strands/experimental/bidi/models",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/models/__init__.py"
+                          },
+                          {
+                            "name": "gemini_live.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/models/gemini_live.py"
+                          },
+                          {
+                            "name": "model.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/models/model.py"
+                          },
+                          {
+                            "name": "nova_sonic.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/models/nova_sonic.py"
+                          },
+                          {
+                            "name": "openai_realtime.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/models/openai_realtime.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "tools",
+                        "type": "directory",
+                        "path": "src/strands/experimental/bidi/tools",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/tools/__init__.py"
+                          },
+                          {
+                            "name": "stop_conversation.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/tools/stop_conversation.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "types",
+                        "type": "directory",
+                        "path": "src/strands/experimental/bidi/types",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/types/__init__.py"
+                          },
+                          {
+                            "name": "agent.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/types/agent.py"
+                          },
+                          {
+                            "name": "events.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/types/events.py"
+                          },
+                          {
+                            "name": "io.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/types/io.py"
+                          },
+                          {
+                            "name": "model.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/bidi/types/model.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/experimental/bidi/__init__.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "hooks",
+                    "type": "directory",
+                    "path": "src/strands/experimental/hooks",
+                    "children": [
+                      {
+                        "name": "multiagent",
+                        "type": "directory",
+                        "path": "src/strands/experimental/hooks/multiagent",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/hooks/multiagent/__init__.py"
+                          },
+                          {
+                            "name": "events.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/hooks/multiagent/events.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/experimental/hooks/__init__.py"
+                      },
+                      {
+                        "name": "events.py",
+                        "type": "file",
+                        "path": "src/strands/experimental/hooks/events.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "steering",
+                    "type": "directory",
+                    "path": "src/strands/experimental/steering",
+                    "children": [
+                      {
+                        "name": "context_providers",
+                        "type": "directory",
+                        "path": "src/strands/experimental/steering/context_providers",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/steering/context_providers/__init__.py"
+                          },
+                          {
+                            "name": "ledger_provider.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/steering/context_providers/ledger_provider.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "core",
+                        "type": "directory",
+                        "path": "src/strands/experimental/steering/core",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/steering/core/__init__.py"
+                          },
+                          {
+                            "name": "action.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/steering/core/action.py"
+                          },
+                          {
+                            "name": "context.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/steering/core/context.py"
+                          },
+                          {
+                            "name": "handler.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/steering/core/handler.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "handlers",
+                        "type": "directory",
+                        "path": "src/strands/experimental/steering/handlers",
+                        "children": [
+                          {
+                            "name": "llm",
+                            "type": "directory",
+                            "path": "src/strands/experimental/steering/handlers/llm",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file",
+                                "path": "src/strands/experimental/steering/handlers/llm/__init__.py"
+                              },
+                              {
+                                "name": "llm_handler.py",
+                                "type": "file",
+                                "path": "src/strands/experimental/steering/handlers/llm/llm_handler.py"
+                              },
+                              {
+                                "name": "mappers.py",
+                                "type": "file",
+                                "path": "src/strands/experimental/steering/handlers/llm/mappers.py"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "src/strands/experimental/steering/handlers/__init__.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/experimental/steering/__init__.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tools",
+                    "type": "directory",
+                    "path": "src/strands/experimental/tools",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/experimental/tools/__init__.py"
+                      },
+                      {
+                        "name": "tool_provider.py",
+                        "type": "file",
+                        "path": "src/strands/experimental/tools/tool_provider.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/experimental/__init__.py"
+                  },
+                  {
+                    "name": "agent_config.py",
+                    "type": "file",
+                    "path": "src/strands/experimental/agent_config.py"
+                  }
+                ]
+              },
+              {
+                "name": "handlers",
+                "type": "directory",
+                "path": "src/strands/handlers",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/handlers/__init__.py"
+                  },
+                  {
+                    "name": "callback_handler.py",
+                    "type": "file",
+                    "path": "src/strands/handlers/callback_handler.py"
+                  }
+                ]
+              },
+              {
+                "name": "hooks",
+                "type": "directory",
+                "path": "src/strands/hooks",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/hooks/__init__.py"
+                  },
+                  {
+                    "name": "events.py",
+                    "type": "file",
+                    "path": "src/strands/hooks/events.py"
+                  },
+                  {
+                    "name": "registry.py",
+                    "type": "file",
+                    "path": "src/strands/hooks/registry.py"
+                  }
+                ]
+              },
+              {
+                "name": "models",
+                "type": "directory",
+                "path": "src/strands/models",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/models/__init__.py"
+                  },
+                  {
+                    "name": "_validation.py",
+                    "type": "file",
+                    "path": "src/strands/models/_validation.py"
+                  },
+                  {
+                    "name": "anthropic.py",
+                    "type": "file",
+                    "path": "src/strands/models/anthropic.py"
+                  },
+                  {
+                    "name": "bedrock.py",
+                    "type": "file",
+                    "path": "src/strands/models/bedrock.py"
+                  },
+                  {
+                    "name": "gemini.py",
+                    "type": "file",
+                    "path": "src/strands/models/gemini.py"
+                  },
+                  {
+                    "name": "litellm.py",
+                    "type": "file",
+                    "path": "src/strands/models/litellm.py"
+                  },
+                  {
+                    "name": "llamaapi.py",
+                    "type": "file",
+                    "path": "src/strands/models/llamaapi.py"
+                  },
+                  {
+                    "name": "llamacpp.py",
+                    "type": "file",
+                    "path": "src/strands/models/llamacpp.py"
+                  },
+                  {
+                    "name": "mistral.py",
+                    "type": "file",
+                    "path": "src/strands/models/mistral.py"
+                  },
+                  {
+                    "name": "model.py",
+                    "type": "file",
+                    "path": "src/strands/models/model.py"
+                  },
+                  {
+                    "name": "ollama.py",
+                    "type": "file",
+                    "path": "src/strands/models/ollama.py"
+                  },
+                  {
+                    "name": "openai.py",
+                    "type": "file",
+                    "path": "src/strands/models/openai.py"
+                  },
+                  {
+                    "name": "sagemaker.py",
+                    "type": "file",
+                    "path": "src/strands/models/sagemaker.py"
+                  },
+                  {
+                    "name": "writer.py",
+                    "type": "file",
+                    "path": "src/strands/models/writer.py"
+                  }
+                ]
+              },
+              {
+                "name": "multiagent",
+                "type": "directory",
+                "path": "src/strands/multiagent",
+                "children": [
+                  {
+                    "name": "a2a",
+                    "type": "directory",
+                    "path": "src/strands/multiagent/a2a",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/multiagent/a2a/__init__.py"
+                      },
+                      {
+                        "name": "executor.py",
+                        "type": "file",
+                        "path": "src/strands/multiagent/a2a/executor.py"
+                      },
+                      {
+                        "name": "server.py",
+                        "type": "file",
+                        "path": "src/strands/multiagent/a2a/server.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/multiagent/__init__.py"
+                  },
+                  {
+                    "name": "base.py",
+                    "type": "file",
+                    "path": "src/strands/multiagent/base.py"
+                  },
+                  {
+                    "name": "graph.py",
+                    "type": "file",
+                    "path": "src/strands/multiagent/graph.py"
+                  },
+                  {
+                    "name": "swarm.py",
+                    "type": "file",
+                    "path": "src/strands/multiagent/swarm.py"
+                  }
+                ]
+              },
+              {
+                "name": "session",
+                "type": "directory",
+                "path": "src/strands/session",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/session/__init__.py"
+                  },
+                  {
+                    "name": "file_session_manager.py",
+                    "type": "file",
+                    "path": "src/strands/session/file_session_manager.py"
+                  },
+                  {
+                    "name": "repository_session_manager.py",
+                    "type": "file",
+                    "path": "src/strands/session/repository_session_manager.py"
+                  },
+                  {
+                    "name": "s3_session_manager.py",
+                    "type": "file",
+                    "path": "src/strands/session/s3_session_manager.py"
+                  },
+                  {
+                    "name": "session_manager.py",
+                    "type": "file",
+                    "path": "src/strands/session/session_manager.py"
+                  },
+                  {
+                    "name": "session_repository.py",
+                    "type": "file",
+                    "path": "src/strands/session/session_repository.py"
+                  }
+                ]
+              },
+              {
+                "name": "telemetry",
+                "type": "directory",
+                "path": "src/strands/telemetry",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/telemetry/__init__.py"
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file",
+                    "path": "src/strands/telemetry/config.py"
+                  },
+                  {
+                    "name": "metrics.py",
+                    "type": "file",
+                    "path": "src/strands/telemetry/metrics.py"
+                  },
+                  {
+                    "name": "metrics_constants.py",
+                    "type": "file",
+                    "path": "src/strands/telemetry/metrics_constants.py"
+                  },
+                  {
+                    "name": "tracer.py",
+                    "type": "file",
+                    "path": "src/strands/telemetry/tracer.py"
+                  }
+                ]
+              },
+              {
+                "name": "tools",
+                "type": "directory",
+                "path": "src/strands/tools",
+                "children": [
+                  {
+                    "name": "executors",
+                    "type": "directory",
+                    "path": "src/strands/tools/executors",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/tools/executors/__init__.py"
+                      },
+                      {
+                        "name": "_executor.py",
+                        "type": "file",
+                        "path": "src/strands/tools/executors/_executor.py"
+                      },
+                      {
+                        "name": "concurrent.py",
+                        "type": "file",
+                        "path": "src/strands/tools/executors/concurrent.py"
+                      },
+                      {
+                        "name": "sequential.py",
+                        "type": "file",
+                        "path": "src/strands/tools/executors/sequential.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "mcp",
+                    "type": "directory",
+                    "path": "src/strands/tools/mcp",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/tools/mcp/__init__.py"
+                      },
+                      {
+                        "name": "mcp_agent_tool.py",
+                        "type": "file",
+                        "path": "src/strands/tools/mcp/mcp_agent_tool.py"
+                      },
+                      {
+                        "name": "mcp_client.py",
+                        "type": "file",
+                        "path": "src/strands/tools/mcp/mcp_client.py"
+                      },
+                      {
+                        "name": "mcp_instrumentation.py",
+                        "type": "file",
+                        "path": "src/strands/tools/mcp/mcp_instrumentation.py"
+                      },
+                      {
+                        "name": "mcp_types.py",
+                        "type": "file",
+                        "path": "src/strands/tools/mcp/mcp_types.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "structured_output",
+                    "type": "directory",
+                    "path": "src/strands/tools/structured_output",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "src/strands/tools/structured_output/__init__.py"
+                      },
+                      {
+                        "name": "_structured_output_context.py",
+                        "type": "file",
+                        "path": "src/strands/tools/structured_output/_structured_output_context.py"
+                      },
+                      {
+                        "name": "structured_output_tool.py",
+                        "type": "file",
+                        "path": "src/strands/tools/structured_output/structured_output_tool.py"
+                      },
+                      {
+                        "name": "structured_output_utils.py",
+                        "type": "file",
+                        "path": "src/strands/tools/structured_output/structured_output_utils.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/tools/__init__.py"
+                  },
+                  {
+                    "name": "_caller.py",
+                    "type": "file",
+                    "path": "src/strands/tools/_caller.py"
+                  },
+                  {
+                    "name": "_tool_helpers.py",
+                    "type": "file",
+                    "path": "src/strands/tools/_tool_helpers.py"
+                  },
+                  {
+                    "name": "_validator.py",
+                    "type": "file",
+                    "path": "src/strands/tools/_validator.py"
+                  },
+                  {
+                    "name": "decorator.py",
+                    "type": "file",
+                    "path": "src/strands/tools/decorator.py"
+                  },
+                  {
+                    "name": "loader.py",
+                    "type": "file",
+                    "path": "src/strands/tools/loader.py"
+                  },
+                  {
+                    "name": "registry.py",
+                    "type": "file",
+                    "path": "src/strands/tools/registry.py"
+                  },
+                  {
+                    "name": "tools.py",
+                    "type": "file",
+                    "path": "src/strands/tools/tools.py"
+                  },
+                  {
+                    "name": "watcher.py",
+                    "type": "file",
+                    "path": "src/strands/tools/watcher.py"
+                  }
+                ]
+              },
+              {
+                "name": "types",
+                "type": "directory",
+                "path": "src/strands/types",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "src/strands/types/__init__.py"
+                  },
+                  {
+                    "name": "_events.py",
+                    "type": "file",
+                    "path": "src/strands/types/_events.py"
+                  },
+                  {
+                    "name": "agent.py",
+                    "type": "file",
+                    "path": "src/strands/types/agent.py"
+                  },
+                  {
+                    "name": "citations.py",
+                    "type": "file",
+                    "path": "src/strands/types/citations.py"
+                  },
+                  {
+                    "name": "collections.py",
+                    "type": "file",
+                    "path": "src/strands/types/collections.py"
+                  },
+                  {
+                    "name": "content.py",
+                    "type": "file",
+                    "path": "src/strands/types/content.py"
+                  },
+                  {
+                    "name": "event_loop.py",
+                    "type": "file",
+                    "path": "src/strands/types/event_loop.py"
+                  },
+                  {
+                    "name": "exceptions.py",
+                    "type": "file",
+                    "path": "src/strands/types/exceptions.py"
+                  },
+                  {
+                    "name": "guardrails.py",
+                    "type": "file",
+                    "path": "src/strands/types/guardrails.py"
+                  },
+                  {
+                    "name": "interrupt.py",
+                    "type": "file",
+                    "path": "src/strands/types/interrupt.py"
+                  },
+                  {
+                    "name": "json_dict.py",
+                    "type": "file",
+                    "path": "src/strands/types/json_dict.py"
+                  },
+                  {
+                    "name": "media.py",
+                    "type": "file",
+                    "path": "src/strands/types/media.py"
+                  },
+                  {
+                    "name": "multiagent.py",
+                    "type": "file",
+                    "path": "src/strands/types/multiagent.py"
+                  },
+                  {
+                    "name": "session.py",
+                    "type": "file",
+                    "path": "src/strands/types/session.py"
+                  },
+                  {
+                    "name": "streaming.py",
+                    "type": "file",
+                    "path": "src/strands/types/streaming.py"
+                  },
+                  {
+                    "name": "tools.py",
+                    "type": "file",
+                    "path": "src/strands/types/tools.py"
+                  },
+                  {
+                    "name": "traces.py",
+                    "type": "file",
+                    "path": "src/strands/types/traces.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "src/strands/__init__.py"
+              },
+              {
+                "name": "_async.py",
+                "type": "file",
+                "path": "src/strands/_async.py"
+              },
+              {
+                "name": "_exception_notes.py",
+                "type": "file",
+                "path": "src/strands/_exception_notes.py"
+              },
+              {
+                "name": "_identifier.py",
+                "type": "file",
+                "path": "src/strands/_identifier.py"
+              },
+              {
+                "name": "interrupt.py",
+                "type": "file",
+                "path": "src/strands/interrupt.py"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "tests",
+        "children": [
+          {
+            "name": "fixtures",
+            "type": "directory",
+            "path": "tests/fixtures",
+            "children": [
+              {
+                "name": "mock_agent_tool.py",
+                "type": "file",
+                "path": "tests/fixtures/mock_agent_tool.py"
+              },
+              {
+                "name": "mock_hook_provider.py",
+                "type": "file",
+                "path": "tests/fixtures/mock_hook_provider.py"
+              },
+              {
+                "name": "mock_multiagent_hook_provider.py",
+                "type": "file",
+                "path": "tests/fixtures/mock_multiagent_hook_provider.py"
+              },
+              {
+                "name": "mock_session_repository.py",
+                "type": "file",
+                "path": "tests/fixtures/mock_session_repository.py"
+              },
+              {
+                "name": "mocked_model_provider.py",
+                "type": "file",
+                "path": "tests/fixtures/mocked_model_provider.py"
+              },
+              {
+                "name": "say_tool.py",
+                "type": "file",
+                "path": "tests/fixtures/say_tool.py"
+              },
+              {
+                "name": "tool_with_spec_but_no_function.py",
+                "type": "file",
+                "path": "tests/fixtures/tool_with_spec_but_no_function.py"
+              },
+              {
+                "name": "tool_with_spec_but_non_callable_function.py",
+                "type": "file",
+                "path": "tests/fixtures/tool_with_spec_but_non_callable_function.py"
+              }
+            ]
+          },
+          {
+            "name": "strands",
+            "type": "directory",
+            "path": "tests/strands",
+            "children": [
+              {
+                "name": "agent",
+                "type": "directory",
+                "path": "tests/strands/agent",
+                "children": [
+                  {
+                    "name": "hooks",
+                    "type": "directory",
+                    "path": "tests/strands/agent/hooks",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "tests/strands/agent/hooks/__init__.py"
+                      },
+                      {
+                        "name": "test_agent_events.py",
+                        "type": "file",
+                        "path": "tests/strands/agent/hooks/test_agent_events.py"
+                      },
+                      {
+                        "name": "test_events.py",
+                        "type": "file",
+                        "path": "tests/strands/agent/hooks/test_events.py"
+                      },
+                      {
+                        "name": "test_hook_registry.py",
+                        "type": "file",
+                        "path": "tests/strands/agent/hooks/test_hook_registry.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/agent/__init__.py"
+                  },
+                  {
+                    "name": "test_agent.py",
+                    "type": "file",
+                    "path": "tests/strands/agent/test_agent.py"
+                  },
+                  {
+                    "name": "test_agent_hooks.py",
+                    "type": "file",
+                    "path": "tests/strands/agent/test_agent_hooks.py"
+                  },
+                  {
+                    "name": "test_agent_result.py",
+                    "type": "file",
+                    "path": "tests/strands/agent/test_agent_result.py"
+                  },
+                  {
+                    "name": "test_agent_state.py",
+                    "type": "file",
+                    "path": "tests/strands/agent/test_agent_state.py"
+                  },
+                  {
+                    "name": "test_agent_structured_output.py",
+                    "type": "file",
+                    "path": "tests/strands/agent/test_agent_structured_output.py"
+                  },
+                  {
+                    "name": "test_conversation_manager.py",
+                    "type": "file",
+                    "path": "tests/strands/agent/test_conversation_manager.py"
+                  },
+                  {
+                    "name": "test_summarizing_conversation_manager.py",
+                    "type": "file",
+                    "path": "tests/strands/agent/test_summarizing_conversation_manager.py"
+                  }
+                ]
+              },
+              {
+                "name": "event_loop",
+                "type": "directory",
+                "path": "tests/strands/event_loop",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/event_loop/__init__.py"
+                  },
+                  {
+                    "name": "test_event_loop.py",
+                    "type": "file",
+                    "path": "tests/strands/event_loop/test_event_loop.py"
+                  },
+                  {
+                    "name": "test_event_loop_structured_output.py",
+                    "type": "file",
+                    "path": "tests/strands/event_loop/test_event_loop_structured_output.py"
+                  },
+                  {
+                    "name": "test_recover_message_on_max_tokens_reached.py",
+                    "type": "file",
+                    "path": "tests/strands/event_loop/test_recover_message_on_max_tokens_reached.py"
+                  },
+                  {
+                    "name": "test_streaming.py",
+                    "type": "file",
+                    "path": "tests/strands/event_loop/test_streaming.py"
+                  },
+                  {
+                    "name": "test_streaming_structured_output.py",
+                    "type": "file",
+                    "path": "tests/strands/event_loop/test_streaming_structured_output.py"
+                  }
+                ]
+              },
+              {
+                "name": "experimental",
+                "type": "directory",
+                "path": "tests/strands/experimental",
+                "children": [
+                  {
+                    "name": "bidi",
+                    "type": "directory",
+                    "path": "tests/strands/experimental/bidi",
+                    "children": [
+                      {
+                        "name": "_async",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/bidi/_async",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/_async/__init__.py"
+                          },
+                          {
+                            "name": "test__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/_async/test__init__.py"
+                          },
+                          {
+                            "name": "test_task_group.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/_async/test_task_group.py"
+                          },
+                          {
+                            "name": "test_task_pool.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/_async/test_task_pool.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "agent",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/bidi/agent",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/agent/__init__.py"
+                          },
+                          {
+                            "name": "test_agent.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/agent/test_agent.py"
+                          },
+                          {
+                            "name": "test_loop.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/agent/test_loop.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/bidi/io",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/io/__init__.py"
+                          },
+                          {
+                            "name": "test_audio.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/io/test_audio.py"
+                          },
+                          {
+                            "name": "test_text.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/io/test_text.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "models",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/bidi/models",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/models/__init__.py"
+                          },
+                          {
+                            "name": "test_gemini_live.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/models/test_gemini_live.py"
+                          },
+                          {
+                            "name": "test_nova_sonic.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/models/test_nova_sonic.py"
+                          },
+                          {
+                            "name": "test_openai_realtime.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/models/test_openai_realtime.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "types",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/bidi/types",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/types/__init__.py"
+                          },
+                          {
+                            "name": "test_events.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/bidi/types/test_events.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "tests/strands/experimental/bidi/__init__.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "hooks",
+                    "type": "directory",
+                    "path": "tests/strands/experimental/hooks",
+                    "children": [
+                      {
+                        "name": "multiagent",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/hooks/multiagent",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/hooks/multiagent/__init__.py"
+                          },
+                          {
+                            "name": "test_events.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/hooks/multiagent/test_events.py"
+                          },
+                          {
+                            "name": "test_multi_agent_hooks.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/hooks/multiagent/test_multi_agent_hooks.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "tests/strands/experimental/hooks/__init__.py"
+                      },
+                      {
+                        "name": "test_bidi_hook_events.py",
+                        "type": "file",
+                        "path": "tests/strands/experimental/hooks/test_bidi_hook_events.py"
+                      },
+                      {
+                        "name": "test_hook_aliases.py",
+                        "type": "file",
+                        "path": "tests/strands/experimental/hooks/test_hook_aliases.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "steering",
+                    "type": "directory",
+                    "path": "tests/strands/experimental/steering",
+                    "children": [
+                      {
+                        "name": "context_providers",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/steering/context_providers",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/steering/context_providers/__init__.py"
+                          },
+                          {
+                            "name": "test_ledger_provider.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/steering/context_providers/test_ledger_provider.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "core",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/steering/core",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/steering/core/__init__.py"
+                          },
+                          {
+                            "name": "test_handler.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/steering/core/test_handler.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "handlers",
+                        "type": "directory",
+                        "path": "tests/strands/experimental/steering/handlers",
+                        "children": [
+                          {
+                            "name": "llm",
+                            "type": "directory",
+                            "path": "tests/strands/experimental/steering/handlers/llm",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file",
+                                "path": "tests/strands/experimental/steering/handlers/llm/__init__.py"
+                              },
+                              {
+                                "name": "test_llm_handler.py",
+                                "type": "file",
+                                "path": "tests/strands/experimental/steering/handlers/llm/test_llm_handler.py"
+                              },
+                              {
+                                "name": "test_mappers.py",
+                                "type": "file",
+                                "path": "tests/strands/experimental/steering/handlers/llm/test_mappers.py"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "__init__.py",
+                            "type": "file",
+                            "path": "tests/strands/experimental/steering/handlers/__init__.py"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "tests/strands/experimental/steering/__init__.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tools",
+                    "type": "directory",
+                    "path": "tests/strands/experimental/tools",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "tests/strands/experimental/tools/__init__.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/experimental/__init__.py"
+                  },
+                  {
+                    "name": "test_agent_config.py",
+                    "type": "file",
+                    "path": "tests/strands/experimental/test_agent_config.py"
+                  }
+                ]
+              },
+              {
+                "name": "handlers",
+                "type": "directory",
+                "path": "tests/strands/handlers",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/handlers/__init__.py"
+                  },
+                  {
+                    "name": "test_callback_handler.py",
+                    "type": "file",
+                    "path": "tests/strands/handlers/test_callback_handler.py"
+                  }
+                ]
+              },
+              {
+                "name": "hooks",
+                "type": "directory",
+                "path": "tests/strands/hooks",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/hooks/__init__.py"
+                  },
+                  {
+                    "name": "test_registry.py",
+                    "type": "file",
+                    "path": "tests/strands/hooks/test_registry.py"
+                  }
+                ]
+              },
+              {
+                "name": "models",
+                "type": "directory",
+                "path": "tests/strands/models",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/models/__init__.py"
+                  },
+                  {
+                    "name": "test_anthropic.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_anthropic.py"
+                  },
+                  {
+                    "name": "test_bedrock.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_bedrock.py"
+                  },
+                  {
+                    "name": "test_gemini.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_gemini.py"
+                  },
+                  {
+                    "name": "test_litellm.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_litellm.py"
+                  },
+                  {
+                    "name": "test_llamaapi.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_llamaapi.py"
+                  },
+                  {
+                    "name": "test_llamacpp.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_llamacpp.py"
+                  },
+                  {
+                    "name": "test_mistral.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_mistral.py"
+                  },
+                  {
+                    "name": "test_model.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_model.py"
+                  },
+                  {
+                    "name": "test_ollama.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_ollama.py"
+                  },
+                  {
+                    "name": "test_openai.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_openai.py"
+                  },
+                  {
+                    "name": "test_sagemaker.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_sagemaker.py"
+                  },
+                  {
+                    "name": "test_writer.py",
+                    "type": "file",
+                    "path": "tests/strands/models/test_writer.py"
+                  }
+                ]
+              },
+              {
+                "name": "multiagent",
+                "type": "directory",
+                "path": "tests/strands/multiagent",
+                "children": [
+                  {
+                    "name": "a2a",
+                    "type": "directory",
+                    "path": "tests/strands/multiagent/a2a",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "tests/strands/multiagent/a2a/__init__.py"
+                      },
+                      {
+                        "name": "conftest.py",
+                        "type": "file",
+                        "path": "tests/strands/multiagent/a2a/conftest.py"
+                      },
+                      {
+                        "name": "test_executor.py",
+                        "type": "file",
+                        "path": "tests/strands/multiagent/a2a/test_executor.py"
+                      },
+                      {
+                        "name": "test_server.py",
+                        "type": "file",
+                        "path": "tests/strands/multiagent/a2a/test_server.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/multiagent/__init__.py"
+                  },
+                  {
+                    "name": "conftest.py",
+                    "type": "file",
+                    "path": "tests/strands/multiagent/conftest.py"
+                  },
+                  {
+                    "name": "test_base.py",
+                    "type": "file",
+                    "path": "tests/strands/multiagent/test_base.py"
+                  },
+                  {
+                    "name": "test_graph.py",
+                    "type": "file",
+                    "path": "tests/strands/multiagent/test_graph.py"
+                  },
+                  {
+                    "name": "test_swarm.py",
+                    "type": "file",
+                    "path": "tests/strands/multiagent/test_swarm.py"
+                  }
+                ]
+              },
+              {
+                "name": "session",
+                "type": "directory",
+                "path": "tests/strands/session",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/session/__init__.py"
+                  },
+                  {
+                    "name": "test_file_session_manager.py",
+                    "type": "file",
+                    "path": "tests/strands/session/test_file_session_manager.py"
+                  },
+                  {
+                    "name": "test_repository_session_manager.py",
+                    "type": "file",
+                    "path": "tests/strands/session/test_repository_session_manager.py"
+                  },
+                  {
+                    "name": "test_s3_session_manager.py",
+                    "type": "file",
+                    "path": "tests/strands/session/test_s3_session_manager.py"
+                  }
+                ]
+              },
+              {
+                "name": "telemetry",
+                "type": "directory",
+                "path": "tests/strands/telemetry",
+                "children": [
+                  {
+                    "name": "test_config.py",
+                    "type": "file",
+                    "path": "tests/strands/telemetry/test_config.py"
+                  },
+                  {
+                    "name": "test_metrics.py",
+                    "type": "file",
+                    "path": "tests/strands/telemetry/test_metrics.py"
+                  },
+                  {
+                    "name": "test_tracer.py",
+                    "type": "file",
+                    "path": "tests/strands/telemetry/test_tracer.py"
+                  }
+                ]
+              },
+              {
+                "name": "tools",
+                "type": "directory",
+                "path": "tests/strands/tools",
+                "children": [
+                  {
+                    "name": "executors",
+                    "type": "directory",
+                    "path": "tests/strands/tools/executors",
+                    "children": [
+                      {
+                        "name": "conftest.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/executors/conftest.py"
+                      },
+                      {
+                        "name": "test_concurrent.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/executors/test_concurrent.py"
+                      },
+                      {
+                        "name": "test_executor.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/executors/test_executor.py"
+                      },
+                      {
+                        "name": "test_sequential.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/executors/test_sequential.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "mcp",
+                    "type": "directory",
+                    "path": "tests/strands/tools/mcp",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/mcp/__init__.py"
+                      },
+                      {
+                        "name": "test_mcp_agent_tool.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/mcp/test_mcp_agent_tool.py"
+                      },
+                      {
+                        "name": "test_mcp_client.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/mcp/test_mcp_client.py"
+                      },
+                      {
+                        "name": "test_mcp_client_tool_provider.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/mcp/test_mcp_client_tool_provider.py"
+                      },
+                      {
+                        "name": "test_mcp_instrumentation.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/mcp/test_mcp_instrumentation.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "structured_output",
+                    "type": "directory",
+                    "path": "tests/strands/tools/structured_output",
+                    "children": [
+                      {
+                        "name": "test_structured_output_context.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/structured_output/test_structured_output_context.py"
+                      },
+                      {
+                        "name": "test_structured_output_tool.py",
+                        "type": "file",
+                        "path": "tests/strands/tools/structured_output/test_structured_output_tool.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/__init__.py"
+                  },
+                  {
+                    "name": "test_caller.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_caller.py"
+                  },
+                  {
+                    "name": "test_decorator.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_decorator.py"
+                  },
+                  {
+                    "name": "test_loader.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_loader.py"
+                  },
+                  {
+                    "name": "test_registry.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_registry.py"
+                  },
+                  {
+                    "name": "test_registry_tool_provider.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_registry_tool_provider.py"
+                  },
+                  {
+                    "name": "test_structured_output.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_structured_output.py"
+                  },
+                  {
+                    "name": "test_tool_helpers.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_tool_helpers.py"
+                  },
+                  {
+                    "name": "test_tools.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_tools.py"
+                  },
+                  {
+                    "name": "test_validator.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_validator.py"
+                  },
+                  {
+                    "name": "test_watcher.py",
+                    "type": "file",
+                    "path": "tests/strands/tools/test_watcher.py"
+                  }
+                ]
+              },
+              {
+                "name": "types",
+                "type": "directory",
+                "path": "tests/strands/types",
+                "children": [
+                  {
+                    "name": "test__events.py",
+                    "type": "file",
+                    "path": "tests/strands/types/test__events.py"
+                  },
+                  {
+                    "name": "test_exceptions.py",
+                    "type": "file",
+                    "path": "tests/strands/types/test_exceptions.py"
+                  },
+                  {
+                    "name": "test_interrupt.py",
+                    "type": "file",
+                    "path": "tests/strands/types/test_interrupt.py"
+                  },
+                  {
+                    "name": "test_json_dict.py",
+                    "type": "file",
+                    "path": "tests/strands/types/test_json_dict.py"
+                  },
+                  {
+                    "name": "test_session.py",
+                    "type": "file",
+                    "path": "tests/strands/types/test_session.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/strands/__init__.py"
+              },
+              {
+                "name": "test_async.py",
+                "type": "file",
+                "path": "tests/strands/test_async.py"
+              },
+              {
+                "name": "test_exception_notes.py",
+                "type": "file",
+                "path": "tests/strands/test_exception_notes.py"
+              },
+              {
+                "name": "test_identifier.py",
+                "type": "file",
+                "path": "tests/strands/test_identifier.py"
+              },
+              {
+                "name": "test_interrupt.py",
+                "type": "file",
+                "path": "tests/strands/test_interrupt.py"
+              }
+            ]
+          },
+          {
+            "name": "__init__.py",
+            "type": "file",
+            "path": "tests/__init__.py"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file",
+            "path": "tests/conftest.py"
+          }
+        ]
+      },
+      {
+        "name": "tests_integ",
+        "type": "directory",
+        "path": "tests_integ",
+        "children": [
+          {
+            "name": "bidi",
+            "type": "directory",
+            "path": "tests_integ/bidi",
+            "children": [
+              {
+                "name": "generators",
+                "type": "directory",
+                "path": "tests_integ/bidi/generators",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests_integ/bidi/generators/__init__.py"
+                  },
+                  {
+                    "name": "audio.py",
+                    "type": "file",
+                    "path": "tests_integ/bidi/generators/audio.py"
+                  }
+                ]
+              },
+              {
+                "name": "tools",
+                "type": "directory",
+                "path": "tests_integ/bidi/tools",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests_integ/bidi/tools/__init__.py"
+                  },
+                  {
+                    "name": "test_direct.py",
+                    "type": "file",
+                    "path": "tests_integ/bidi/tools/test_direct.py"
+                  }
+                ]
+              },
+              {
+                "name": "wrappers",
+                "type": "directory",
+                "path": "tests_integ/bidi/wrappers",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests_integ/bidi/wrappers/__init__.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests_integ/bidi/__init__.py"
+              },
+              {
+                "name": "conftest.py",
+                "type": "file",
+                "path": "tests_integ/bidi/conftest.py"
+              },
+              {
+                "name": "context.py",
+                "type": "file",
+                "path": "tests_integ/bidi/context.py"
+              },
+              {
+                "name": "hook_utils.py",
+                "type": "file",
+                "path": "tests_integ/bidi/hook_utils.py"
+              },
+              {
+                "name": "test_bidi_hooks.py",
+                "type": "file",
+                "path": "tests_integ/bidi/test_bidi_hooks.py"
+              },
+              {
+                "name": "test_bidirectional_agent.py",
+                "type": "file",
+                "path": "tests_integ/bidi/test_bidirectional_agent.py"
+              }
+            ]
+          },
+          {
+            "name": "fixtures",
+            "type": "directory",
+            "path": "tests_integ/fixtures",
+            "children": [
+              {
+                "name": "say_tool.py",
+                "type": "file",
+                "path": "tests_integ/fixtures/say_tool.py"
+              }
+            ]
+          },
+          {
+            "name": "hooks",
+            "type": "directory",
+            "path": "tests_integ/hooks",
+            "children": [
+              {
+                "name": "multiagent",
+                "type": "directory",
+                "path": "tests_integ/hooks/multiagent",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests_integ/hooks/multiagent/__init__.py"
+                  },
+                  {
+                    "name": "test_cancel.py",
+                    "type": "file",
+                    "path": "tests_integ/hooks/multiagent/test_cancel.py"
+                  },
+                  {
+                    "name": "test_events.py",
+                    "type": "file",
+                    "path": "tests_integ/hooks/multiagent/test_events.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests_integ/hooks/__init__.py"
+              },
+              {
+                "name": "test_events.py",
+                "type": "file",
+                "path": "tests_integ/hooks/test_events.py"
+              }
+            ]
+          },
+          {
+            "name": "interrupts",
+            "type": "directory",
+            "path": "tests_integ/interrupts",
+            "children": [
+              {
+                "name": "multiagent",
+                "type": "directory",
+                "path": "tests_integ/interrupts/multiagent",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests_integ/interrupts/multiagent/__init__.py"
+                  },
+                  {
+                    "name": "test_agent.py",
+                    "type": "file",
+                    "path": "tests_integ/interrupts/multiagent/test_agent.py"
+                  },
+                  {
+                    "name": "test_hook.py",
+                    "type": "file",
+                    "path": "tests_integ/interrupts/multiagent/test_hook.py"
+                  },
+                  {
+                    "name": "test_session.py",
+                    "type": "file",
+                    "path": "tests_integ/interrupts/multiagent/test_session.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests_integ/interrupts/__init__.py"
+              },
+              {
+                "name": "test_hook.py",
+                "type": "file",
+                "path": "tests_integ/interrupts/test_hook.py"
+              },
+              {
+                "name": "test_session.py",
+                "type": "file",
+                "path": "tests_integ/interrupts/test_session.py"
+              },
+              {
+                "name": "test_tool.py",
+                "type": "file",
+                "path": "tests_integ/interrupts/test_tool.py"
+              }
+            ]
+          },
+          {
+            "name": "mcp",
+            "type": "directory",
+            "path": "tests_integ/mcp",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests_integ/mcp/__init__.py"
+              },
+              {
+                "name": "echo_server.py",
+                "type": "file",
+                "path": "tests_integ/mcp/echo_server.py"
+              },
+              {
+                "name": "elicitation_server.py",
+                "type": "file",
+                "path": "tests_integ/mcp/elicitation_server.py"
+              },
+              {
+                "name": "test_mcp_client.py",
+                "type": "file",
+                "path": "tests_integ/mcp/test_mcp_client.py"
+              },
+              {
+                "name": "test_mcp_client_structured_content_and_metadata.py",
+                "type": "file",
+                "path": "tests_integ/mcp/test_mcp_client_structured_content_and_metadata.py"
+              },
+              {
+                "name": "test_mcp_elicitation.py",
+                "type": "file",
+                "path": "tests_integ/mcp/test_mcp_elicitation.py"
+              },
+              {
+                "name": "test_mcp_output_schema.py",
+                "type": "file",
+                "path": "tests_integ/mcp/test_mcp_output_schema.py"
+              },
+              {
+                "name": "test_mcp_tool_provider.py",
+                "type": "file",
+                "path": "tests_integ/mcp/test_mcp_tool_provider.py"
+              }
+            ]
+          },
+          {
+            "name": "models",
+            "type": "directory",
+            "path": "tests_integ/models",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests_integ/models/__init__.py"
+              },
+              {
+                "name": "providers.py",
+                "type": "file",
+                "path": "tests_integ/models/providers.py"
+              },
+              {
+                "name": "test_conformance.py",
+                "type": "file",
+                "path": "tests_integ/models/test_conformance.py"
+              },
+              {
+                "name": "test_model_anthropic.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_anthropic.py"
+              },
+              {
+                "name": "test_model_bedrock.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_bedrock.py"
+              },
+              {
+                "name": "test_model_cohere.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_cohere.py"
+              },
+              {
+                "name": "test_model_gemini.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_gemini.py"
+              },
+              {
+                "name": "test_model_litellm.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_litellm.py"
+              },
+              {
+                "name": "test_model_llamaapi.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_llamaapi.py"
+              },
+              {
+                "name": "test_model_llamacpp.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_llamacpp.py"
+              },
+              {
+                "name": "test_model_mistral.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_mistral.py"
+              },
+              {
+                "name": "test_model_ollama.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_ollama.py"
+              },
+              {
+                "name": "test_model_openai.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_openai.py"
+              },
+              {
+                "name": "test_model_sagemaker.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_sagemaker.py"
+              },
+              {
+                "name": "test_model_writer.py",
+                "type": "file",
+                "path": "tests_integ/models/test_model_writer.py"
+              }
+            ]
+          },
+          {
+            "name": "steering",
+            "type": "directory",
+            "path": "tests_integ/steering",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests_integ/steering/__init__.py"
+              },
+              {
+                "name": "test_llm_handler.py",
+                "type": "file",
+                "path": "tests_integ/steering/test_llm_handler.py"
+              }
+            ]
+          },
+          {
+            "name": "tools",
+            "type": "directory",
+            "path": "tests_integ/tools",
+            "children": [
+              {
+                "name": "executors",
+                "type": "directory",
+                "path": "tests_integ/tools/executors",
+                "children": [
+                  {
+                    "name": "conftest.py",
+                    "type": "file",
+                    "path": "tests_integ/tools/executors/conftest.py"
+                  },
+                  {
+                    "name": "test_concurrent.py",
+                    "type": "file",
+                    "path": "tests_integ/tools/executors/test_concurrent.py"
+                  },
+                  {
+                    "name": "test_sequential.py",
+                    "type": "file",
+                    "path": "tests_integ/tools/executors/test_sequential.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests_integ/tools/__init__.py"
+              },
+              {
+                "name": "test_thread_context.py",
+                "type": "file",
+                "path": "tests_integ/tools/test_thread_context.py"
+              }
+            ]
+          },
+          {
+            "name": "__init__.py",
+            "type": "file",
+            "path": "tests_integ/__init__.py"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file",
+            "path": "tests_integ/conftest.py"
+          },
+          {
+            "name": "test_a2a_executor.py",
+            "type": "file",
+            "path": "tests_integ/test_a2a_executor.py"
+          },
+          {
+            "name": "test_agent_async.py",
+            "type": "file",
+            "path": "tests_integ/test_agent_async.py"
+          },
+          {
+            "name": "test_agent_json.py",
+            "type": "file",
+            "path": "tests_integ/test_agent_json.py"
+          },
+          {
+            "name": "test_bedrock_cache_point.py",
+            "type": "file",
+            "path": "tests_integ/test_bedrock_cache_point.py"
+          },
+          {
+            "name": "test_bedrock_guardrails.py",
+            "type": "file",
+            "path": "tests_integ/test_bedrock_guardrails.py"
+          },
+          {
+            "name": "test_context_overflow.py",
+            "type": "file",
+            "path": "tests_integ/test_context_overflow.py"
+          },
+          {
+            "name": "test_function_tools.py",
+            "type": "file",
+            "path": "tests_integ/test_function_tools.py"
+          },
+          {
+            "name": "test_hot_tool_reload_decorator.py",
+            "type": "file",
+            "path": "tests_integ/test_hot_tool_reload_decorator.py"
+          },
+          {
+            "name": "test_invalid_tool_names.py",
+            "type": "file",
+            "path": "tests_integ/test_invalid_tool_names.py"
+          },
+          {
+            "name": "test_max_tokens_reached.py",
+            "type": "file",
+            "path": "tests_integ/test_max_tokens_reached.py"
+          },
+          {
+            "name": "test_multiagent_graph.py",
+            "type": "file",
+            "path": "tests_integ/test_multiagent_graph.py"
+          },
+          {
+            "name": "test_multiagent_swarm.py",
+            "type": "file",
+            "path": "tests_integ/test_multiagent_swarm.py"
+          },
+          {
+            "name": "test_session.py",
+            "type": "file",
+            "path": "tests_integ/test_session.py"
+          },
+          {
+            "name": "test_stream_agent.py",
+            "type": "file",
+            "path": "tests_integ/test_stream_agent.py"
+          },
+          {
+            "name": "test_structured_output_agent_loop.py",
+            "type": "file",
+            "path": "tests_integ/test_structured_output_agent_loop.py"
+          },
+          {
+            "name": "test_summarizing_conversation_manager_integration.py",
+            "type": "file",
+            "path": "tests_integ/test_summarizing_conversation_manager_integration.py"
+          },
+          {
+            "name": "test_tool_context_injection.py",
+            "type": "file",
+            "path": "tests_integ/test_tool_context_injection.py"
+          }
+        ]
+      },
+      {
+        "name": "pyproject.toml",
+        "type": "file",
+        "path": "pyproject.toml"
+      }
+    ]
+  },
+  "dependencies": {
+    "nodes": [
+      {
+        "id": 0,
+        "path": "tests_integ/test_hot_tool_reload_decorator.py",
+        "name": "test_hot_tool_reload_decorator.py"
+      },
+      {
+        "id": 1,
+        "path": "tests_integ/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 2,
+        "path": "tests_integ/test_max_tokens_reached.py",
+        "name": "test_max_tokens_reached.py"
+      },
+      {
+        "id": 3,
+        "path": "tests_integ/test_agent_async.py",
+        "name": "test_agent_async.py"
+      },
+      {
+        "id": 4,
+        "path": "tests_integ/test_multiagent_graph.py",
+        "name": "test_multiagent_graph.py"
+      },
+      {
+        "id": 5,
+        "path": "tests_integ/test_session.py",
+        "name": "test_session.py"
+      },
+      {
+        "id": 6,
+        "path": "tests_integ/test_summarizing_conversation_manager_integration.py",
+        "name": "test_summarizing_conversation_manager_integration.py"
+      },
+      {
+        "id": 7,
+        "path": "tests_integ/test_stream_agent.py",
+        "name": "test_stream_agent.py"
+      },
+      {
+        "id": 8,
+        "path": "tests_integ/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 9,
+        "path": "tests_integ/test_tool_context_injection.py",
+        "name": "test_tool_context_injection.py"
+      },
+      {
+        "id": 10,
+        "path": "tests_integ/test_multiagent_swarm.py",
+        "name": "test_multiagent_swarm.py"
+      },
+      {
+        "id": 11,
+        "path": "tests_integ/test_a2a_executor.py",
+        "name": "test_a2a_executor.py"
+      },
+      {
+        "id": 12,
+        "path": "tests_integ/test_structured_output_agent_loop.py",
+        "name": "test_structured_output_agent_loop.py"
+      },
+      {
+        "id": 13,
+        "path": "tests_integ/test_function_tools.py",
+        "name": "test_function_tools.py"
+      },
+      {
+        "id": 14,
+        "path": "tests_integ/test_invalid_tool_names.py",
+        "name": "test_invalid_tool_names.py"
+      },
+      {
+        "id": 15,
+        "path": "tests_integ/test_bedrock_guardrails.py",
+        "name": "test_bedrock_guardrails.py"
+      },
+      {
+        "id": 16,
+        "path": "tests_integ/test_bedrock_cache_point.py",
+        "name": "test_bedrock_cache_point.py"
+      },
+      {
+        "id": 17,
+        "path": "tests_integ/test_context_overflow.py",
+        "name": "test_context_overflow.py"
+      },
+      {
+        "id": 18,
+        "path": "tests_integ/test_agent_json.py",
+        "name": "test_agent_json.py"
+      },
+      {
+        "id": 19,
+        "path": "tests/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 20,
+        "path": "tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 21,
+        "path": "src/strands/_exception_notes.py",
+        "name": "_exception_notes.py"
+      },
+      {
+        "id": 22,
+        "path": "src/strands/interrupt.py",
+        "name": "interrupt.py"
+      },
+      {
+        "id": 23,
+        "path": "src/strands/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 24,
+        "path": "src/strands/_async.py",
+        "name": "_async.py"
+      },
+      {
+        "id": 25,
+        "path": "src/strands/_identifier.py",
+        "name": "_identifier.py"
+      },
+      {
+        "id": 26,
+        "path": "src/strands/experimental/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 27,
+        "path": "src/strands/experimental/agent_config.py",
+        "name": "agent_config.py"
+      },
+      {
+        "id": 28,
+        "path": "src/strands/tools/registry.py",
+        "name": "registry.py"
+      },
+      {
+        "id": 29,
+        "path": "src/strands/tools/decorator.py",
+        "name": "decorator.py"
+      },
+      {
+        "id": 30,
+        "path": "src/strands/tools/_validator.py",
+        "name": "_validator.py"
+      },
+      {
+        "id": 31,
+        "path": "src/strands/tools/tools.py",
+        "name": "tools.py"
+      },
+      {
+        "id": 32,
+        "path": "src/strands/tools/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 33,
+        "path": "src/strands/tools/loader.py",
+        "name": "loader.py"
+      },
+      {
+        "id": 34,
+        "path": "src/strands/tools/_tool_helpers.py",
+        "name": "_tool_helpers.py"
+      },
+      {
+        "id": 35,
+        "path": "src/strands/tools/watcher.py",
+        "name": "watcher.py"
+      },
+      {
+        "id": 36,
+        "path": "src/strands/tools/_caller.py",
+        "name": "_caller.py"
+      },
+      {
+        "id": 37,
+        "path": "src/strands/types/citations.py",
+        "name": "citations.py"
+      },
+      {
+        "id": 38,
+        "path": "src/strands/types/json_dict.py",
+        "name": "json_dict.py"
+      },
+      {
+        "id": 39,
+        "path": "src/strands/types/media.py",
+        "name": "media.py"
+      },
+      {
+        "id": 40,
+        "path": "src/strands/types/interrupt.py",
+        "name": "interrupt.py"
+      },
+      {
+        "id": 41,
+        "path": "src/strands/types/multiagent.py",
+        "name": "multiagent.py"
+      },
+      {
+        "id": 42,
+        "path": "src/strands/types/tools.py",
+        "name": "tools.py"
+      },
+      {
+        "id": 43,
+        "path": "src/strands/types/session.py",
+        "name": "session.py"
+      },
+      {
+        "id": 44,
+        "path": "src/strands/types/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 45,
+        "path": "src/strands/types/event_loop.py",
+        "name": "event_loop.py"
+      },
+      {
+        "id": 46,
+        "path": "src/strands/types/content.py",
+        "name": "content.py"
+      },
+      {
+        "id": 47,
+        "path": "src/strands/types/collections.py",
+        "name": "collections.py"
+      },
+      {
+        "id": 48,
+        "path": "src/strands/types/guardrails.py",
+        "name": "guardrails.py"
+      },
+      {
+        "id": 49,
+        "path": "src/strands/types/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 50,
+        "path": "src/strands/types/_events.py",
+        "name": "_events.py"
+      },
+      {
+        "id": 51,
+        "path": "src/strands/types/exceptions.py",
+        "name": "exceptions.py"
+      },
+      {
+        "id": 52,
+        "path": "src/strands/types/streaming.py",
+        "name": "streaming.py"
+      },
+      {
+        "id": 53,
+        "path": "src/strands/types/traces.py",
+        "name": "traces.py"
+      },
+      {
+        "id": 54,
+        "path": "src/strands/multiagent/swarm.py",
+        "name": "swarm.py"
+      },
+      {
+        "id": 55,
+        "path": "src/strands/multiagent/graph.py",
+        "name": "graph.py"
+      },
+      {
+        "id": 56,
+        "path": "src/strands/multiagent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 57,
+        "path": "src/strands/multiagent/base.py",
+        "name": "base.py"
+      },
+      {
+        "id": 58,
+        "path": "src/strands/event_loop/_recover_message_on_max_tokens_reached.py",
+        "name": "_recover_message_on_max_tokens_reached.py"
+      },
+      {
+        "id": 59,
+        "path": "src/strands/event_loop/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 60,
+        "path": "src/strands/event_loop/event_loop.py",
+        "name": "event_loop.py"
+      },
+      {
+        "id": 61,
+        "path": "src/strands/event_loop/streaming.py",
+        "name": "streaming.py"
+      },
+      {
+        "id": 62,
+        "path": "src/strands/agent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 63,
+        "path": "src/strands/agent/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 64,
+        "path": "src/strands/agent/agent_result.py",
+        "name": "agent_result.py"
+      },
+      {
+        "id": 65,
+        "path": "src/strands/agent/state.py",
+        "name": "state.py"
+      },
+      {
+        "id": 66,
+        "path": "src/strands/models/llamaapi.py",
+        "name": "llamaapi.py"
+      },
+      {
+        "id": 67,
+        "path": "src/strands/models/mistral.py",
+        "name": "mistral.py"
+      },
+      {
+        "id": 68,
+        "path": "src/strands/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 69,
+        "path": "src/strands/models/gemini.py",
+        "name": "gemini.py"
+      },
+      {
+        "id": 70,
+        "path": "src/strands/models/model.py",
+        "name": "model.py"
+      },
+      {
+        "id": 71,
+        "path": "src/strands/models/litellm.py",
+        "name": "litellm.py"
+      },
+      {
+        "id": 72,
+        "path": "src/strands/models/openai.py",
+        "name": "openai.py"
+      },
+      {
+        "id": 73,
+        "path": "src/strands/models/_validation.py",
+        "name": "_validation.py"
+      },
+      {
+        "id": 74,
+        "path": "src/strands/models/sagemaker.py",
+        "name": "sagemaker.py"
+      },
+      {
+        "id": 75,
+        "path": "src/strands/models/anthropic.py",
+        "name": "anthropic.py"
+      },
+      {
+        "id": 76,
+        "path": "src/strands/models/writer.py",
+        "name": "writer.py"
+      },
+      {
+        "id": 77,
+        "path": "src/strands/models/ollama.py",
+        "name": "ollama.py"
+      },
+      {
+        "id": 78,
+        "path": "src/strands/models/bedrock.py",
+        "name": "bedrock.py"
+      },
+      {
+        "id": 79,
+        "path": "src/strands/models/llamacpp.py",
+        "name": "llamacpp.py"
+      },
+      {
+        "id": 80,
+        "path": "src/strands/hooks/registry.py",
+        "name": "registry.py"
+      },
+      {
+        "id": 81,
+        "path": "src/strands/hooks/events.py",
+        "name": "events.py"
+      },
+      {
+        "id": 82,
+        "path": "src/strands/hooks/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 83,
+        "path": "src/strands/telemetry/metrics.py",
+        "name": "metrics.py"
+      },
+      {
+        "id": 84,
+        "path": "src/strands/telemetry/config.py",
+        "name": "config.py"
+      },
+      {
+        "id": 85,
+        "path": "src/strands/telemetry/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 86,
+        "path": "src/strands/telemetry/metrics_constants.py",
+        "name": "metrics_constants.py"
+      },
+      {
+        "id": 87,
+        "path": "src/strands/telemetry/tracer.py",
+        "name": "tracer.py"
+      },
+      {
+        "id": 88,
+        "path": "src/strands/handlers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 89,
+        "path": "src/strands/handlers/callback_handler.py",
+        "name": "callback_handler.py"
+      },
+      {
+        "id": 90,
+        "path": "src/strands/session/session_repository.py",
+        "name": "session_repository.py"
+      },
+      {
+        "id": 91,
+        "path": "src/strands/session/session_manager.py",
+        "name": "session_manager.py"
+      },
+      {
+        "id": 92,
+        "path": "src/strands/session/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 93,
+        "path": "src/strands/session/file_session_manager.py",
+        "name": "file_session_manager.py"
+      },
+      {
+        "id": 94,
+        "path": "src/strands/session/s3_session_manager.py",
+        "name": "s3_session_manager.py"
+      },
+      {
+        "id": 95,
+        "path": "src/strands/session/repository_session_manager.py",
+        "name": "repository_session_manager.py"
+      },
+      {
+        "id": 96,
+        "path": "src/strands/agent/conversation_manager/sliding_window_conversation_manager.py",
+        "name": "sliding_window_conversation_manager.py"
+      },
+      {
+        "id": 97,
+        "path": "src/strands/agent/conversation_manager/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 98,
+        "path": "src/strands/agent/conversation_manager/summarizing_conversation_manager.py",
+        "name": "summarizing_conversation_manager.py"
+      },
+      {
+        "id": 99,
+        "path": "src/strands/agent/conversation_manager/null_conversation_manager.py",
+        "name": "null_conversation_manager.py"
+      },
+      {
+        "id": 100,
+        "path": "src/strands/agent/conversation_manager/conversation_manager.py",
+        "name": "conversation_manager.py"
+      },
+      {
+        "id": 101,
+        "path": "src/strands/multiagent/a2a/server.py",
+        "name": "server.py"
+      },
+      {
+        "id": 102,
+        "path": "src/strands/multiagent/a2a/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 103,
+        "path": "src/strands/multiagent/a2a/executor.py",
+        "name": "executor.py"
+      },
+      {
+        "id": 104,
+        "path": "src/strands/tools/structured_output/structured_output_tool.py",
+        "name": "structured_output_tool.py"
+      },
+      {
+        "id": 105,
+        "path": "src/strands/tools/structured_output/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 106,
+        "path": "src/strands/tools/structured_output/_structured_output_context.py",
+        "name": "_structured_output_context.py"
+      },
+      {
+        "id": 107,
+        "path": "src/strands/tools/structured_output/structured_output_utils.py",
+        "name": "structured_output_utils.py"
+      },
+      {
+        "id": 108,
+        "path": "src/strands/tools/mcp/mcp_instrumentation.py",
+        "name": "mcp_instrumentation.py"
+      },
+      {
+        "id": 109,
+        "path": "src/strands/tools/mcp/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 110,
+        "path": "src/strands/tools/mcp/mcp_agent_tool.py",
+        "name": "mcp_agent_tool.py"
+      },
+      {
+        "id": 111,
+        "path": "src/strands/tools/mcp/mcp_client.py",
+        "name": "mcp_client.py"
+      },
+      {
+        "id": 112,
+        "path": "src/strands/tools/mcp/mcp_types.py",
+        "name": "mcp_types.py"
+      },
+      {
+        "id": 113,
+        "path": "src/strands/tools/executors/concurrent.py",
+        "name": "concurrent.py"
+      },
+      {
+        "id": 114,
+        "path": "src/strands/tools/executors/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 115,
+        "path": "src/strands/tools/executors/sequential.py",
+        "name": "sequential.py"
+      },
+      {
+        "id": 116,
+        "path": "src/strands/tools/executors/_executor.py",
+        "name": "_executor.py"
+      },
+      {
+        "id": 117,
+        "path": "src/strands/experimental/tools/tool_provider.py",
+        "name": "tool_provider.py"
+      },
+      {
+        "id": 118,
+        "path": "src/strands/experimental/tools/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 119,
+        "path": "src/strands/experimental/bidi/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 120,
+        "path": "src/strands/experimental/hooks/events.py",
+        "name": "events.py"
+      },
+      {
+        "id": 121,
+        "path": "src/strands/experimental/hooks/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 122,
+        "path": "src/strands/experimental/steering/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 123,
+        "path": "src/strands/experimental/steering/core/handler.py",
+        "name": "handler.py"
+      },
+      {
+        "id": 124,
+        "path": "src/strands/experimental/steering/core/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 125,
+        "path": "src/strands/experimental/steering/core/action.py",
+        "name": "action.py"
+      },
+      {
+        "id": 126,
+        "path": "src/strands/experimental/steering/core/context.py",
+        "name": "context.py"
+      },
+      {
+        "id": 127,
+        "path": "src/strands/experimental/steering/context_providers/ledger_provider.py",
+        "name": "ledger_provider.py"
+      },
+      {
+        "id": 128,
+        "path": "src/strands/experimental/steering/context_providers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 129,
+        "path": "src/strands/experimental/steering/handlers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 130,
+        "path": "src/strands/experimental/steering/handlers/llm/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 131,
+        "path": "src/strands/experimental/steering/handlers/llm/mappers.py",
+        "name": "mappers.py"
+      },
+      {
+        "id": 132,
+        "path": "src/strands/experimental/steering/handlers/llm/llm_handler.py",
+        "name": "llm_handler.py"
+      },
+      {
+        "id": 133,
+        "path": "src/strands/experimental/hooks/multiagent/events.py",
+        "name": "events.py"
+      },
+      {
+        "id": 134,
+        "path": "src/strands/experimental/hooks/multiagent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 135,
+        "path": "src/strands/experimental/bidi/tools/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 136,
+        "path": "src/strands/experimental/bidi/tools/stop_conversation.py",
+        "name": "stop_conversation.py"
+      },
+      {
+        "id": 137,
+        "path": "src/strands/experimental/bidi/types/events.py",
+        "name": "events.py"
+      },
+      {
+        "id": 138,
+        "path": "src/strands/experimental/bidi/types/io.py",
+        "name": "io.py"
+      },
+      {
+        "id": 139,
+        "path": "src/strands/experimental/bidi/types/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 140,
+        "path": "src/strands/experimental/bidi/types/model.py",
+        "name": "model.py"
+      },
+      {
+        "id": 141,
+        "path": "src/strands/experimental/bidi/types/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 142,
+        "path": "src/strands/experimental/bidi/_async/_task_pool.py",
+        "name": "_task_pool.py"
+      },
+      {
+        "id": 143,
+        "path": "src/strands/experimental/bidi/_async/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 144,
+        "path": "src/strands/experimental/bidi/_async/_task_group.py",
+        "name": "_task_group.py"
+      },
+      {
+        "id": 145,
+        "path": "src/strands/experimental/bidi/io/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 146,
+        "path": "src/strands/experimental/bidi/io/text.py",
+        "name": "text.py"
+      },
+      {
+        "id": 147,
+        "path": "src/strands/experimental/bidi/io/audio.py",
+        "name": "audio.py"
+      },
+      {
+        "id": 148,
+        "path": "src/strands/experimental/bidi/agent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 149,
+        "path": "src/strands/experimental/bidi/agent/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 150,
+        "path": "src/strands/experimental/bidi/agent/loop.py",
+        "name": "loop.py"
+      },
+      {
+        "id": 151,
+        "path": "src/strands/experimental/bidi/models/nova_sonic.py",
+        "name": "nova_sonic.py"
+      },
+      {
+        "id": 152,
+        "path": "src/strands/experimental/bidi/models/gemini_live.py",
+        "name": "gemini_live.py"
+      },
+      {
+        "id": 153,
+        "path": "src/strands/experimental/bidi/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 154,
+        "path": "src/strands/experimental/bidi/models/model.py",
+        "name": "model.py"
+      },
+      {
+        "id": 155,
+        "path": "src/strands/experimental/bidi/models/openai_realtime.py",
+        "name": "openai_realtime.py"
+      },
+      {
+        "id": 156,
+        "path": "tests/strands/test_identifier.py",
+        "name": "test_identifier.py"
+      },
+      {
+        "id": 157,
+        "path": "tests/strands/test_async.py",
+        "name": "test_async.py"
+      },
+      {
+        "id": 158,
+        "path": "tests/strands/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 159,
+        "path": "tests/strands/test_exception_notes.py",
+        "name": "test_exception_notes.py"
+      },
+      {
+        "id": 160,
+        "path": "tests/strands/test_interrupt.py",
+        "name": "test_interrupt.py"
+      },
+      {
+        "id": 161,
+        "path": "tests/fixtures/say_tool.py",
+        "name": "say_tool.py"
+      },
+      {
+        "id": 162,
+        "path": "tests/fixtures/mock_agent_tool.py",
+        "name": "mock_agent_tool.py"
+      },
+      {
+        "id": 163,
+        "path": "tests/fixtures/mock_hook_provider.py",
+        "name": "mock_hook_provider.py"
+      },
+      {
+        "id": 164,
+        "path": "tests/fixtures/tool_with_spec_but_no_function.py",
+        "name": "tool_with_spec_but_no_function.py"
+      },
+      {
+        "id": 165,
+        "path": "tests/fixtures/mocked_model_provider.py",
+        "name": "mocked_model_provider.py"
+      },
+      {
+        "id": 166,
+        "path": "tests/fixtures/mock_session_repository.py",
+        "name": "mock_session_repository.py"
+      },
+      {
+        "id": 167,
+        "path": "tests/fixtures/mock_multiagent_hook_provider.py",
+        "name": "mock_multiagent_hook_provider.py"
+      },
+      {
+        "id": 168,
+        "path": "tests/fixtures/tool_with_spec_but_non_callable_function.py",
+        "name": "tool_with_spec_but_non_callable_function.py"
+      },
+      {
+        "id": 169,
+        "path": "tests/strands/experimental/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 170,
+        "path": "tests/strands/experimental/test_agent_config.py",
+        "name": "test_agent_config.py"
+      },
+      {
+        "id": 171,
+        "path": "tests/strands/tools/test_registry.py",
+        "name": "test_registry.py"
+      },
+      {
+        "id": 172,
+        "path": "tests/strands/tools/test_loader.py",
+        "name": "test_loader.py"
+      },
+      {
+        "id": 173,
+        "path": "tests/strands/tools/test_registry_tool_provider.py",
+        "name": "test_registry_tool_provider.py"
+      },
+      {
+        "id": 174,
+        "path": "tests/strands/tools/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 175,
+        "path": "tests/strands/tools/test_caller.py",
+        "name": "test_caller.py"
+      },
+      {
+        "id": 176,
+        "path": "tests/strands/tools/test_structured_output.py",
+        "name": "test_structured_output.py"
+      },
+      {
+        "id": 177,
+        "path": "tests/strands/tools/test_validator.py",
+        "name": "test_validator.py"
+      },
+      {
+        "id": 178,
+        "path": "tests/strands/tools/test_tool_helpers.py",
+        "name": "test_tool_helpers.py"
+      },
+      {
+        "id": 179,
+        "path": "tests/strands/tools/test_tools.py",
+        "name": "test_tools.py"
+      },
+      {
+        "id": 180,
+        "path": "tests/strands/tools/test_watcher.py",
+        "name": "test_watcher.py"
+      },
+      {
+        "id": 181,
+        "path": "tests/strands/tools/test_decorator.py",
+        "name": "test_decorator.py"
+      },
+      {
+        "id": 182,
+        "path": "tests/strands/types/test_session.py",
+        "name": "test_session.py"
+      },
+      {
+        "id": 183,
+        "path": "tests/strands/types/test_exceptions.py",
+        "name": "test_exceptions.py"
+      },
+      {
+        "id": 184,
+        "path": "tests/strands/types/test__events.py",
+        "name": "test__events.py"
+      },
+      {
+        "id": 185,
+        "path": "tests/strands/types/test_json_dict.py",
+        "name": "test_json_dict.py"
+      },
+      {
+        "id": 186,
+        "path": "tests/strands/types/test_interrupt.py",
+        "name": "test_interrupt.py"
+      },
+      {
+        "id": 187,
+        "path": "tests/strands/multiagent/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 188,
+        "path": "tests/strands/multiagent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 189,
+        "path": "tests/strands/multiagent/test_swarm.py",
+        "name": "test_swarm.py"
+      },
+      {
+        "id": 190,
+        "path": "tests/strands/multiagent/test_base.py",
+        "name": "test_base.py"
+      },
+      {
+        "id": 191,
+        "path": "tests/strands/multiagent/test_graph.py",
+        "name": "test_graph.py"
+      },
+      {
+        "id": 192,
+        "path": "tests/strands/event_loop/test_event_loop.py",
+        "name": "test_event_loop.py"
+      },
+      {
+        "id": 193,
+        "path": "tests/strands/event_loop/test_streaming.py",
+        "name": "test_streaming.py"
+      },
+      {
+        "id": 194,
+        "path": "tests/strands/event_loop/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 195,
+        "path": "tests/strands/event_loop/test_streaming_structured_output.py",
+        "name": "test_streaming_structured_output.py"
+      },
+      {
+        "id": 196,
+        "path": "tests/strands/event_loop/test_event_loop_structured_output.py",
+        "name": "test_event_loop_structured_output.py"
+      },
+      {
+        "id": 197,
+        "path": "tests/strands/event_loop/test_recover_message_on_max_tokens_reached.py",
+        "name": "test_recover_message_on_max_tokens_reached.py"
+      },
+      {
+        "id": 198,
+        "path": "tests/strands/agent/test_agent_result.py",
+        "name": "test_agent_result.py"
+      },
+      {
+        "id": 199,
+        "path": "tests/strands/agent/test_agent_state.py",
+        "name": "test_agent_state.py"
+      },
+      {
+        "id": 200,
+        "path": "tests/strands/agent/test_agent.py",
+        "name": "test_agent.py"
+      },
+      {
+        "id": 201,
+        "path": "tests/strands/agent/test_summarizing_conversation_manager.py",
+        "name": "test_summarizing_conversation_manager.py"
+      },
+      {
+        "id": 202,
+        "path": "tests/strands/agent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 203,
+        "path": "tests/strands/agent/test_conversation_manager.py",
+        "name": "test_conversation_manager.py"
+      },
+      {
+        "id": 204,
+        "path": "tests/strands/agent/test_agent_structured_output.py",
+        "name": "test_agent_structured_output.py"
+      },
+      {
+        "id": 205,
+        "path": "tests/strands/agent/test_agent_hooks.py",
+        "name": "test_agent_hooks.py"
+      },
+      {
+        "id": 206,
+        "path": "tests/strands/models/test_anthropic.py",
+        "name": "test_anthropic.py"
+      },
+      {
+        "id": 207,
+        "path": "tests/strands/models/test_model.py",
+        "name": "test_model.py"
+      },
+      {
+        "id": 208,
+        "path": "tests/strands/models/test_mistral.py",
+        "name": "test_mistral.py"
+      },
+      {
+        "id": 209,
+        "path": "tests/strands/models/test_sagemaker.py",
+        "name": "test_sagemaker.py"
+      },
+      {
+        "id": 210,
+        "path": "tests/strands/models/test_openai.py",
+        "name": "test_openai.py"
+      },
+      {
+        "id": 211,
+        "path": "tests/strands/models/test_writer.py",
+        "name": "test_writer.py"
+      },
+      {
+        "id": 212,
+        "path": "tests/strands/models/test_llamaapi.py",
+        "name": "test_llamaapi.py"
+      },
+      {
+        "id": 213,
+        "path": "tests/strands/models/test_ollama.py",
+        "name": "test_ollama.py"
+      },
+      {
+        "id": 214,
+        "path": "tests/strands/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 215,
+        "path": "tests/strands/models/test_litellm.py",
+        "name": "test_litellm.py"
+      },
+      {
+        "id": 216,
+        "path": "tests/strands/models/test_llamacpp.py",
+        "name": "test_llamacpp.py"
+      },
+      {
+        "id": 217,
+        "path": "tests/strands/models/test_bedrock.py",
+        "name": "test_bedrock.py"
+      },
+      {
+        "id": 218,
+        "path": "tests/strands/models/test_gemini.py",
+        "name": "test_gemini.py"
+      },
+      {
+        "id": 219,
+        "path": "tests/strands/hooks/test_registry.py",
+        "name": "test_registry.py"
+      },
+      {
+        "id": 220,
+        "path": "tests/strands/hooks/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 221,
+        "path": "tests/strands/telemetry/test_metrics.py",
+        "name": "test_metrics.py"
+      },
+      {
+        "id": 222,
+        "path": "tests/strands/telemetry/test_tracer.py",
+        "name": "test_tracer.py"
+      },
+      {
+        "id": 223,
+        "path": "tests/strands/telemetry/test_config.py",
+        "name": "test_config.py"
+      },
+      {
+        "id": 224,
+        "path": "tests/strands/handlers/test_callback_handler.py",
+        "name": "test_callback_handler.py"
+      },
+      {
+        "id": 225,
+        "path": "tests/strands/handlers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 226,
+        "path": "tests/strands/session/test_repository_session_manager.py",
+        "name": "test_repository_session_manager.py"
+      },
+      {
+        "id": 227,
+        "path": "tests/strands/session/test_file_session_manager.py",
+        "name": "test_file_session_manager.py"
+      },
+      {
+        "id": 228,
+        "path": "tests/strands/session/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 229,
+        "path": "tests/strands/session/test_s3_session_manager.py",
+        "name": "test_s3_session_manager.py"
+      },
+      {
+        "id": 230,
+        "path": "tests/strands/agent/hooks/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 231,
+        "path": "tests/strands/agent/hooks/test_hook_registry.py",
+        "name": "test_hook_registry.py"
+      },
+      {
+        "id": 232,
+        "path": "tests/strands/agent/hooks/test_events.py",
+        "name": "test_events.py"
+      },
+      {
+        "id": 233,
+        "path": "tests/strands/agent/hooks/test_agent_events.py",
+        "name": "test_agent_events.py"
+      },
+      {
+        "id": 234,
+        "path": "tests/strands/multiagent/a2a/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 235,
+        "path": "tests/strands/multiagent/a2a/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 236,
+        "path": "tests/strands/multiagent/a2a/test_server.py",
+        "name": "test_server.py"
+      },
+      {
+        "id": 237,
+        "path": "tests/strands/multiagent/a2a/test_executor.py",
+        "name": "test_executor.py"
+      },
+      {
+        "id": 238,
+        "path": "tests/strands/tools/structured_output/test_structured_output_context.py",
+        "name": "test_structured_output_context.py"
+      },
+      {
+        "id": 239,
+        "path": "tests/strands/tools/structured_output/test_structured_output_tool.py",
+        "name": "test_structured_output_tool.py"
+      },
+      {
+        "id": 240,
+        "path": "tests/strands/tools/mcp/test_mcp_client.py",
+        "name": "test_mcp_client.py"
+      },
+      {
+        "id": 241,
+        "path": "tests/strands/tools/mcp/test_mcp_agent_tool.py",
+        "name": "test_mcp_agent_tool.py"
+      },
+      {
+        "id": 242,
+        "path": "tests/strands/tools/mcp/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 243,
+        "path": "tests/strands/tools/mcp/test_mcp_instrumentation.py",
+        "name": "test_mcp_instrumentation.py"
+      },
+      {
+        "id": 244,
+        "path": "tests/strands/tools/mcp/test_mcp_client_tool_provider.py",
+        "name": "test_mcp_client_tool_provider.py"
+      },
+      {
+        "id": 245,
+        "path": "tests/strands/tools/executors/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 246,
+        "path": "tests/strands/tools/executors/test_sequential.py",
+        "name": "test_sequential.py"
+      },
+      {
+        "id": 247,
+        "path": "tests/strands/tools/executors/test_executor.py",
+        "name": "test_executor.py"
+      },
+      {
+        "id": 248,
+        "path": "tests/strands/tools/executors/test_concurrent.py",
+        "name": "test_concurrent.py"
+      },
+      {
+        "id": 249,
+        "path": "tests/strands/experimental/tools/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 250,
+        "path": "tests/strands/experimental/bidi/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 251,
+        "path": "tests/strands/experimental/hooks/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 252,
+        "path": "tests/strands/experimental/hooks/test_hook_aliases.py",
+        "name": "test_hook_aliases.py"
+      },
+      {
+        "id": 253,
+        "path": "tests/strands/experimental/hooks/test_bidi_hook_events.py",
+        "name": "test_bidi_hook_events.py"
+      },
+      {
+        "id": 254,
+        "path": "tests/strands/experimental/steering/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 255,
+        "path": "tests/strands/experimental/steering/core/test_handler.py",
+        "name": "test_handler.py"
+      },
+      {
+        "id": 256,
+        "path": "tests/strands/experimental/steering/core/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 257,
+        "path": "tests/strands/experimental/steering/context_providers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 258,
+        "path": "tests/strands/experimental/steering/context_providers/test_ledger_provider.py",
+        "name": "test_ledger_provider.py"
+      },
+      {
+        "id": 259,
+        "path": "tests/strands/experimental/steering/handlers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 260,
+        "path": "tests/strands/experimental/steering/handlers/llm/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 261,
+        "path": "tests/strands/experimental/steering/handlers/llm/test_mappers.py",
+        "name": "test_mappers.py"
+      },
+      {
+        "id": 262,
+        "path": "tests/strands/experimental/steering/handlers/llm/test_llm_handler.py",
+        "name": "test_llm_handler.py"
+      },
+      {
+        "id": 263,
+        "path": "tests/strands/experimental/hooks/multiagent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 264,
+        "path": "tests/strands/experimental/hooks/multiagent/test_multi_agent_hooks.py",
+        "name": "test_multi_agent_hooks.py"
+      },
+      {
+        "id": 265,
+        "path": "tests/strands/experimental/hooks/multiagent/test_events.py",
+        "name": "test_events.py"
+      },
+      {
+        "id": 266,
+        "path": "tests/strands/experimental/bidi/types/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 267,
+        "path": "tests/strands/experimental/bidi/types/test_events.py",
+        "name": "test_events.py"
+      },
+      {
+        "id": 268,
+        "path": "tests/strands/experimental/bidi/_async/test_task_group.py",
+        "name": "test_task_group.py"
+      },
+      {
+        "id": 269,
+        "path": "tests/strands/experimental/bidi/_async/test__init__.py",
+        "name": "test__init__.py"
+      },
+      {
+        "id": 270,
+        "path": "tests/strands/experimental/bidi/_async/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 271,
+        "path": "tests/strands/experimental/bidi/_async/test_task_pool.py",
+        "name": "test_task_pool.py"
+      },
+      {
+        "id": 272,
+        "path": "tests/strands/experimental/bidi/io/test_audio.py",
+        "name": "test_audio.py"
+      },
+      {
+        "id": 273,
+        "path": "tests/strands/experimental/bidi/io/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 274,
+        "path": "tests/strands/experimental/bidi/io/test_text.py",
+        "name": "test_text.py"
+      },
+      {
+        "id": 275,
+        "path": "tests/strands/experimental/bidi/agent/test_agent.py",
+        "name": "test_agent.py"
+      },
+      {
+        "id": 276,
+        "path": "tests/strands/experimental/bidi/agent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 277,
+        "path": "tests/strands/experimental/bidi/agent/test_loop.py",
+        "name": "test_loop.py"
+      },
+      {
+        "id": 278,
+        "path": "tests/strands/experimental/bidi/models/test_openai_realtime.py",
+        "name": "test_openai_realtime.py"
+      },
+      {
+        "id": 279,
+        "path": "tests/strands/experimental/bidi/models/test_gemini_live.py",
+        "name": "test_gemini_live.py"
+      },
+      {
+        "id": 280,
+        "path": "tests/strands/experimental/bidi/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 281,
+        "path": "tests/strands/experimental/bidi/models/test_nova_sonic.py",
+        "name": "test_nova_sonic.py"
+      },
+      {
+        "id": 282,
+        "path": "tests_integ/tools/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 283,
+        "path": "tests_integ/tools/test_thread_context.py",
+        "name": "test_thread_context.py"
+      },
+      {
+        "id": 284,
+        "path": "tests_integ/bidi/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 285,
+        "path": "tests_integ/bidi/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 286,
+        "path": "tests_integ/bidi/hook_utils.py",
+        "name": "hook_utils.py"
+      },
+      {
+        "id": 287,
+        "path": "tests_integ/bidi/context.py",
+        "name": "context.py"
+      },
+      {
+        "id": 288,
+        "path": "tests_integ/bidi/test_bidirectional_agent.py",
+        "name": "test_bidirectional_agent.py"
+      },
+      {
+        "id": 289,
+        "path": "tests_integ/bidi/test_bidi_hooks.py",
+        "name": "test_bidi_hooks.py"
+      },
+      {
+        "id": 290,
+        "path": "tests_integ/mcp/elicitation_server.py",
+        "name": "elicitation_server.py"
+      },
+      {
+        "id": 291,
+        "path": "tests_integ/mcp/test_mcp_client.py",
+        "name": "test_mcp_client.py"
+      },
+      {
+        "id": 292,
+        "path": "tests_integ/mcp/test_mcp_elicitation.py",
+        "name": "test_mcp_elicitation.py"
+      },
+      {
+        "id": 293,
+        "path": "tests_integ/mcp/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 294,
+        "path": "tests_integ/mcp/test_mcp_client_structured_content_and_metadata.py",
+        "name": "test_mcp_client_structured_content_and_metadata.py"
+      },
+      {
+        "id": 295,
+        "path": "tests_integ/mcp/test_mcp_tool_provider.py",
+        "name": "test_mcp_tool_provider.py"
+      },
+      {
+        "id": 296,
+        "path": "tests_integ/mcp/echo_server.py",
+        "name": "echo_server.py"
+      },
+      {
+        "id": 297,
+        "path": "tests_integ/mcp/test_mcp_output_schema.py",
+        "name": "test_mcp_output_schema.py"
+      },
+      {
+        "id": 298,
+        "path": "tests_integ/models/test_model_cohere.py",
+        "name": "test_model_cohere.py"
+      },
+      {
+        "id": 299,
+        "path": "tests_integ/models/test_model_ollama.py",
+        "name": "test_model_ollama.py"
+      },
+      {
+        "id": 300,
+        "path": "tests_integ/models/test_model_litellm.py",
+        "name": "test_model_litellm.py"
+      },
+      {
+        "id": 301,
+        "path": "tests_integ/models/test_model_bedrock.py",
+        "name": "test_model_bedrock.py"
+      },
+      {
+        "id": 302,
+        "path": "tests_integ/models/test_model_openai.py",
+        "name": "test_model_openai.py"
+      },
+      {
+        "id": 303,
+        "path": "tests_integ/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 304,
+        "path": "tests_integ/models/test_model_writer.py",
+        "name": "test_model_writer.py"
+      },
+      {
+        "id": 305,
+        "path": "tests_integ/models/test_model_llamaapi.py",
+        "name": "test_model_llamaapi.py"
+      },
+      {
+        "id": 306,
+        "path": "tests_integ/models/test_model_mistral.py",
+        "name": "test_model_mistral.py"
+      },
+      {
+        "id": 307,
+        "path": "tests_integ/models/test_model_anthropic.py",
+        "name": "test_model_anthropic.py"
+      },
+      {
+        "id": 308,
+        "path": "tests_integ/models/providers.py",
+        "name": "providers.py"
+      },
+      {
+        "id": 309,
+        "path": "tests_integ/models/test_model_llamacpp.py",
+        "name": "test_model_llamacpp.py"
+      },
+      {
+        "id": 310,
+        "path": "tests_integ/models/test_model_sagemaker.py",
+        "name": "test_model_sagemaker.py"
+      },
+      {
+        "id": 311,
+        "path": "tests_integ/models/test_model_gemini.py",
+        "name": "test_model_gemini.py"
+      },
+      {
+        "id": 312,
+        "path": "tests_integ/models/test_conformance.py",
+        "name": "test_conformance.py"
+      },
+      {
+        "id": 313,
+        "path": "tests_integ/hooks/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 314,
+        "path": "tests_integ/hooks/test_events.py",
+        "name": "test_events.py"
+      },
+      {
+        "id": 315,
+        "path": "tests_integ/interrupts/test_session.py",
+        "name": "test_session.py"
+      },
+      {
+        "id": 316,
+        "path": "tests_integ/interrupts/test_hook.py",
+        "name": "test_hook.py"
+      },
+      {
+        "id": 317,
+        "path": "tests_integ/interrupts/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 318,
+        "path": "tests_integ/interrupts/test_tool.py",
+        "name": "test_tool.py"
+      },
+      {
+        "id": 319,
+        "path": "tests_integ/fixtures/say_tool.py",
+        "name": "say_tool.py"
+      },
+      {
+        "id": 320,
+        "path": "tests_integ/steering/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 321,
+        "path": "tests_integ/steering/test_llm_handler.py",
+        "name": "test_llm_handler.py"
+      },
+      {
+        "id": 322,
+        "path": "tests_integ/interrupts/multiagent/test_agent.py",
+        "name": "test_agent.py"
+      },
+      {
+        "id": 323,
+        "path": "tests_integ/interrupts/multiagent/test_session.py",
+        "name": "test_session.py"
+      },
+      {
+        "id": 324,
+        "path": "tests_integ/interrupts/multiagent/test_hook.py",
+        "name": "test_hook.py"
+      },
+      {
+        "id": 325,
+        "path": "tests_integ/interrupts/multiagent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 326,
+        "path": "tests_integ/hooks/multiagent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 327,
+        "path": "tests_integ/hooks/multiagent/test_cancel.py",
+        "name": "test_cancel.py"
+      },
+      {
+        "id": 328,
+        "path": "tests_integ/hooks/multiagent/test_events.py",
+        "name": "test_events.py"
+      },
+      {
+        "id": 329,
+        "path": "tests_integ/bidi/wrappers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 330,
+        "path": "tests_integ/bidi/tools/test_direct.py",
+        "name": "test_direct.py"
+      },
+      {
+        "id": 331,
+        "path": "tests_integ/bidi/tools/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 332,
+        "path": "tests_integ/bidi/generators/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 333,
+        "path": "tests_integ/bidi/generators/audio.py",
+        "name": "audio.py"
+      },
+      {
+        "id": 334,
+        "path": "tests_integ/tools/executors/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 335,
+        "path": "tests_integ/tools/executors/test_sequential.py",
+        "name": "test_sequential.py"
+      },
+      {
+        "id": 336,
+        "path": "tests_integ/tools/executors/test_concurrent.py",
+        "name": "test_concurrent.py"
+      }
+    ],
+    "edges": [],
+    "external_deps": [
+      "",
+      "__future__",
+      "_async",
+      "_exception_notes",
+      "_executor",
+      "_recover_message_on_max_tokens_reached",
+      "_structured_output_context",
+      "_task_group",
+      "_task_pool",
+      "_validation",
+      "a2a",
+      "abc",
+      "action",
+      "agent",
+      "agent_config",
+      "agent_result",
+      "aiohttp",
+      "anthropic",
+      "anyio",
+      "asyncio",
+      "audio",
+      "aws_sdk_bedrock_runtime",
+      "base",
+      "base64",
+      "bedrock",
+      "bidi",
+      "boto3",
+      "botocore",
+      "callback_handler",
+      "citations",
+      "collections",
+      "concurrent",
+      "config",
+      "configparser",
+      "content",
+      "context",
+      "context_providers",
+      "contextlib",
+      "contextvars",
+      "conversation_manager",
+      "copy",
+      "core",
+      "dataclasses",
+      "datetime",
+      "decorator",
+      "docstring_parser",
+      "echo_server",
+      "enum",
+      "event_loop",
+      "events",
+      "executor",
+      "experimental",
+      "fastapi",
+      "file_session_manager",
+      "fixtures",
+      "functools",
+      "generators",
+      "google",
+      "graph",
+      "guardrails",
+      "handler",
+      "handlers",
+      "hashlib",
+      "hook_utils",
+      "hooks",
+      "httpx",
+      "importlib",
+      "inspect",
+      "interrupt",
+      "io",
+      "json",
+      "jsonschema",
+      "ledger_provider",
+      "litellm",
+      "llama_api_client",
+      "llm_handler",
+      "loader",
+      "logging",
+      "loop",
+      "mappers",
+      "mcp",
+      "mcp_agent_tool",
+      "mcp_client",
+      "mcp_instrumentation",
+      "mcp_types",
+      "media",
+      "metrics",
+      "mimetypes",
+      "mistralai",
+      "model",
+      "models",
+      "moto",
+      "multiagent",
+      "multiprocessing",
+      "mypy_boto3_sagemaker_runtime",
+      "nova_sonic",
+      "null_conversation_manager",
+      "ollama",
+      "openai",
+      "opentelemetry",
+      "os",
+      "pathlib",
+      "posixpath",
+      "prompt_toolkit",
+      "pyaudio",
+      "pydantic",
+      "pytest",
+      "pytest_asyncio",
+      "queue",
+      "random",
+      "re",
+      "registry",
+      "repository_session_manager",
+      "requests",
+      "s3_session_manager",
+      "sequential",
+      "server",
+      "session",
+      "session_manager",
+      "session_repository",
+      "shutil",
+      "sliding_window_conversation_manager",
+      "smithy_aws_core",
+      "smithy_core",
+      "starlette",
+      "state",
+      "stop_conversation",
+      "strands",
+      "streaming",
+      "structured_output",
+      "structured_output_tool",
+      "structured_output_utils",
+      "summarizing_conversation_manager",
+      "swarm",
+      "sys",
+      "telemetry",
+      "tempfile",
+      "tests",
+      "tests_integ",
+      "text",
+      "textwrap",
+      "threading",
+      "time",
+      "tool_provider",
+      "tools",
+      "traceback",
+      "tracer",
+      "types",
+      "typing",
+      "typing_extensions",
+      "unittest",
+      "urllib",
+      "uuid",
+      "uvicorn",
+      "warnings",
+      "watchdog",
+      "websockets",
+      "wrapt",
+      "writerai"
+    ],
+    "internal_deps": {}
+  },
+  "entry_points": [
+    {
+      "path": "pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "tests_integ/mcp/elicitation_server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "tests_integ/mcp/echo_server.py",
+      "type": "python",
+      "description": "Executable module"
+    }
+  ],
+  "key_files": {
+    "types": [],
+    "execution": [
+      "src/strands/multiagent/a2a/executor.py",
+      "src/strands/experimental/bidi/agent/loop.py"
+    ],
+    "tools": [
+      "src/strands/tools/tools.py",
+      "src/strands/types/tools.py"
+    ],
+    "agents": [
+      "src/strands/types/agent.py",
+      "src/strands/agent/agent.py",
+      "src/strands/experimental/bidi/types/agent.py",
+      "src/strands/experimental/bidi/agent/agent.py"
+    ],
+    "config": [
+      "src/strands/telemetry/config.py"
+    ]
+  },
+  "stats": {
+    "total_files": 367,
+    "python_files": 337,
+    "external_dependencies": 159
+  }
+}

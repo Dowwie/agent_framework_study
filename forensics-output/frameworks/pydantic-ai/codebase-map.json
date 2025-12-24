@@ -1,0 +1,4906 @@
+{
+  "repository": "pydantic-ai",
+  "path": "/Users/dgordon/my_projects/agent_framework_study/repos/pydantic-ai",
+  "file_tree": {
+    "name": "pydantic-ai",
+    "type": "directory",
+    "path": "/Users/dgordon/my_projects/agent_framework_study/repos/pydantic-ai",
+    "children": [
+      {
+        "name": "clai",
+        "type": "directory",
+        "path": "clai",
+        "children": [
+          {
+            "name": "clai",
+            "type": "directory",
+            "path": "clai/clai",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "clai/clai/__init__.py"
+              },
+              {
+                "name": "__main__.py",
+                "type": "file",
+                "path": "clai/clai/__main__.py"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file",
+            "path": "clai/pyproject.toml"
+          },
+          {
+            "name": "update_readme.py",
+            "type": "file",
+            "path": "clai/update_readme.py"
+          }
+        ]
+      },
+      {
+        "name": "docs",
+        "type": "directory",
+        "path": "docs",
+        "children": [
+          {
+            "name": "javascripts",
+            "type": "directory",
+            "path": "docs/javascripts",
+            "children": [
+              {
+                "name": "algolia-search.js",
+                "type": "file",
+                "path": "docs/javascripts/algolia-search.js"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "docs-site",
+        "type": "directory",
+        "path": "docs-site",
+        "children": [
+          {
+            "name": "src",
+            "type": "directory",
+            "path": "docs-site/src",
+            "children": [
+              {
+                "name": "index.ts",
+                "type": "file",
+                "path": "docs-site/src/index.ts"
+              }
+            ]
+          },
+          {
+            "name": "package.json",
+            "type": "file",
+            "path": "docs-site/package.json"
+          },
+          {
+            "name": "worker-configuration.d.ts",
+            "type": "file",
+            "path": "docs-site/worker-configuration.d.ts"
+          }
+        ]
+      },
+      {
+        "name": "examples",
+        "type": "directory",
+        "path": "examples",
+        "children": [
+          {
+            "name": "pydantic_ai_examples",
+            "type": "directory",
+            "path": "examples/pydantic_ai_examples",
+            "children": [
+              {
+                "name": "ag_ui",
+                "type": "directory",
+                "path": "examples/pydantic_ai_examples/ag_ui",
+                "children": [
+                  {
+                    "name": "api",
+                    "type": "directory",
+                    "path": "examples/pydantic_ai_examples/ag_ui/api",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "examples/pydantic_ai_examples/ag_ui/api/__init__.py"
+                      },
+                      {
+                        "name": "agentic_chat.py",
+                        "type": "file",
+                        "path": "examples/pydantic_ai_examples/ag_ui/api/agentic_chat.py"
+                      },
+                      {
+                        "name": "agentic_generative_ui.py",
+                        "type": "file",
+                        "path": "examples/pydantic_ai_examples/ag_ui/api/agentic_generative_ui.py"
+                      },
+                      {
+                        "name": "human_in_the_loop.py",
+                        "type": "file",
+                        "path": "examples/pydantic_ai_examples/ag_ui/api/human_in_the_loop.py"
+                      },
+                      {
+                        "name": "predictive_state_updates.py",
+                        "type": "file",
+                        "path": "examples/pydantic_ai_examples/ag_ui/api/predictive_state_updates.py"
+                      },
+                      {
+                        "name": "shared_state.py",
+                        "type": "file",
+                        "path": "examples/pydantic_ai_examples/ag_ui/api/shared_state.py"
+                      },
+                      {
+                        "name": "tool_based_generative_ui.py",
+                        "type": "file",
+                        "path": "examples/pydantic_ai_examples/ag_ui/api/tool_based_generative_ui.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/ag_ui/__init__.py"
+                  },
+                  {
+                    "name": "__main__.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/ag_ui/__main__.py"
+                  }
+                ]
+              },
+              {
+                "name": "evals",
+                "type": "directory",
+                "path": "examples/pydantic_ai_examples/evals",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/evals/__init__.py"
+                  },
+                  {
+                    "name": "agent.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/evals/agent.py"
+                  },
+                  {
+                    "name": "custom_evaluators.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/evals/custom_evaluators.py"
+                  },
+                  {
+                    "name": "example_01_generate_dataset.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/evals/example_01_generate_dataset.py"
+                  },
+                  {
+                    "name": "example_02_add_custom_evaluators.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/evals/example_02_add_custom_evaluators.py"
+                  },
+                  {
+                    "name": "example_03_unit_testing.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/evals/example_03_unit_testing.py"
+                  },
+                  {
+                    "name": "example_04_compare_models.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/evals/example_04_compare_models.py"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/evals/models.py"
+                  }
+                ]
+              },
+              {
+                "name": "slack_lead_qualifier",
+                "type": "directory",
+                "path": "examples/pydantic_ai_examples/slack_lead_qualifier",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/slack_lead_qualifier/__init__.py"
+                  },
+                  {
+                    "name": "agent.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/slack_lead_qualifier/agent.py"
+                  },
+                  {
+                    "name": "app.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/slack_lead_qualifier/app.py"
+                  },
+                  {
+                    "name": "functions.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/slack_lead_qualifier/functions.py"
+                  },
+                  {
+                    "name": "modal.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/slack_lead_qualifier/modal.py"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/slack_lead_qualifier/models.py"
+                  },
+                  {
+                    "name": "slack.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/slack_lead_qualifier/slack.py"
+                  },
+                  {
+                    "name": "store.py",
+                    "type": "file",
+                    "path": "examples/pydantic_ai_examples/slack_lead_qualifier/store.py"
+                  }
+                ]
+              },
+              {
+                "name": "__main__.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/__main__.py"
+              },
+              {
+                "name": "bank_support.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/bank_support.py"
+              },
+              {
+                "name": "chat_app.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/chat_app.py"
+              },
+              {
+                "name": "chat_app.ts",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/chat_app.ts"
+              },
+              {
+                "name": "data_analyst.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/data_analyst.py"
+              },
+              {
+                "name": "flight_booking.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/flight_booking.py"
+              },
+              {
+                "name": "pydantic_model.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/pydantic_model.py"
+              },
+              {
+                "name": "question_graph.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/question_graph.py"
+              },
+              {
+                "name": "rag.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/rag.py"
+              },
+              {
+                "name": "roulette_wheel.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/roulette_wheel.py"
+              },
+              {
+                "name": "sql_gen.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/sql_gen.py"
+              },
+              {
+                "name": "stream_markdown.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/stream_markdown.py"
+              },
+              {
+                "name": "stream_whales.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/stream_whales.py"
+              },
+              {
+                "name": "weather_agent.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/weather_agent.py"
+              },
+              {
+                "name": "weather_agent_gradio.py",
+                "type": "file",
+                "path": "examples/pydantic_ai_examples/weather_agent_gradio.py"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file",
+            "path": "examples/pyproject.toml"
+          }
+        ]
+      },
+      {
+        "name": "pydantic_ai_slim",
+        "type": "directory",
+        "path": "pydantic_ai_slim",
+        "children": [
+          {
+            "name": "pydantic_ai",
+            "type": "directory",
+            "path": "pydantic_ai_slim/pydantic_ai",
+            "children": [
+              {
+                "name": "_cli",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/_cli",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/_cli/__init__.py"
+                  },
+                  {
+                    "name": "web.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/_cli/web.py"
+                  }
+                ]
+              },
+              {
+                "name": "agent",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/agent",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/agent/__init__.py"
+                  },
+                  {
+                    "name": "abstract.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/agent/abstract.py"
+                  },
+                  {
+                    "name": "wrapper.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/agent/wrapper.py"
+                  }
+                ]
+              },
+              {
+                "name": "common_tools",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/common_tools",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/common_tools/__init__.py"
+                  },
+                  {
+                    "name": "duckduckgo.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/common_tools/duckduckgo.py"
+                  },
+                  {
+                    "name": "tavily.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/common_tools/tavily.py"
+                  }
+                ]
+              },
+              {
+                "name": "durable_exec",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/durable_exec",
+                "children": [
+                  {
+                    "name": "dbos",
+                    "type": "directory",
+                    "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/__init__.py"
+                      },
+                      {
+                        "name": "_agent.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_agent.py"
+                      },
+                      {
+                        "name": "_fastmcp_toolset.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_fastmcp_toolset.py"
+                      },
+                      {
+                        "name": "_mcp.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_mcp.py"
+                      },
+                      {
+                        "name": "_mcp_server.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_mcp_server.py"
+                      },
+                      {
+                        "name": "_model.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_model.py"
+                      },
+                      {
+                        "name": "_utils.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_utils.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "prefect",
+                    "type": "directory",
+                    "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/__init__.py"
+                      },
+                      {
+                        "name": "_agent.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_agent.py"
+                      },
+                      {
+                        "name": "_cache_policies.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_cache_policies.py"
+                      },
+                      {
+                        "name": "_function_toolset.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_function_toolset.py"
+                      },
+                      {
+                        "name": "_mcp_server.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_mcp_server.py"
+                      },
+                      {
+                        "name": "_model.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_model.py"
+                      },
+                      {
+                        "name": "_toolset.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_toolset.py"
+                      },
+                      {
+                        "name": "_types.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_types.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "temporal",
+                    "type": "directory",
+                    "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/__init__.py"
+                      },
+                      {
+                        "name": "_agent.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_agent.py"
+                      },
+                      {
+                        "name": "_dynamic_toolset.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_dynamic_toolset.py"
+                      },
+                      {
+                        "name": "_fastmcp_toolset.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_fastmcp_toolset.py"
+                      },
+                      {
+                        "name": "_function_toolset.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_function_toolset.py"
+                      },
+                      {
+                        "name": "_logfire.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_logfire.py"
+                      },
+                      {
+                        "name": "_mcp.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_mcp.py"
+                      },
+                      {
+                        "name": "_mcp_server.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_mcp_server.py"
+                      },
+                      {
+                        "name": "_model.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_model.py"
+                      },
+                      {
+                        "name": "_run_context.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_run_context.py"
+                      },
+                      {
+                        "name": "_toolset.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_toolset.py"
+                      },
+                      {
+                        "name": "_workflow.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_workflow.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/durable_exec/__init__.py"
+                  }
+                ]
+              },
+              {
+                "name": "ext",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/ext",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/ext/__init__.py"
+                  },
+                  {
+                    "name": "aci.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/ext/aci.py"
+                  },
+                  {
+                    "name": "langchain.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/ext/langchain.py"
+                  }
+                ]
+              },
+              {
+                "name": "models",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/models",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/__init__.py"
+                  },
+                  {
+                    "name": "anthropic.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/anthropic.py"
+                  },
+                  {
+                    "name": "bedrock.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/bedrock.py"
+                  },
+                  {
+                    "name": "cerebras.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/cerebras.py"
+                  },
+                  {
+                    "name": "cohere.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/cohere.py"
+                  },
+                  {
+                    "name": "fallback.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/fallback.py"
+                  },
+                  {
+                    "name": "function.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/function.py"
+                  },
+                  {
+                    "name": "gemini.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/gemini.py"
+                  },
+                  {
+                    "name": "google.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/google.py"
+                  },
+                  {
+                    "name": "groq.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/groq.py"
+                  },
+                  {
+                    "name": "huggingface.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/huggingface.py"
+                  },
+                  {
+                    "name": "instrumented.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/instrumented.py"
+                  },
+                  {
+                    "name": "mcp_sampling.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/mcp_sampling.py"
+                  },
+                  {
+                    "name": "mistral.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/mistral.py"
+                  },
+                  {
+                    "name": "openai.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/openai.py"
+                  },
+                  {
+                    "name": "openrouter.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/openrouter.py"
+                  },
+                  {
+                    "name": "outlines.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/outlines.py"
+                  },
+                  {
+                    "name": "test.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/test.py"
+                  },
+                  {
+                    "name": "wrapper.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/models/wrapper.py"
+                  }
+                ]
+              },
+              {
+                "name": "profiles",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/profiles",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/__init__.py"
+                  },
+                  {
+                    "name": "amazon.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/amazon.py"
+                  },
+                  {
+                    "name": "anthropic.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/anthropic.py"
+                  },
+                  {
+                    "name": "cohere.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/cohere.py"
+                  },
+                  {
+                    "name": "deepseek.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/deepseek.py"
+                  },
+                  {
+                    "name": "google.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/google.py"
+                  },
+                  {
+                    "name": "grok.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/grok.py"
+                  },
+                  {
+                    "name": "groq.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/groq.py"
+                  },
+                  {
+                    "name": "harmony.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/harmony.py"
+                  },
+                  {
+                    "name": "meta.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/meta.py"
+                  },
+                  {
+                    "name": "mistral.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/mistral.py"
+                  },
+                  {
+                    "name": "moonshotai.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/moonshotai.py"
+                  },
+                  {
+                    "name": "openai.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/openai.py"
+                  },
+                  {
+                    "name": "qwen.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/qwen.py"
+                  },
+                  {
+                    "name": "zai.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/profiles/zai.py"
+                  }
+                ]
+              },
+              {
+                "name": "providers",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/providers",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/__init__.py"
+                  },
+                  {
+                    "name": "alibaba.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/alibaba.py"
+                  },
+                  {
+                    "name": "anthropic.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/anthropic.py"
+                  },
+                  {
+                    "name": "azure.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/azure.py"
+                  },
+                  {
+                    "name": "bedrock.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/bedrock.py"
+                  },
+                  {
+                    "name": "cerebras.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/cerebras.py"
+                  },
+                  {
+                    "name": "cohere.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/cohere.py"
+                  },
+                  {
+                    "name": "deepseek.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/deepseek.py"
+                  },
+                  {
+                    "name": "fireworks.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/fireworks.py"
+                  },
+                  {
+                    "name": "gateway.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/gateway.py"
+                  },
+                  {
+                    "name": "github.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/github.py"
+                  },
+                  {
+                    "name": "google.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/google.py"
+                  },
+                  {
+                    "name": "google_gla.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/google_gla.py"
+                  },
+                  {
+                    "name": "google_vertex.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/google_vertex.py"
+                  },
+                  {
+                    "name": "grok.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/grok.py"
+                  },
+                  {
+                    "name": "groq.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/groq.py"
+                  },
+                  {
+                    "name": "heroku.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/heroku.py"
+                  },
+                  {
+                    "name": "huggingface.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/huggingface.py"
+                  },
+                  {
+                    "name": "litellm.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/litellm.py"
+                  },
+                  {
+                    "name": "mistral.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/mistral.py"
+                  },
+                  {
+                    "name": "moonshotai.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/moonshotai.py"
+                  },
+                  {
+                    "name": "nebius.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/nebius.py"
+                  },
+                  {
+                    "name": "ollama.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/ollama.py"
+                  },
+                  {
+                    "name": "openai.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/openai.py"
+                  },
+                  {
+                    "name": "openrouter.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/openrouter.py"
+                  },
+                  {
+                    "name": "outlines.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/outlines.py"
+                  },
+                  {
+                    "name": "ovhcloud.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/ovhcloud.py"
+                  },
+                  {
+                    "name": "together.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/together.py"
+                  },
+                  {
+                    "name": "vercel.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/providers/vercel.py"
+                  }
+                ]
+              },
+              {
+                "name": "toolsets",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/toolsets",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/__init__.py"
+                  },
+                  {
+                    "name": "_dynamic.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/_dynamic.py"
+                  },
+                  {
+                    "name": "abstract.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/abstract.py"
+                  },
+                  {
+                    "name": "approval_required.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/approval_required.py"
+                  },
+                  {
+                    "name": "combined.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/combined.py"
+                  },
+                  {
+                    "name": "external.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/external.py"
+                  },
+                  {
+                    "name": "fastmcp.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/fastmcp.py"
+                  },
+                  {
+                    "name": "filtered.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/filtered.py"
+                  },
+                  {
+                    "name": "function.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/function.py"
+                  },
+                  {
+                    "name": "prefixed.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/prefixed.py"
+                  },
+                  {
+                    "name": "prepared.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/prepared.py"
+                  },
+                  {
+                    "name": "renamed.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/renamed.py"
+                  },
+                  {
+                    "name": "wrapper.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/toolsets/wrapper.py"
+                  }
+                ]
+              },
+              {
+                "name": "ui",
+                "type": "directory",
+                "path": "pydantic_ai_slim/pydantic_ai/ui",
+                "children": [
+                  {
+                    "name": "_web",
+                    "type": "directory",
+                    "path": "pydantic_ai_slim/pydantic_ai/ui/_web",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/_web/__init__.py"
+                      },
+                      {
+                        "name": "api.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/_web/api.py"
+                      },
+                      {
+                        "name": "app.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/_web/app.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "ag_ui",
+                    "type": "directory",
+                    "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/__init__.py"
+                      },
+                      {
+                        "name": "_adapter.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/_adapter.py"
+                      },
+                      {
+                        "name": "_event_stream.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/_event_stream.py"
+                      },
+                      {
+                        "name": "app.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/app.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "vercel_ai",
+                    "type": "directory",
+                    "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/__init__.py"
+                      },
+                      {
+                        "name": "_adapter.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/_adapter.py"
+                      },
+                      {
+                        "name": "_event_stream.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/_event_stream.py"
+                      },
+                      {
+                        "name": "_utils.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/_utils.py"
+                      },
+                      {
+                        "name": "request_types.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/request_types.py"
+                      },
+                      {
+                        "name": "response_types.py",
+                        "type": "file",
+                        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/response_types.py"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/ui/__init__.py"
+                  },
+                  {
+                    "name": "_adapter.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/ui/_adapter.py"
+                  },
+                  {
+                    "name": "_event_stream.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/ui/_event_stream.py"
+                  },
+                  {
+                    "name": "_messages_builder.py",
+                    "type": "file",
+                    "path": "pydantic_ai_slim/pydantic_ai/ui/_messages_builder.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/__init__.py"
+              },
+              {
+                "name": "__main__.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/__main__.py"
+              },
+              {
+                "name": "_a2a.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_a2a.py"
+              },
+              {
+                "name": "_agent_graph.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_agent_graph.py"
+              },
+              {
+                "name": "_function_schema.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_function_schema.py"
+              },
+              {
+                "name": "_griffe.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_griffe.py"
+              },
+              {
+                "name": "_instrumentation.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_instrumentation.py"
+              },
+              {
+                "name": "_json_schema.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_json_schema.py"
+              },
+              {
+                "name": "_mcp.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_mcp.py"
+              },
+              {
+                "name": "_otel_messages.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_otel_messages.py"
+              },
+              {
+                "name": "_output.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_output.py"
+              },
+              {
+                "name": "_parts_manager.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_parts_manager.py"
+              },
+              {
+                "name": "_run_context.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_run_context.py"
+              },
+              {
+                "name": "_system_prompt.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_system_prompt.py"
+              },
+              {
+                "name": "_thinking_part.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_thinking_part.py"
+              },
+              {
+                "name": "_tool_manager.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_tool_manager.py"
+              },
+              {
+                "name": "_utils.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/_utils.py"
+              },
+              {
+                "name": "ag_ui.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/ag_ui.py"
+              },
+              {
+                "name": "builtin_tools.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/builtin_tools.py"
+              },
+              {
+                "name": "direct.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/direct.py"
+              },
+              {
+                "name": "exceptions.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/exceptions.py"
+              },
+              {
+                "name": "format_prompt.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/format_prompt.py"
+              },
+              {
+                "name": "mcp.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/mcp.py"
+              },
+              {
+                "name": "messages.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/messages.py"
+              },
+              {
+                "name": "output.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/output.py"
+              },
+              {
+                "name": "result.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/result.py"
+              },
+              {
+                "name": "retries.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/retries.py"
+              },
+              {
+                "name": "run.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/run.py"
+              },
+              {
+                "name": "settings.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/settings.py"
+              },
+              {
+                "name": "tools.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/tools.py"
+              },
+              {
+                "name": "usage.py",
+                "type": "file",
+                "path": "pydantic_ai_slim/pydantic_ai/usage.py"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file",
+            "path": "pydantic_ai_slim/pyproject.toml"
+          }
+        ]
+      },
+      {
+        "name": "pydantic_evals",
+        "type": "directory",
+        "path": "pydantic_evals",
+        "children": [
+          {
+            "name": "pydantic_evals",
+            "type": "directory",
+            "path": "pydantic_evals/pydantic_evals",
+            "children": [
+              {
+                "name": "evaluators",
+                "type": "directory",
+                "path": "pydantic_evals/pydantic_evals/evaluators",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/evaluators/__init__.py"
+                  },
+                  {
+                    "name": "_run_evaluator.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/evaluators/_run_evaluator.py"
+                  },
+                  {
+                    "name": "common.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/evaluators/common.py"
+                  },
+                  {
+                    "name": "context.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/evaluators/context.py"
+                  },
+                  {
+                    "name": "evaluator.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/evaluators/evaluator.py"
+                  },
+                  {
+                    "name": "llm_as_a_judge.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/evaluators/llm_as_a_judge.py"
+                  },
+                  {
+                    "name": "spec.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/evaluators/spec.py"
+                  }
+                ]
+              },
+              {
+                "name": "otel",
+                "type": "directory",
+                "path": "pydantic_evals/pydantic_evals/otel",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/otel/__init__.py"
+                  },
+                  {
+                    "name": "_context_in_memory_span_exporter.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/otel/_context_in_memory_span_exporter.py"
+                  },
+                  {
+                    "name": "_context_subtree.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/otel/_context_subtree.py"
+                  },
+                  {
+                    "name": "_errors.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/otel/_errors.py"
+                  },
+                  {
+                    "name": "span_tree.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/otel/span_tree.py"
+                  }
+                ]
+              },
+              {
+                "name": "reporting",
+                "type": "directory",
+                "path": "pydantic_evals/pydantic_evals/reporting",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/reporting/__init__.py"
+                  },
+                  {
+                    "name": "render_numbers.py",
+                    "type": "file",
+                    "path": "pydantic_evals/pydantic_evals/reporting/render_numbers.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "pydantic_evals/pydantic_evals/__init__.py"
+              },
+              {
+                "name": "_utils.py",
+                "type": "file",
+                "path": "pydantic_evals/pydantic_evals/_utils.py"
+              },
+              {
+                "name": "dataset.py",
+                "type": "file",
+                "path": "pydantic_evals/pydantic_evals/dataset.py"
+              },
+              {
+                "name": "generation.py",
+                "type": "file",
+                "path": "pydantic_evals/pydantic_evals/generation.py"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file",
+            "path": "pydantic_evals/pyproject.toml"
+          }
+        ]
+      },
+      {
+        "name": "pydantic_graph",
+        "type": "directory",
+        "path": "pydantic_graph",
+        "children": [
+          {
+            "name": "pydantic_graph",
+            "type": "directory",
+            "path": "pydantic_graph/pydantic_graph",
+            "children": [
+              {
+                "name": "beta",
+                "type": "directory",
+                "path": "pydantic_graph/pydantic_graph/beta",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/__init__.py"
+                  },
+                  {
+                    "name": "decision.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/decision.py"
+                  },
+                  {
+                    "name": "graph.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/graph.py"
+                  },
+                  {
+                    "name": "graph_builder.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/graph_builder.py"
+                  },
+                  {
+                    "name": "id_types.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/id_types.py"
+                  },
+                  {
+                    "name": "join.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/join.py"
+                  },
+                  {
+                    "name": "mermaid.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/mermaid.py"
+                  },
+                  {
+                    "name": "node.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/node.py"
+                  },
+                  {
+                    "name": "node_types.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/node_types.py"
+                  },
+                  {
+                    "name": "parent_forks.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/parent_forks.py"
+                  },
+                  {
+                    "name": "paths.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/paths.py"
+                  },
+                  {
+                    "name": "step.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/step.py"
+                  },
+                  {
+                    "name": "util.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/beta/util.py"
+                  }
+                ]
+              },
+              {
+                "name": "persistence",
+                "type": "directory",
+                "path": "pydantic_graph/pydantic_graph/persistence",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/persistence/__init__.py"
+                  },
+                  {
+                    "name": "_utils.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/persistence/_utils.py"
+                  },
+                  {
+                    "name": "file.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/persistence/file.py"
+                  },
+                  {
+                    "name": "in_mem.py",
+                    "type": "file",
+                    "path": "pydantic_graph/pydantic_graph/persistence/in_mem.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "pydantic_graph/pydantic_graph/__init__.py"
+              },
+              {
+                "name": "_utils.py",
+                "type": "file",
+                "path": "pydantic_graph/pydantic_graph/_utils.py"
+              },
+              {
+                "name": "exceptions.py",
+                "type": "file",
+                "path": "pydantic_graph/pydantic_graph/exceptions.py"
+              },
+              {
+                "name": "graph.py",
+                "type": "file",
+                "path": "pydantic_graph/pydantic_graph/graph.py"
+              },
+              {
+                "name": "mermaid.py",
+                "type": "file",
+                "path": "pydantic_graph/pydantic_graph/mermaid.py"
+              },
+              {
+                "name": "nodes.py",
+                "type": "file",
+                "path": "pydantic_graph/pydantic_graph/nodes.py"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file",
+            "path": "pydantic_graph/pyproject.toml"
+          }
+        ]
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "tests",
+        "children": [
+          {
+            "name": "evals",
+            "type": "directory",
+            "path": "tests/evals",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/evals/__init__.py"
+              },
+              {
+                "name": "test_dataset.py",
+                "type": "file",
+                "path": "tests/evals/test_dataset.py"
+              },
+              {
+                "name": "test_evaluator_base.py",
+                "type": "file",
+                "path": "tests/evals/test_evaluator_base.py"
+              },
+              {
+                "name": "test_evaluator_common.py",
+                "type": "file",
+                "path": "tests/evals/test_evaluator_common.py"
+              },
+              {
+                "name": "test_evaluator_context.py",
+                "type": "file",
+                "path": "tests/evals/test_evaluator_context.py"
+              },
+              {
+                "name": "test_evaluator_spec.py",
+                "type": "file",
+                "path": "tests/evals/test_evaluator_spec.py"
+              },
+              {
+                "name": "test_evaluators.py",
+                "type": "file",
+                "path": "tests/evals/test_evaluators.py"
+              },
+              {
+                "name": "test_llm_as_a_judge.py",
+                "type": "file",
+                "path": "tests/evals/test_llm_as_a_judge.py"
+              },
+              {
+                "name": "test_otel.py",
+                "type": "file",
+                "path": "tests/evals/test_otel.py"
+              },
+              {
+                "name": "test_render_numbers.py",
+                "type": "file",
+                "path": "tests/evals/test_render_numbers.py"
+              },
+              {
+                "name": "test_reporting.py",
+                "type": "file",
+                "path": "tests/evals/test_reporting.py"
+              },
+              {
+                "name": "test_reports.py",
+                "type": "file",
+                "path": "tests/evals/test_reports.py"
+              },
+              {
+                "name": "test_utils.py",
+                "type": "file",
+                "path": "tests/evals/test_utils.py"
+              },
+              {
+                "name": "utils.py",
+                "type": "file",
+                "path": "tests/evals/utils.py"
+              }
+            ]
+          },
+          {
+            "name": "example_modules",
+            "type": "directory",
+            "path": "tests/example_modules",
+            "children": [
+              {
+                "name": "bank_database.py",
+                "type": "file",
+                "path": "tests/example_modules/bank_database.py"
+              },
+              {
+                "name": "fake_database.py",
+                "type": "file",
+                "path": "tests/example_modules/fake_database.py"
+              },
+              {
+                "name": "mcp_server.py",
+                "type": "file",
+                "path": "tests/example_modules/mcp_server.py"
+              },
+              {
+                "name": "weather_service.py",
+                "type": "file",
+                "path": "tests/example_modules/weather_service.py"
+              }
+            ]
+          },
+          {
+            "name": "ext",
+            "type": "directory",
+            "path": "tests/ext",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/ext/__init__.py"
+              },
+              {
+                "name": "test_langchain.py",
+                "type": "file",
+                "path": "tests/ext/test_langchain.py"
+              }
+            ]
+          },
+          {
+            "name": "graph",
+            "type": "directory",
+            "path": "tests/graph",
+            "children": [
+              {
+                "name": "beta",
+                "type": "directory",
+                "path": "tests/graph/beta",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/__init__.py"
+                  },
+                  {
+                    "name": "test_broadcast_and_spread.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_broadcast_and_spread.py"
+                  },
+                  {
+                    "name": "test_decisions.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_decisions.py"
+                  },
+                  {
+                    "name": "test_edge_cases.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_edge_cases.py"
+                  },
+                  {
+                    "name": "test_edge_labels.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_edge_labels.py"
+                  },
+                  {
+                    "name": "test_graph_builder.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_graph_builder.py"
+                  },
+                  {
+                    "name": "test_graph_edge_cases.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_graph_edge_cases.py"
+                  },
+                  {
+                    "name": "test_graph_execution.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_graph_execution.py"
+                  },
+                  {
+                    "name": "test_graph_iteration.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_graph_iteration.py"
+                  },
+                  {
+                    "name": "test_joins_and_reducers.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_joins_and_reducers.py"
+                  },
+                  {
+                    "name": "test_mermaid_rendering.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_mermaid_rendering.py"
+                  },
+                  {
+                    "name": "test_node_and_step.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_node_and_step.py"
+                  },
+                  {
+                    "name": "test_parent_forks.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_parent_forks.py"
+                  },
+                  {
+                    "name": "test_paths.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_paths.py"
+                  },
+                  {
+                    "name": "test_util.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_util.py"
+                  },
+                  {
+                    "name": "test_v1_v2_integration.py",
+                    "type": "file",
+                    "path": "tests/graph/beta/test_v1_v2_integration.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/graph/__init__.py"
+              },
+              {
+                "name": "test_file_persistence.py",
+                "type": "file",
+                "path": "tests/graph/test_file_persistence.py"
+              },
+              {
+                "name": "test_graph.py",
+                "type": "file",
+                "path": "tests/graph/test_graph.py"
+              },
+              {
+                "name": "test_mermaid.py",
+                "type": "file",
+                "path": "tests/graph/test_mermaid.py"
+              },
+              {
+                "name": "test_persistence.py",
+                "type": "file",
+                "path": "tests/graph/test_persistence.py"
+              },
+              {
+                "name": "test_state.py",
+                "type": "file",
+                "path": "tests/graph/test_state.py"
+              },
+              {
+                "name": "test_utils.py",
+                "type": "file",
+                "path": "tests/graph/test_utils.py"
+              }
+            ]
+          },
+          {
+            "name": "models",
+            "type": "directory",
+            "path": "tests/models",
+            "children": [
+              {
+                "name": "anthropic",
+                "type": "directory",
+                "path": "tests/models/anthropic",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "tests/models/anthropic/__init__.py"
+                  },
+                  {
+                    "name": "conftest.py",
+                    "type": "file",
+                    "path": "tests/models/anthropic/conftest.py"
+                  },
+                  {
+                    "name": "test_output.py",
+                    "type": "file",
+                    "path": "tests/models/anthropic/test_output.py"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/models/__init__.py"
+              },
+              {
+                "name": "mock_async_stream.py",
+                "type": "file",
+                "path": "tests/models/mock_async_stream.py"
+              },
+              {
+                "name": "mock_openai.py",
+                "type": "file",
+                "path": "tests/models/mock_openai.py"
+              },
+              {
+                "name": "test_anthropic.py",
+                "type": "file",
+                "path": "tests/models/test_anthropic.py"
+              },
+              {
+                "name": "test_bedrock.py",
+                "type": "file",
+                "path": "tests/models/test_bedrock.py"
+              },
+              {
+                "name": "test_cerebras.py",
+                "type": "file",
+                "path": "tests/models/test_cerebras.py"
+              },
+              {
+                "name": "test_cohere.py",
+                "type": "file",
+                "path": "tests/models/test_cohere.py"
+              },
+              {
+                "name": "test_deepseek.py",
+                "type": "file",
+                "path": "tests/models/test_deepseek.py"
+              },
+              {
+                "name": "test_download_item.py",
+                "type": "file",
+                "path": "tests/models/test_download_item.py"
+              },
+              {
+                "name": "test_fallback.py",
+                "type": "file",
+                "path": "tests/models/test_fallback.py"
+              },
+              {
+                "name": "test_gemini.py",
+                "type": "file",
+                "path": "tests/models/test_gemini.py"
+              },
+              {
+                "name": "test_gemini_vertex.py",
+                "type": "file",
+                "path": "tests/models/test_gemini_vertex.py"
+              },
+              {
+                "name": "test_google.py",
+                "type": "file",
+                "path": "tests/models/test_google.py"
+              },
+              {
+                "name": "test_groq.py",
+                "type": "file",
+                "path": "tests/models/test_groq.py"
+              },
+              {
+                "name": "test_huggingface.py",
+                "type": "file",
+                "path": "tests/models/test_huggingface.py"
+              },
+              {
+                "name": "test_instrumented.py",
+                "type": "file",
+                "path": "tests/models/test_instrumented.py"
+              },
+              {
+                "name": "test_mcp_sampling.py",
+                "type": "file",
+                "path": "tests/models/test_mcp_sampling.py"
+              },
+              {
+                "name": "test_mistral.py",
+                "type": "file",
+                "path": "tests/models/test_mistral.py"
+              },
+              {
+                "name": "test_model.py",
+                "type": "file",
+                "path": "tests/models/test_model.py"
+              },
+              {
+                "name": "test_model_function.py",
+                "type": "file",
+                "path": "tests/models/test_model_function.py"
+              },
+              {
+                "name": "test_model_names.py",
+                "type": "file",
+                "path": "tests/models/test_model_names.py"
+              },
+              {
+                "name": "test_model_request_parameters.py",
+                "type": "file",
+                "path": "tests/models/test_model_request_parameters.py"
+              },
+              {
+                "name": "test_model_settings.py",
+                "type": "file",
+                "path": "tests/models/test_model_settings.py"
+              },
+              {
+                "name": "test_model_test.py",
+                "type": "file",
+                "path": "tests/models/test_model_test.py"
+              },
+              {
+                "name": "test_openai.py",
+                "type": "file",
+                "path": "tests/models/test_openai.py"
+              },
+              {
+                "name": "test_openai_responses.py",
+                "type": "file",
+                "path": "tests/models/test_openai_responses.py"
+              },
+              {
+                "name": "test_openrouter.py",
+                "type": "file",
+                "path": "tests/models/test_openrouter.py"
+              },
+              {
+                "name": "test_outlines.py",
+                "type": "file",
+                "path": "tests/models/test_outlines.py"
+              }
+            ]
+          },
+          {
+            "name": "profiles",
+            "type": "directory",
+            "path": "tests/profiles",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/profiles/__init__.py"
+              },
+              {
+                "name": "test_anthropic.py",
+                "type": "file",
+                "path": "tests/profiles/test_anthropic.py"
+              },
+              {
+                "name": "test_google.py",
+                "type": "file",
+                "path": "tests/profiles/test_google.py"
+              }
+            ]
+          },
+          {
+            "name": "providers",
+            "type": "directory",
+            "path": "tests/providers",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "tests/providers/__init__.py"
+              },
+              {
+                "name": "test_alibaba_provider.py",
+                "type": "file",
+                "path": "tests/providers/test_alibaba_provider.py"
+              },
+              {
+                "name": "test_anthropic.py",
+                "type": "file",
+                "path": "tests/providers/test_anthropic.py"
+              },
+              {
+                "name": "test_azure.py",
+                "type": "file",
+                "path": "tests/providers/test_azure.py"
+              },
+              {
+                "name": "test_bedrock.py",
+                "type": "file",
+                "path": "tests/providers/test_bedrock.py"
+              },
+              {
+                "name": "test_cerebras.py",
+                "type": "file",
+                "path": "tests/providers/test_cerebras.py"
+              },
+              {
+                "name": "test_cohere.py",
+                "type": "file",
+                "path": "tests/providers/test_cohere.py"
+              },
+              {
+                "name": "test_deepseek.py",
+                "type": "file",
+                "path": "tests/providers/test_deepseek.py"
+              },
+              {
+                "name": "test_fireworks.py",
+                "type": "file",
+                "path": "tests/providers/test_fireworks.py"
+              },
+              {
+                "name": "test_gateway.py",
+                "type": "file",
+                "path": "tests/providers/test_gateway.py"
+              },
+              {
+                "name": "test_github.py",
+                "type": "file",
+                "path": "tests/providers/test_github.py"
+              },
+              {
+                "name": "test_google_gla.py",
+                "type": "file",
+                "path": "tests/providers/test_google_gla.py"
+              },
+              {
+                "name": "test_google_vertex.py",
+                "type": "file",
+                "path": "tests/providers/test_google_vertex.py"
+              },
+              {
+                "name": "test_grok.py",
+                "type": "file",
+                "path": "tests/providers/test_grok.py"
+              },
+              {
+                "name": "test_groq.py",
+                "type": "file",
+                "path": "tests/providers/test_groq.py"
+              },
+              {
+                "name": "test_heroku.py",
+                "type": "file",
+                "path": "tests/providers/test_heroku.py"
+              },
+              {
+                "name": "test_huggingface.py",
+                "type": "file",
+                "path": "tests/providers/test_huggingface.py"
+              },
+              {
+                "name": "test_litellm.py",
+                "type": "file",
+                "path": "tests/providers/test_litellm.py"
+              },
+              {
+                "name": "test_mistral.py",
+                "type": "file",
+                "path": "tests/providers/test_mistral.py"
+              },
+              {
+                "name": "test_moonshotai.py",
+                "type": "file",
+                "path": "tests/providers/test_moonshotai.py"
+              },
+              {
+                "name": "test_nebius.py",
+                "type": "file",
+                "path": "tests/providers/test_nebius.py"
+              },
+              {
+                "name": "test_ollama.py",
+                "type": "file",
+                "path": "tests/providers/test_ollama.py"
+              },
+              {
+                "name": "test_openai.py",
+                "type": "file",
+                "path": "tests/providers/test_openai.py"
+              },
+              {
+                "name": "test_openrouter.py",
+                "type": "file",
+                "path": "tests/providers/test_openrouter.py"
+              },
+              {
+                "name": "test_outlines.py",
+                "type": "file",
+                "path": "tests/providers/test_outlines.py"
+              },
+              {
+                "name": "test_ovhcloud.py",
+                "type": "file",
+                "path": "tests/providers/test_ovhcloud.py"
+              },
+              {
+                "name": "test_provider_names.py",
+                "type": "file",
+                "path": "tests/providers/test_provider_names.py"
+              },
+              {
+                "name": "test_together.py",
+                "type": "file",
+                "path": "tests/providers/test_together.py"
+              },
+              {
+                "name": "test_vercel.py",
+                "type": "file",
+                "path": "tests/providers/test_vercel.py"
+              }
+            ]
+          },
+          {
+            "name": "__init__.py",
+            "type": "file",
+            "path": "tests/__init__.py"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file",
+            "path": "tests/conftest.py"
+          },
+          {
+            "name": "import_examples.py",
+            "type": "file",
+            "path": "tests/import_examples.py"
+          },
+          {
+            "name": "json_body_serializer.py",
+            "type": "file",
+            "path": "tests/json_body_serializer.py"
+          },
+          {
+            "name": "mcp_server.py",
+            "type": "file",
+            "path": "tests/mcp_server.py"
+          },
+          {
+            "name": "parts_from_messages.py",
+            "type": "file",
+            "path": "tests/parts_from_messages.py"
+          },
+          {
+            "name": "test_a2a.py",
+            "type": "file",
+            "path": "tests/test_a2a.py"
+          },
+          {
+            "name": "test_ag_ui.py",
+            "type": "file",
+            "path": "tests/test_ag_ui.py"
+          },
+          {
+            "name": "test_agent.py",
+            "type": "file",
+            "path": "tests/test_agent.py"
+          },
+          {
+            "name": "test_agent_output_schemas.py",
+            "type": "file",
+            "path": "tests/test_agent_output_schemas.py"
+          },
+          {
+            "name": "test_builtin_tools.py",
+            "type": "file",
+            "path": "tests/test_builtin_tools.py"
+          },
+          {
+            "name": "test_cli.py",
+            "type": "file",
+            "path": "tests/test_cli.py"
+          },
+          {
+            "name": "test_dbos.py",
+            "type": "file",
+            "path": "tests/test_dbos.py"
+          },
+          {
+            "name": "test_deps.py",
+            "type": "file",
+            "path": "tests/test_deps.py"
+          },
+          {
+            "name": "test_direct.py",
+            "type": "file",
+            "path": "tests/test_direct.py"
+          },
+          {
+            "name": "test_examples.py",
+            "type": "file",
+            "path": "tests/test_examples.py"
+          },
+          {
+            "name": "test_exceptions.py",
+            "type": "file",
+            "path": "tests/test_exceptions.py"
+          },
+          {
+            "name": "test_fastmcp.py",
+            "type": "file",
+            "path": "tests/test_fastmcp.py"
+          },
+          {
+            "name": "test_format_as_xml.py",
+            "type": "file",
+            "path": "tests/test_format_as_xml.py"
+          },
+          {
+            "name": "test_function_schema.py",
+            "type": "file",
+            "path": "tests/test_function_schema.py"
+          },
+          {
+            "name": "test_history_processor.py",
+            "type": "file",
+            "path": "tests/test_history_processor.py"
+          },
+          {
+            "name": "test_json_body_serializer.py",
+            "type": "file",
+            "path": "tests/test_json_body_serializer.py"
+          },
+          {
+            "name": "test_json_schema.py",
+            "type": "file",
+            "path": "tests/test_json_schema.py"
+          },
+          {
+            "name": "test_logfire.py",
+            "type": "file",
+            "path": "tests/test_logfire.py"
+          },
+          {
+            "name": "test_mcp.py",
+            "type": "file",
+            "path": "tests/test_mcp.py"
+          },
+          {
+            "name": "test_messages.py",
+            "type": "file",
+            "path": "tests/test_messages.py"
+          },
+          {
+            "name": "test_native_output_schema.py",
+            "type": "file",
+            "path": "tests/test_native_output_schema.py"
+          },
+          {
+            "name": "test_parts_manager.py",
+            "type": "file",
+            "path": "tests/test_parts_manager.py"
+          },
+          {
+            "name": "test_prefect.py",
+            "type": "file",
+            "path": "tests/test_prefect.py"
+          },
+          {
+            "name": "test_settings.py",
+            "type": "file",
+            "path": "tests/test_settings.py"
+          },
+          {
+            "name": "test_streaming.py",
+            "type": "file",
+            "path": "tests/test_streaming.py"
+          },
+          {
+            "name": "test_temporal.py",
+            "type": "file",
+            "path": "tests/test_temporal.py"
+          },
+          {
+            "name": "test_tenacity.py",
+            "type": "file",
+            "path": "tests/test_tenacity.py"
+          },
+          {
+            "name": "test_thinking_part.py",
+            "type": "file",
+            "path": "tests/test_thinking_part.py"
+          },
+          {
+            "name": "test_tools.py",
+            "type": "file",
+            "path": "tests/test_tools.py"
+          },
+          {
+            "name": "test_toolsets.py",
+            "type": "file",
+            "path": "tests/test_toolsets.py"
+          },
+          {
+            "name": "test_ui.py",
+            "type": "file",
+            "path": "tests/test_ui.py"
+          },
+          {
+            "name": "test_ui_web.py",
+            "type": "file",
+            "path": "tests/test_ui_web.py"
+          },
+          {
+            "name": "test_usage_limits.py",
+            "type": "file",
+            "path": "tests/test_usage_limits.py"
+          },
+          {
+            "name": "test_utils.py",
+            "type": "file",
+            "path": "tests/test_utils.py"
+          },
+          {
+            "name": "test_validation_context.py",
+            "type": "file",
+            "path": "tests/test_validation_context.py"
+          },
+          {
+            "name": "test_vercel_ai.py",
+            "type": "file",
+            "path": "tests/test_vercel_ai.py"
+          },
+          {
+            "name": "typed_agent.py",
+            "type": "file",
+            "path": "tests/typed_agent.py"
+          },
+          {
+            "name": "typed_deps.py",
+            "type": "file",
+            "path": "tests/typed_deps.py"
+          },
+          {
+            "name": "typed_graph.py",
+            "type": "file",
+            "path": "tests/typed_graph.py"
+          }
+        ]
+      },
+      {
+        "name": "pyproject.toml",
+        "type": "file",
+        "path": "pyproject.toml"
+      }
+    ]
+  },
+  "dependencies": {
+    "nodes": [
+      {
+        "id": 0,
+        "path": "docs-site/worker-configuration.d.ts",
+        "name": "worker-configuration.d.ts"
+      },
+      {
+        "id": 1,
+        "path": "clai/update_readme.py",
+        "name": "update_readme.py"
+      },
+      {
+        "id": 2,
+        "path": "tests/test_native_output_schema.py",
+        "name": "test_native_output_schema.py"
+      },
+      {
+        "id": 3,
+        "path": "tests/test_utils.py",
+        "name": "test_utils.py"
+      },
+      {
+        "id": 4,
+        "path": "tests/test_parts_manager.py",
+        "name": "test_parts_manager.py"
+      },
+      {
+        "id": 5,
+        "path": "tests/test_toolsets.py",
+        "name": "test_toolsets.py"
+      },
+      {
+        "id": 6,
+        "path": "tests/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 7,
+        "path": "tests/test_ui_web.py",
+        "name": "test_ui_web.py"
+      },
+      {
+        "id": 8,
+        "path": "tests/test_agent.py",
+        "name": "test_agent.py"
+      },
+      {
+        "id": 9,
+        "path": "tests/typed_graph.py",
+        "name": "typed_graph.py"
+      },
+      {
+        "id": 10,
+        "path": "tests/test_deps.py",
+        "name": "test_deps.py"
+      },
+      {
+        "id": 11,
+        "path": "tests/import_examples.py",
+        "name": "import_examples.py"
+      },
+      {
+        "id": 12,
+        "path": "tests/test_format_as_xml.py",
+        "name": "test_format_as_xml.py"
+      },
+      {
+        "id": 13,
+        "path": "tests/test_direct.py",
+        "name": "test_direct.py"
+      },
+      {
+        "id": 14,
+        "path": "tests/json_body_serializer.py",
+        "name": "json_body_serializer.py"
+      },
+      {
+        "id": 15,
+        "path": "tests/test_history_processor.py",
+        "name": "test_history_processor.py"
+      },
+      {
+        "id": 16,
+        "path": "tests/test_a2a.py",
+        "name": "test_a2a.py"
+      },
+      {
+        "id": 17,
+        "path": "tests/test_temporal.py",
+        "name": "test_temporal.py"
+      },
+      {
+        "id": 18,
+        "path": "tests/test_streaming.py",
+        "name": "test_streaming.py"
+      },
+      {
+        "id": 19,
+        "path": "tests/test_exceptions.py",
+        "name": "test_exceptions.py"
+      },
+      {
+        "id": 20,
+        "path": "tests/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 21,
+        "path": "tests/test_ui.py",
+        "name": "test_ui.py"
+      },
+      {
+        "id": 22,
+        "path": "tests/test_logfire.py",
+        "name": "test_logfire.py"
+      },
+      {
+        "id": 23,
+        "path": "tests/test_fastmcp.py",
+        "name": "test_fastmcp.py"
+      },
+      {
+        "id": 24,
+        "path": "tests/test_tenacity.py",
+        "name": "test_tenacity.py"
+      },
+      {
+        "id": 25,
+        "path": "tests/typed_deps.py",
+        "name": "typed_deps.py"
+      },
+      {
+        "id": 26,
+        "path": "tests/test_prefect.py",
+        "name": "test_prefect.py"
+      },
+      {
+        "id": 27,
+        "path": "tests/test_dbos.py",
+        "name": "test_dbos.py"
+      },
+      {
+        "id": 28,
+        "path": "tests/test_validation_context.py",
+        "name": "test_validation_context.py"
+      },
+      {
+        "id": 29,
+        "path": "tests/test_usage_limits.py",
+        "name": "test_usage_limits.py"
+      },
+      {
+        "id": 30,
+        "path": "tests/parts_from_messages.py",
+        "name": "parts_from_messages.py"
+      },
+      {
+        "id": 31,
+        "path": "tests/test_function_schema.py",
+        "name": "test_function_schema.py"
+      },
+      {
+        "id": 32,
+        "path": "tests/test_json_schema.py",
+        "name": "test_json_schema.py"
+      },
+      {
+        "id": 33,
+        "path": "tests/test_vercel_ai.py",
+        "name": "test_vercel_ai.py"
+      },
+      {
+        "id": 34,
+        "path": "tests/typed_agent.py",
+        "name": "typed_agent.py"
+      },
+      {
+        "id": 35,
+        "path": "tests/test_tools.py",
+        "name": "test_tools.py"
+      },
+      {
+        "id": 36,
+        "path": "tests/test_cli.py",
+        "name": "test_cli.py"
+      },
+      {
+        "id": 37,
+        "path": "tests/test_agent_output_schemas.py",
+        "name": "test_agent_output_schemas.py"
+      },
+      {
+        "id": 38,
+        "path": "tests/test_mcp.py",
+        "name": "test_mcp.py"
+      },
+      {
+        "id": 39,
+        "path": "tests/test_builtin_tools.py",
+        "name": "test_builtin_tools.py"
+      },
+      {
+        "id": 40,
+        "path": "tests/test_examples.py",
+        "name": "test_examples.py"
+      },
+      {
+        "id": 41,
+        "path": "tests/test_json_body_serializer.py",
+        "name": "test_json_body_serializer.py"
+      },
+      {
+        "id": 42,
+        "path": "tests/mcp_server.py",
+        "name": "mcp_server.py"
+      },
+      {
+        "id": 43,
+        "path": "tests/test_settings.py",
+        "name": "test_settings.py"
+      },
+      {
+        "id": 44,
+        "path": "tests/test_thinking_part.py",
+        "name": "test_thinking_part.py"
+      },
+      {
+        "id": 45,
+        "path": "tests/test_ag_ui.py",
+        "name": "test_ag_ui.py"
+      },
+      {
+        "id": 46,
+        "path": "tests/test_messages.py",
+        "name": "test_messages.py"
+      },
+      {
+        "id": 47,
+        "path": ".github/set_docs_pr_preview_url.py",
+        "name": "set_docs_pr_preview_url.py"
+      },
+      {
+        "id": 48,
+        "path": ".github/set_docs_main_preview_url.py",
+        "name": "set_docs_main_preview_url.py"
+      },
+      {
+        "id": 49,
+        "path": "pydantic_graph/pydantic_graph/mermaid.py",
+        "name": "mermaid.py"
+      },
+      {
+        "id": 50,
+        "path": "pydantic_graph/pydantic_graph/graph.py",
+        "name": "graph.py"
+      },
+      {
+        "id": 51,
+        "path": "pydantic_graph/pydantic_graph/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 52,
+        "path": "pydantic_graph/pydantic_graph/exceptions.py",
+        "name": "exceptions.py"
+      },
+      {
+        "id": 53,
+        "path": "pydantic_graph/pydantic_graph/nodes.py",
+        "name": "nodes.py"
+      },
+      {
+        "id": 54,
+        "path": "pydantic_graph/pydantic_graph/_utils.py",
+        "name": "_utils.py"
+      },
+      {
+        "id": 55,
+        "path": "pydantic_graph/pydantic_graph/beta/parent_forks.py",
+        "name": "parent_forks.py"
+      },
+      {
+        "id": 56,
+        "path": "pydantic_graph/pydantic_graph/beta/paths.py",
+        "name": "paths.py"
+      },
+      {
+        "id": 57,
+        "path": "pydantic_graph/pydantic_graph/beta/util.py",
+        "name": "util.py"
+      },
+      {
+        "id": 58,
+        "path": "pydantic_graph/pydantic_graph/beta/mermaid.py",
+        "name": "mermaid.py"
+      },
+      {
+        "id": 59,
+        "path": "pydantic_graph/pydantic_graph/beta/id_types.py",
+        "name": "id_types.py"
+      },
+      {
+        "id": 60,
+        "path": "pydantic_graph/pydantic_graph/beta/graph.py",
+        "name": "graph.py"
+      },
+      {
+        "id": 61,
+        "path": "pydantic_graph/pydantic_graph/beta/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 62,
+        "path": "pydantic_graph/pydantic_graph/beta/decision.py",
+        "name": "decision.py"
+      },
+      {
+        "id": 63,
+        "path": "pydantic_graph/pydantic_graph/beta/join.py",
+        "name": "join.py"
+      },
+      {
+        "id": 64,
+        "path": "pydantic_graph/pydantic_graph/beta/step.py",
+        "name": "step.py"
+      },
+      {
+        "id": 65,
+        "path": "pydantic_graph/pydantic_graph/beta/node.py",
+        "name": "node.py"
+      },
+      {
+        "id": 66,
+        "path": "pydantic_graph/pydantic_graph/beta/graph_builder.py",
+        "name": "graph_builder.py"
+      },
+      {
+        "id": 67,
+        "path": "pydantic_graph/pydantic_graph/beta/node_types.py",
+        "name": "node_types.py"
+      },
+      {
+        "id": 68,
+        "path": "pydantic_graph/pydantic_graph/persistence/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 69,
+        "path": "pydantic_graph/pydantic_graph/persistence/file.py",
+        "name": "file.py"
+      },
+      {
+        "id": 70,
+        "path": "pydantic_graph/pydantic_graph/persistence/_utils.py",
+        "name": "_utils.py"
+      },
+      {
+        "id": 71,
+        "path": "pydantic_graph/pydantic_graph/persistence/in_mem.py",
+        "name": "in_mem.py"
+      },
+      {
+        "id": 72,
+        "path": "examples/pydantic_ai_examples/pydantic_model.py",
+        "name": "pydantic_model.py"
+      },
+      {
+        "id": 73,
+        "path": "examples/pydantic_ai_examples/roulette_wheel.py",
+        "name": "roulette_wheel.py"
+      },
+      {
+        "id": 74,
+        "path": "examples/pydantic_ai_examples/chat_app.ts",
+        "name": "chat_app.ts"
+      },
+      {
+        "id": 75,
+        "path": "examples/pydantic_ai_examples/sql_gen.py",
+        "name": "sql_gen.py"
+      },
+      {
+        "id": 76,
+        "path": "examples/pydantic_ai_examples/bank_support.py",
+        "name": "bank_support.py"
+      },
+      {
+        "id": 77,
+        "path": "examples/pydantic_ai_examples/flight_booking.py",
+        "name": "flight_booking.py"
+      },
+      {
+        "id": 78,
+        "path": "examples/pydantic_ai_examples/chat_app.py",
+        "name": "chat_app.py"
+      },
+      {
+        "id": 79,
+        "path": "examples/pydantic_ai_examples/rag.py",
+        "name": "rag.py"
+      },
+      {
+        "id": 80,
+        "path": "examples/pydantic_ai_examples/question_graph.py",
+        "name": "question_graph.py"
+      },
+      {
+        "id": 81,
+        "path": "examples/pydantic_ai_examples/data_analyst.py",
+        "name": "data_analyst.py"
+      },
+      {
+        "id": 82,
+        "path": "examples/pydantic_ai_examples/weather_agent_gradio.py",
+        "name": "weather_agent_gradio.py"
+      },
+      {
+        "id": 83,
+        "path": "examples/pydantic_ai_examples/stream_whales.py",
+        "name": "stream_whales.py"
+      },
+      {
+        "id": 84,
+        "path": "examples/pydantic_ai_examples/weather_agent.py",
+        "name": "weather_agent.py"
+      },
+      {
+        "id": 85,
+        "path": "examples/pydantic_ai_examples/stream_markdown.py",
+        "name": "stream_markdown.py"
+      },
+      {
+        "id": 86,
+        "path": "examples/pydantic_ai_examples/__main__.py",
+        "name": "__main__.py"
+      },
+      {
+        "id": 87,
+        "path": "examples/pydantic_ai_examples/evals/example_03_unit_testing.py",
+        "name": "example_03_unit_testing.py"
+      },
+      {
+        "id": 88,
+        "path": "examples/pydantic_ai_examples/evals/example_04_compare_models.py",
+        "name": "example_04_compare_models.py"
+      },
+      {
+        "id": 89,
+        "path": "examples/pydantic_ai_examples/evals/models.py",
+        "name": "models.py"
+      },
+      {
+        "id": 90,
+        "path": "examples/pydantic_ai_examples/evals/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 91,
+        "path": "examples/pydantic_ai_examples/evals/example_01_generate_dataset.py",
+        "name": "example_01_generate_dataset.py"
+      },
+      {
+        "id": 92,
+        "path": "examples/pydantic_ai_examples/evals/example_02_add_custom_evaluators.py",
+        "name": "example_02_add_custom_evaluators.py"
+      },
+      {
+        "id": 93,
+        "path": "examples/pydantic_ai_examples/evals/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 94,
+        "path": "examples/pydantic_ai_examples/evals/custom_evaluators.py",
+        "name": "custom_evaluators.py"
+      },
+      {
+        "id": 95,
+        "path": "examples/pydantic_ai_examples/ag_ui/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 96,
+        "path": "examples/pydantic_ai_examples/ag_ui/__main__.py",
+        "name": "__main__.py"
+      },
+      {
+        "id": 97,
+        "path": "examples/pydantic_ai_examples/slack_lead_qualifier/functions.py",
+        "name": "functions.py"
+      },
+      {
+        "id": 98,
+        "path": "examples/pydantic_ai_examples/slack_lead_qualifier/store.py",
+        "name": "store.py"
+      },
+      {
+        "id": 99,
+        "path": "examples/pydantic_ai_examples/slack_lead_qualifier/models.py",
+        "name": "models.py"
+      },
+      {
+        "id": 100,
+        "path": "examples/pydantic_ai_examples/slack_lead_qualifier/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 101,
+        "path": "examples/pydantic_ai_examples/slack_lead_qualifier/agent.py",
+        "name": "agent.py"
+      },
+      {
+        "id": 102,
+        "path": "examples/pydantic_ai_examples/slack_lead_qualifier/app.py",
+        "name": "app.py"
+      },
+      {
+        "id": 103,
+        "path": "examples/pydantic_ai_examples/slack_lead_qualifier/modal.py",
+        "name": "modal.py"
+      },
+      {
+        "id": 104,
+        "path": "examples/pydantic_ai_examples/slack_lead_qualifier/slack.py",
+        "name": "slack.py"
+      },
+      {
+        "id": 105,
+        "path": "examples/pydantic_ai_examples/ag_ui/api/agentic_chat.py",
+        "name": "agentic_chat.py"
+      },
+      {
+        "id": 106,
+        "path": "examples/pydantic_ai_examples/ag_ui/api/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 107,
+        "path": "examples/pydantic_ai_examples/ag_ui/api/human_in_the_loop.py",
+        "name": "human_in_the_loop.py"
+      },
+      {
+        "id": 108,
+        "path": "examples/pydantic_ai_examples/ag_ui/api/agentic_generative_ui.py",
+        "name": "agentic_generative_ui.py"
+      },
+      {
+        "id": 109,
+        "path": "examples/pydantic_ai_examples/ag_ui/api/shared_state.py",
+        "name": "shared_state.py"
+      },
+      {
+        "id": 110,
+        "path": "examples/pydantic_ai_examples/ag_ui/api/predictive_state_updates.py",
+        "name": "predictive_state_updates.py"
+      },
+      {
+        "id": 111,
+        "path": "examples/pydantic_ai_examples/ag_ui/api/tool_based_generative_ui.py",
+        "name": "tool_based_generative_ui.py"
+      },
+      {
+        "id": 112,
+        "path": "pydantic_evals/pydantic_evals/generation.py",
+        "name": "generation.py"
+      },
+      {
+        "id": 113,
+        "path": "pydantic_evals/pydantic_evals/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 114,
+        "path": "pydantic_evals/pydantic_evals/dataset.py",
+        "name": "dataset.py"
+      },
+      {
+        "id": 115,
+        "path": "pydantic_evals/pydantic_evals/_utils.py",
+        "name": "_utils.py"
+      },
+      {
+        "id": 116,
+        "path": "pydantic_evals/pydantic_evals/reporting/render_numbers.py",
+        "name": "render_numbers.py"
+      },
+      {
+        "id": 117,
+        "path": "pydantic_evals/pydantic_evals/reporting/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 118,
+        "path": "pydantic_evals/pydantic_evals/otel/_errors.py",
+        "name": "_errors.py"
+      },
+      {
+        "id": 119,
+        "path": "pydantic_evals/pydantic_evals/otel/_context_in_memory_span_exporter.py",
+        "name": "_context_in_memory_span_exporter.py"
+      },
+      {
+        "id": 120,
+        "path": "pydantic_evals/pydantic_evals/otel/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 121,
+        "path": "pydantic_evals/pydantic_evals/otel/span_tree.py",
+        "name": "span_tree.py"
+      },
+      {
+        "id": 122,
+        "path": "pydantic_evals/pydantic_evals/otel/_context_subtree.py",
+        "name": "_context_subtree.py"
+      },
+      {
+        "id": 123,
+        "path": "pydantic_evals/pydantic_evals/evaluators/_run_evaluator.py",
+        "name": "_run_evaluator.py"
+      },
+      {
+        "id": 124,
+        "path": "pydantic_evals/pydantic_evals/evaluators/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 125,
+        "path": "pydantic_evals/pydantic_evals/evaluators/spec.py",
+        "name": "spec.py"
+      },
+      {
+        "id": 126,
+        "path": "pydantic_evals/pydantic_evals/evaluators/context.py",
+        "name": "context.py"
+      },
+      {
+        "id": 127,
+        "path": "pydantic_evals/pydantic_evals/evaluators/common.py",
+        "name": "common.py"
+      },
+      {
+        "id": 128,
+        "path": "pydantic_evals/pydantic_evals/evaluators/llm_as_a_judge.py",
+        "name": "llm_as_a_judge.py"
+      },
+      {
+        "id": 129,
+        "path": "pydantic_evals/pydantic_evals/evaluators/evaluator.py",
+        "name": "evaluator.py"
+      },
+      {
+        "id": 130,
+        "path": "docs/.hooks/algolia.py",
+        "name": "algolia.py"
+      },
+      {
+        "id": 131,
+        "path": "docs/.hooks/snippets.py",
+        "name": "snippets.py"
+      },
+      {
+        "id": 132,
+        "path": "docs/.hooks/main.py",
+        "name": "main.py"
+      },
+      {
+        "id": 133,
+        "path": "docs/.hooks/test_snippets.py",
+        "name": "test_snippets.py"
+      },
+      {
+        "id": 134,
+        "path": "docs/javascripts/algolia-search.js",
+        "name": "algolia-search.js"
+      },
+      {
+        "id": 135,
+        "path": "tests/evals/test_evaluator_common.py",
+        "name": "test_evaluator_common.py"
+      },
+      {
+        "id": 136,
+        "path": "tests/evals/test_utils.py",
+        "name": "test_utils.py"
+      },
+      {
+        "id": 137,
+        "path": "tests/evals/test_evaluator_context.py",
+        "name": "test_evaluator_context.py"
+      },
+      {
+        "id": 138,
+        "path": "tests/evals/test_evaluators.py",
+        "name": "test_evaluators.py"
+      },
+      {
+        "id": 139,
+        "path": "tests/evals/test_reporting.py",
+        "name": "test_reporting.py"
+      },
+      {
+        "id": 140,
+        "path": "tests/evals/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 141,
+        "path": "tests/evals/test_llm_as_a_judge.py",
+        "name": "test_llm_as_a_judge.py"
+      },
+      {
+        "id": 142,
+        "path": "tests/evals/test_evaluator_base.py",
+        "name": "test_evaluator_base.py"
+      },
+      {
+        "id": 143,
+        "path": "tests/evals/test_render_numbers.py",
+        "name": "test_render_numbers.py"
+      },
+      {
+        "id": 144,
+        "path": "tests/evals/test_reports.py",
+        "name": "test_reports.py"
+      },
+      {
+        "id": 145,
+        "path": "tests/evals/utils.py",
+        "name": "utils.py"
+      },
+      {
+        "id": 146,
+        "path": "tests/evals/test_dataset.py",
+        "name": "test_dataset.py"
+      },
+      {
+        "id": 147,
+        "path": "tests/evals/test_otel.py",
+        "name": "test_otel.py"
+      },
+      {
+        "id": 148,
+        "path": "tests/evals/test_evaluator_spec.py",
+        "name": "test_evaluator_spec.py"
+      },
+      {
+        "id": 149,
+        "path": "tests/providers/test_anthropic.py",
+        "name": "test_anthropic.py"
+      },
+      {
+        "id": 150,
+        "path": "tests/providers/test_mistral.py",
+        "name": "test_mistral.py"
+      },
+      {
+        "id": 151,
+        "path": "tests/providers/test_openai.py",
+        "name": "test_openai.py"
+      },
+      {
+        "id": 152,
+        "path": "tests/providers/test_fireworks.py",
+        "name": "test_fireworks.py"
+      },
+      {
+        "id": 153,
+        "path": "tests/providers/test_heroku.py",
+        "name": "test_heroku.py"
+      },
+      {
+        "id": 154,
+        "path": "tests/providers/test_alibaba_provider.py",
+        "name": "test_alibaba_provider.py"
+      },
+      {
+        "id": 155,
+        "path": "tests/providers/test_gateway.py",
+        "name": "test_gateway.py"
+      },
+      {
+        "id": 156,
+        "path": "tests/providers/test_github.py",
+        "name": "test_github.py"
+      },
+      {
+        "id": 157,
+        "path": "tests/providers/test_google_gla.py",
+        "name": "test_google_gla.py"
+      },
+      {
+        "id": 158,
+        "path": "tests/providers/test_cerebras.py",
+        "name": "test_cerebras.py"
+      },
+      {
+        "id": 159,
+        "path": "tests/providers/test_cohere.py",
+        "name": "test_cohere.py"
+      },
+      {
+        "id": 160,
+        "path": "tests/providers/test_ollama.py",
+        "name": "test_ollama.py"
+      },
+      {
+        "id": 161,
+        "path": "tests/providers/test_nebius.py",
+        "name": "test_nebius.py"
+      },
+      {
+        "id": 162,
+        "path": "tests/providers/test_grok.py",
+        "name": "test_grok.py"
+      },
+      {
+        "id": 163,
+        "path": "tests/providers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 164,
+        "path": "tests/providers/test_provider_names.py",
+        "name": "test_provider_names.py"
+      },
+      {
+        "id": 165,
+        "path": "tests/providers/test_together.py",
+        "name": "test_together.py"
+      },
+      {
+        "id": 166,
+        "path": "tests/providers/test_google_vertex.py",
+        "name": "test_google_vertex.py"
+      },
+      {
+        "id": 167,
+        "path": "tests/providers/test_openrouter.py",
+        "name": "test_openrouter.py"
+      },
+      {
+        "id": 168,
+        "path": "tests/providers/test_vercel.py",
+        "name": "test_vercel.py"
+      },
+      {
+        "id": 169,
+        "path": "tests/providers/test_litellm.py",
+        "name": "test_litellm.py"
+      },
+      {
+        "id": 170,
+        "path": "tests/providers/test_outlines.py",
+        "name": "test_outlines.py"
+      },
+      {
+        "id": 171,
+        "path": "tests/providers/test_ovhcloud.py",
+        "name": "test_ovhcloud.py"
+      },
+      {
+        "id": 172,
+        "path": "tests/providers/test_groq.py",
+        "name": "test_groq.py"
+      },
+      {
+        "id": 173,
+        "path": "tests/providers/test_bedrock.py",
+        "name": "test_bedrock.py"
+      },
+      {
+        "id": 174,
+        "path": "tests/providers/test_azure.py",
+        "name": "test_azure.py"
+      },
+      {
+        "id": 175,
+        "path": "tests/providers/test_deepseek.py",
+        "name": "test_deepseek.py"
+      },
+      {
+        "id": 176,
+        "path": "tests/providers/test_huggingface.py",
+        "name": "test_huggingface.py"
+      },
+      {
+        "id": 177,
+        "path": "tests/providers/test_moonshotai.py",
+        "name": "test_moonshotai.py"
+      },
+      {
+        "id": 178,
+        "path": "tests/ext/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 179,
+        "path": "tests/ext/test_langchain.py",
+        "name": "test_langchain.py"
+      },
+      {
+        "id": 180,
+        "path": "tests/graph/test_utils.py",
+        "name": "test_utils.py"
+      },
+      {
+        "id": 181,
+        "path": "tests/graph/test_mermaid.py",
+        "name": "test_mermaid.py"
+      },
+      {
+        "id": 182,
+        "path": "tests/graph/test_persistence.py",
+        "name": "test_persistence.py"
+      },
+      {
+        "id": 183,
+        "path": "tests/graph/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 184,
+        "path": "tests/graph/test_state.py",
+        "name": "test_state.py"
+      },
+      {
+        "id": 185,
+        "path": "tests/graph/test_file_persistence.py",
+        "name": "test_file_persistence.py"
+      },
+      {
+        "id": 186,
+        "path": "tests/graph/test_graph.py",
+        "name": "test_graph.py"
+      },
+      {
+        "id": 187,
+        "path": "tests/models/test_anthropic.py",
+        "name": "test_anthropic.py"
+      },
+      {
+        "id": 188,
+        "path": "tests/models/test_model.py",
+        "name": "test_model.py"
+      },
+      {
+        "id": 189,
+        "path": "tests/models/test_mistral.py",
+        "name": "test_mistral.py"
+      },
+      {
+        "id": 190,
+        "path": "tests/models/test_openai.py",
+        "name": "test_openai.py"
+      },
+      {
+        "id": 191,
+        "path": "tests/models/mock_async_stream.py",
+        "name": "mock_async_stream.py"
+      },
+      {
+        "id": 192,
+        "path": "tests/models/test_mcp_sampling.py",
+        "name": "test_mcp_sampling.py"
+      },
+      {
+        "id": 193,
+        "path": "tests/models/test_cerebras.py",
+        "name": "test_cerebras.py"
+      },
+      {
+        "id": 194,
+        "path": "tests/models/test_cohere.py",
+        "name": "test_cohere.py"
+      },
+      {
+        "id": 195,
+        "path": "tests/models/test_model_names.py",
+        "name": "test_model_names.py"
+      },
+      {
+        "id": 196,
+        "path": "tests/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 197,
+        "path": "tests/models/test_model_function.py",
+        "name": "test_model_function.py"
+      },
+      {
+        "id": 198,
+        "path": "tests/models/test_model_request_parameters.py",
+        "name": "test_model_request_parameters.py"
+      },
+      {
+        "id": 199,
+        "path": "tests/models/test_openrouter.py",
+        "name": "test_openrouter.py"
+      },
+      {
+        "id": 200,
+        "path": "tests/models/test_fallback.py",
+        "name": "test_fallback.py"
+      },
+      {
+        "id": 201,
+        "path": "tests/models/test_outlines.py",
+        "name": "test_outlines.py"
+      },
+      {
+        "id": 202,
+        "path": "tests/models/test_download_item.py",
+        "name": "test_download_item.py"
+      },
+      {
+        "id": 203,
+        "path": "tests/models/test_groq.py",
+        "name": "test_groq.py"
+      },
+      {
+        "id": 204,
+        "path": "tests/models/test_model_test.py",
+        "name": "test_model_test.py"
+      },
+      {
+        "id": 205,
+        "path": "tests/models/test_model_settings.py",
+        "name": "test_model_settings.py"
+      },
+      {
+        "id": 206,
+        "path": "tests/models/mock_openai.py",
+        "name": "mock_openai.py"
+      },
+      {
+        "id": 207,
+        "path": "tests/models/test_bedrock.py",
+        "name": "test_bedrock.py"
+      },
+      {
+        "id": 208,
+        "path": "tests/models/test_deepseek.py",
+        "name": "test_deepseek.py"
+      },
+      {
+        "id": 209,
+        "path": "tests/models/test_gemini.py",
+        "name": "test_gemini.py"
+      },
+      {
+        "id": 210,
+        "path": "tests/models/test_google.py",
+        "name": "test_google.py"
+      },
+      {
+        "id": 211,
+        "path": "tests/models/test_huggingface.py",
+        "name": "test_huggingface.py"
+      },
+      {
+        "id": 212,
+        "path": "tests/models/test_instrumented.py",
+        "name": "test_instrumented.py"
+      },
+      {
+        "id": 213,
+        "path": "tests/models/test_openai_responses.py",
+        "name": "test_openai_responses.py"
+      },
+      {
+        "id": 214,
+        "path": "tests/models/test_gemini_vertex.py",
+        "name": "test_gemini_vertex.py"
+      },
+      {
+        "id": 215,
+        "path": "tests/example_modules/fake_database.py",
+        "name": "fake_database.py"
+      },
+      {
+        "id": 216,
+        "path": "tests/example_modules/weather_service.py",
+        "name": "weather_service.py"
+      },
+      {
+        "id": 217,
+        "path": "tests/example_modules/bank_database.py",
+        "name": "bank_database.py"
+      },
+      {
+        "id": 218,
+        "path": "tests/example_modules/mcp_server.py",
+        "name": "mcp_server.py"
+      },
+      {
+        "id": 219,
+        "path": "tests/profiles/test_anthropic.py",
+        "name": "test_anthropic.py"
+      },
+      {
+        "id": 220,
+        "path": "tests/profiles/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 221,
+        "path": "tests/profiles/test_google.py",
+        "name": "test_google.py"
+      },
+      {
+        "id": 222,
+        "path": "tests/models/anthropic/conftest.py",
+        "name": "conftest.py"
+      },
+      {
+        "id": 223,
+        "path": "tests/models/anthropic/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 224,
+        "path": "tests/models/anthropic/test_output.py",
+        "name": "test_output.py"
+      },
+      {
+        "id": 225,
+        "path": "tests/graph/beta/test_edge_labels.py",
+        "name": "test_edge_labels.py"
+      },
+      {
+        "id": 226,
+        "path": "tests/graph/beta/test_v1_v2_integration.py",
+        "name": "test_v1_v2_integration.py"
+      },
+      {
+        "id": 227,
+        "path": "tests/graph/beta/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 228,
+        "path": "tests/graph/beta/test_joins_and_reducers.py",
+        "name": "test_joins_and_reducers.py"
+      },
+      {
+        "id": 229,
+        "path": "tests/graph/beta/test_node_and_step.py",
+        "name": "test_node_and_step.py"
+      },
+      {
+        "id": 230,
+        "path": "tests/graph/beta/test_util.py",
+        "name": "test_util.py"
+      },
+      {
+        "id": 231,
+        "path": "tests/graph/beta/test_graph_edge_cases.py",
+        "name": "test_graph_edge_cases.py"
+      },
+      {
+        "id": 232,
+        "path": "tests/graph/beta/test_paths.py",
+        "name": "test_paths.py"
+      },
+      {
+        "id": 233,
+        "path": "tests/graph/beta/test_edge_cases.py",
+        "name": "test_edge_cases.py"
+      },
+      {
+        "id": 234,
+        "path": "tests/graph/beta/test_parent_forks.py",
+        "name": "test_parent_forks.py"
+      },
+      {
+        "id": 235,
+        "path": "tests/graph/beta/test_broadcast_and_spread.py",
+        "name": "test_broadcast_and_spread.py"
+      },
+      {
+        "id": 236,
+        "path": "tests/graph/beta/test_graph_execution.py",
+        "name": "test_graph_execution.py"
+      },
+      {
+        "id": 237,
+        "path": "tests/graph/beta/test_decisions.py",
+        "name": "test_decisions.py"
+      },
+      {
+        "id": 238,
+        "path": "tests/graph/beta/test_mermaid_rendering.py",
+        "name": "test_mermaid_rendering.py"
+      },
+      {
+        "id": 239,
+        "path": "tests/graph/beta/test_graph_builder.py",
+        "name": "test_graph_builder.py"
+      },
+      {
+        "id": 240,
+        "path": "tests/graph/beta/test_graph_iteration.py",
+        "name": "test_graph_iteration.py"
+      },
+      {
+        "id": 241,
+        "path": "clai/clai/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 242,
+        "path": "clai/clai/__main__.py",
+        "name": "__main__.py"
+      },
+      {
+        "id": 243,
+        "path": "docs-site/src/index.ts",
+        "name": "index.ts"
+      },
+      {
+        "id": 244,
+        "path": "pydantic_ai_slim/pydantic_ai/_output.py",
+        "name": "_output.py"
+      },
+      {
+        "id": 245,
+        "path": "pydantic_ai_slim/pydantic_ai/retries.py",
+        "name": "retries.py"
+      },
+      {
+        "id": 246,
+        "path": "pydantic_ai_slim/pydantic_ai/_thinking_part.py",
+        "name": "_thinking_part.py"
+      },
+      {
+        "id": 247,
+        "path": "pydantic_ai_slim/pydantic_ai/run.py",
+        "name": "run.py"
+      },
+      {
+        "id": 248,
+        "path": "pydantic_ai_slim/pydantic_ai/format_prompt.py",
+        "name": "format_prompt.py"
+      },
+      {
+        "id": 249,
+        "path": "pydantic_ai_slim/pydantic_ai/_instrumentation.py",
+        "name": "_instrumentation.py"
+      },
+      {
+        "id": 250,
+        "path": "pydantic_ai_slim/pydantic_ai/_mcp.py",
+        "name": "_mcp.py"
+      },
+      {
+        "id": 251,
+        "path": "pydantic_ai_slim/pydantic_ai/tools.py",
+        "name": "tools.py"
+      },
+      {
+        "id": 252,
+        "path": "pydantic_ai_slim/pydantic_ai/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 253,
+        "path": "pydantic_ai_slim/pydantic_ai/_function_schema.py",
+        "name": "_function_schema.py"
+      },
+      {
+        "id": 254,
+        "path": "pydantic_ai_slim/pydantic_ai/ag_ui.py",
+        "name": "ag_ui.py"
+      },
+      {
+        "id": 255,
+        "path": "pydantic_ai_slim/pydantic_ai/result.py",
+        "name": "result.py"
+      },
+      {
+        "id": 256,
+        "path": "pydantic_ai_slim/pydantic_ai/_run_context.py",
+        "name": "_run_context.py"
+      },
+      {
+        "id": 257,
+        "path": "pydantic_ai_slim/pydantic_ai/_system_prompt.py",
+        "name": "_system_prompt.py"
+      },
+      {
+        "id": 258,
+        "path": "pydantic_ai_slim/pydantic_ai/mcp.py",
+        "name": "mcp.py"
+      },
+      {
+        "id": 259,
+        "path": "pydantic_ai_slim/pydantic_ai/_otel_messages.py",
+        "name": "_otel_messages.py"
+      },
+      {
+        "id": 260,
+        "path": "pydantic_ai_slim/pydantic_ai/_json_schema.py",
+        "name": "_json_schema.py"
+      },
+      {
+        "id": 261,
+        "path": "pydantic_ai_slim/pydantic_ai/_tool_manager.py",
+        "name": "_tool_manager.py"
+      },
+      {
+        "id": 262,
+        "path": "pydantic_ai_slim/pydantic_ai/_griffe.py",
+        "name": "_griffe.py"
+      },
+      {
+        "id": 263,
+        "path": "pydantic_ai_slim/pydantic_ai/messages.py",
+        "name": "messages.py"
+      },
+      {
+        "id": 264,
+        "path": "pydantic_ai_slim/pydantic_ai/settings.py",
+        "name": "settings.py"
+      },
+      {
+        "id": 265,
+        "path": "pydantic_ai_slim/pydantic_ai/exceptions.py",
+        "name": "exceptions.py"
+      },
+      {
+        "id": 266,
+        "path": "pydantic_ai_slim/pydantic_ai/_a2a.py",
+        "name": "_a2a.py"
+      },
+      {
+        "id": 267,
+        "path": "pydantic_ai_slim/pydantic_ai/direct.py",
+        "name": "direct.py"
+      },
+      {
+        "id": 268,
+        "path": "pydantic_ai_slim/pydantic_ai/builtin_tools.py",
+        "name": "builtin_tools.py"
+      },
+      {
+        "id": 269,
+        "path": "pydantic_ai_slim/pydantic_ai/_parts_manager.py",
+        "name": "_parts_manager.py"
+      },
+      {
+        "id": 270,
+        "path": "pydantic_ai_slim/pydantic_ai/_agent_graph.py",
+        "name": "_agent_graph.py"
+      },
+      {
+        "id": 271,
+        "path": "pydantic_ai_slim/pydantic_ai/usage.py",
+        "name": "usage.py"
+      },
+      {
+        "id": 272,
+        "path": "pydantic_ai_slim/pydantic_ai/__main__.py",
+        "name": "__main__.py"
+      },
+      {
+        "id": 273,
+        "path": "pydantic_ai_slim/pydantic_ai/output.py",
+        "name": "output.py"
+      },
+      {
+        "id": 274,
+        "path": "pydantic_ai_slim/pydantic_ai/_utils.py",
+        "name": "_utils.py"
+      },
+      {
+        "id": 275,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/_event_stream.py",
+        "name": "_event_stream.py"
+      },
+      {
+        "id": 276,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/_adapter.py",
+        "name": "_adapter.py"
+      },
+      {
+        "id": 277,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 278,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/_messages_builder.py",
+        "name": "_messages_builder.py"
+      },
+      {
+        "id": 279,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/cerebras.py",
+        "name": "cerebras.py"
+      },
+      {
+        "id": 280,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/gateway.py",
+        "name": "gateway.py"
+      },
+      {
+        "id": 281,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/moonshotai.py",
+        "name": "moonshotai.py"
+      },
+      {
+        "id": 282,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/vercel.py",
+        "name": "vercel.py"
+      },
+      {
+        "id": 283,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/mistral.py",
+        "name": "mistral.py"
+      },
+      {
+        "id": 284,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/openrouter.py",
+        "name": "openrouter.py"
+      },
+      {
+        "id": 285,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/azure.py",
+        "name": "azure.py"
+      },
+      {
+        "id": 286,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/grok.py",
+        "name": "grok.py"
+      },
+      {
+        "id": 287,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 288,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/google.py",
+        "name": "google.py"
+      },
+      {
+        "id": 289,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/litellm.py",
+        "name": "litellm.py"
+      },
+      {
+        "id": 290,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/groq.py",
+        "name": "groq.py"
+      },
+      {
+        "id": 291,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/heroku.py",
+        "name": "heroku.py"
+      },
+      {
+        "id": 292,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/openai.py",
+        "name": "openai.py"
+      },
+      {
+        "id": 293,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/google_gla.py",
+        "name": "google_gla.py"
+      },
+      {
+        "id": 294,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/fireworks.py",
+        "name": "fireworks.py"
+      },
+      {
+        "id": 295,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/google_vertex.py",
+        "name": "google_vertex.py"
+      },
+      {
+        "id": 296,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/huggingface.py",
+        "name": "huggingface.py"
+      },
+      {
+        "id": 297,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/deepseek.py",
+        "name": "deepseek.py"
+      },
+      {
+        "id": 298,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/anthropic.py",
+        "name": "anthropic.py"
+      },
+      {
+        "id": 299,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/together.py",
+        "name": "together.py"
+      },
+      {
+        "id": 300,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/alibaba.py",
+        "name": "alibaba.py"
+      },
+      {
+        "id": 301,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/github.py",
+        "name": "github.py"
+      },
+      {
+        "id": 302,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/cohere.py",
+        "name": "cohere.py"
+      },
+      {
+        "id": 303,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/nebius.py",
+        "name": "nebius.py"
+      },
+      {
+        "id": 304,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/outlines.py",
+        "name": "outlines.py"
+      },
+      {
+        "id": 305,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/ollama.py",
+        "name": "ollama.py"
+      },
+      {
+        "id": 306,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/bedrock.py",
+        "name": "bedrock.py"
+      },
+      {
+        "id": 307,
+        "path": "pydantic_ai_slim/pydantic_ai/providers/ovhcloud.py",
+        "name": "ovhcloud.py"
+      },
+      {
+        "id": 308,
+        "path": "pydantic_ai_slim/pydantic_ai/ext/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 309,
+        "path": "pydantic_ai_slim/pydantic_ai/ext/aci.py",
+        "name": "aci.py"
+      },
+      {
+        "id": 310,
+        "path": "pydantic_ai_slim/pydantic_ai/ext/langchain.py",
+        "name": "langchain.py"
+      },
+      {
+        "id": 311,
+        "path": "pydantic_ai_slim/pydantic_ai/agent/abstract.py",
+        "name": "abstract.py"
+      },
+      {
+        "id": 312,
+        "path": "pydantic_ai_slim/pydantic_ai/agent/wrapper.py",
+        "name": "wrapper.py"
+      },
+      {
+        "id": 313,
+        "path": "pydantic_ai_slim/pydantic_ai/agent/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 314,
+        "path": "pydantic_ai_slim/pydantic_ai/models/cerebras.py",
+        "name": "cerebras.py"
+      },
+      {
+        "id": 315,
+        "path": "pydantic_ai_slim/pydantic_ai/models/wrapper.py",
+        "name": "wrapper.py"
+      },
+      {
+        "id": 316,
+        "path": "pydantic_ai_slim/pydantic_ai/models/instrumented.py",
+        "name": "instrumented.py"
+      },
+      {
+        "id": 317,
+        "path": "pydantic_ai_slim/pydantic_ai/models/mistral.py",
+        "name": "mistral.py"
+      },
+      {
+        "id": 318,
+        "path": "pydantic_ai_slim/pydantic_ai/models/openrouter.py",
+        "name": "openrouter.py"
+      },
+      {
+        "id": 319,
+        "path": "pydantic_ai_slim/pydantic_ai/models/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 320,
+        "path": "pydantic_ai_slim/pydantic_ai/models/google.py",
+        "name": "google.py"
+      },
+      {
+        "id": 321,
+        "path": "pydantic_ai_slim/pydantic_ai/models/gemini.py",
+        "name": "gemini.py"
+      },
+      {
+        "id": 322,
+        "path": "pydantic_ai_slim/pydantic_ai/models/test.py",
+        "name": "test.py"
+      },
+      {
+        "id": 323,
+        "path": "pydantic_ai_slim/pydantic_ai/models/groq.py",
+        "name": "groq.py"
+      },
+      {
+        "id": 324,
+        "path": "pydantic_ai_slim/pydantic_ai/models/openai.py",
+        "name": "openai.py"
+      },
+      {
+        "id": 325,
+        "path": "pydantic_ai_slim/pydantic_ai/models/huggingface.py",
+        "name": "huggingface.py"
+      },
+      {
+        "id": 326,
+        "path": "pydantic_ai_slim/pydantic_ai/models/anthropic.py",
+        "name": "anthropic.py"
+      },
+      {
+        "id": 327,
+        "path": "pydantic_ai_slim/pydantic_ai/models/cohere.py",
+        "name": "cohere.py"
+      },
+      {
+        "id": 328,
+        "path": "pydantic_ai_slim/pydantic_ai/models/outlines.py",
+        "name": "outlines.py"
+      },
+      {
+        "id": 329,
+        "path": "pydantic_ai_slim/pydantic_ai/models/fallback.py",
+        "name": "fallback.py"
+      },
+      {
+        "id": 330,
+        "path": "pydantic_ai_slim/pydantic_ai/models/bedrock.py",
+        "name": "bedrock.py"
+      },
+      {
+        "id": 331,
+        "path": "pydantic_ai_slim/pydantic_ai/models/mcp_sampling.py",
+        "name": "mcp_sampling.py"
+      },
+      {
+        "id": 332,
+        "path": "pydantic_ai_slim/pydantic_ai/models/function.py",
+        "name": "function.py"
+      },
+      {
+        "id": 333,
+        "path": "pydantic_ai_slim/pydantic_ai/common_tools/tavily.py",
+        "name": "tavily.py"
+      },
+      {
+        "id": 334,
+        "path": "pydantic_ai_slim/pydantic_ai/common_tools/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 335,
+        "path": "pydantic_ai_slim/pydantic_ai/common_tools/duckduckgo.py",
+        "name": "duckduckgo.py"
+      },
+      {
+        "id": 336,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 337,
+        "path": "pydantic_ai_slim/pydantic_ai/_cli/web.py",
+        "name": "web.py"
+      },
+      {
+        "id": 338,
+        "path": "pydantic_ai_slim/pydantic_ai/_cli/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 339,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/moonshotai.py",
+        "name": "moonshotai.py"
+      },
+      {
+        "id": 340,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/mistral.py",
+        "name": "mistral.py"
+      },
+      {
+        "id": 341,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/grok.py",
+        "name": "grok.py"
+      },
+      {
+        "id": 342,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 343,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/google.py",
+        "name": "google.py"
+      },
+      {
+        "id": 344,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/zai.py",
+        "name": "zai.py"
+      },
+      {
+        "id": 345,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/harmony.py",
+        "name": "harmony.py"
+      },
+      {
+        "id": 346,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/groq.py",
+        "name": "groq.py"
+      },
+      {
+        "id": 347,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/openai.py",
+        "name": "openai.py"
+      },
+      {
+        "id": 348,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/qwen.py",
+        "name": "qwen.py"
+      },
+      {
+        "id": 349,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/deepseek.py",
+        "name": "deepseek.py"
+      },
+      {
+        "id": 350,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/anthropic.py",
+        "name": "anthropic.py"
+      },
+      {
+        "id": 351,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/cohere.py",
+        "name": "cohere.py"
+      },
+      {
+        "id": 352,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/amazon.py",
+        "name": "amazon.py"
+      },
+      {
+        "id": 353,
+        "path": "pydantic_ai_slim/pydantic_ai/profiles/meta.py",
+        "name": "meta.py"
+      },
+      {
+        "id": 354,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/abstract.py",
+        "name": "abstract.py"
+      },
+      {
+        "id": 355,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/renamed.py",
+        "name": "renamed.py"
+      },
+      {
+        "id": 356,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/wrapper.py",
+        "name": "wrapper.py"
+      },
+      {
+        "id": 357,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/filtered.py",
+        "name": "filtered.py"
+      },
+      {
+        "id": 358,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/approval_required.py",
+        "name": "approval_required.py"
+      },
+      {
+        "id": 359,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/prepared.py",
+        "name": "prepared.py"
+      },
+      {
+        "id": 360,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/fastmcp.py",
+        "name": "fastmcp.py"
+      },
+      {
+        "id": 361,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 362,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/_dynamic.py",
+        "name": "_dynamic.py"
+      },
+      {
+        "id": 363,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/external.py",
+        "name": "external.py"
+      },
+      {
+        "id": 364,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/combined.py",
+        "name": "combined.py"
+      },
+      {
+        "id": 365,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/function.py",
+        "name": "function.py"
+      },
+      {
+        "id": 366,
+        "path": "pydantic_ai_slim/pydantic_ai/toolsets/prefixed.py",
+        "name": "prefixed.py"
+      },
+      {
+        "id": 367,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_function_toolset.py",
+        "name": "_function_toolset.py"
+      },
+      {
+        "id": 368,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_logfire.py",
+        "name": "_logfire.py"
+      },
+      {
+        "id": 369,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_mcp.py",
+        "name": "_mcp.py"
+      },
+      {
+        "id": 370,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 371,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_fastmcp_toolset.py",
+        "name": "_fastmcp_toolset.py"
+      },
+      {
+        "id": 372,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_run_context.py",
+        "name": "_run_context.py"
+      },
+      {
+        "id": 373,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_mcp_server.py",
+        "name": "_mcp_server.py"
+      },
+      {
+        "id": 374,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_dynamic_toolset.py",
+        "name": "_dynamic_toolset.py"
+      },
+      {
+        "id": 375,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_agent.py",
+        "name": "_agent.py"
+      },
+      {
+        "id": 376,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_toolset.py",
+        "name": "_toolset.py"
+      },
+      {
+        "id": 377,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_model.py",
+        "name": "_model.py"
+      },
+      {
+        "id": 378,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/temporal/_workflow.py",
+        "name": "_workflow.py"
+      },
+      {
+        "id": 379,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_mcp.py",
+        "name": "_mcp.py"
+      },
+      {
+        "id": 380,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 381,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_fastmcp_toolset.py",
+        "name": "_fastmcp_toolset.py"
+      },
+      {
+        "id": 382,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_mcp_server.py",
+        "name": "_mcp_server.py"
+      },
+      {
+        "id": 383,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_agent.py",
+        "name": "_agent.py"
+      },
+      {
+        "id": 384,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_model.py",
+        "name": "_model.py"
+      },
+      {
+        "id": 385,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/dbos/_utils.py",
+        "name": "_utils.py"
+      },
+      {
+        "id": 386,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_types.py",
+        "name": "_types.py"
+      },
+      {
+        "id": 387,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_function_toolset.py",
+        "name": "_function_toolset.py"
+      },
+      {
+        "id": 388,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 389,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_cache_policies.py",
+        "name": "_cache_policies.py"
+      },
+      {
+        "id": 390,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_mcp_server.py",
+        "name": "_mcp_server.py"
+      },
+      {
+        "id": 391,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_agent.py",
+        "name": "_agent.py"
+      },
+      {
+        "id": 392,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_toolset.py",
+        "name": "_toolset.py"
+      },
+      {
+        "id": 393,
+        "path": "pydantic_ai_slim/pydantic_ai/durable_exec/prefect/_model.py",
+        "name": "_model.py"
+      },
+      {
+        "id": 394,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/_event_stream.py",
+        "name": "_event_stream.py"
+      },
+      {
+        "id": 395,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/response_types.py",
+        "name": "response_types.py"
+      },
+      {
+        "id": 396,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/_adapter.py",
+        "name": "_adapter.py"
+      },
+      {
+        "id": 397,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 398,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/request_types.py",
+        "name": "request_types.py"
+      },
+      {
+        "id": 399,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/vercel_ai/_utils.py",
+        "name": "_utils.py"
+      },
+      {
+        "id": 400,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/_web/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 401,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/_web/api.py",
+        "name": "api.py"
+      },
+      {
+        "id": 402,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/_web/app.py",
+        "name": "app.py"
+      },
+      {
+        "id": 403,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/_event_stream.py",
+        "name": "_event_stream.py"
+      },
+      {
+        "id": 404,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/_adapter.py",
+        "name": "_adapter.py"
+      },
+      {
+        "id": 405,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/__init__.py",
+        "name": "__init__.py"
+      },
+      {
+        "id": 406,
+        "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/app.py",
+        "name": "app.py"
+      }
+    ],
+    "edges": [],
+    "external_deps": [
+      "",
+      "PIL",
+      "__future__",
+      "_a2a",
+      "_adapter",
+      "_agent",
+      "_agent_graph",
+      "_cache_policies",
+      "_cli",
+      "_context_in_memory_span_exporter",
+      "_dynamic",
+      "_dynamic_toolset",
+      "_errors",
+      "_event_stream",
+      "_fastmcp_toolset",
+      "_function_toolset",
+      "_griffe",
+      "_instrumentation",
+      "_json_schema",
+      "_logfire",
+      "_mcp",
+      "_mcp_server",
+      "_messages_builder",
+      "_model",
+      "_output",
+      "_parts_manager",
+      "_pytest",
+      "_run_context",
+      "_thinking_part",
+      "_tool_manager",
+      "_toolset",
+      "_types",
+      "_utils",
+      "_workflow",
+      "abc",
+      "abstract",
+      "aci",
+      "ag_ui",
+      "agent",
+      "agentic_chat",
+      "agentic_generative_ui",
+      "aiohttp",
+      "algoliasearch",
+      "alibaba",
+      "annotated_types",
+      "anthropic",
+      "anyio",
+      "api",
+      "app",
+      "approval_required",
+      "argcomplete",
+      "argparse",
+      "asgi_lifespan",
+      "asyncio",
+      "asyncpg",
+      "azure",
+      "base64",
+      "bedrock",
+      "boto3",
+      "botocore",
+      "bs4",
+      "builtin_tools",
+      "cerebras",
+      "cohere",
+      "collections",
+      "combined",
+      "common",
+      "concurrent",
+      "conftest",
+      "context",
+      "contextlib",
+      "contextvars",
+      "copy",
+      "dataclasses",
+      "dataset",
+      "datasets",
+      "datetime",
+      "dbos",
+      "ddgs",
+      "decimal",
+      "deepseek",
+      "devtools",
+      "direct",
+      "dirty_equals",
+      "duckdb",
+      "duckduckgo_search",
+      "email",
+      "enum",
+      "evaluator",
+      "evaluators",
+      "exceptiongroup",
+      "exceptions",
+      "external",
+      "fasta2a",
+      "fastapi",
+      "fastmcp",
+      "filtered",
+      "fireworks",
+      "format_prompt",
+      "function",
+      "functions",
+      "functools",
+      "gateway",
+      "genai_prices",
+      "github",
+      "google",
+      "gradio",
+      "graph",
+      "graph_builder",
+      "griffe",
+      "grok",
+      "groq",
+      "hashlib",
+      "heroku",
+      "http",
+      "httpx",
+      "huggingface",
+      "huggingface_hub",
+      "human_in_the_loop",
+      "importlib",
+      "inline_snapshot",
+      "inspect",
+      "io",
+      "itertools",
+      "jinja2",
+      "json",
+      "json_body_serializer",
+      "litellm",
+      "llama_cpp",
+      "llm_as_a_judge",
+      "logfire",
+      "logfire_api",
+      "logging",
+      "marked",
+      "math",
+      "mcp",
+      "messages",
+      "mimetypes",
+      "mistral",
+      "mistralai",
+      "mkdocs",
+      "mlx",
+      "mlx_lm",
+      "mock_async_stream",
+      "mock_openai",
+      "modal",
+      "models",
+      "moonshotai",
+      "mypy_boto3_bedrock_runtime",
+      "nebius",
+      "node",
+      "nodes",
+      "ollama",
+      "openai",
+      "openrouter",
+      "opentelemetry",
+      "operator",
+      "os",
+      "otel",
+      "outlines",
+      "output",
+      "ovhcloud",
+      "packaging",
+      "pandas",
+      "parts_from_messages",
+      "pathlib",
+      "persistence",
+      "predictive_state_updates",
+      "prefect",
+      "prefixed",
+      "prepared",
+      "profiles",
+      "prompt_toolkit",
+      "providers",
+      "pydantic",
+      "pydantic_ai",
+      "pydantic_ai_examples",
+      "pydantic_core",
+      "pydantic_evals",
+      "pydantic_graph",
+      "pyperclip",
+      "pytest",
+      "pytest_examples",
+      "pytest_mock",
+      "queue",
+      "re",
+      "renamed",
+      "render_numbers",
+      "reporting",
+      "request_types",
+      "response_types",
+      "result",
+      "rich",
+      "run",
+      "secrets",
+      "settings",
+      "shared_state",
+      "shutil",
+      "slack",
+      "snippets",
+      "span_tree",
+      "spec",
+      "sqlite3",
+      "ssl",
+      "starlette",
+      "step",
+      "store",
+      "string",
+      "sys",
+      "tavily",
+      "tempfile",
+      "temporalio",
+      "tenacity",
+      "test",
+      "test_anthropic",
+      "textwrap",
+      "threading",
+      "time",
+      "together",
+      "tool_based_generative_ui",
+      "tools",
+      "toolsets",
+      "traceback",
+      "transformers",
+      "types",
+      "typing",
+      "typing_extensions",
+      "typing_inspection",
+      "ui",
+      "unicodedata",
+      "unittest",
+      "urllib",
+      "usage",
+      "util",
+      "utils",
+      "uuid",
+      "uvicorn",
+      "vcr",
+      "vercel",
+      "vllm",
+      "warnings",
+      "weakref",
+      "web",
+      "wrapper",
+      "xml",
+      "yaml",
+      "zoneinfo"
+    ],
+    "internal_deps": {
+      "examples/pydantic_ai_examples/chat_app.ts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.0/lib/marked.esm.js"
+      ],
+      "docs-site/src/index.ts": [
+        "@pydantic/logfire-cf-workers"
+      ]
+    }
+  },
+  "entry_points": [
+    {
+      "path": "pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "pydantic_ai_slim/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "clai/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "pydantic_evals/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "examples/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "pydantic_graph/pyproject.toml",
+      "type": "python",
+      "description": "Python project configuration"
+    },
+    {
+      "path": "docs/.hooks/main.py",
+      "type": "python",
+      "description": "Main module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/slack_lead_qualifier/app.py",
+      "type": "python",
+      "description": "Application entry (Flask/FastAPI)"
+    },
+    {
+      "path": "pydantic_ai_slim/pydantic_ai/ui/_web/app.py",
+      "type": "python",
+      "description": "Application entry (Flask/FastAPI)"
+    },
+    {
+      "path": "pydantic_ai_slim/pydantic_ai/ui/ag_ui/app.py",
+      "type": "python",
+      "description": "Application entry (Flask/FastAPI)"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/__main__.py",
+      "type": "python",
+      "description": "Package main module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/ag_ui/__main__.py",
+      "type": "python",
+      "description": "Package main module"
+    },
+    {
+      "path": "clai/clai/__main__.py",
+      "type": "python",
+      "description": "Package main module"
+    },
+    {
+      "path": "pydantic_ai_slim/pydantic_ai/__main__.py",
+      "type": "python",
+      "description": "Package main module"
+    },
+    {
+      "path": "tests/mcp_server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/pydantic_model.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/roulette_wheel.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/sql_gen.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/bank_support.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/flight_booking.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/chat_app.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/rag.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/question_graph.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/data_analyst.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/weather_agent_gradio.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/stream_whales.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/weather_agent.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/stream_markdown.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/__main__.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/evals/example_03_unit_testing.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/evals/example_04_compare_models.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/evals/example_01_generate_dataset.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/evals/example_02_add_custom_evaluators.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "examples/pydantic_ai_examples/ag_ui/__main__.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "docs/.hooks/algolia.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "tests/example_modules/mcp_server.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "clai/clai/__main__.py",
+      "type": "python",
+      "description": "Executable module"
+    },
+    {
+      "path": "pydantic_ai_slim/pydantic_ai/__main__.py",
+      "type": "python",
+      "description": "Executable module"
+    }
+  ],
+  "key_files": {
+    "types": [
+      "examples/pydantic_ai_examples/evals/models.py",
+      "examples/pydantic_ai_examples/slack_lead_qualifier/models.py"
+    ],
+    "execution": [],
+    "tools": [
+      "pydantic_ai_slim/pydantic_ai/tools.py",
+      "examples/pydantic_ai_examples/slack_lead_qualifier/functions.py"
+    ],
+    "agents": [
+      "examples/pydantic_ai_examples/evals/agent.py",
+      "examples/pydantic_ai_examples/slack_lead_qualifier/agent.py"
+    ],
+    "config": [
+      "pydantic_ai_slim/pydantic_ai/settings.py"
+    ]
+  },
+  "stats": {
+    "total_files": 1126,
+    "python_files": 403,
+    "external_dependencies": 247
+  }
+}

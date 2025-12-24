@@ -1,0 +1,40 @@
+{
+  "framework": "openai-agents-python",
+  "status": "completed",
+  "timestamp": "2025-12-23T00:00:00Z",
+  "analyses_completed": [
+    "data-substrate-analysis",
+    "execution-engine-analysis",
+    "component-model-analysis",
+    "resilience-analysis",
+    "control-loop-extraction",
+    "memory-orchestration",
+    "tool-interface-analysis",
+    "multi-agent-analysis"
+  ],
+  "output_files": {
+    "codebase_map": "/Users/dgordon/my_projects/agent_framework_study/forensics-output/frameworks/openai-agents-python/codebase-map.json",
+    "framework_summary": "/Users/dgordon/my_projects/agent_framework_study/reports/frameworks/openai-agents-python.md"
+  },
+  "key_findings": [
+    "Configuration-first agent design using dataclasses",
+    "Fully native async with sophisticated sync wrapper",
+    "Guardrail tripwire pattern with parallel execution",
+    "Handoff-based multi-agent coordination",
+    "Session-based memory with pluggable backends",
+    "Deep OpenAI Responses API integration"
+  ],
+  "notable_patterns": [
+    "Comprehensive lifecycle hooks (agent-scoped and run-scoped)",
+    "Server-side conversation deduplication",
+    "Streaming with semantic events",
+    "Agent-as-tool pattern",
+    "MCP (Model Context Protocol) integration"
+  ],
+  "anti_patterns": [
+    "Unbounded session growth without automatic summarization",
+    "Docstring-based tool schema generation (fragile)",
+    "Global mutable DEFAULT_AGENT_RUNNER state",
+    "Mixed sync/async throughout codebase"
+  ]
+}

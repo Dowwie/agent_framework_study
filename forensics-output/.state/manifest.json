@@ -1,59 +1,59 @@
 {
   "frameworks": {
     "ms-agent-framework": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/ms-agent-framework"
     },
     "langgraph": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/langgraph"
     },
     "swarm": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/swarm"
     },
     "crewAI": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/crewAI"
     },
     "llama_index": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/llama_index"
     },
     "camel": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/camel"
     },
     "agent-zero": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/agent-zero"
     },
     "pydantic-ai": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/pydantic-ai"
     },
     "aws-strands": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/aws-strands"
     },
     "openai-agents-python": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/openai-agents-python"
     },
     "MetaGPT": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/MetaGPT"
     },
     "agno": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/agno"
     },
     "google-adk": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/google-adk"
     },
     "autogen": {
-      "status": "pending",
+      "status": "completed",
       "path": "repos/autogen"
     }
   }
