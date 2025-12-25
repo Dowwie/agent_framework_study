@@ -51,23 +51,27 @@ Two major simplifications were made after initial design:
 
 ## Design Decisions Summary
 
-| Dimension | Decision |
-|-----------|----------|
-| Core Architecture | Deep Agents via GenServer + Task |
-| Process Structure | SessionController GenServer + Task.async for steps |
-| State Model | PostgreSQL + Redis with Ecto embedded schemas |
-| Message Protocol | Lightweight reference structs (session_id, plan_id, step_index) |
-| ETS Layout | 4 tables: :sessions, :messages, :context, :cache |
-| Clustering | Node affinity + ex_hash_ring + write-behind persistence |
-| Tool System | Ecto schemas, introspection-based JSON schema, Task isolation |
-| LLM Integration | Req + Behaviour adapters, PubSub streaming, Hammer rate limiting, :fuse circuit breaker |
-| Memory/Context | Token budget + eviction, pgvector + pg_bm25, tiktoken NIF |
-| Multi-Agent | SessionController orchestrates sub-steps; no peer-to-peer agent communication |
-| Observability | Telemetry + OpenTelemetry, step-level granularity |
-| Error Handling | Feed errors to LLM, checkpoint recovery, configurable max iterations |
-| Interrupts/Breakpoints | Hybrid (step-level + runtime registry), timeout with default action |
-| Human-in-the-Loop | Step type + tool, PubSub → Phoenix Channel → WebSocket |
-| Time Travel Debugging | Hybrid snapshots + events, L1 view-only inspection |
+| # | Dimension | Decision |
+|---|-----------|----------|
+| 1 | Core Architecture | Deep Agents via GenServer + Task |
+| 2 | Process Structure | SessionController GenServer + Task.async for steps |
+| 3 | State Model | PostgreSQL + Redis with Ecto embedded schemas |
+| 4 | Message Protocol | Lightweight reference structs (session_id, plan_id, step_index) |
+| 5 | ETS Layout | 5 tables: :sessions, :messages, :context, :cache, :sub_agent_contexts |
+| 6 | Clustering | Node affinity + ex_hash_ring + write-behind persistence |
+| 7 | Tool System | Ecto schemas, introspection-based JSON schema, Task isolation |
+| 8 | LLM Integration | Req + Behaviour adapters, PubSub streaming, Hammer rate limiting, :fuse circuit breaker |
+| 9 | Memory/Context | Token budget + eviction, pgvector + pg_bm25, tiktoken NIF |
+| 10 | Multi-Agent | SessionController orchestrates sub-agents; hub-and-spoke coordination |
+| 11 | Observability | Telemetry + OpenTelemetry, step-level granularity |
+| 12 | Error Handling | Feed errors to LLM, checkpoint recovery, configurable max iterations |
+| 13 | Interrupts/Breakpoints | Hybrid (step-level + runtime registry), timeout with default action |
+| 14 | Human-in-the-Loop | Step type + tool, PubSub → Phoenix Channel → WebSocket |
+| 15 | Time Travel Debugging | Hybrid snapshots + events, L1 view-only inspection |
+| 16 | Sub-Agent Architecture | Task-based with ETS context; ephemeral processes, persistent context |
+| 17 | Artifact/Workspace Memory | S3-compatible storage with behaviour abstraction; reference + tool pattern |
+| 18 | System Prompts | EEx templates in priv/prompts/; directory override; ship with defaults |
+| 19 | Context Handoff | Hybrid extraction: code extracts facts, LLM extracts interpretation |
 
 ## Key Libraries
 
@@ -80,6 +84,7 @@ Two major simplifications were made after initial design:
 - **Phoenix.PubSub** - Streaming to UI
 - **Telemetry + OpenTelemetry** - Observability
 - **pgvector + pg_bm25** - Vector and text search in PostgreSQL
+- **ex_aws_s3** - S3-compatible artifact storage
 
 ## Architecture
 
@@ -200,7 +205,10 @@ lib/
 │   │   ├── step.ex
 │   │   ├── message.ex
 │   │   ├── context.ex
-│   │   └── checkpoint.ex
+│   │   ├── checkpoint.ex
+│   │   ├── sub_agent_context.ex    # Sub-agent conversation history
+│   │   ├── sub_agent_result.ex     # Structured sub-agent output
+│   │   └── artifact.ex             # Workspace artifact metadata
 │   │
 │   ├── session/                    # Session Management
 │   │   ├── supervisor.ex           # DynamicSupervisor
@@ -209,12 +217,29 @@ lib/
 │   │   ├── router.ex               # Routes to owning node
 │   │   └── registry.ex             # Process registry
 │   │
+│   ├── sub_agent/                  # Sub-Agent System (Dim 16)
+│   │   ├── runner.ex               # Task-based sub-agent execution
+│   │   ├── context.ex              # ETS context load/save
+│   │   └── synthesizer.ex          # Result extraction (code + LLM)
+│   │
+│   ├── storage/                    # Artifact Storage (Dim 17)
+│   │   ├── behaviour.ex            # Storage behaviour
+│   │   ├── s3.ex                   # S3-compatible (ex_aws_s3)
+│   │   └── local.ex                # Local filesystem (dev/test)
+│   │
+│   ├── prompts/                    # System Prompts (Dim 18)
+│   │   └── loader.ex               # EEx template loading + caching
+│   │
 │   ├── tools/                      # Tool System
 │   │   ├── behaviour.ex
 │   │   ├── registry.ex
 │   │   ├── schema.ex
 │   │   ├── executor.ex
 │   │   └── builtin/
+│   │       ├── web_search.ex
+│   │       ├── write_artifact.ex   # Write to workspace (Dim 17)
+│   │       ├── read_artifact.ex    # Read from workspace (Dim 17)
+│   │       └── list_artifacts.ex   # List session artifacts (Dim 17)
 │   │
 │   ├── llm/                        # LLM Integration
 │   │   ├── behaviour.ex
@@ -254,7 +279,19 @@ lib/
 │       └── query.ex                # state_at, timeline APIs
 │
 ├── agent_framework.ex              # Public API
-└── mix.exs
+├── mix.exs
+│
+priv/
+└── prompts/                        # System Prompt Templates (Dim 18)
+    ├── _shared/
+    │   ├── artifact_conventions.md.eex
+    │   ├── tool_guidelines.md.eex
+    │   └── hitl_protocols.md.eex
+    ├── orchestrator.md.eex
+    ├── researcher.md.eex
+    ├── coder.md.eex
+    ├── writer.md.eex
+    └── reviewer.md.eex
 ```
 
 ## Key Types
@@ -469,6 +506,152 @@ TimeTravel.full_timeline(session_id)
 
 **Snapshot strategy:** Full snapshot every 5 steps + events between. Reconstruct by loading nearest snapshot and applying subsequent events.
 
+## Sub-Agent Architecture
+
+Sub-agents provide hierarchical delegation with context isolation. Each sub-agent runs as a Task with its context persisted in ETS.
+
+**Architecture:**
+```
+SessionController (orchestrator)
+    │
+    ├── spawns Task (sub_agent_id: "researcher_1")
+    │       └── loads context from ETS[:sub_agent_contexts]
+    │       └── runs multi-turn LLM loop internally
+    │       └── saves context to ETS[:sub_agent_contexts]
+    │       └── returns SubAgentResult
+    │
+    └── can spawn another Task for same sub_agent_id later
+            └── context restored from ETS (resumable)
+```
+
+**Context schema:**
+```elixir
+defmodule AgentFramework.Schemas.SubAgentContext do
+  embedded_schema do
+    field :session_id, :binary_id
+    field :sub_agent_id, :string  # e.g., "researcher_1"
+    field :agent_type, Ecto.Enum, values: [:researcher, :coder, :writer, :reviewer, :custom]
+    field :messages, {:array, :map}  # conversation history
+    field :tool_results, {:array, :map}
+    field :artifacts_created, {:array, :string}  # paths
+    field :created_at, :utc_datetime_usec
+    field :updated_at, :utc_datetime_usec
+  end
+end
+```
+
+**Coordination model:** Hub-and-spoke via orchestrator. Sub-agents cannot communicate directly; they return to the orchestrator, which decides next actions.
+
+## Artifact/Workspace Storage
+
+Artifacts (research notes, code, drafts) are stored in S3-compatible storage and referenced by path, not included in context.
+
+**Storage behaviour:**
+```elixir
+defmodule AgentFramework.Storage do
+  @callback write(session_id, path, content) :: {:ok, artifact_url} | {:error, term()}
+  @callback read(artifact_url) :: {:ok, content} | {:error, term()}
+  @callback list(session_id, prefix) :: {:ok, [artifact_url]} | {:error, term()}
+  @callback delete(artifact_url) :: :ok | {:error, term()}
+end
+```
+
+**Path conventions:**
+```
+s3://{bucket}/{session_id}/{artifact_type}/{filename}
+
+Types: research/, code/, drafts/, data/, logs/
+```
+
+**Artifact metadata:**
+```elixir
+defmodule AgentFramework.Schemas.Artifact do
+  embedded_schema do
+    field :session_id, :binary_id
+    field :sub_agent_id, :string
+    field :type, Ecto.Enum, values: [:research, :code, :draft, :data, :log]
+    field :path, :string  # s3://bucket/path
+    field :filename, :string
+    field :content_type, :string
+    field :size_bytes, :integer
+    field :created_by_step, :integer
+    field :created_at, :utc_datetime_usec
+  end
+end
+```
+
+**Built-in tools:** `WriteArtifact`, `ReadArtifact`, `ListArtifacts`
+
+## System Prompts
+
+Prompts are EEx templates in `priv/prompts/`. Framework ships with battle-tested defaults; users can override via directory config.
+
+**Loading:**
+```elixir
+defmodule AgentFramework.Prompts do
+  def get(agent_type, assigns \\ %{}) do
+    path = resolve_path(agent_type)
+    EEx.eval_file(path, assigns: Map.to_list(assigns))
+  end
+end
+```
+
+**Override:**
+```elixir
+# config/config.exs
+config :agent_framework, :prompts_dir, "priv/my_prompts"
+# Missing files fall back to framework defaults
+```
+
+**Template variables available:**
+- `@agent_type` - Type of agent (researcher, coder, etc.)
+- `@goal` - Session goal
+- `@tool_names` - List of available tools
+- `@workspace_path` - S3 path for artifacts
+- `@step` - Current step details
+
+## Context Handoff Protocol
+
+When sub-agents return to the orchestrator, results are extracted via hybrid approach:
+
+**Code extracts (deterministic):**
+- `artifacts_created` - Paths created during execution
+- `tools_used` - Tool names called
+- `token_usage` - Input/output tokens
+- `duration_ms` - Execution time
+
+**LLM extracts (interpretation):**
+- `summary` - 1-2 sentence summary
+- `status` - completed | partial | blocked | failed
+- `recommendations` - Suggested next steps
+- `blockers` - What's preventing progress
+- `confidence` - 0-1 confidence score
+- Type-specific fields (sources for researcher, tests_status for coder, etc.)
+
+**Result schema:**
+```elixir
+defmodule AgentFramework.Schemas.SubAgentResult do
+  embedded_schema do
+    field :sub_agent_id, :string
+    field :agent_type, Ecto.Enum, values: [:researcher, :coder, :writer, :reviewer, :custom]
+    field :status, Ecto.Enum, values: [:completed, :partial, :blocked, :failed]
+
+    # Code-extracted
+    field :artifacts_created, {:array, :string}
+    field :tools_used, {:array, :string}
+    field :token_usage, :map
+    field :duration_ms, :integer
+
+    # LLM-extracted
+    field :summary, :string
+    field :recommendations, {:array, :string}
+    field :blockers, {:array, :string}
+    field :confidence, :float
+    embeds_one :type_specific, :map
+  end
+end
+```
+
 ## Public API
 
 The `AgentFramework` module exposes the primary interface:
@@ -547,15 +730,18 @@ end
 
 ## Implementation Order
 
-1. **Foundation** - ETS tables, Ecto schemas, persistence worker
+1. **Foundation** - ETS tables (5 tables), Ecto schemas, persistence worker
 2. **Session Management** - Controller GenServer, step executor, supervisor, registry
 3. **Tools** - Behaviour, registry, executor, schema generation
-4. **LLM Integration** - Provider behaviour, pool, OpenAI adapter, streaming
-5. **Memory & Context** - Token counter, context builder, eviction
-6. **Interrupts & HITL** - Breakpoints, interrupt handler, AskHuman tool, Phoenix Channel
-7. **Time Travel** - Event logging, snapshotter, query API
-8. **Clustering** - Hash ring, cross-node routing, failover
-9. **Observability & Hardening** - Telemetry, checkpoints, integration tests
+4. **Storage Layer** - Storage behaviour, S3 adapter, local adapter, artifact tools
+5. **System Prompts** - EEx loader, default templates, override mechanism
+6. **Sub-Agent System** - Runner, context management, result synthesizer
+7. **LLM Integration** - Provider behaviour, pool, OpenAI adapter, streaming
+8. **Memory & Context** - Token counter, context builder, eviction
+9. **Interrupts & HITL** - Breakpoints, interrupt handler, AskHuman tool, Phoenix Channel
+10. **Time Travel** - Event logging, snapshotter, query API
+11. **Clustering** - Hash ring, cross-node routing, failover
+12. **Observability & Hardening** - Telemetry, checkpoints, integration tests
 
 ## Architectural Note: Why GenServer + Task (Not Broadway)
 
@@ -621,4 +807,7 @@ From analysis of 15 Python frameworks:
 ### Project Artifacts
 - Framework analysis: `reports/synthesis/comparison-matrix.md`
 - Anti-patterns catalog: `reports/synthesis/antipatterns.md`
-- Session log: `docs/elixir-sessions/2025-12-24-0639.md`
+- Session logs:
+  - `docs/elixir-sessions/2025-12-24-0639.md` (Dimensions 1-13)
+  - `docs/elixir-sessions/2025-12-25-0409.md` (Dimensions 14-17, gap resolution)
+- Gap analysis: `fathom_gap.md`
