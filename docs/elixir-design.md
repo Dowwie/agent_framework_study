@@ -59,12 +59,12 @@ Two major simplifications were made after initial design:
 | 4 | Message Protocol | Lightweight reference structs (session_id, plan_id, step_index) |
 | 5 | ETS Layout | 5 tables: :sessions, :messages, :context, :cache, :sub_agent_contexts |
 | 6 | Clustering | Node affinity + ex_hash_ring + write-behind persistence |
-| 7 | Tool System | Ecto schemas, introspection-based JSON schema, Task isolation |
+| 7 | Tool System | Ecto schemas, introspection, ToolError for structured errors, sandbox_mode callback |
 | 8 | LLM Integration | Req + Behaviour adapters, PubSub streaming, Hammer rate limiting, :fuse circuit breaker |
 | 9 | Memory/Context | Token budget + eviction, pgvector + pg_bm25, tiktoken NIF |
 | 10 | Multi-Agent | SessionController orchestrates sub-agents; hub-and-spoke coordination |
 | 11 | Observability | Telemetry + OpenTelemetry, step-level granularity |
-| 12 | Error Handling | Feed errors to LLM, checkpoint recovery, configurable max iterations |
+| 12 | Error Handling | Feed errors to LLM (via ToolError), checkpoint recovery, configurable max iterations |
 | 13 | Interrupts/Breakpoints | Hybrid (step-level + runtime registry), timeout with default action |
 | 14 | Human-in-the-Loop | Step type + tool, PubSub → Phoenix Channel → WebSocket |
 | 15 | Time Travel Debugging | Hybrid snapshots + events, L1 view-only inspection |
@@ -72,6 +72,8 @@ Two major simplifications were made after initial design:
 | 17 | Artifact/Workspace Memory | S3-compatible storage with behaviour abstraction; reference + tool pattern |
 | 18 | System Prompts | EEx templates in priv/prompts/; directory override; ship with defaults |
 | 19 | Context Handoff | Hybrid extraction: code extracts facts, LLM extracts interpretation |
+| 20 | Hierarchical Memory | 50/30/20 split: recent verbatim, historical summary, semantic retrieval |
+| 21 | Sandbox Interface | Behaviour + WebSocket protocol for external code execution sandbox |
 
 ## Key Libraries
 
@@ -208,7 +210,8 @@ lib/
 │   │   ├── checkpoint.ex
 │   │   ├── sub_agent_context.ex    # Sub-agent conversation history
 │   │   ├── sub_agent_result.ex     # Structured sub-agent output
-│   │   └── artifact.ex             # Workspace artifact metadata
+│   │   ├── artifact.ex             # Workspace artifact metadata
+│   │   └── tool_error.ex           # Structured tool errors (Dim 7 refinement)
 │   │
 │   ├── session/                    # Session Management
 │   │   ├── supervisor.ex           # DynamicSupervisor
@@ -230,8 +233,8 @@ lib/
 │   ├── prompts/                    # System Prompts (Dim 18)
 │   │   └── loader.ex               # EEx template loading + caching
 │   │
-│   ├── tools/                      # Tool System
-│   │   ├── behaviour.ex
+│   ├── tools/                      # Tool System (Dim 7)
+│   │   ├── behaviour.ex            # Includes sandbox_mode/0 callback
 │   │   ├── registry.ex
 │   │   ├── schema.ex
 │   │   ├── executor.ex
@@ -239,7 +242,8 @@ lib/
 │   │       ├── web_search.ex
 │   │       ├── write_artifact.ex   # Write to workspace (Dim 17)
 │   │       ├── read_artifact.ex    # Read from workspace (Dim 17)
-│   │       └── list_artifacts.ex   # List session artifacts (Dim 17)
+│   │       ├── list_artifacts.ex   # List session artifacts (Dim 17)
+│   │       └── code_execute.ex     # Sandboxed code execution (Dim 21)
 │   │
 │   ├── llm/                        # LLM Integration
 │   │   ├── behaviour.ex
@@ -250,11 +254,16 @@ lib/
 │   │   ├── rate_limiter.ex
 │   │   └── circuit_breaker.ex
 │   │
-│   ├── memory/                     # Memory/Context
+│   ├── memory/                     # Memory/Context (Dim 9, 20)
 │   │   ├── token_counter.ex
-│   │   ├── context_builder.ex
+│   │   ├── context_builder.ex      # Implements 50/30/20 strategy
+│   │   ├── summary_generator.ex    # Background LLM summarization
 │   │   ├── eviction.ex
 │   │   └── search.ex
+│   │
+│   ├── sandbox/                    # Code Execution Sandbox (Dim 21)
+│   │   ├── behaviour.ex            # Sandbox behaviour definition
+│   │   └── websocket_client.ex     # WebSocket client to external sandbox
 │   │
 │   ├── telemetry/                  # Observability
 │   │   ├── events.ex
@@ -652,6 +661,158 @@ defmodule AgentFramework.Schemas.SubAgentResult do
 end
 ```
 
+## Hierarchical Memory Strategy
+
+The 50/30/20 strategy addresses unbounded memory growth (anti-pattern #1) by allocating token budget across three tiers:
+
+```
+Token Budget Allocation:
+├── 50% Recent Messages (verbatim, most recent first)
+├── 30% Historical Summary (LLM-compressed rolling summary)
+└── 20% Semantic Retrieval (pgvector similarity search)
+```
+
+### Configuration
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `@summary_token_threshold` | 4000 | Unsummarized tokens before regeneration |
+| `@summary_target_tokens` | 2000 | Target size for generated summary |
+| `@semantic_top_k` | 20 | Max results from pgvector query |
+
+### Summary Generation
+
+- **Trigger**: Token threshold (when unsummarized tokens > 4000)
+- **Mode**: Full replacement (not incremental)
+- **Execution**: Background Task, non-blocking
+- **Cache**: ETS with no TTL (token-triggered invalidation only)
+- **Persistence**: Write-behind to Postgres
+
+### Semantic Retrieval
+
+- **Embedding unit**: Per-message (each message is one vector)
+- **Query source**: Current user message content
+- **Budget fitting**: Top-K with token accumulation (accumulate until budget filled)
+- **Index**: pgvector with IVFFlat on `embedding vector_cosine_ops`
+
+### Context Output
+
+Returns structured `%Context{}` preserving tier provenance:
+
+```elixir
+defmodule AgentFramework.Schemas.Context do
+  @type t :: %__MODULE__{
+    session_id: String.t(),
+    summary: String.t() | nil,
+    recent_messages: [Message.t()],
+    semantic_messages: [Message.t()],  # Attributed with "[From earlier in conversation]"
+    total_tokens: non_neg_integer(),
+    metadata: map()
+  }
+end
+```
+
+### Integration Point
+
+Called once per LLM call in `StepExecutor`, before each invocation. Tool loop iterations rebuild context with new tool results included.
+
+## Sandbox Interface
+
+Code execution tools require security isolation beyond what BEAM Tasks provide. The framework defines an interface to external sandboxes without implementing the sandbox runtime itself.
+
+**Design scope:**
+- Define behaviour + Fathom Sandbox Protocol (FSP)
+- Build client to connect to external sandbox
+- Do NOT implement sandbox server (separate concern)
+
+### Connection Management
+
+- **Pool**: Poolboy with configurable size (default 5, max overflow 10)
+- **Reconnection**: Immediate retry first, then exponential backoff (100ms → 30s max)
+- **Health check**: Workers validate connection before checkout
+
+### Fathom Sandbox Protocol v1.0
+
+See [`docs/fathom-sandbox-protocol.md`](fathom-sandbox-protocol.md) for full specification.
+
+| Property | Value |
+|----------|-------|
+| Encoding | JSON over WebSocket |
+| Versioning | `v` field in every message |
+| Output mode | Streaming only |
+| Session model | Stateless |
+
+**Message types:**
+- Client → Sandbox: `execute`, `cancel`, `ping`
+- Sandbox → Client: `ack`, `status`, `stdout`, `stderr`, `result`, `error`, `pong`
+
+**Key error codes:** `TIMEOUT`, `OOM`, `OUTPUT_LIMIT`, `SANDBOX_OVERLOADED`, `INTERNAL_ERROR`
+
+### Configuration
+
+```elixir
+config :agent_framework, AgentFramework.Sandbox,
+  url: "wss://sandbox.example.com/ws",
+  auth: [api_key: "...", refresh_url: "..."],
+  pool: [size: 5, max_overflow: 10],
+  timeouts: [connect_timeout_ms: 5_000, execution_default_ms: 30_000]
+```
+
+### Tool Integration
+
+Tools declare `sandbox_mode/0` callback. Default is `:none` (in-process). Code execution tools specify `:external` to route through sandbox pool. Routing checked at execution time.
+
+## ToolError Schema
+
+Structured errors from tool execution, providing enough context for LLM self-correction.
+
+### Schema
+
+```elixir
+defmodule AgentFramework.Schemas.ToolError do
+  @type t :: %__MODULE__{
+    tool_name: String.t(),
+    error_type: :validation | :execution | :timeout | :sandbox | :permission,
+    message: String.t(),
+    retryable: boolean(),
+    context: map()
+  }
+
+  # Constructor helpers
+  def validation_error(tool_name, message, context \\ %{})
+  def execution_error(tool_name, message, opts \\ [])
+  def timeout_error(tool_name, timeout_ms)
+  def from_api_error(tool_name, %{status: status, body: body})
+  def from_exception(tool_name, exception)
+
+  # LLM formatting
+  def format_for_llm(%__MODULE__{} = error)
+end
+```
+
+### Executor Integration
+
+All tool errors wrapped in ToolError. The executor normalizes raw `{:error, reason}` returns automatically for backward compatibility.
+
+```elixir
+# Tools SHOULD return ToolError
+{:error, ToolError.execution_error("web_search", "Rate limited", retryable: true)}
+
+# But legacy returns are auto-wrapped
+{:error, "Something went wrong"}  # → ToolError.execution_error(...)
+```
+
+### LLM Feedback Format
+
+```
+Tool `web_search` failed.
+Error type: timeout
+Message: Execution timed out after 30000ms
+This error is not retryable.
+```
+
+Formatting defined in `ToolError.format_for_llm/1`, invoked by `StepExecutor` when building tool result messages. Context shown selectively (validation, execution only) to avoid leaking internals.
+
 ## Public API
 
 The `AgentFramework` module exposes the primary interface:
@@ -790,9 +951,12 @@ From analysis of 15 Python frameworks:
 
 ## Research Items
 
+See `docs/TODO-ANALYSIS.md` for detailed research tasks:
 - Tiktoken Elixir bindings (NIF implementation)
 - Compaction alternatives to LLM summarization
 - LiteLLM analysis for provider unification patterns
+- Agno event taxonomy analysis (observability patterns)
+- OpenTelemetry GenAI semantic conventions
 
 ## References
 
@@ -807,7 +971,11 @@ From analysis of 15 Python frameworks:
 ### Project Artifacts
 - Framework analysis: `reports/synthesis/comparison-matrix.md`
 - Anti-patterns catalog: `reports/synthesis/antipatterns.md`
+- Protocol specification: `docs/fathom-sandbox-protocol.md`
 - Session logs:
   - `docs/elixir-sessions/2025-12-24-0639.md` (Dimensions 1-13)
   - `docs/elixir-sessions/2025-12-25-0409.md` (Dimensions 14-17, gap resolution)
+  - `docs/elixir-sessions/2025-12-27-0639.md` (Dimensions 20-21, critique evaluation)
+  - `docs/elixir-sessions/2025-12-27-1100.md` (Dimension 20-21 gap resolution, FSP v1.0)
 - Gap analysis: `fathom_gap.md`
+- Research backlog: `docs/TODO-ANALYSIS.md`
