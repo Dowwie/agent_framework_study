@@ -48,6 +48,38 @@ Two major simplifications were made after initial design:
 3. **ETS as Hot Cache** - PostgreSQL as durability layer with write-behind
 4. **Behaviour-Driven** - Protocols and behaviours for extensibility
 5. **Observability Built-In** - Telemetry + OpenTelemetry from day one
+6. **Defensive Error Handling** - Result tuples, boundary validation, explicit propagation
+
+### Error Philosophy
+
+**Result Tuples Over Exceptions**
+
+All fallible operations return `{:ok, result} | {:error, reason}`. Exceptions are reserved for programmer errors (bugs), not operational failures. This makes error paths explicit and composable via `with` chains.
+
+**Validation at Boundaries**
+
+- Ecto changesets validate all external input (user requests, LLM responses, tool parameters)
+- Invalid data is rejected before entering the system
+- Internal functions assume valid data; no redundant defensive checks deep in the stack
+
+**Explicit Error Propagation**
+
+- Errors propagate up with context using tagged tuples: `{:error, {:tool_timeout, details}}`
+- No silent failures or swallowed exceptions
+- `with` chains for multi-step operations; each step can fail independently
+
+**LLM Error Feedback**
+
+- Tool failures return `ToolError` structs with structured context
+- `format_for_llm/1` converts errors to actionable text for the LLM
+- Enables self-correction: LLM can retry with different parameters or strategy
+
+**Crashes Are Exceptional**
+
+- Supervisors handle truly unexpected failures only
+- Recovery loads from PostgreSQL checkpoint, not crashed process memory
+- No crash-as-control-flow patterns; crashes indicate bugs to fix, not normal operation
+- ETS tables survive process crashes (owned by dedicated supervisor)
 
 ## Design Decisions Summary
 
@@ -59,7 +91,7 @@ Two major simplifications were made after initial design:
 | 4 | Message Protocol | Lightweight reference structs (session_id, plan_id, step_index) |
 | 5 | ETS Layout | 5 tables: :sessions, :messages, :context, :cache, :sub_agent_contexts |
 | 6 | Clustering | Node affinity + ex_hash_ring + write-behind persistence |
-| 7 | Tool System | Ecto schemas, introspection, ToolError for structured errors, sandbox_mode callback |
+| 7 | Tool System | Ecto schemas, introspection, ToolError, sandbox_mode, parallel execution (scatter-gather) |
 | 8 | LLM Integration | Req + Behaviour adapters, PubSub streaming, Hammer rate limiting, :fuse circuit breaker |
 | 9 | Memory/Context | Token budget + eviction, pgvector + pg_bm25, tiktoken NIF |
 | 10 | Multi-Agent | SessionController orchestrates sub-agents; hub-and-spoke coordination |
@@ -315,8 +347,15 @@ priv/
   config: map(),
   max_iterations: pos_integer(),
   current_iteration: non_neg_integer(),
-  pending_task: reference() | nil,    # Task.async ref when step is executing
+  pending_tasks: %{reference() => pending_task_meta()},  # Parallel tool execution
   subscribers: [pid()]                 # Processes to notify on events
+}
+
+# Metadata for each pending tool execution
+@type pending_task_meta :: %{
+  tool_call_id: String.t(),
+  tool_module: module(),
+  started_at: DateTime.t()
 }
 
 # Plan with Steps
@@ -393,6 +432,76 @@ defmodule MyTools.WebSearch do
   end
 end
 ```
+
+## Parallel Tool Execution (Scatter-Gather)
+
+LLMs can return multiple tool calls in a single response when operations are independent. The framework executes these concurrently rather than serially.
+
+**Why parallel execution matters:**
+
+| Scenario | Serial | Parallel |
+|----------|--------|----------|
+| 3 web searches @ 2s each | 6s | ~2s |
+| 5 file reads @ 100ms each | 500ms | ~100ms |
+| Mixed: 2 searches + 1 API call | Sum of all | Max of all |
+
+**Implementation in StepExecutor:**
+
+```elixir
+defmodule AgentFramework.Session.StepExecutor do
+  @max_concurrent_tools 10
+  @tool_batch_timeout 60_000
+
+  def execute_tools(tool_calls, context) when length(tool_calls) > @max_concurrent_tools do
+    {:error, ToolError.validation_error("batch", "Too many concurrent tools (max #{@max_concurrent_tools})")}
+  end
+
+  def execute_tools(tool_calls, context) do
+    # Spawn all tools concurrently
+    tasks =
+      Enum.map(tool_calls, fn call ->
+        task = Task.Supervisor.async_nolink(ToolTaskSupervisor, fn ->
+          Executor.execute(call.tool_module, call.params, context)
+        end)
+        {call.id, task}
+      end)
+
+    # Await all results (handles partial failures)
+    results =
+      tasks
+      |> Enum.map(fn {call_id, task} ->
+        result = case Task.yield(task, @tool_batch_timeout) || Task.shutdown(task) do
+          {:ok, result} -> result
+          nil -> {:error, ToolError.timeout_error("batch", @tool_batch_timeout)}
+          {:exit, reason} -> {:error, ToolError.execution_error("unknown", inspect(reason))}
+        end
+        {call_id, result}
+      end)
+
+    {:ok, results}
+  end
+end
+```
+
+**Partial failure handling:**
+
+When some tools succeed and others fail, all results are returned to the LLM. The LLM decides how to proceed—retry failed tools, work with partial data, or abort.
+
+```elixir
+# Example: 3 tools called, 1 fails
+[
+  {"call_1", {:ok, %{results: [...]}}},
+  {"call_2", {:error, %ToolError{error_type: :timeout, ...}}},
+  {"call_3", {:ok, %{data: "..."}}}
+]
+# All three results sent back to LLM for decision
+```
+
+**Resource bounds:**
+
+- `@max_concurrent_tools` caps concurrent executions (default: 10)
+- `@tool_batch_timeout` bounds total wait time for batch
+- Task.Supervisor isolates tool crashes from SessionController
 
 ## Telemetry Events
 
