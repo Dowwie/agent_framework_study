@@ -24,7 +24,9 @@ def build_prompt(skill_name: str, framework_name: str, codebase_map_path: str, o
     else:
         skill_content = f"[Skill file not found: {skill_file}]"
 
-    phase = "1" if skill_name in ["data-substrate-analysis", "execution-engine-analysis", "component-model-analysis", "resilience-analysis"] else "2"
+    phase1_skills = ["data-substrate-analysis", "execution-engine-analysis", "component-model-analysis", "resilience-analysis"]
+    phase2_skills = ["control-loop-extraction", "memory-orchestration", "tool-interface-analysis", "harness-model-protocol", "multi-agent-analysis"]
+    phase = "1" if skill_name in phase1_skills else "2"
 
     phase_ref_file = project_root / f".claude/skills/architectural-forensics/references/phase{phase}-{'engineering' if phase == '1' else 'cognitive'}.md"
     if phase_ref_file.exists():

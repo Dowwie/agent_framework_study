@@ -16,6 +16,7 @@ flowchart TB
         CL["🔄 control-loop-extraction<br/><i>Reasoning, Step Function</i>"]
         MO["🧠 memory-orchestration<br/><i>Context, Eviction, Tiers</i>"]
         TI["🔧 tool-interface-analysis<br/><i>Schema Gen, Feedback</i>"]
+        HM["📡 harness-model-protocol<br/><i>Wire Format, Agentic Primitives</i>"]
         MA["👥 multi-agent-analysis<br/><i>Coordination, Handoffs</i>"]
     end
 
@@ -31,8 +32,8 @@ flowchart TB
 
     FW --> CM
     CM --> DS & EE & CO & RE
-    DS & EE & CO & RE --> CL & MO & TI & MA
-    CL & MO & TI & MA --> MT
+    DS & EE & CO & RE --> CL & MO & TI & HM & MA
+    CL & MO & TI & HM & MA --> MT
     MT --> AP --> AS
     AS --> SPEC
 

@@ -43,6 +43,7 @@ Extract agent "business logic". See `references/phase2-cognitive.md` for detaile
 | Control Loop | agent.py, loop.py | Reasoning pattern, step function |
 | Memory | memory.py, context.py | Context assembly, eviction policies |
 | Tool Interface | tool.py, functions.py | Schema generation, error feedback |
+| Harness-Model Protocol | llm.py, adapters/, stream.py | Wire format, tool call encoding, agentic primitives |
 | Multi-Agent | orchestrator.py, router.py | Coordination model, state sharing |
 
 ### Phase 3: Synthesis
@@ -71,6 +72,7 @@ Generate actionable outputs:
 │     ├── control-loop-extraction                         │
 │     ├── memory-orchestration                            │
 │     ├── tool-interface-analysis                         │
+│     ├── harness-model-protocol                          │
 │     └── multi-agent-analysis (if applicable)            │
 └─────────────────────────────────────────────────────────┘
         ↓
@@ -173,6 +175,7 @@ See:
 | `control-loop-extraction` | Reasoning loop | Pattern classification, step function |
 | `memory-orchestration` | Context management | Assembly, eviction, tiers |
 | `tool-interface-analysis` | Tool system | Schema gen, error feedback |
+| `harness-model-protocol` | LLM interface layer | Wire format, encoding, agentic primitives |
 | `multi-agent-analysis` | Coordination | Handoffs, state sharing |
 | `comparative-matrix` | Comparison | Decision tables |
 | `antipattern-catalog` | Tech debt | Do-not-repeat list |

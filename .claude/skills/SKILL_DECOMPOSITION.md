@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document decomposes the Architectural Forensics Protocol into **12 discrete, modular skills** that a software engineering agent can utilize. Each skill is designed to be:
+This document decomposes the Architectural Forensics Protocol into **13 discrete, modular skills** that a software engineering agent can utilize. Each skill is designed to be:
 
 - **Self-contained**: Executable independently with clear inputs/outputs
 - **Composable**: Can be chained together for complex analysis workflows
@@ -25,12 +25,13 @@ architectural-forensics/
 │   ├── 6. control-loop-extraction   # Reasoning patterns, step functions, termination
 │   ├── 7. memory-orchestration      # Context management, eviction, state continuity
 │   ├── 8. tool-interface-analysis   # Schema generation, feedback loops
-│   └── 9. multi-agent-analysis      # Coordination, handoffs, shared state
+│   ├── 9. harness-model-protocol    # Wire format, tool call encoding, agentic primitives
+│   └── 10. multi-agent-analysis     # Coordination, handoffs, shared state
 │
 └── Phase 3: Synthesis
-    ├── 10. comparative-matrix        # Best-of-breed decision framework
-    ├── 11. antipattern-catalog       # Technical debt documentation
-    └── 12. architecture-synthesis    # Reference architecture generation
+    ├── 11. comparative-matrix        # Best-of-breed decision framework
+    ├── 12. antipattern-catalog       # Technical debt documentation
+    └── 13. architecture-synthesis    # Reference architecture generation
 ```
 
 ---
@@ -298,7 +299,50 @@ architectural-forensics/
 
 ---
 
-### Skill 9: `multi-agent-analysis`
+### Skill 9: `harness-model-protocol`
+
+**Purpose**: Analyze the protocol layer between agent framework (harness) and language model, including wire formats, tool call encoding, and agentic primitives.
+
+**Inputs**:
+- LLM client/adapter code
+- Message formatting modules
+- Streaming handlers
+
+**Outputs**:
+- Wire format classification (OpenAI/Anthropic/Custom)
+- Tool call encoding/decoding patterns
+- Streaming protocol analysis
+- Agentic primitive inventory (scratchpad, interrupt, confirmation)
+- Provider abstraction assessment
+
+**Key Operations**:
+1. Map message protocol:
+   - Identify wire format family (OpenAI-compatible, Anthropic, Gemini, custom)
+   - Document message structure translation
+   - Analyze role handling (system, user, assistant, tool)
+2. Trace tool call encoding:
+   - Request: How tools are transmitted to LLM (function calling API vs system prompt injection)
+   - Response: How tool calls are parsed (native API, regex, XML)
+   - Tool choice constraints (auto, required, specific)
+3. Analyze streaming mechanics:
+   - Protocol type (SSE, WebSocket)
+   - Partial tool call accumulation
+   - Event types and handling
+4. Catalog agentic primitives:
+   - System prompt injection points
+   - Scratchpad/working memory patterns
+   - Interrupt/HITL mechanisms
+   - Conversation state machine
+5. Evaluate provider abstraction:
+   - Adapter pattern (thin vs unified)
+   - Feature parity across providers
+   - Graceful degradation for missing features
+
+**Trigger Phrases**: "harness model protocol", "wire format", "LLM API", "message format", "agentic primitives", "streaming protocol"
+
+---
+
+### Skill 10: `multi-agent-analysis`
 
 **Purpose**: Analyze coordination patterns in multi-agent systems.
 
@@ -335,7 +379,7 @@ architectural-forensics/
 
 ---
 
-### Skill 10: `comparative-matrix`
+### Skill 11: `comparative-matrix`
 
 **Purpose**: Generate structured comparisons across analyzed frameworks.
 
@@ -364,7 +408,7 @@ architectural-forensics/
 
 ---
 
-### Skill 11: `antipattern-catalog`
+### Skill 12: `antipattern-catalog`
 
 **Purpose**: Document technical debt and patterns to avoid.
 
@@ -392,7 +436,7 @@ architectural-forensics/
 
 ---
 
-### Skill 12: `architecture-synthesis`
+### Skill 13: `architecture-synthesis`
 
 **Purpose**: Generate a reference architecture specification.
 
@@ -434,15 +478,15 @@ architectural-forensics/
    ↓
 2-5. [Engineering Chassis Skills] in parallel
    ↓
-6-9. [Cognitive Architecture Skills] in parallel
+6-10. [Cognitive Architecture Skills] in parallel
    ↓
-[Repeat 1-9 for Framework B, C, ...]
+[Repeat 1-10 for Framework B, C, ...]
    ↓
-10. comparative-matrix
+11. comparative-matrix
    ↓
-11. antipattern-catalog
+12. antipattern-catalog
    ↓
-12. architecture-synthesis
+13. architecture-synthesis
 ```
 
 ### Quick Analysis Workflow
@@ -470,7 +514,7 @@ For evaluating how easy it is to extend a framework:
    ↓
 8. tool-interface-analysis
    ↓
-11. antipattern-catalog (extensibility focus)
+12. antipattern-catalog (extensibility focus)
 ```
 
 ---
@@ -483,6 +527,7 @@ For evaluating how easy it is to extend a framework:
 | P0 | control-loop-extraction | Core insight for agent architecture |
 | P1 | execution-engine-analysis | Critical for scalability decisions |
 | P1 | tool-interface-analysis | Essential for interoperability |
+| P1 | harness-model-protocol | Essential for multi-provider support |
 | P1 | comparative-matrix | Enables systematic decision-making |
 | P2 | data-substrate-analysis | Important but analyzable manually |
 | P2 | memory-orchestration | Complex, high value |
